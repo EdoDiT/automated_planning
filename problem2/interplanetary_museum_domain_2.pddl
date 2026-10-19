@@ -49,6 +49,17 @@
 		(seismic_phase_duration)
 	)
 
+	(:action wait
+		:parameters (?agent - robot)
+		:precondition (and
+			(< (seismic_counter) (seismic_phase_duration))
+		)
+		:effect (and
+			(increase (seismic_counter) 1)
+			(decrease (battery_level ?agent) 5)
+		)
+	)
+
 	(:action pickup_standard_artifact
 		:parameters (?agent - robot ?artifact - artifact ?room - room)
 		:precondition (and 

@@ -53,10 +53,23 @@
 	(:action activate_robot
 		:parameters (?agent - robot)
 		:precondition (and
+			(< (seismic_counter) (seismic_phase_duration))
 			(is_idle ?agent)
 		)
 		:effect (and
+			(increase (seismic_counter) 1)
 			(not (is_idle ?agent))
+		)
+	)
+
+	(:action wait
+		:parameters (?agent - robot)
+		:precondition (and
+			(< (seismic_counter) (seismic_phase_duration))
+		)
+		:effect (and
+			(increase (seismic_counter) 1)
+			(decrease (battery_level ?agent) 5)
 		)
 	)
 
@@ -755,6 +768,25 @@
 		)
 	)
 
+	(:task robot_wait_daemon :parameters (?agent - robot))
+
+    (:method finish_waiting
+        :parameters (?agent - robot)
+        :task (robot_wait_daemon ?agent)
+        :ordered-subtasks ()
+    )
+
+    (:method do_wait_step
+        :parameters (?agent - robot)
+        :task (robot_wait_daemon ?agent)
+        :precondition (and
+        )
+        :ordered-subtasks (and
+            (wait ?agent)
+            (robot_wait_daemon ?agent)
+        )
+    )
+
 	(:task make_robot_work :parameters (?agent - robot))
 
 	(:method deploy_for_work_once
@@ -763,9 +795,14 @@
 		:precondition (and
 			(at ?agent ?departure)
 		)
-		:ordered-subtasks (and
-			(tour_around ?agent ?departure ?next_destination)
-			(make_robot_work ?agent)
+		:subtasks (and
+			(t_act (tour_around ?agent ?departure ?next_destination))
+			(t_wait (robot_wait_daemon ?agent))
+			(t_work (make_robot_work ?agent))
+		)
+		:ordering (and
+			(< t_act t_work)
+			(< t_wait t_work)
 		)
 	)
 	
