@@ -30,6 +30,7 @@
 		(is_thermosensitive ?arg0 - artifact)
 		(is_seismic_sensitive ?arg0 - artifact)
 		(is_thermo_and_seismic_sensitive ?arg0 - artifact)
+		(is_idle ?arg0 - robot)
 		(has_pod ?arg0 - robot ?arg1 -pod)
 		(on ?arg0 - carriable_item ?arg1 - robot)
 		(in ?arg0 - artifact ?arg1 - pod)
@@ -47,6 +48,16 @@
 		(max_battery_level ?arg0 - robot)
 		(seismic_counter)
 		(seismic_phase_duration)
+	)
+
+	(:action activate_robot
+		:parameters (?agent - robot)
+		:precondition (and
+			(is_idle ?agent)
+		)
+		:effect (and
+			(not (is_idle ?agent))
+		)
 	)
 
 	(:action pickup_standard_artifact
@@ -369,37 +380,6 @@
 		)
 	)
 
-	(:task transport_batch
-  		:parameters (?agent - robot ?departure - location ?destination - location)
-	)
-
-	(:method do_transport_batch
-  		:parameters (?agent - sealing_curators ?departure - location ?destination - location)
-  		:task (transport_batch ?agent ?departure ?destination)
-		:precondition (and
-			(at ?agent ?departure)
-			(is_unsealed ?agent)
-		)
-  		:ordered-subtasks (and
-    		(load_phase ?agent ?departure)
-    		(robot_travel ?agent ?destination)
-    		(unload_phase ?agent ?destination)
-  		)
-	)
-
-	(:method do_transport_batch_drone
-  		:parameters (?agent - drone_curator ?departure - location ?destination - location)
-  		:task (transport_batch ?agent ?departure ?destination)
-		:precondition (and
-			(at ?agent ?departure)
-		)
-  		:ordered-subtasks (and
-			(load_phase ?agent ?departure)
-			(robot_travel ?agent ?destination)
-			(unload_phase ?agent ?destination)
-  		)
-	)
-
 	(:task unload_phase :parameters (?agent - robot ?room - room))
 
 	(:method unload_one_standard_more
@@ -689,37 +669,6 @@
 		:ordered-subtasks ()
 	)
 
-	(:task earthquake_daemon)
-
-	(:method trigger_earthquake
-		:task (earthquake_daemon)
-		:precondition (and
-			(>= (seismic_counter) (seismic_phase_duration))
-			(is_not_seisming hall_beta)
-		)
-		:ordered-subtasks (and
-			(start_earthquake)
-			(earthquake_daemon)
-		)
-	)
-	
-	(:method trigger_calm
-		:task (earthquake_daemon)
-		:precondition (and
-			(>= (seismic_counter) (seismic_phase_duration))
-			(is_seisming hall_beta)
-		)
-		:ordered-subtasks (and
-			(stop_earthquake)
-			(earthquake_daemon)
-		)
-	)
-	
-	(:method stop_daemon
-		:task (earthquake_daemon)
-		:ordered-subtasks ()
-	)
-
 	(:task prepare_robot :parameters (?agent - robot ?departure - location))
 
 	(:method prepare_nothing
@@ -815,13 +764,79 @@
 			(at ?agent ?departure)
 		)
 		:ordered-subtasks (and
-			(service_destinations ?agent ?departure ?next_destination)
+			(tour_around ?agent ?departure ?next_destination)
 			(make_robot_work ?agent)
 		)
 	)
 	
 	(:method finish_work
+		:parameters (?agent - robot)
 		:task (make_robot_work ?agent)
 		:ordered-subtasks ()
 	)
+
+	(:task manage_workforce)
+
+	(:method deploy_one_more_robot
+        :parameters (?agent - robot)
+        :task (manage_workforce)
+        :precondition (and
+            (is_idle ?agent)
+        )
+        :subtasks (and
+            (t_act (activate_robot ?agent))
+            (t_work (make_robot_work ?agent))
+            (t_rec (manage_workforce))
+        )
+        :ordering (and 
+            (< t_act t_work)
+            (< t_act t_rec)
+        )
+    )
+
+	(:method finish_deployment
+		:task (manage_workforce)
+		:ordered-subtasks ()
+	)
+
+	(:task earthquake_daemon)
+
+	(:method trigger_earthquake
+		:task (earthquake_daemon)
+		:precondition (and
+			(>= (seismic_counter) (seismic_phase_duration))
+			(is_not_seisming hall_beta)
+		)
+		:ordered-subtasks (and
+			(start_earthquake)
+			(earthquake_daemon)
+		)
+	)
+	
+	(:method trigger_calm
+		:task (earthquake_daemon)
+		:precondition (and
+			(>= (seismic_counter) (seismic_phase_duration))
+			(is_seisming hall_beta)
+		)
+		:ordered-subtasks (and
+			(stop_earthquake)
+			(earthquake_daemon)
+		)
+	)
+	
+	(:method stop_daemon
+		:task (earthquake_daemon)
+		:ordered-subtasks ()
+	)
+
+	(:task solve_problem)
+
+    (:method run_main_task
+        :task (solve_problem)
+        :subtasks (and
+            (t_daemon (earthquake_daemon))
+            (t_workforce (manage_workforce))
+        )
+    )
 )
