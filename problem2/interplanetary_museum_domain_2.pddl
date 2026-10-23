@@ -1,5 +1,5 @@
 (define (domain interplanetary_museum_domain_2)
-	(:requirements :strips :typing :fluents :htn)
+	(:requirements :strips :typing :fluents)
 	(:types
 		location - object
 		entity - object
@@ -379,3 +379,4 @@
 			(assign (seismic_counter) 0)
 		)
 	)
+)
