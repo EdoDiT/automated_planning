@@ -1,4 +1,4 @@
-(define (domain interplanetary_museum_domain_2)
+(define (domain interplanetary_museum_domain_3)
 	(:requirements :strips :typing :fluents :htn)
 	(:types
 		location - object
@@ -31,7 +31,7 @@
 		(is_seismic_sensitive ?arg0 - artifact)
 		(is_thermo_and_seismic_sensitive ?arg0 - artifact)
 		(is_idle ?arg0 - robot)
-		(has_pod ?arg0 - robot ?arg1 -pod)
+		(has_pod ?arg0 - robot ?arg1 - pod)
 		(on ?arg0 - carriable_item ?arg1 - robot)
 		(in ?arg0 - artifact ?arg1 - pod)
 		(pod_is_available ?arg0 - pod); available for pickup
@@ -790,13 +790,13 @@
 	(:task make_robot_work :parameters (?agent - robot))
 
 	(:method deploy_for_work_once
-		:parameters (?agent - robot ?departure - location ?next_destination - location)
+		:parameters (?agent - robot ?departure - location)
 		:task (make_robot_work ?agent)
 		:precondition (and
 			(at ?agent ?departure)
 		)
 		:subtasks (and
-			(t_act (tour_around ?agent ?departure ?next_destination))
+			(t_act (tour_around ?agent ?departure))
 			(t_wait (robot_wait_daemon ?agent))
 			(t_work (make_robot_work ?agent))
 		)

@@ -1,0 +1,42 @@
+set instance cryo_chamber location
+set instance hall_alpha location
+set instance hall_beta location
+set instance stasis_lab location
+set instance curator standard_curator
+set instance pod_1 pod
+set instance pod_2 pod
+set instance artifact_1 artifact
+set instance artifact_2 artifact
+set instance artifact_3 artifact
+set instance artifact_4 artifact
+set instance artifact_5 artifact
+set instance martian_artifact_1 artifact
+set instance martian_artifact_2 artifact
+set instance martian_artifact_3 artifact
+
+set predicate (is_freezing cryo_chamber)
+set predicate (is_vibration_free hall_alpha)
+set predicate (is_freezing stasis_lab)
+set predicate (is_vibration_free stasis_lab)
+set predicate (connected cryo_chamber)
+set predicate (connected hall_alpha)
+set predicate (connected hall_beta)
+set predicate (connected stasis_lab)
+set predicate (connected pod_pickup)
+set predicate (at curator tunnel)
+set predicate (is_sealed curator)
+set predicate (is_unloaded curator)
+set predicate (is_unpodded curator)
+set predicate (at pod_1 pod_pickup)
+set predicate (at pod_2 pod_pickup)
+set predicate (at artifact_1 hall_alpha)
+set predicate (at artifact_2 hall_alpha)
+set predicate (at artifact_3 hall_beta)
+set predicate (at artifact_4 hall_beta)
+set predicate (at artifact_5 hall_beta)
+set predicate (at martian_artifact_1 cryo_chamber)
+set predicate (at martian_artifact_2 cryo_chamber)
+set predicate (at martian_artifact_3 cryo_chamber)
+
+
+set goal (and (at artifact_1 cryo_chamber) (at artifact_2 stasis_lab) (at artifact_3 stasis_lab) (at artifact_4 cryo_chamber) (at artifact_5 hall_alpha) (at martian_artifact_1 stasis_lab) (at martian_artifact_2 stasis_lab) (at martian_artifact_3 stasis_lab))
