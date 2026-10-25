@@ -1,0 +1,5 @@
+downward/
+.vscode/
+**/scalability-test/**/*.plan
+**/scalability-test/**/*.log
+seed-results

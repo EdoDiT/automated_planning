@@ -3,6 +3,7 @@
 	(:types
 		location - object
 		room - location
+		entity - object
 		carriable_item - entity
 		artifact - carriable_item
 		pod - carriable_item
@@ -10,7 +11,7 @@
 		standard_curator - robot
     )
 	(:constants
-		pod_pickup - location
+		pod_pickup - room
 		tunnel - location)
     (:predicates
         (at ?arg0 - entity ?arg1 - location)
@@ -23,8 +24,9 @@
 		(is_sensitive ?arg0 - artifact)
 		(is_thermosensitive ?arg0 - artifact)
 		(is_seismic_sensitive ?arg0 - artifact)
+		(is_thermo_and_seismic_sensitive ?arg0 - artifact)
 		(is_loaded ?arg0 - robot)
-		(has_pod ?arg0 - robot ?arg1 -pod)
+		(has_pod ?arg0 - robot ?arg1 - pod)
 		(on ?arg0 - carriable_item ?arg1 - robot)
 		(in ?arg0 - artifact ?arg1 - pod)
 		(is_unloaded ?arg0 - robot) ;not carrying any artifact
@@ -99,6 +101,7 @@
 			(has_pod ?agent ?pod)
 			(on ?artifact ?agent)
 			(in ?artifact ?pod)
+			(is_sensitive ?artifact)
 			(is_seismic_sensitive ?artifact)
 			(is_vibration_free ?room)
 			(at ?agent ?room)
@@ -123,6 +126,7 @@
 			(has_pod ?agent ?pod)
 			(on ?artifact ?agent)
 			(in ?artifact ?pod)
+			(is_sensitive ?artifact)
 			(is_thermosensitive ?artifact)
 			(is_freezing ?room)
 			(at ?agent ?room)
@@ -147,8 +151,8 @@
 			(has_pod ?agent ?pod)
 			(on ?artifact ?agent)
 			(in ?artifact ?pod)
-			(is_seismic_sensitive ?artifact)
-			(is_thermosensitive ?artifact)
+			(is_sensitive ?artifact)
+			(is_thermo_and_seismic_sensitive ?artifact)
 			(is_vibration_free ?room)
 			(is_freezing ?room)
 			(at ?agent ?room)
@@ -171,7 +175,7 @@
 		:precondition (and
 			(at ?agent tunnel)
 			(is_sealed ?agent)
-			(connected tunnel ?destination)
+			(connected ?destination)
 			(is_not_seisming ?destination)
 		)
 		:effect (and
@@ -187,6 +191,7 @@
 		:precondition (and
 			(at ?agent ?departure)
 			(is_unsealed ?agent)
+			(connected ?departure)
 		)
 		:effect (and
 			(is_sealed ?agent)
