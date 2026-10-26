@@ -2,15 +2,8 @@
 
 start=$(date +%s.%N)
 
-planutils run ff "-o interplanetary_museum_domain_2.pddl -f problem_2.pddl" | grep '^[0-9]' > solution.plan
-
-if [[ -f sas_plan ]]; then
-    cp sas_plan solution.plan
-else
-    echo "Planner did not produce sas_plan" >&2
-    exit 1
-fi
+enhsp -o interplanetary_museum_domain_2.pddl -f problem_2.pddl -planner sat-hadd | grep '^[0-9]' > solution.plan
 
 end=$(date +%s.%N)
 
-echo "Execution time: $(echo "$end - $start" | bc) seconds"
+echo "Execution time: $(awk -v start="$start" -v end="$end" 'BEGIN { print end - start }') seconds"

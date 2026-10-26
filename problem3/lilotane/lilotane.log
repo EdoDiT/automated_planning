@@ -9,4 +9,5 @@
 by Dominik Schreiber <dominik.schreiber@kit.edu> 2020-2021
 using SAT solver glucose4
 
-0.000 Problem file "/project/problem3/problem_3.hddl" is not a regular file. Exiting.
+[31mParse error[0m in file /project/problem3/interplanetary_museum_domain_3.hddl in line [1m56[0m
+unexpected '<'

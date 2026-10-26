@@ -30,7 +30,7 @@
 		(is_thermosensitive ?arg0 - artifact)
 		(is_seismic_sensitive ?arg0 - artifact)
 		(is_thermo_and_seismic_sensitive ?arg0 - artifact)
-		(has_pod ?arg0 - robot ?arg1 -pod)
+		(has_pod ?arg0 - robot ?arg1 - pod)
 		(on ?arg0 - carriable_item ?arg1 - robot)
 		(in ?arg0 - artifact ?arg1 - pod)
 		(pod_is_available ?arg0 - pod); available for pickup
@@ -279,7 +279,7 @@
 			(at start (not (is_available ?agent)))
 			(at end (is_available ?agent))
 			(at start (increase (seismic_counter) 1))
-			(at end (decrease (battery_level ?agent) (+ (+ 200 (*30 (- (max_capacity ?agent) (capacity_available ?agent)))) (*15 (- (max_pod_capacity ?agent) (pod_capacity_available ?agent))))))
+			(at end (decrease (battery_level ?agent) (+ (+ 200 (* 30 (- (max_capacity ?agent) (capacity_available ?agent)))) (* 15 (- (max_pod_capacity ?agent) (pod_capacity_available ?agent))))))
 			(at start (not (at ?agent ?departure)))
 			(at end (at ?agent ?destination))
 		)

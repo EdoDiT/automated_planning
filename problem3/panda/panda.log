@@ -1,0 +1,12 @@
+pandaPIparser is configured as follows
+  Colors in output: true
+  Mode: parsing mode
+  Parameter splitting: true
+  Conditional effects: exponential encoding
+  Disjunctive preconditions as HTN: false
+  Replace goal with action: false
+  Output: pandaPI format
+Parsing /project/problem3/interplanetary_museum_domain_3.hddl
+[31mParse error[0m in file /project/problem3/interplanetary_museum_domain_3.hddl in line [1m56[0m
+unexpected '<'
+Parsing failed.

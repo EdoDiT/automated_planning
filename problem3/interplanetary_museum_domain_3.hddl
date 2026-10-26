@@ -1,5 +1,5 @@
 (define (domain interplanetary_museum_domain_3)
-	(:requirements :strips :typing :fluents :htn)
+	(:requirements :strips :typing :fluents :hierarchy)
 	(:types
 		location - object
 		entity - object

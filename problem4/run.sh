@@ -2,7 +2,7 @@
 
 start=$(date +%s.%N)
 
-planutils run tfd "domain.pddl problem.pddl" \
+planutils run tfd "interplanetary_museum_domain_4.pddl problem_4.pddl" \
 | tee >(awk '
     /Found new plan:/ {capture=1; next}
     /Solution with original makespan/ {capture=0}

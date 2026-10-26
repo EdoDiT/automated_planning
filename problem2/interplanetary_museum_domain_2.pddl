@@ -360,6 +360,7 @@
 		:parameters ()
 		:precondition (and
 			(>= (seismic_counter) (seismic_phase_duration))
+			(is_not_seisming hall_beta)
 		)
 		:effect (and
 			(is_seisming hall_beta)
@@ -372,6 +373,7 @@
 		:parameters ()
 		:precondition (and
 			(>= (seismic_counter) (seismic_phase_duration))
+			(is_seisming hall_beta)
 		)
 		:effect (and
 			(not (is_seisming hall_beta))
