@@ -47,6 +47,7 @@
 		(max_battery_level ?arg0 - robot)
 		(seismic_counter)
 		(seismic_phase_duration)
+		(total_cost)
 	)
 
 	(:action wait
@@ -56,6 +57,7 @@
 		)
 		:effect (and
 			(increase (seismic_counter) 1)
+			(increase (total_cost) 1)
 			(decrease (battery_level ?agent) 5)
 		)
 	)
@@ -73,6 +75,7 @@
 		)
 		:effect (and
 			(increase (seismic_counter) 1)
+			(increase (total_cost) 1)
 			(decrease (battery_level ?agent) (+ (+ 50 (* 10 (- (max_capacity ?agent) (capacity_available ?agent)))) (* 5 (- (max_pod_capacity ?agent) (pod_capacity_available ?agent)))))
 			(decrease (capacity_available ?agent) 1)
 			(not (at ?artifact ?room))
@@ -92,6 +95,7 @@
 		)
 		:effect (and
 			(increase (seismic_counter) 1)
+			(increase (total_cost) 1)
 			(decrease (battery_level ?agent) (+ (+ 50 (* 10 (- (max_capacity ?agent) (capacity_available ?agent)))) (* 5 (- (max_pod_capacity ?agent) (pod_capacity_available ?agent)))))
 			(not (on ?artifact ?agent))
 			(increase (capacity_available ?agent) 1)
@@ -115,6 +119,7 @@
 		)
 		:effect (and
 			(increase (seismic_counter) 1)
+			(increase (total_cost) 1)
 			(decrease (battery_level ?agent) (+ (+ 50 (* 10 (- (max_capacity ?agent) (capacity_available ?agent)))) (* 5 (- (max_pod_capacity ?agent) (pod_capacity_available ?agent)))))
 			(decrease (capacity_available ?agent) 1)
 			(not (at ?artifact ?room))
@@ -141,6 +146,7 @@
 		)
 		:effect (and
 			(increase (seismic_counter) 1)
+			(increase (total_cost) 1)
 			(decrease (battery_level ?agent) (+ (+ 50 (* 10 (- (max_capacity ?agent) (capacity_available ?agent)))) (* 5 (- (max_pod_capacity ?agent) (pod_capacity_available ?agent)))))
 			(not (pod_is_empty ?pod))
 			(decrease (capacity_available ?agent) 1)
@@ -167,6 +173,7 @@
 		)
 		:effect (and
 			(increase (seismic_counter) 1)
+			(increase (total_cost) 1)
 			(decrease (battery_level ?agent) (+ (+ 50 (* 10 (- (max_capacity ?agent) (capacity_available ?agent)))) (* 5 (- (max_pod_capacity ?agent) (pod_capacity_available ?agent)))))
 			(not (on ?artifact ?agent))
 			(not (in ?artifact ?pod))
@@ -194,6 +201,7 @@
 		)
 		:effect (and
 			(increase (seismic_counter) 1)
+			(increase (total_cost) 1)
 			(decrease (battery_level ?agent) (+ (+ 50 (* 10 (- (max_capacity ?agent) (capacity_available ?agent)))) (* 5 (- (max_pod_capacity ?agent) (pod_capacity_available ?agent)))))
 			(not (on ?artifact ?agent))
 			(not (in ?artifact ?pod))
@@ -222,6 +230,7 @@
 		)
 		:effect (and
 			(increase (seismic_counter) 1)
+			(increase (total_cost) 1)
 			(decrease (battery_level ?agent) (+ (+ 50 (* 10 (- (max_capacity ?agent) (capacity_available ?agent)))) (* 5 (- (max_pod_capacity ?agent) (pod_capacity_available ?agent)))))
 			(not (on ?artifact ?agent))
 			(not (in ?artifact ?pod))
@@ -242,6 +251,7 @@
 		)
 		:effect (and 
 			(increase (seismic_counter) 1)
+			(increase (total_cost) 1)
 			(decrease (battery_level ?agent) (+ (+ 200 (*30 (- (max_capacity ?agent) (capacity_available ?agent)))) (*15 (- (max_pod_capacity ?agent) (pod_capacity_available ?agent)))))
 			(not (at ?agent ?departure))
 			(at ?agent ?destination)
@@ -260,6 +270,7 @@
 		)
 		:effect (and
 			(increase (seismic_counter) 1)
+			(increase (total_cost) 1)
 			(decrease (battery_level ?agent) (+ (+ 100 (* 20 (- (max_capacity ?agent) (capacity_available ?agent)))) (* 10 (- (max_pod_capacity ?agent) (pod_capacity_available ?agent)))))
 			(not (at ?agent ?departure))
 			(at ?agent ?destination)
@@ -275,6 +286,7 @@
 		)
 		:effect (and
 			(increase (seismic_counter) 1)
+			(increase (total_cost) 1)
 			(decrease (battery_level ?agent) 50)
 			(not (is_unsealed ?agent))
 			(is_sealed ?agent)
@@ -290,6 +302,7 @@
 		)
 		:effect (and
 			(increase (seismic_counter) 1)
+			(increase (total_cost) 1)
 			(decrease (battery_level ?agent) 50)
 			(not (is_sealed ?agent))
 			(is_unsealed ?agent)
@@ -310,6 +323,7 @@
 		)
 		:effect (and
 			(increase (seismic_counter) 1)
+			(increase (total_cost) 1)
 			(decrease (battery_level ?agent) (+ (+ 50 (* 10 (- (max_capacity ?agent) (capacity_available ?agent)))) (* 5 (- (max_pod_capacity ?agent) (pod_capacity_available ?agent)))))
 			(not(at ?pod pod_pickup))
 			(not(pod_is_available ?pod))
@@ -332,6 +346,7 @@
 		)
 		:effect (and
 			(increase (seismic_counter) 1)
+			(increase (total_cost) 1)
 			(decrease (battery_level ?agent) (+ (+ 50 (* 10 (- (max_capacity ?agent) (capacity_available ?agent)))) (* 5 (- (max_pod_capacity ?agent) (pod_capacity_available ?agent)))))		
 			(not (on ?pod ?agent))
 			(not (has_pod ?agent ?pod))
@@ -352,6 +367,7 @@
 		)
 		:effect (and
 			(increase (seismic_counter) 1)
+			(increase (total_cost) 1)
 			(increase (battery_level ?agent) (- (max_battery_level ?agent) (battery_level ?agent)))
 		)
 	)
@@ -366,6 +382,7 @@
 			(is_seisming hall_beta)
 			(not (is_not_seisming hall_beta))
 			(assign (seismic_counter) 0)
+			(increase (total_cost) 1)
 			)
 	)
 	
@@ -379,6 +396,7 @@
 			(not (is_seisming hall_beta))
 			(is_not_seisming hall_beta)
 			(assign (seismic_counter) 0)
+			(increase (total_cost) 1)
 		)
 	)
 )

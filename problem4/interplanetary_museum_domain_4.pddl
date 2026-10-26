@@ -400,7 +400,7 @@
 
 	(:durative-action charge_battery
 		:parameters (?agent - robot)
-		:duration (= ?duration (/ (- (max_battery_level ?agent) (battery_level ?agent)) 5))
+		:duration (= ?duration 10)
 		:condition (and
 			(at start (is_available ?agent))
 			(at start (< (seismic_counter) (seismic_phase_duration)))

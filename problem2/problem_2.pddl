@@ -4,13 +4,13 @@
     hall_alpha - room
     stasis_lab - room
     curator - standard_curator
-    ;biggie - tank_curator
+    biggie - tank_curator
     ;bee - drone_curator
     pod_1 - pod
     pod_2 - pod
     artifact_1 - artifact
     artifact_2 - artifact
-    ;artifact_3 - artifact
+    artifact_3 - artifact
     ;artifact_4 - artifact
     ;artifact_5 - artifact
     ;artifact_6 - artifact
@@ -55,14 +55,14 @@
     (= (pod_capacity_available curator) 1)
     (= (max_battery_level curator) 1000)
     (= (battery_level curator) 1000)
-    ;(at biggie tunnel)
-    ;(is_sealed biggie)
-    ;(= (max_capacity biggie) 2)
-    ;(= (max_pod_capacity biggie) 2)
-    ;(= (capacity_available biggie) 2)
-    ;(= (pod_capacity_available biggie) 2)
-    ;(= (max_battery_level biggie) 2000)
-    ;(= (battery_level biggie) 2000)
+    (at biggie tunnel)
+    (is_sealed biggie)
+    (= (max_capacity biggie) 2)
+    (= (max_pod_capacity biggie) 2)
+    (= (capacity_available biggie) 2)
+    (= (pod_capacity_available biggie) 2)
+    (= (max_battery_level biggie) 2000)
+    (= (battery_level biggie) 2000)
     ;(at bee tunnel)
     ;(is_unsealed bee)
     ;(= (max_capacity bee) 1)
@@ -84,8 +84,8 @@
     (at artifact_2 hall_alpha)
     (is_sensitive artifact_2)
     (is_thermosensitive artifact_2)
-    ;(at artifact_3 hall_alpha)
-    ;(is_sturdy artifact_3)
+    (at artifact_3 hall_alpha)
+    (is_sturdy artifact_3)
     ;(at artifact_4 hall_beta)
     ;(is_sensitive artifact_4)
     ;(is_seismic_sensitive artifact_4)
@@ -136,7 +136,8 @@
     ;(is_thermosensitive martian_artifact_10)
     ;;earthquakes
     (= (seismic_counter) 0)
-    (= (seismic_phase_duration) 50)
+    (= (seismic_phase_duration) 20)
+    (= (total_cost) 0)
     (is_not_seisming hall_beta)
     (is_not_seisming hall_alpha)
     (is_not_seisming stasis_lab)
@@ -148,7 +149,7 @@
 (:goal (and
     (at artifact_1 cryo_chamber)
     (at artifact_2 stasis_lab)
-    ;(at artifact_3 stasis_lab)
+    (at artifact_3 stasis_lab)
     ;(at artifact_4 hall_alpha)
     ;(at artifact_5 cryo_chamber)
     ;(at artifact_6 stasis_lab)
@@ -168,6 +169,5 @@
     ;(at martian_artifact_10 cryo_chamber)
 ))
 
-;un-comment the following line if metric is needed
-;(:metric minimize (???))
+(:metric minimize (total_cost))
 )
