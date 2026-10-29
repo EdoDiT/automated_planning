@@ -368,7 +368,7 @@
 		:effect (and
 			(increase (seismic_counter) 1)
 			(increase (total_cost) 1)
-			(increase (battery_level ?agent) (- (max_battery_level ?agent) (battery_level ?agent)))
+			(assign (battery_level ?agent) (max_battery_level ?agent))
 		)
 	)
 

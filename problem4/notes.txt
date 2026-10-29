@@ -1,0 +1,15 @@
+POPF - doesn't work
+planutils run popf \
+  interplanetary_museum_domain_4.pddl \
+  problem_4.pddl
+
+LPG-TD works
+planutils run lpg-td \
+  interplanetary_museum_domain_4.pddl \
+  problem_4.pddl
+
+OPTIC - works
+planutils run optic "interplanetary_museum_domain_4.pddl problem_4.pddl"
+
+TFD - doesn't work
+planutils run tfd "interplanetary_museum_domain_4.pddl problem_4.pddl"
