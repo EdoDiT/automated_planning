@@ -1,5 +1,5 @@
 (define (domain interplanetary_museum_domain_3)
-	(:requirements :strips :typing :fluents :hierarchy)
+	(:requirements :strips :typing :hierarchy)
 	(:types
 		location - object
 		entity - object
@@ -15,12 +15,10 @@
     )
 	(:constants
 		pod_pickup - location
-		tunnel - location
-		hall_beta - room)
+		tunnel - locations
+	)
     (:predicates
         (at ?arg0 - entity ?arg1 - location)
-		(is_not_seisming ?arg0 - location)
-		(is_seisming ?arg0 - location)
 		(is_freezing ?arg0 - location)
 		(are_connected  ?departure - location ?destination - location)
 		(is_vibration_free ?arg0 - location)
@@ -28,8 +26,6 @@
 		(is_sturdy ?arg0 - artifact)
 		(is_sensitive ?arg0 - artifact)
 		(is_thermosensitive ?arg0 - artifact)
-		(is_seismic_sensitive ?arg0 - artifact)
-		(is_thermo_and_seismic_sensitive ?arg0 - artifact)
 		(is_idle ?arg0 - robot)
 		(has_pod ?arg0 - robot ?arg1 - pod)
 		(on ?arg0 - carriable_item ?arg1 - robot)
@@ -38,17 +34,10 @@
 		(pod_is_empty ?arg0 - pod); no artifact inside
 		(is_sealed ?arg0 - robot)
 		(is_unsealed ?arg0 - robot)
+		(is_not_full ?arg0 - robot)
+		(is_full ?arg0 - robot)
+		(is_unpodded ?arg0 - robot)
     )
-	(:functions
-		(capacity_available ?arg0 - robot)
-		(max_capacity ?arg0 - robot)
-		(pod_capacity_available ?arg0 - robot)
-		(max_pod_capacity ?arg0 - robot)
-		(battery_level ?arg0 - robot)
-		(max_battery_level ?arg0 - robot)
-		(seismic_counter)
-		(seismic_phase_duration)
-	)
 
 	(:action activate_robot
 		:parameters (?agent - robot)
@@ -75,19 +64,16 @@
 
 	(:action pickup_standard_artifact
 		:parameters (?agent - robot ?artifact - artifact ?room - room)
-		:precondition (and 
-			(< (seismic_counter) (seismic_phase_duration))
-			(> (capacity_available ?agent) 0)
+		:precondition (and
+			(is_not_full ?agent)
 			(is_unsealed ?agent)
 			(at ?agent ?room)
 			(at ?artifact ?room)
 			(is_sturdy ?artifact)
-			(> (battery_level ?agent) (+ (+ 50 (* 10 (- (max_capacity ?agent) (capacity_available ?agent)))) (* 5 (- (max_pod_capacity ?agent) (pod_capacity_available ?agent)))))
 		)
 		:effect (and
-			(increase (seismic_counter) 1)
-			(decrease (battery_level ?agent) (+ (+ 50 (* 10 (- (max_capacity ?agent) (capacity_available ?agent)))) (* 5 (- (max_pod_capacity ?agent) (pod_capacity_available ?agent)))))
-			(decrease (capacity_available ?agent) 1)
+			(not(is_not_full ?agent))
+			(is_full ?agent)
 			(not (at ?artifact ?room))
 			(on ?artifact ?agent)
 		)
@@ -96,18 +82,16 @@
 	(:action drop_standard_artifact
 		:parameters (?agent - robot ?artifact - artifact ?room - room)
 		:precondition (and
-			(< (seismic_counter) (seismic_phase_duration))
 			(on ?artifact ?agent)
 			(at ?agent ?room)
 			(is_unsealed ?agent)
 			(is_sturdy ?artifact)
-			(> (battery_level ?agent) (+ (+ 50 (* 10 (- (max_capacity ?agent) (capacity_available ?agent)))) (* 5 (- (max_pod_capacity ?agent) (pod_capacity_available ?agent)))))
+			(is_full ?agent)
 		)
 		:effect (and
-			(increase (seismic_counter) 1)
-			(decrease (battery_level ?agent) (+ (+ 50 (* 10 (- (max_capacity ?agent) (capacity_available ?agent)))) (* 5 (- (max_pod_capacity ?agent) (pod_capacity_available ?agent)))))
 			(not (on ?artifact ?agent))
-			(increase (capacity_available ?agent) 1)
+			(not(is_full ?agent))
+			(is_not_full ?agent)
 			(at ?artifact ?room)
 			(is_safe ?artifact)
 		)
@@ -116,20 +100,17 @@
 	(:action pickup_thermosensitive_artifact
 		:parameters (?agent - drone_curator ?artifact - artifact ?pod - pod ?room - room)
 		:precondition (and
-			(< (seismic_counter) (seismic_phase_duration))
 			(at ?agent ?room)
-			(> (capacity_available ?agent) 0)
 			(has_pod ?agent ?pod)
 			(pod_is_empty ?pod)
 			(is_sensitive ?artifact)
 			(is_thermosensitive ?artifact)
-			(> (battery_level ?agent) (+ (+ 50 (* 10 (- (max_capacity ?agent) (capacity_available ?agent)))) (* 5 (- (max_pod_capacity ?agent) (pod_capacity_available ?agent)))))
 			(at ?artifact ?room)
+			(is_not_full ?agent)
 		)
 		:effect (and
-			(increase (seismic_counter) 1)
-			(decrease (battery_level ?agent) (+ (+ 50 (* 10 (- (max_capacity ?agent) (capacity_available ?agent)))) (* 5 (- (max_pod_capacity ?agent) (pod_capacity_available ?agent)))))
-			(decrease (capacity_available ?agent) 1)
+			(not(is_not_full ?agent))
+			(is_full ?agent)
 			(not (at ?artifact ?room))
 			(on ?artifact ?agent)
 			(in ?artifact ?pod)
@@ -141,22 +122,19 @@
 	(:action pickup_sensitive_artifact
 		:parameters (?agent - sealing_curators ?artifact - artifact ?pod - pod ?room - room)
 		:precondition (and
-			(< (seismic_counter) (seismic_phase_duration))
 			(on ?pod ?agent)
 			(is_unsealed ?agent)
 			(has_pod ?agent ?pod)
 			(pod_is_empty ?pod)
 			(is_sensitive ?artifact)
-			(> (capacity_available ?agent) 0)
 			(at ?agent ?room)
 			(at ?artifact ?room)
-			(> (battery_level ?agent) (+ (+ 50 (* 10 (- (max_capacity ?agent) (capacity_available ?agent)))) (* 5 (- (max_pod_capacity ?agent) (pod_capacity_available ?agent)))))
+			(is_not_full ?agent)
 		)
 		:effect (and
-			(increase (seismic_counter) 1)
-			(decrease (battery_level ?agent) (+ (+ 50 (* 10 (- (max_capacity ?agent) (capacity_available ?agent)))) (* 5 (- (max_pod_capacity ?agent) (pod_capacity_available ?agent)))))
 			(not (pod_is_empty ?pod))
-			(decrease (capacity_available ?agent) 1)
+			(not(is_not_full ?agent))
+			(is_full ?agent)
 			(not (at ?artifact ?room))
 			(on ?artifact ?agent)
 			(in ?artifact ?pod)
@@ -166,7 +144,6 @@
 	(:action safe_drop_seismic_sensitive_artifact
 		:parameters (?agent - sealing_curators ?artifact - artifact ?pod - pod ?room - room)
 		:precondition (and
-			(< (seismic_counter) (seismic_phase_duration))
 			(on ?pod ?agent)
 			(is_unsealed ?agent)
 			(has_pod ?agent ?pod)
@@ -176,14 +153,13 @@
 			(is_seismic_sensitive ?artifact)
 			(is_vibration_free ?room)
 			(at ?agent ?room)
-			(> (battery_level ?agent) (+ (+ 50 (* 10 (- (max_capacity ?agent) (capacity_available ?agent)))) (* 5 (- (max_pod_capacity ?agent) (pod_capacity_available ?agent)))))
+			(is_full ?agent)
 		)
 		:effect (and
-			(increase (seismic_counter) 1)
-			(decrease (battery_level ?agent) (+ (+ 50 (* 10 (- (max_capacity ?agent) (capacity_available ?agent)))) (* 5 (- (max_pod_capacity ?agent) (pod_capacity_available ?agent)))))
 			(not (on ?artifact ?agent))
+			(not(is_full ?agent))
+			(is_not_full ?agent)
 			(not (in ?artifact ?pod))
-			(increase (capacity_available ?agent) 1)
 			(at ?artifact ?room)
 			(pod_is_empty ?pod)
 			(is_safe ?artifact)
@@ -193,7 +169,6 @@
 	(:action safe_drop_thermosensitive_artifact
 		:parameters (?agent - robot ?artifact - artifact ?pod - pod ?room - room)
 		:precondition (and
-			(< (seismic_counter) (seismic_phase_duration))
 			(on ?pod ?agent)
 			(is_unsealed ?agent)
 			(has_pod ?agent ?pod)
@@ -203,16 +178,15 @@
 			(is_thermosensitive ?artifact)
 			(is_freezing ?room)
 			(at ?agent ?room)
-			(> (battery_level ?agent) (+ (+ 50 (* 10 (- (max_capacity ?agent) (capacity_available ?agent)))) (* 5 (- (max_pod_capacity ?agent) (pod_capacity_available ?agent)))))
+			(is_full ?agent)
 		)
 		:effect (and
-			(increase (seismic_counter) 1)
-			(decrease (battery_level ?agent) (+ (+ 50 (* 10 (- (max_capacity ?agent) (capacity_available ?agent)))) (* 5 (- (max_pod_capacity ?agent) (pod_capacity_available ?agent)))))
 			(not (on ?artifact ?agent))
 			(not (in ?artifact ?pod))
 			(at ?artifact ?room)
 			(pod_is_empty ?pod)
-			(increase (capacity_available ?agent) 1)	
+			(is_not_full ?agent)
+			(not (is_full ?agent))
 			(is_safe ?artifact)
 		)
 	)
@@ -220,7 +194,6 @@
 	(:action safe_drop_seismic_and_thermo_sensitive_artifact
 		:parameters (?agent - sealing_curators ?artifact - artifact ?pod - pod ?room - room)
 		:precondition (and
-			(< (seismic_counter) (seismic_phase_duration))
 			(on ?pod ?agent)
 			(is_unsealed ?agent)
 			(has_pod ?agent ?pod)
@@ -230,17 +203,16 @@
 			(is_thermo_and_seismic_sensitive ?artifact)
 			(is_vibration_free ?room)
 			(is_freezing ?room)
-			(> (battery_level ?agent) (+ (+ 50 (* 10 (- (max_capacity ?agent) (capacity_available ?agent)))) (* 5 (- (max_pod_capacity ?agent) (pod_capacity_available ?agent)))))
 			(at ?agent ?room)
+			(is_full ?agent)
 		)
 		:effect (and
-			(increase (seismic_counter) 1)
-			(decrease (battery_level ?agent) (+ (+ 50 (* 10 (- (max_capacity ?agent) (capacity_available ?agent)))) (* 5 (- (max_pod_capacity ?agent) (pod_capacity_available ?agent)))))
+			(not (is_full ?agent))
+			(is_not_full ?agent)
 			(not (on ?artifact ?agent))
 			(not (in ?artifact ?pod))
 			(at ?artifact ?room)
 			(pod_is_empty ?pod)
-			(increase (capacity_available ?agent) 1)
 			(is_safe ?artifact)
 		)
 	)
@@ -248,14 +220,10 @@
 	(:action fly
 		:parameters (?agent - drone_curator ?departure - location ?destination - location)
 		:precondition (and
-			(< (seismic_counter) (seismic_phase_duration))
 			(at ?agent ?departure)
 			(are_connected ?departure ?destination)
-			(> (battery_level ?agent) (+ (+ 200 (* 30 (- (max_capacity ?agent) (capacity_available ?agent)))) (* 15 (- (max_pod_capacity ?agent) (pod_capacity_available ?agent)))))
 		)
 		:effect (and 
-			(increase (seismic_counter) 1)
-			(decrease (battery_level ?agent) (+ (+ 200 (*30 (- (max_capacity ?agent) (capacity_available ?agent)))) (*15 (- (max_pod_capacity ?agent) (pod_capacity_available ?agent)))))
 			(not (at ?agent ?departure))
 			(at ?agent ?destination)
 		)
@@ -264,16 +232,12 @@
 	(:action move
 		:parameters (?agent - sealing_curators ?departure - location ?destination - location)
 		:precondition (and
-			(< (seismic_counter) (seismic_phase_duration))
 			(at ?agent ?departure)
 			(is_sealed ?agent)
 			(are_connected ?departure ?destination)
 			(is_not_seisming ?destination)
-			(> (battery_level ?agent) (+ (+ 100 (* 20 (- (max_capacity ?agent) (capacity_available ?agent)))) (* 10 (- (max_pod_capacity ?agent) (pod_capacity_available ?agent)))))
 		)
 		:effect (and
-			(increase (seismic_counter) 1)
-			(decrease (battery_level ?agent) (+ (+ 100 (* 20 (- (max_capacity ?agent) (capacity_available ?agent)))) (* 10 (- (max_pod_capacity ?agent) (pod_capacity_available ?agent)))))
 			(not (at ?agent ?departure))
 			(at ?agent ?destination)
 		)
@@ -282,13 +246,9 @@
 	(:action seal
 		:parameters (?agent - sealing_curators)
 		:precondition (and
-			(< (seismic_counter) (seismic_phase_duration))
 			(is_unsealed ?agent)
-			(> (battery_level ?agent) 50)
 		)
 		:effect (and
-			(increase (seismic_counter) 1)
-			(decrease (battery_level ?agent) 50)
 			(not (is_unsealed ?agent))
 			(is_sealed ?agent)
 		)
@@ -297,13 +257,9 @@
 	(:action unseal
 		:parameters (?agent - sealing_curators)
 		:precondition (and
-			(< (seismic_counter) (seismic_phase_duration))
 			(is_sealed ?agent)
-			(> (battery_level ?agent) 50)
 		)
 		:effect (and
-			(increase (seismic_counter) 1)
-			(decrease (battery_level ?agent) 50)
 			(not (is_sealed ?agent))
 			(is_unsealed ?agent)
 		)
@@ -312,21 +268,17 @@
 	(:action take_pod
 		:parameters (?agent - robot ?pod - pod)
 		:precondition (and
-			(< (seismic_counter) (seismic_phase_duration))
 			(at ?agent pod_pickup)
 			(at ?pod pod_pickup)
 			(is_unsealed ?agent)
 			(pod_is_empty ?pod)
 			(pod_is_available ?pod)
-			(> (pod_capacity_available ?agent) 0)
-			(> (battery_level ?agent) (+ (+ 50 (* 10 (- (max_capacity ?agent) (capacity_available ?agent)))) (* 5 (- (max_pod_capacity ?agent) (pod_capacity_available ?agent)))))
+			(is_unpodded ?agent)
 		)
 		:effect (and
-			(increase (seismic_counter) 1)
-			(decrease (battery_level ?agent) (+ (+ 50 (* 10 (- (max_capacity ?agent) (capacity_available ?agent)))) (* 5 (- (max_pod_capacity ?agent) (pod_capacity_available ?agent)))))
+			(not (is_unpodded ?agent))
 			(not(at ?pod pod_pickup))
 			(not(pod_is_available ?pod))
-			(decrease (pod_capacity_available ?agent) 1)
 			(on ?pod ?agent)
 			(has_pod ?agent ?pod)
 		)
@@ -335,61 +287,19 @@
 	(:action drop_pod
 		:parameters (?agent - robot ?pod - pod)
 		:precondition (and
-			(< (seismic_counter) (seismic_phase_duration))
 			(at ?agent pod_pickup)
 			(is_unsealed ?agent)
 			(on ?pod ?agent)
 			(has_pod ?agent ?pod)
 			(pod_is_empty ?pod)
-			(> (battery_level ?agent) (+ (+ 50 (* 10 (- (max_capacity ?agent) (capacity_available ?agent)))) (* 5 (- (max_pod_capacity ?agent) (pod_capacity_available ?agent)))))
 		)
 		:effect (and
-			(increase (seismic_counter) 1)
-			(decrease (battery_level ?agent) (+ (+ 50 (* 10 (- (max_capacity ?agent) (capacity_available ?agent)))) (* 5 (- (max_pod_capacity ?agent) (pod_capacity_available ?agent)))))		
 			(not (on ?pod ?agent))
 			(not (has_pod ?agent ?pod))
 			(at ?pod pod_pickup)
 			(pod_is_available ?pod)
+			(is_unpodded ?agent)
 			(increase (pod_capacity_available ?agent) 1)
-		)
-	)
-
-	(:action charge_battery
-		:parameters (?agent - robot)
-		:precondition (and
-			(< (seismic_counter) (seismic_phase_duration))
-			(at ?agent pod_pickup)
-			(= (capacity_available ?agent) (max_capacity ?agent))
-			(= (pod_capacity_available ?agent) (max_pod_capacity ?agent))
-			(> (battery_level ?agent) 0)
-		)
-		:effect (and
-			(increase (seismic_counter) 1)
-			(increase (battery_level ?agent) (- (max_battery_level ?agent) (battery_level ?agent)))
-		)
-	)
-
-	(:action start_earthquake
-		:parameters ()
-		:precondition (and
-			(>= (seismic_counter) (seismic_phase_duration))
-		)
-		:effect (and
-			(is_seisming hall_beta)
-			(not (is_not_seisming hall_beta))
-			(assign (seismic_counter) 0)
-			)
-	)
-	
-	(:action stop_earthquake
-		:parameters ()
-		:precondition (and
-			(>= (seismic_counter) (seismic_phase_duration))
-		)
-		:effect (and
-			(not (is_seisming hall_beta))
-			(is_not_seisming hall_beta)
-			(assign (seismic_counter) 0)
 		)
 	)
 
@@ -463,7 +373,7 @@
 		:precondition (and 
 			(at ?artifact ?room)
 			(at ?agent ?room)
-			(> (capacity_available ?agent) 0)
+			(is_not_full ?agent)
 		)
 		:ordered-subtasks (and
 			(pickup_standard_artifact ?agent ?artifact ?room)
@@ -477,7 +387,7 @@
 		:precondition (and 
 			(at ?artifact ?room)
 			(at ?agent ?room)
-			(> (capacity_available ?agent) 0)
+			(is_not_full ?agent)
 			(has_pod ?agent ?pod)
 			(pod_is_empty ?pod)
 		)
@@ -493,7 +403,7 @@
 		:precondition (and 
 			(at ?artifact ?room)
 			(at ?agent ?room)
-			(> (capacity_available ?agent) 0)
+			(is_not_full ?agent)
 			(has_pod ?agent ?pod)
 			(pod_is_empty ?pod)
 		)
@@ -601,21 +511,6 @@
 		)
 	)
 
-	(:task charge_robot :parameters (?agent - robot))
-
-	(:method charge_robot_at_station
-		:parameters (?agent - robot)
-		:task (charge_robot ?agent)
-		:precondition (and
-			(= (capacity_available ?agent) (max_capacity ?agent))
-			(= (pod_capacity_available ?agent) (max_pod_capacity ?agent))
-		)
-		:ordered-subtasks (and
-			(robot_travel ?agent pod_pickup)
-			(charge_battery ?agent)
-		)
-	)
-
 	(:task take_pods :parameters (?agent - robot))
 
 	(:method take_one_pod
@@ -623,7 +518,7 @@
 		:task (take_pods ?agent)
 		:precondition (and
 			(at ?agent pod_pickup)
-			(> (pod_capacity_available ?agent) 0)
+			(is_unpodded ?agent)
 			(pod_is_available ?pod)
 			(at ?pod pod_pickup)
 		)
@@ -648,7 +543,7 @@
 		:parameters (?agent - robot)
 		:task (fetch_pods ?agent)
 		:precondition (and
-			(> (pod_capacity_available ?agent) 0)
+			(is_unpodded ?agent)
 		)
 		:ordered-subtasks (and
 			(robot_travel ?agent pod_pickup)
@@ -698,29 +593,6 @@
 			(at ?agent ?departure)
 		)
 		:ordered-subtasks (and
-			(fetch_pods ?agent)
-		)
-	)
-
-	(:method prepare_battery
-		:parameters (?agent - robot ?departure - location)
-		:task (prepare_robot ?agent ?departure)
-		:precondition (and
-			(at ?agent ?departure)
-		)
-		:ordered-subtasks (and
-			(charge_robot ?agent)
-		)
-	)
-
-	(:method prepare_battery_and_pods
-		:parameters (?agent - robot ?departure - location)
-		:task (prepare_robot ?agent ?departure)
-		:precondition (and
-			(at ?agent ?departure)
-		)
-		:ordered-subtasks (and
-			(charge_robot ?agent)
 			(fetch_pods ?agent)
 		)
 	)
@@ -836,43 +708,11 @@
 		:ordered-subtasks ()
 	)
 
-	(:task earthquake_daemon)
-
-	(:method trigger_earthquake
-		:task (earthquake_daemon)
-		:precondition (and
-			(>= (seismic_counter) (seismic_phase_duration))
-			(is_not_seisming hall_beta)
-		)
-		:ordered-subtasks (and
-			(start_earthquake)
-			(earthquake_daemon)
-		)
-	)
-	
-	(:method trigger_calm
-		:task (earthquake_daemon)
-		:precondition (and
-			(>= (seismic_counter) (seismic_phase_duration))
-			(is_seisming hall_beta)
-		)
-		:ordered-subtasks (and
-			(stop_earthquake)
-			(earthquake_daemon)
-		)
-	)
-	
-	(:method stop_daemon
-		:task (earthquake_daemon)
-		:ordered-subtasks ()
-	)
-
 	(:task solve_problem)
 
     (:method run_main_task
         :task (solve_problem)
         :subtasks (and
-            (t_daemon (earthquake_daemon))
             (t_workforce (manage_workforce))
         )
     )
