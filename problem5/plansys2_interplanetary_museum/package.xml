@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>plansys2_abyssus_base</name>
+  <name>plansys2_interplanetary_museum</name>
   <version>0.0.1</version>
 
-  <description>Abyssus Base problem implemented with ROS2 Planning System</description>
+  <description>Interplanetary Museum problem implemented with ROS2 Planning System</description>
 
   <maintainer email="giorgia.lorengo@studenti.unitn.it">Giorgia Lorengo</maintainer>
   <maintainer email="stefano.racca@studenti.unitn.it">Stefano Racca</maintainer>

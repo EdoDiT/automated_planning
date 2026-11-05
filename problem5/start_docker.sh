@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source plansys2_abyssus_base/config.env
+source plansys2_interplanetary_museum/config.env
 
 FORCE_REBUILD=false
 
@@ -9,7 +9,7 @@ if [[ "$1" == "--rebuild" ]]; then
 fi
 
 if [[ "$FORCE_REBUILD" == "true" ]] || \
-   ! docker image inspect "$IMAGE_NAME" >/dev/null 2>&1; then
+   ! sudo docker image inspect "$IMAGE_NAME" >/dev/null 2>&1; then
 
     echo "Building image $IMAGE_NAME..."
     sudo docker build \
@@ -20,7 +20,7 @@ if [[ "$FORCE_REBUILD" == "true" ]] || \
         --file Dockerfile
 fi
 
-docker run \
+sudo docker run \
     -v /tmp/.X11-unix/:/tmp/.X11-unix/ \
     -v "$(pwd)/$PROJECT_NAME:$PLANSYS2_WS/$PROJECT_NAME" \
     -v "$(pwd)/terminal_1.sh:$PLANSYS2_WS/terminal_1.sh" \

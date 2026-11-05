@@ -1,4 +1,4 @@
-CONFIG_FILE_PATH=plansys2_abyssus_base/config.env
+CONFIG_FILE_PATH=plansys2_interplanetary_museum/config.env
 
 source ${CONFIG_FILE_PATH}
 

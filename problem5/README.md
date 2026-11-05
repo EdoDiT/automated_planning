@@ -33,9 +33,9 @@ Prepare the ROS 2 workspace by running:
 ```
 
 This script:
-- parses the `problem.pddl` file located in `plansys2_abyssus_base/pddl`;
+- parses the `problem.pddl` file located in `plansys2_interplanetary_museum/pddl`;
 - generates the corresponding Plansys2 problem file;
-- builds the `plansys2_abyssus_base` package.
+- builds the `plansys2_interplanetary_museum` package.
 
 After the setup is completed, launch the Plansys2 nodes with:
 
@@ -50,7 +50,7 @@ Keep this terminal running.
 Open a second terminal and connect to the running container:
 
 ```bash
-docker exec -it <docker_id> bash
+sudo docker exec -it <docker_id> bash
 ```
 
 Then start the Plansys2 terminal:
@@ -62,7 +62,7 @@ Then start the Plansys2 terminal:
 Load the problem generated from the interplanetary museum PDDL during the setup step:
 
 ```bash
-source ./plansys2_abyssus_base/launch/problem 1
+source ./plansys2_interplanetary_museum/launch/problem 1
 ```
 
 Generate a plan using the POPF planner:

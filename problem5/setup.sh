@@ -1,4 +1,4 @@
-source plansys2_abyssus_base/config.env
+source plansys2_interplanetary_museum/config.env
 
 #setup bash
 source /opt/ros/humble/setup.bash

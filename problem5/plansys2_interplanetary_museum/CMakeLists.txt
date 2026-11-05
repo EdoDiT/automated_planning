@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(plansys2_abyssus_base)
+project(plansys2_interplanetary_museum)
 
 
 find_package(ament_cmake REQUIRED)
