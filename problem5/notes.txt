@@ -1,0 +1,31 @@
+Notes regarding POPF
+You’re right—the specific issue is the **`assign` reset of `seismic_counter`**.
+
+When the counter reaches 20, every normal action is blocked:
+
+```lisp
+(< (seismic_counter) (seismic_phase_duration))
+```
+
+The only possible recovery is:
+
+```lisp
+(assign (seismic_counter) 0)
+```
+
+inside `start_earthquake` or `stop_earthquake`.
+
+**POPF’s limitation is that its numeric planning heuristic does not properly support this cyclic numeric behavior**: a fluent monotonically increases, reaches a threshold, and is then reset with `assign`. It treats the reset as unusable/unsupported during search and immediately concludes that no relaxed plan exists.
+
+Kairos handles the numeric reset cycle, so it finds the solution.
+
+The relevant mechanism is:
+
+```lisp
+(increase (seismic_counter) 1)
+...
+(>= (seismic_counter) (seismic_phase_duration))
+(assign (seismic_counter) 0)
+```
+
+It is not a timeout and not an unsolvable goal; it is a POPF limitation with the counter-reset modeling.

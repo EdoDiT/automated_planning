@@ -6,8 +6,7 @@
 
   <description>Interplanetary Museum problem implemented with ROS2 Planning System</description>
 
-  <maintainer email="giorgia.lorengo@studenti.unitn.it">Giorgia Lorengo</maintainer>
-  <maintainer email="stefano.racca@studenti.unitn.it">Stefano Racca</maintainer>
+  <maintainer email="edoardo.ditommaso-1@studenti.unitn.it">Edoardo Di Tommaso</maintainer>
 
   <license>Apache License, Version 2.0</license>
 
