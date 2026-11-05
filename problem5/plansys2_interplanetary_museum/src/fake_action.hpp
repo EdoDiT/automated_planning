@@ -12,9 +12,10 @@
 class FakeAction : public plansys2::ActionExecutorClient
 {
 public:
-  explicit FakeAction(const std::string & action_name)
+  FakeAction(const std::string & action_name, std::chrono::seconds duration)
   : plansys2::ActionExecutorClient(action_name, std::chrono::milliseconds(250)),
-    action_name_(action_name)
+    action_name_(action_name),
+    duration_(duration)
   {
     set_parameter(rclcpp::Parameter("action_name", action_name));
   }
@@ -22,18 +23,25 @@ public:
 private:
   void do_work() override
   {
-    if (progress_ < 1.0f) {
-      progress_ = std::min(1.0f, progress_ + 0.25f);
-      send_feedback(progress_, action_name_ + " running");
+    elapsed_ += tick_;
+
+    if (elapsed_ < duration_) {
+      const auto progress = std::min(
+        1.0,
+        static_cast<double>(elapsed_.count()) /
+        std::chrono::duration_cast<std::chrono::milliseconds>(duration_).count());
+      send_feedback(progress, action_name_ + " running");
       return;
     }
 
     finish(true, 1.0, action_name_ + " completed");
-    progress_ = 0.0f;
+    elapsed_ = std::chrono::milliseconds::zero();
   }
 
   std::string action_name_;
-  float progress_{0.0f};
+  const std::chrono::seconds duration_;
+  std::chrono::milliseconds elapsed_{0};
+  static constexpr std::chrono::milliseconds tick_{250};
 };
 
 #endif

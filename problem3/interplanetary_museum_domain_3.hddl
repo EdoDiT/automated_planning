@@ -42,23 +42,10 @@
 	(:action activate_robot
 		:parameters (?agent - robot)
 		:precondition (and
-			(< (seismic_counter) (seismic_phase_duration))
 			(is_idle ?agent)
 		)
 		:effect (and
-			(increase (seismic_counter) 1)
 			(not (is_idle ?agent))
-		)
-	)
-
-	(:action wait
-		:parameters (?agent - robot)
-		:precondition (and
-			(< (seismic_counter) (seismic_phase_duration))
-		)
-		:effect (and
-			(increase (seismic_counter) 1)
-			(decrease (battery_level ?agent) 5)
 		)
 	)
 
@@ -235,7 +222,6 @@
 			(at ?agent ?departure)
 			(is_sealed ?agent)
 			(are_connected ?departure ?destination)
-			(is_not_seisming ?destination)
 		)
 		:effect (and
 			(not (at ?agent ?departure))
