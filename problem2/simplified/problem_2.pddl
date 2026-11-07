@@ -20,7 +20,7 @@
     ;artifact_10 - artifact
     martian_artifact_1 - artifact
     martian_artifact_2 - artifact
-    ;martian_artifact_3 - artifact
+    martian_artifact_3 - artifact
     ;martian_artifact_4 - artifact
     ;martian_artifact_5 - artifact
     ;martian_artifact_6 - artifact
@@ -105,9 +105,9 @@
     (at martian_artifact_2 cryo_chamber)
     (is_sensitive martian_artifact_2)
     (is_seismic_sensitive martian_artifact_2)
-    ;(at martian_artifact_3 cryo_chamber)
-    ;(is_sensitive martian_artifact_3)
-    ;(is_thermo_and_seismic_sensitive martian_artifact_3)
+    (at martian_artifact_3 cryo_chamber)
+    (is_sensitive martian_artifact_3)
+    (is_thermo_and_seismic_sensitive martian_artifact_3)
     ;(at martian_artifact_4 stasis_lab)
     ;(is_sturdy martian_artifact_4)
     ;(at martian_artifact_5 stasis_lab)
@@ -153,7 +153,7 @@
     ;(at artifact_10 stasis_lab)
     (at martian_artifact_1 stasis_lab)
     (at martian_artifact_2 stasis_lab)
-    ;(at martian_artifact_3 stasis_lab)
+    (at martian_artifact_3 stasis_lab)
     ;(at martian_artifact_4 hall_alpha)
     ;(at martian_artifact_5 cryo_chamber)
     ;(at martian_artifact_6 cryo_chamber)

@@ -17,6 +17,16 @@
     artifact_8 - artifact
     artifact_9 - artifact
     artifact_10 - artifact
+    artifact_11 - artifact
+    artifact_12 - artifact
+    artifact_13 - artifact
+    artifact_14 - artifact
+    artifact_15 - artifact
+    artifact_16 - artifact
+    artifact_17 - artifact
+    artifact_18 - artifact
+    artifact_19 - artifact
+    artifact_20 - artifact
     martian_artifact_1 - artifact
     martian_artifact_2 - artifact
     martian_artifact_3 - artifact
@@ -27,6 +37,16 @@
     martian_artifact_8 - artifact
     martian_artifact_9 - artifact
     martian_artifact_10 - artifact
+    martian_artifact_11 - artifact
+    martian_artifact_12 - artifact
+    martian_artifact_13 - artifact
+    martian_artifact_14 - artifact
+    martian_artifact_15 - artifact
+    martian_artifact_16 - artifact
+    martian_artifact_17 - artifact
+    martian_artifact_18 - artifact
+    martian_artifact_19 - artifact
+    martian_artifact_20 - artifact
 )
 
 (:init
@@ -40,14 +60,21 @@
     (are_connected tunnel hall_beta)
     (are_connected tunnel stasis_lab)
     (are_connected tunnel pod_pickup)
+    (are_connected cryo_chamber tunnel)
+    (are_connected hall_alpha tunnel)
+    (are_connected stasis_lab tunnel)
+    (are_connected pod_pickup tunnel)
+    (are_connected hall_beta tunnel)
     ;curator
-    (at curator tunnel)
-    (is_sealed curator)
+    (at curator pod_pickup)
+    (is_unsealed curator)
     (is_not_full curator)
-    (at bee tunnel)
+    (is_unpodded curator)
+    (is_idle curator)
+    (at bee pod_pickup)
     (is_unsealed bee)
     (is_not_full bee)
-    (is_idle curator)
+    (is_unpodded bee)
     (is_idle bee)
     ;pods
     (at pod_1 pod_pickup)
@@ -84,6 +111,29 @@
     (at artifact_10 hall_beta)
     (is_sensitive artifact_10)
     (is_thermo_and_seismic_sensitive artifact_10)
+    (at artifact_11 hall_alpha)
+    (is_sturdy artifact_11)
+    (at artifact_12 hall_alpha)
+    (is_sensitive artifact_12)
+    (is_seismic_sensitive artifact_12)
+    (at artifact_13 hall_alpha)
+    (is_sturdy artifact_13)
+    (at artifact_14 hall_alpha)
+    (is_sensitive artifact_14)
+    (is_seismic_sensitive artifact_14)
+    (at artifact_15 hall_alpha)
+    (is_sturdy artifact_15)
+    (at artifact_16 hall_beta)
+    (is_sturdy artifact_16)
+    (at artifact_17 hall_beta)
+    (is_sturdy artifact_17)
+    (at artifact_18 hall_beta)
+    (is_sturdy artifact_18)
+    (at artifact_19 hall_alpha)
+    (is_sensitive artifact_19)
+    (is_seismic_sensitive artifact_19)
+    (at artifact_20 hall_beta)
+    (is_sturdy artifact_20)
     (at martian_artifact_1 cryo_chamber)
     (is_sturdy martian_artifact_1)
     (at martian_artifact_2 cryo_chamber)
@@ -112,6 +162,32 @@
     (at martian_artifact_10 stasis_lab)
     (is_sensitive martian_artifact_10)
     (is_thermosensitive martian_artifact_10)
+    (at martian_artifact_11 cryo_chamber)
+    (is_sensitive martian_artifact_11)
+    (is_thermosensitive martian_artifact_11)
+    (at martian_artifact_12 cryo_chamber)
+    (is_sturdy martian_artifact_12)
+    (at martian_artifact_13 stasis_lab)
+    (is_sensitive martian_artifact_13)
+    (is_seismic_sensitive martian_artifact_13)
+    (at martian_artifact_14 stasis_lab)
+    (is_sensitive martian_artifact_14)
+    (is_thermosensitive martian_artifact_14)
+    (at martian_artifact_15 stasis_lab)
+    (is_sensitive martian_artifact_15)
+    (is_thermo_and_seismic_sensitive martian_artifact_15)
+    (at martian_artifact_16 hall_alpha)
+    (is_sensitive martian_artifact_16)
+    (is_seismic_sensitive martian_artifact_16)
+    (at martian_artifact_17 hall_alpha)
+    (is_sturdy martian_artifact_17)
+    (at martian_artifact_18 hall_beta)
+    (is_sturdy martian_artifact_18)
+    (at martian_artifact_19 cryo_chamber)
+    (is_sturdy martian_artifact_19)
+    (at martian_artifact_20 stasis_lab)
+    (is_sensitive martian_artifact_20)
+    (is_thermosensitive martian_artifact_20)
 )
 
 (:htn
@@ -132,6 +208,16 @@
     (at artifact_8 hall_alpha)
     (at artifact_9 stasis_lab)
     (at artifact_10 stasis_lab)
+    (at artifact_11 cryo_chamber)
+    (at artifact_12 hall_alpha)
+    (at artifact_13 stasis_lab)
+    (at artifact_14 hall_alpha)
+    (at artifact_15 cryo_chamber)
+    (at artifact_16 stasis_lab)
+    (at artifact_17 hall_alpha)
+    (at artifact_18 cryo_chamber)
+    (at artifact_19 hall_alpha)
+    (at artifact_20 stasis_lab)
     (at martian_artifact_1 stasis_lab)
     (at martian_artifact_2 stasis_lab)
     (at martian_artifact_3 stasis_lab)
@@ -142,6 +228,16 @@
     (at martian_artifact_8 hall_alpha)
     (at martian_artifact_9 stasis_lab)
     (at martian_artifact_10 cryo_chamber)
+    (at martian_artifact_11 cryo_chamber)
+    (at martian_artifact_12 stasis_lab)
+    (at martian_artifact_13 stasis_lab)
+    (at martian_artifact_14 cryo_chamber)
+    (at martian_artifact_15 stasis_lab)
+    (at martian_artifact_16 hall_alpha)
+    (at martian_artifact_17 cryo_chamber)
+    (at martian_artifact_18 stasis_lab)
+    (at martian_artifact_19 hall_alpha)
+    (at martian_artifact_20 cryo_chamber)
 ))
 
 ;un-comment the following line if metric is needed

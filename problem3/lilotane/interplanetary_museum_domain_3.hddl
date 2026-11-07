@@ -15,7 +15,8 @@
     )
 	(:constants
 		pod_pickup - location
-		tunnel - locations
+		tunnel - location
+		hall_beta - room
 	)
     (:predicates
         (at ?arg0 - entity ?arg1 - location)
@@ -25,7 +26,9 @@
 		(is_safe ?arg0 - artifact)
 		(is_sturdy ?arg0 - artifact)
 		(is_sensitive ?arg0 - artifact)
+		(is_seismic_sensitive ?arg0 - artifact)
 		(is_thermosensitive ?arg0 - artifact)
+		(is_thermo_and_seismic_sensitive ?arg0 - artifact)
 		(is_idle ?arg0 - robot)
 		(has_pod ?arg0 - robot ?arg1 - pod)
 		(on ?arg0 - carriable_item ?arg1 - robot)
@@ -285,7 +288,6 @@
 			(at ?pod pod_pickup)
 			(pod_is_available ?pod)
 			(is_unpodded ?agent)
-			(increase (pod_capacity_available ?agent) 1)
 		)
 	)
 
@@ -626,25 +628,6 @@
 		)
 	)
 
-	(:task robot_wait_daemon :parameters (?agent - robot))
-
-    (:method finish_waiting
-        :parameters (?agent - robot)
-        :task (robot_wait_daemon ?agent)
-        :ordered-subtasks ()
-    )
-
-    (:method do_wait_step
-        :parameters (?agent - robot)
-        :task (robot_wait_daemon ?agent)
-        :precondition (and
-        )
-        :ordered-subtasks (and
-            (wait ?agent)
-            (robot_wait_daemon ?agent)
-        )
-    )
-
 	(:task make_robot_work :parameters (?agent - robot))
 
 	(:method deploy_for_work_once
@@ -653,14 +636,9 @@
 		:precondition (and
 			(at ?agent ?departure)
 		)
-		:subtasks (and
-			(t_act (tour_around ?agent ?departure))
-			(t_wait (robot_wait_daemon ?agent))
-			(t_work (make_robot_work ?agent))
-		)
-		:ordering (and
-			(< t_act t_work)
-			(< t_wait t_work)
+		:ordered-subtasks (and
+			(tour_around ?agent ?departure)
+			(make_robot_work ?agent)
 		)
 	)
 	

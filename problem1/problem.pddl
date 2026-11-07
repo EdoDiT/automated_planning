@@ -12,9 +12,21 @@
     artifact_3 - artifact
     artifact_4 - artifact
     artifact_5 - artifact
+    ;artifact_6 - artifact
+    ;artifact_7 - artifact
+    ;artifact_8 - artifact
+    ;artifact_9 - artifact
+    ;artifact_10 - artifact
     martian_artifact_1 - artifact
     martian_artifact_2 - artifact
     martian_artifact_3 - artifact    
+    ;martian_artifact_4 - artifact
+    ;martian_artifact_5 - artifact
+    ;martian_artifact_6 - artifact
+    ;martian_artifact_7 - artifact
+    ;martian_artifact_8 - artifact
+    ;martian_artifact_9 - artifact
+    ;martian_artifact_10 - artifact
 )
 
 (:init
@@ -60,6 +72,20 @@
     (at artifact_5 hall_beta)
     (is_sensitive artifact_5)
     (is_seismic_sensitive artifact_5)
+    ;(at artifact_6 hall_beta)
+    ;(is_sturdy artifact_6)
+    ;(at artifact_7 hall_beta)
+    ;(is_sensitive artifact_7)
+    ;(is_seismic_sensitive artifact_7)
+    ;(at artifact_8 hall_beta)
+    ;(is_sensitive artifact_8)
+    ;(is_seismic_sensitive artifact_8)
+    ;(at artifact_9 hall_beta)
+    ;(is_sensitive artifact_9)
+    ;(is_thermo_and_seismic_sensitive artifact_9)
+    ;(at artifact_10 hall_beta)
+    ;(is_sensitive artifact_10)
+    ;(is_thermo_and_seismic_sensitive artifact_10)
     (at martian_artifact_1 cryo-chamber)
     (is_sturdy martian_artifact_1)
     (at martian_artifact_2 cryo-chamber)
@@ -68,6 +94,26 @@
     (at martian_artifact_3 cryo-chamber)
     (is_sensitive martian_artifact_3)
     (is_thermo_and_seismic_sensitive martian_artifact_3)
+    ;(at martian_artifact_4 cryo-chamber)
+    ;(is_sturdy martian_artifact_4)
+    ;(at martian_artifact_5 cryo-chamber)
+    ;(is_sensitive martian_artifact_5)
+    ;(is_thermosensitive martian_artifact_5)
+    ;(at martian_artifact_6 cryo-chamber)
+    ;(is_sensitive martian_artifact_6)
+    ;(is_thermosensitive martian_artifact_6)
+    ;(at martian_artifact_7 cryo-chamber)
+    ;(is_sensitive martian_artifact_7)
+    ;(is_seismic_sensitive martian_artifact_7)
+    ;(at martian_artifact_8 cryo-chamber)
+    ;(is_sensitive martian_artifact_8)
+    ;(is_seismic_sensitive martian_artifact_8)
+    ;(at martian_artifact_9 cryo-chamber)
+    ;(is_sensitive martian_artifact_9)
+    ;(is_thermo_and_seismic_sensitive martian_artifact_9)
+    ;(at martian_artifact_10 cryo-chamber)
+    ;(is_sensitive martian_artifact_10)
+    ;(is_thermosensitive martian_artifact_10)
 )
 
 (:goal (and
@@ -76,17 +122,41 @@
     (at artifact_3 stasis_lab)
     (at artifact_4 stasis_lab)
     (at artifact_5 hall_alpha)
+    ;(at artifact_6 stasis_lab)
+    ;(at artifact_7 stasis_lab)
+    ;(at artifact_8 hall_alpha)
+    ;(at artifact_9 stasis_lab)
+    ;(at artifact_10 stasis_lab)
     (at martian_artifact_1 stasis_lab)
     (at martian_artifact_2 stasis_lab)
     (at martian_artifact_3 stasis_lab)
-    (is_safe artifact_1)
-    (is_safe artifact_2)
-    (is_safe artifact_3)
-    (is_safe artifact_4)
-    (is_safe artifact_5)
-    (is_safe martian_artifact_1)
-    (is_safe martian_artifact_2)
-    (is_safe martian_artifact_3)
+    ;(at martian_artifact_4 hall_alpha)
+    ;(at martian_artifact_5 cryo-chamber)
+    ;(at martian_artifact_6 cryo-chamber)
+    ;(at martian_artifact_7 stasis_lab)
+    ;(at martian_artifact_8 hall_alpha)
+    ;(at martian_artifact_9 stasis_lab)
+    ;(at martian_artifact_10 cryo-chamber)
+    ;(is_safe artifact_1)
+    ;(is_safe artifact_2)
+    ;(is_safe artifact_3)
+    ;(is_safe artifact_4)
+    ;(is_safe artifact_5)
+    ;(is_safe artifact_6)
+    ;(is_safe artifact_7)
+    ;(is_safe artifact_8)
+    ;(is_safe artifact_9)
+    ;(is_safe artifact_10)
+    ;(is_safe martian_artifact_1)
+    ;(is_safe martian_artifact_2)
+    ;(is_safe martian_artifact_3)
+    ;(is_safe martian_artifact_4)
+    ;(is_safe martian_artifact_5)
+    ;(is_safe martian_artifact_6)
+    ;(is_safe martian_artifact_7)
+    ;(is_safe martian_artifact_8)
+    ;(is_safe martian_artifact_9)
+    ;(is_safe martian_artifact_10)
 ))
 
 ;un-comment the following line if metric is needed
