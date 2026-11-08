@@ -22,6 +22,7 @@ RUN planutils install -y optic
 RUN planutils install -y tfd
 RUN planutils install -y downward
 RUN planutils install -y panda
+RUN planutils install -y lpg-td
 
 # Install and build ENHSP
 RUN mkdir -p /opt/enhsp && \

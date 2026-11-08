@@ -1,0 +1,22 @@
+The runtime is dominated by the SAT solver’s search, not by the number of artifacts alone.
+
+| Run | Relevant facts | Final clauses | Hardest SAT step | Total |
+|---|---:|---:|---:|---:|
+| 7 artifacts | 93 | 295,916 | Layer 11: ~30.3 s | 34.67 s |
+| 8 artifacts | 101 | 320,360 | Layer 11: ~5.4 s | 15.65 s |
+
+The key difference is here:
+
+- **7 artifacts:** the solver spends `0.778 → 31.079 s` proving layer 11 unsatisfiable.
+- **8 artifacts:** it spends only `0.571 → 6.003 s` on the equivalent step.
+
+Adding `artifact_8` increases the encoding by about 8%, but it also changes the SAT formula’s structure. Glucose’s branching decisions and learned clauses then happen to make the second formula much easier to prove. SAT solving is highly non-linear: a slightly larger formula can be substantially easier than a smaller one.
+
+Other observations:
+
+- Both runs reach the solution at **layer 12**.
+- The number of instantiated positions, actions, and reductions is identical.
+- The second run’s final plan is shorter: 80 steps versus 84.
+- The planner is not simply executing one operation per artifact; it searches over many possible orderings, robot assignments, movements, and temporary actions.
+
+Therefore, the 34 versus 15 seconds is expected solver variance caused by the altered constraint structure—not evidence that processing eight artifacts is intrinsically faster. Cold-start effects or CPU contention may contribute slightly, but the logs clearly show the SAT search as the main cause.

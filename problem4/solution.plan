@@ -1,0 +1,8 @@
+0.000: (move curator tunnel hall_alpha)  [4.000]
+4.001: (unseal curator)  [1.000]
+5.002: (pickup_standard_artifact curator artifact_1 hall_alpha)  [1.000]
+6.003: (seal curator)  [1.000]
+7.004: (move curator hall_alpha tunnel)  [4.000]
+11.005: (move curator tunnel cryo_chamber)  [4.000]
+15.006: (unseal curator)  [1.000]
+16.007: (drop_standard_artifact curator artifact_1 cryo_chamber)  [1.000]

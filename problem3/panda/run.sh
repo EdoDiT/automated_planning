@@ -1,22 +1,8 @@
 #!/usr/bin/env bash
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-TASK_DIR="$(dirname "$SCRIPT_DIR")"
-
-case "${1:-handover}" in
-    handover)
-        domain="$TASK_DIR/interplanetary_museum_domain_3.hddl"
-        ;;
-    noho|no-handover)
-        domain="$TASK_DIR/interplanetary_museum_domain_3.hddl"
-        ;;
-    *)
-        echo "Usage: $0 [handover|noho]" >&2
-        exit 2
-        ;;
-esac
-
-problem="$TASK_DIR/problem_3.hddl"
+domain="$SCRIPT_DIR/interplanetary_museum_domain_3.hddl"
+problem="$SCRIPT_DIR/problem_3.hddl"
 
 # PANDA creates intermediate files in its current working directory. Run it in
 # a temporary folder so that only the log and the final plan remain here.
