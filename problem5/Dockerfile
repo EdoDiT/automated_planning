@@ -1,4 +1,4 @@
-FROM ros:humble-ros-base-jammy
+FROM ros:humble
 
 SHELL ["/bin/bash", "-c"]
 
@@ -21,14 +21,18 @@ RUN mkdir -p ~/plansys2_ws/src && \
     cd ~/plansys2_ws/src && \
     git clone https://github.com/PlanSys2/ros2_planning_system.git && \
     cd ros2_planning_system && \
-    git checkout ${ROS_DISTRO}-devel
+    git checkout ${ROS_DISTRO}-devel && \
+    git clone --branch main --depth 1 https://github.com/PlanSys2/kairos.git kairos && \
+    git clone --branch ${ROS_DISTRO}-devel --depth 1 \
+    https://github.com/fmrico/cascade_lifecycle.git cascade_lifecycle
     
-RUN cd ~/plansys2_ws && \
+RUN apt-get update && \
+    cd ~/plansys2_ws && \
     rosdep install -y -r -q \
     --from-paths src \
     --ignore-src \
-    --rosdistro ${ROS_DISTRO} \
-    --skip-keys kairos
+    --rosdistro ${ROS_DISTRO} && \
+    rm -rf /var/lib/apt/lists/*
 
 RUN cd ~/plansys2_ws && source /opt/ros/${ROS_DISTRO}/setup.bash && colcon build --symlink-install --parallel-workers 1
 

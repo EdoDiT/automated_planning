@@ -18,7 +18,13 @@ First, start the Docker environment:
 ./start_docker.sh
 ```
 
-This script creates and starts the Docker container using the provided `Dockerfile`, installs all required dependencies, and mounts the necessary directories inside the container.
+This script creates and starts the Docker container using the provided `Dockerfile`, installs all required dependencies, and mounts the necessary directories inside the container. When you exit the container, it is stopped but kept for reuse; running `./start_docker.sh` again attaches to the same container without rebuilding the image. Use `./start_docker.sh --rebuild` to rebuild it, or `./start_docker.sh --clean` to remove the container and image.
+
+The Docker image checks out the PlanSys2 `kairos` and
+`rclcpp_cascade_lifecycle` source dependencies. This avoids relying on the
+unavailable or incompatible `ros-humble-kairos` and
+`ros-humble-rclcpp-cascade-lifecycle` binary packages. It refreshes apt
+metadata before running rosdep.
 
 Once inside the container, the workspace is located at:
 
@@ -50,7 +56,7 @@ Keep this terminal running.
 Open a second terminal and connect to the running container:
 
 ```bash
-sudo docker exec -it <docker_id> bash
+sudo docker exec -it plansys2-humble-container bash
 ```
 
 Then start the Plansys2 terminal:
