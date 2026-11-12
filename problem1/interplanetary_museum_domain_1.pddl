@@ -19,14 +19,12 @@
 		(is_freezing ?arg0 - location)
 		(connected ?destination - location)
 		(is_vibration_free ?arg0 - location)
-		(is_safe ?arg0 - artifact)
 		(is_sturdy ?arg0 - artifact)
 		(is_sensitive ?arg0 - artifact)
 		(is_thermosensitive ?arg0 - artifact)
 		(is_seismic_sensitive ?arg0 - artifact)
 		(is_thermo_and_seismic_sensitive ?arg0 - artifact)
 		(is_loaded ?arg0 - robot)
-		(has_pod ?arg0 - robot ?arg1 - pod)
 		(on ?arg0 - carriable_item ?arg1 - robot)
 		(in ?arg0 - artifact ?arg1 - pod)
 		(is_unloaded ?arg0 - robot) ;not carrying any artifact
@@ -68,7 +66,6 @@
 			(not (is_loaded ?agent))
 			(at ?artifact ?room)
 			(is_unloaded ?agent)
-			(is_safe ?artifact)
 		)
 	)
 	(:action pickup_sensitive_artifact
@@ -76,7 +73,6 @@
 		:precondition (and
 			(on ?pod ?agent)
 			(is_unsealed ?agent)
-			(has_pod ?agent ?pod)
 			(pod_is_empty ?pod)
 			(is_sensitive ?artifact)
 			(is_unloaded ?agent)
@@ -98,7 +94,6 @@
 		:precondition (and
 			(on ?pod ?agent)
 			(is_unsealed ?agent)
-			(has_pod ?agent ?pod)
 			(on ?artifact ?agent)
 			(in ?artifact ?pod)
 			(is_sensitive ?artifact)
@@ -114,7 +109,6 @@
 			(at ?artifact ?room)
 			(pod_is_empty ?pod)
 			(is_unloaded ?agent)
-			(is_safe ?artifact)
 		)
 	)
 
@@ -123,7 +117,6 @@
 		:precondition (and
 			(on ?pod ?agent)
 			(is_unsealed ?agent)
-			(has_pod ?agent ?pod)
 			(on ?artifact ?agent)
 			(in ?artifact ?pod)
 			(is_sensitive ?artifact)
@@ -139,7 +132,6 @@
 			(at ?artifact ?room)
 			(pod_is_empty ?pod)
 			(is_unloaded ?agent)
-			(is_safe ?artifact)
 		)
 	)
 
@@ -148,7 +140,6 @@
 		:precondition (and
 			(on ?pod ?agent)
 			(is_unsealed ?agent)
-			(has_pod ?agent ?pod)
 			(on ?artifact ?agent)
 			(in ?artifact ?pod)
 			(is_sensitive ?artifact)
@@ -165,7 +156,6 @@
 			(at ?artifact ?room)
 			(pod_is_empty ?pod)
 			(is_unloaded ?agent)
-			(is_safe ?artifact)
 		)
 	)
 	
@@ -218,7 +208,6 @@
 			(not(pod_is_available ?pod))
 			(not(is_unpodded ?agent))
 			(on ?pod ?agent)
-			(has_pod ?agent ?pod)
 		)
 	)
 
@@ -228,13 +217,11 @@
 			(at ?agent pod_pickup)
 			(is_unsealed ?agent)
 			(on ?pod ?agent)
-			(has_pod ?agent ?pod)
 			(pod_is_empty ?pod)
 			(is_unloaded ?agent)
 		)
 		:effect (and
 			(not (on ?pod ?agent))
-			(not (has_pod ?agent ?pod))
 			(at ?pod pod_pickup)
 			(pod_is_available ?pod)
 			(is_unpodded ?agent)

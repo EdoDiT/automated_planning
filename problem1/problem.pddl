@@ -20,8 +20,8 @@
     martian_artifact_1 - artifact
     martian_artifact_2 - artifact
     martian_artifact_3 - artifact    
-    ;martian_artifact_4 - artifact
-    ;martian_artifact_5 - artifact
+    martian_artifact_4 - artifact
+    martian_artifact_5 - artifact
     ;martian_artifact_6 - artifact
     ;martian_artifact_7 - artifact
     ;martian_artifact_8 - artifact
@@ -94,11 +94,11 @@
     (at martian_artifact_3 cryo-chamber)
     (is_sensitive martian_artifact_3)
     (is_thermo_and_seismic_sensitive martian_artifact_3)
-    ;(at martian_artifact_4 cryo-chamber)
-    ;(is_sturdy martian_artifact_4)
-    ;(at martian_artifact_5 cryo-chamber)
-    ;(is_sensitive martian_artifact_5)
-    ;(is_thermosensitive martian_artifact_5)
+    (at martian_artifact_4 cryo-chamber)
+    (is_sturdy martian_artifact_4)
+    (at martian_artifact_5 cryo-chamber)
+    (is_sensitive martian_artifact_5)
+    (is_thermosensitive martian_artifact_5)
     ;(at martian_artifact_6 cryo-chamber)
     ;(is_sensitive martian_artifact_6)
     ;(is_thermosensitive martian_artifact_6)
@@ -130,33 +130,13 @@
     (at martian_artifact_1 stasis_lab)
     (at martian_artifact_2 stasis_lab)
     (at martian_artifact_3 stasis_lab)
-    ;(at martian_artifact_4 hall_alpha)
-    ;(at martian_artifact_5 cryo-chamber)
+    (at martian_artifact_4 hall_alpha)
+    (at martian_artifact_5 cryo-chamber)
     ;(at martian_artifact_6 cryo-chamber)
     ;(at martian_artifact_7 stasis_lab)
     ;(at martian_artifact_8 hall_alpha)
     ;(at martian_artifact_9 stasis_lab)
     ;(at martian_artifact_10 cryo-chamber)
-    ;(is_safe artifact_1)
-    ;(is_safe artifact_2)
-    ;(is_safe artifact_3)
-    ;(is_safe artifact_4)
-    ;(is_safe artifact_5)
-    ;(is_safe artifact_6)
-    ;(is_safe artifact_7)
-    ;(is_safe artifact_8)
-    ;(is_safe artifact_9)
-    ;(is_safe artifact_10)
-    ;(is_safe martian_artifact_1)
-    ;(is_safe martian_artifact_2)
-    ;(is_safe martian_artifact_3)
-    ;(is_safe martian_artifact_4)
-    ;(is_safe martian_artifact_5)
-    ;(is_safe martian_artifact_6)
-    ;(is_safe martian_artifact_7)
-    ;(is_safe martian_artifact_8)
-    ;(is_safe martian_artifact_9)
-    ;(is_safe martian_artifact_10)
 ))
 
 ;un-comment the following line if metric is needed

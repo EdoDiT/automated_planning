@@ -1,0 +1,11 @@
+Plan-Length:57
+Metric (Search):57.0
+Planning Time (msec): 155172
+Heuristic Time (msec): 137699
+Search Time (msec): 155169
+Expanded Nodes:723332
+States Evaluated:1513708
+Number of Dead-Ends detected:0
+Number of Duplicates detected:6210270
+Execution time: 156.059 seconds
+

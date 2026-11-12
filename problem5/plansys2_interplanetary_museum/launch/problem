@@ -1,10 +1,34 @@
+set instance pod_pickup location
+set instance tunnel location
+set instance hall_beta room
 set instance cryo_chamber room
 set instance hall_alpha room
 set instance stasis_lab room
 set instance curator standard_curator
+set instance biggie tank_curator
+set instance bee drone_curator
 set instance pod_1 pod
 set instance pod_2 pod
 set instance artifact_1 artifact
+set instance artifact_2 artifact
+set instance artifact_3 artifact
+set instance artifact_4 artifact
+set instance artifact_5 artifact
+set instance artifact_6 artifact
+set instance artifact_7 artifact
+set instance artifact_8 artifact
+set instance artifact_9 artifact
+set instance artifact_10 artifact
+set instance martian_artifact_1 artifact
+set instance martian_artifact_2 artifact
+set instance martian_artifact_3 artifact
+set instance martian_artifact_4 artifact
+set instance martian_artifact_5 artifact
+set instance martian_artifact_6 artifact
+set instance martian_artifact_7 artifact
+set instance martian_artifact_8 artifact
+set instance martian_artifact_9 artifact
+set instance martian_artifact_10 artifact
 
 set predicate (is_freezing cryo_chamber)
 set predicate (is_vibration_free hall_alpha)
@@ -23,6 +47,12 @@ set predicate (are_connected pod_pickup tunnel)
 set predicate (at curator tunnel)
 set predicate (is_sealed curator)
 set predicate (is_available curator)
+set predicate (at biggie tunnel)
+set predicate (is_sealed biggie)
+set predicate (is_available biggie)
+set predicate (at bee tunnel)
+set predicate (is_unsealed bee)
+set predicate (is_available bee)
 set predicate (at pod_1 pod_pickup)
 set predicate (at pod_2 pod_pickup)
 set predicate (pod_is_empty pod_1)
@@ -31,6 +61,59 @@ set predicate (pod_is_available pod_1)
 set predicate (pod_is_available pod_2)
 set predicate (at artifact_1 hall_alpha)
 set predicate (is_sturdy artifact_1)
+set predicate (at artifact_2 hall_alpha)
+set predicate (is_sensitive artifact_2)
+set predicate (is_thermosensitive artifact_2)
+set predicate (at artifact_3 hall_alpha)
+set predicate (is_sturdy artifact_3)
+set predicate (at artifact_4 hall_beta)
+set predicate (is_sensitive artifact_4)
+set predicate (is_seismic_sensitive artifact_4)
+set predicate (at artifact_5 hall_alpha)
+set predicate (is_sensitive artifact_5)
+set predicate (is_thermosensitive artifact_5)
+set predicate (at artifact_6 hall_beta)
+set predicate (is_sturdy artifact_6)
+set predicate (at artifact_7 hall_beta)
+set predicate (is_sensitive artifact_7)
+set predicate (is_seismic_sensitive artifact_7)
+set predicate (at artifact_8 hall_beta)
+set predicate (is_sensitive artifact_8)
+set predicate (is_seismic_sensitive artifact_8)
+set predicate (at artifact_9 hall_beta)
+set predicate (is_sensitive artifact_9)
+set predicate (is_thermo_and_seismic_sensitive artifact_9)
+set predicate (at artifact_10 hall_beta)
+set predicate (is_sensitive artifact_10)
+set predicate (is_thermo_and_seismic_sensitive artifact_10)
+set predicate (at martian_artifact_1 cryo_chamber)
+set predicate (is_sturdy martian_artifact_1)
+set predicate (at martian_artifact_2 cryo_chamber)
+set predicate (is_sensitive martian_artifact_2)
+set predicate (is_seismic_sensitive martian_artifact_2)
+set predicate (at martian_artifact_3 cryo_chamber)
+set predicate (is_sensitive martian_artifact_3)
+set predicate (is_thermo_and_seismic_sensitive martian_artifact_3)
+set predicate (at martian_artifact_4 stasis_lab)
+set predicate (is_sturdy martian_artifact_4)
+set predicate (at martian_artifact_5 stasis_lab)
+set predicate (is_sensitive martian_artifact_5)
+set predicate (is_thermosensitive martian_artifact_5)
+set predicate (at martian_artifact_6 stasis_lab)
+set predicate (is_sensitive martian_artifact_6)
+set predicate (is_thermosensitive martian_artifact_6)
+set predicate (at martian_artifact_7 stasis_lab)
+set predicate (is_sensitive martian_artifact_7)
+set predicate (is_seismic_sensitive martian_artifact_7)
+set predicate (at martian_artifact_8 stasis_lab)
+set predicate (is_sensitive martian_artifact_8)
+set predicate (is_seismic_sensitive martian_artifact_8)
+set predicate (at martian_artifact_9 stasis_lab)
+set predicate (is_sensitive martian_artifact_9)
+set predicate (is_thermo_and_seismic_sensitive martian_artifact_9)
+set predicate (at martian_artifact_10 stasis_lab)
+set predicate (is_sensitive martian_artifact_10)
+set predicate (is_thermosensitive martian_artifact_10)
 set predicate (is_not_seisming hall_beta)
 set predicate (is_not_seisming hall_alpha)
 set predicate (is_not_seisming stasis_lab)
@@ -42,9 +125,15 @@ set function ( (max_capacity curator) 1)
 set function ( (max_pod_capacity curator) 1)
 set function ( (capacity_available curator) 1)
 set function ( (pod_capacity_available curator) 1)
-set function ( (max_battery_level curator) 20)
-set function ( (battery_level curator) 20)
+set function ( (max_capacity biggie) 2)
+set function ( (max_pod_capacity biggie) 2)
+set function ( (capacity_available biggie) 2)
+set function ( (pod_capacity_available biggie) 2)
+set function ( (max_capacity bee) 1)
+set function ( (max_pod_capacity bee) 1)
+set function ( (capacity_available bee) 1)
+set function ( (pod_capacity_available bee) 1)
 set function ( (seismic_counter) 0)
 set function ( (seismic_phase_duration) 20)
 
-set goal (and (at artifact_1 cryo_chamber))
+set goal (and (at artifact_1 cryo_chamber) (at artifact_2 stasis_lab) (at artifact_3 stasis_lab) (at artifact_4 hall_alpha) (at artifact_5 cryo_chamber) (at artifact_6 stasis_lab) (at artifact_7 stasis_lab) (at artifact_8 hall_alpha) (at artifact_9 stasis_lab) (at artifact_10 stasis_lab) (at martian_artifact_1 stasis_lab) (at martian_artifact_2 stasis_lab) (at martian_artifact_3 stasis_lab) (at martian_artifact_4 hall_alpha) (at martian_artifact_5 cryo_chamber) (at martian_artifact_6 cryo_chamber) (at martian_artifact_7 stasis_lab) (at martian_artifact_8 hall_alpha) (at martian_artifact_9 stasis_lab) (at martian_artifact_10 cryo_chamber))
