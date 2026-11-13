@@ -1,0 +1,128 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 45
+|F|:91
+|X|:0
+|A|:134
+|P|:0
+|E|:0
+f(n) = 1.0 (Expanded Nodes: 2, Evaluated States: 6, Time: 0.007) Frontier Size: 4
+f(n) = 2.0 (Expanded Nodes: 7, Evaluated States: 12, Time: 0.025) Frontier Size: 5
+f(n) = 3.0 (Expanded Nodes: 13, Evaluated States: 18, Time: 0.026) Frontier Size: 5
+f(n) = 4.0 (Expanded Nodes: 19, Evaluated States: 42, Time: 0.027) Frontier Size: 23
+f(n) = 5.0 (Expanded Nodes: 43, Evaluated States: 78, Time: 0.03) Frontier Size: 35
+f(n) = 6.0 (Expanded Nodes: 79, Evaluated States: 132, Time: 0.032) Frontier Size: 53
+f(n) = 7.0 (Expanded Nodes: 133, Evaluated States: 294, Time: 0.034) Frontier Size: 161
+f(n) = 8.0 (Expanded Nodes: 295, Evaluated States: 468, Time: 0.038) Frontier Size: 173
+f(n) = 9.0 (Expanded Nodes: 469, Evaluated States: 722, Time: 0.041) Frontier Size: 253
+f(n) = 10.0 (Expanded Nodes: 723, Evaluated States: 1217, Time: 0.046) Frontier Size: 494
+f(n) = 11.0 (Expanded Nodes: 1218, Evaluated States: 2339, Time: 0.054) Frontier Size: 1121
+f(n) = 12.0 (Expanded Nodes: 2340, Evaluated States: 3312, Time: 0.068) Frontier Size: 972
+f(n) = 13.0 (Expanded Nodes: 3313, Evaluated States: 5611, Time: 0.074) Frontier Size: 2298
+f(n) = 14.0 (Expanded Nodes: 5612, Evaluated States: 7957, Time: 0.086) Frontier Size: 2345
+f(n) = 15.0 (Expanded Nodes: 7958, Evaluated States: 12850, Time: 0.101) Frontier Size: 4892
+f(n) = 16.0 (Expanded Nodes: 12851, Evaluated States: 17683, Time: 0.119) Frontier Size: 4832
+f(n) = 17.0 (Expanded Nodes: 17684, Evaluated States: 30370, Time: 0.153) Frontier Size: 12686
+f(n) = 18.0 (Expanded Nodes: 30371, Evaluated States: 39046, Time: 0.208) Frontier Size: 8675
+f(n) = 19.0 (Expanded Nodes: 39047, Evaluated States: 58584, Time: 0.25) Frontier Size: 19537
+f(n) = 20.0 (Expanded Nodes: 58585, Evaluated States: 75465, Time: 0.303) Frontier Size: 16880
+f(n) = 21.0 (Expanded Nodes: 75466, Evaluated States: 117982, Time: 0.403) Frontier Size: 42516
+f(n) = 22.0 (Expanded Nodes: 117983, Evaluated States: 145972, Time: 0.594) Frontier Size: 27989
+f(n) = 23.0 (Expanded Nodes: 145973, Evaluated States: 213310, Time: 0.773) Frontier Size: 67337
+f(n) = 24.0 (Expanded Nodes: 213311, Evaluated States: 257782, Time: 1.011) Frontier Size: 44471
+f(n) = 25.0 (Expanded Nodes: 257783, Evaluated States: 359244, Time: 1.286) Frontier Size: 101461
+f(n) = 26.0 (Expanded Nodes: 359245, Evaluated States: 428424, Time: 1.689) Frontier Size: 69179
+f(n) = 27.0 (Expanded Nodes: 428425, Evaluated States: 593734, Time: 2.026) Frontier Size: 165309
+f(n) = 28.0 (Expanded Nodes: 593735, Evaluated States: 686932, Time: 2.675) Frontier Size: 93197
+f(n) = 29.0 (Expanded Nodes: 686933, Evaluated States: 890040, Time: 3.323) Frontier Size: 203107
+f(n) = 30.0 (Expanded Nodes: 890041, Evaluated States: 1015813, Time: 4.06) Frontier Size: 125772
+f(n) = 31.0 (Expanded Nodes: 1015814, Evaluated States: 1287118, Time: 4.908) Frontier Size: 271304
+f(n) = 32.0 (Expanded Nodes: 1287119, Evaluated States: 1439347, Time: 6.05) Frontier Size: 152228
+f(n) = 33.0 (Expanded Nodes: 1439348, Evaluated States: 1778806, Time: 7.319) Frontier Size: 339458
+f(n) = 34.0 (Expanded Nodes: 1778807, Evaluated States: 1952478, Time: 8.736) Frontier Size: 173671
+-------------Time: 10s ; Expanded Nodes: 1945000 (Avg-Speed 194500.0 n/s); Evaluated States: 2284551
+f(n) = 35.0 (Expanded Nodes: 1952479, Evaluated States: 2299243, Time: 10.068) Frontier Size: 346764
+f(n) = 36.0 (Expanded Nodes: 2299244, Evaluated States: 2494407, Time: 11.798) Frontier Size: 195163
+f(n) = 37.0 (Expanded Nodes: 2494408, Evaluated States: 2889486, Time: 13.6) Frontier Size: 395078
+f(n) = 38.0 (Expanded Nodes: 2889487, Evaluated States: 3083637, Time: 15.784) Frontier Size: 194150
+f(n) = 39.0 (Expanded Nodes: 3083638, Evaluated States: 3480396, Time: 17.772) Frontier Size: 396758
+f(n) = 40.0 (Expanded Nodes: 3480397, Evaluated States: 3669767, Time: 19.561) Frontier Size: 189370
+-------------Time: 20s ; Expanded Nodes: 3552621 (Avg-Speed 177631.0 n/s); Evaluated States: 3794863
+f(n) = 41.0 (Expanded Nodes: 3669768, Evaluated States: 4011427, Time: 19.589) Frontier Size: 341659
+f(n) = 42.0 (Expanded Nodes: 4011428, Evaluated States: 4187912, Time: 21.236) Frontier Size: 176484
+f(n) = 43.0 (Expanded Nodes: 4187913, Evaluated States: 4512529, Time: 22.545) Frontier Size: 324616
+f(n) = 44.0 (Expanded Nodes: 4512530, Evaluated States: 4657660, Time: 24.074) Frontier Size: 145130
+f(n) = 45.0 (Expanded Nodes: 4657661, Evaluated States: 4921850, Time: 25.245) Frontier Size: 264189
+f(n) = 46.0 (Expanded Nodes: 4921851, Evaluated States: 5041289, Time: 26.717) Frontier Size: 119438
+f(n) = 47.0 (Expanded Nodes: 5041290, Evaluated States: 5228752, Time: 27.873) Frontier Size: 187462
+f(n) = 48.0 (Expanded Nodes: 5228753, Evaluated States: 5319304, Time: 29.168) Frontier Size: 90551
+-------------Time: 30s ; Expanded Nodes: 5318928 (Avg-Speed 177297.0 n/s); Evaluated States: 5462575
+f(n) = 49.0 (Expanded Nodes: 5319305, Evaluated States: 5463104, Time: 30.003) Frontier Size: 143799
+f(n) = 50.0 (Expanded Nodes: 5463105, Evaluated States: 5522999, Time: 30.915) Frontier Size: 59894
+Problem Solved
+
+Found Plan:
+0.0: (move_in_room curator pod_pickup)
+1.0: (take_pod curator pod_2)
+2.0: (move_out_room curator pod_pickup)
+3.0: (move_in_room curator cryo-chamber)
+4.0: (pickup_sensitive_artifact curator martian_artifact_3 pod_2 cryo-chamber)
+5.0: (move_out_room curator cryo-chamber)
+6.0: (move_in_room curator stasis_lab)
+7.0: (safe_drop_seismic_and_thermo_sensitive_artifact curator martian_artifact_3 pod_2 stasis_lab)
+8.0: (move_out_room curator stasis_lab)
+9.0: (move_in_room curator hall_beta)
+10.0: (pickup_standard_artifact curator artifact_3 hall_beta)
+11.0: (move_out_room curator hall_beta)
+12.0: (move_in_room curator stasis_lab)
+13.0: (drop_standard_artifact curator artifact_3 stasis_lab)
+14.0: (move_out_room curator stasis_lab)
+15.0: (move_in_room curator hall_beta)
+16.0: (pickup_sensitive_artifact curator artifact_5 pod_2 hall_beta)
+17.0: (move_out_room curator hall_beta)
+18.0: (move_in_room curator hall_alpha)
+19.0: (safe_drop_seismic_sensitive_artifact curator artifact_5 pod_2 hall_alpha)
+20.0: (pickup_sensitive_artifact curator artifact_1 pod_2 hall_alpha)
+21.0: (move_out_room curator hall_alpha)
+22.0: (move_in_room curator cryo-chamber)
+23.0: (safe_drop_thermosensitive_artifact curator artifact_1 pod_2 cryo-chamber)
+24.0: (pickup_standard_artifact curator martian_artifact_1 cryo-chamber)
+25.0: (move_out_room curator cryo-chamber)
+26.0: (move_in_room curator stasis_lab)
+27.0: (drop_standard_artifact curator martian_artifact_1 stasis_lab)
+28.0: (move_out_room curator stasis_lab)
+29.0: (move_in_room curator hall_beta)
+30.0: (pickup_sensitive_artifact curator artifact_4 pod_2 hall_beta)
+31.0: (move_out_room curator hall_beta)
+32.0: (move_in_room curator stasis_lab)
+33.0: (safe_drop_seismic_and_thermo_sensitive_artifact curator artifact_4 pod_2 stasis_lab)
+34.0: (move_out_room curator stasis_lab)
+35.0: (move_in_room curator cryo-chamber)
+36.0: (pickup_standard_artifact curator martian_artifact_4 cryo-chamber)
+37.0: (move_out_room curator cryo-chamber)
+38.0: (move_in_room curator hall_alpha)
+39.0: (drop_standard_artifact curator martian_artifact_4 hall_alpha)
+40.0: (pickup_standard_artifact curator artifact_2 hall_alpha)
+41.0: (move_out_room curator hall_alpha)
+42.0: (move_in_room curator stasis_lab)
+43.0: (drop_standard_artifact curator artifact_2 stasis_lab)
+44.0: (move_out_room curator stasis_lab)
+45.0: (move_in_room curator cryo-chamber)
+46.0: (pickup_sensitive_artifact curator martian_artifact_2 pod_2 cryo-chamber)
+47.0: (move_out_room curator cryo-chamber)
+48.0: (move_in_room curator stasis_lab)
+49.0: (safe_drop_thermosensitive_artifact curator martian_artifact_2 pod_2 stasis_lab)
+
+Plan-Length:50
+Metric (Search):50.0
+Planning Time (msec): 30927
+Heuristic Time (msec): 152
+Search Time (msec): 30922
+Expanded Nodes:5463906
+States Evaluated:5523856
+Number of Dead-Ends detected:0
+Number of Duplicates detected:7701526
+
+Execution time: 31.7151 seconds
+Exit status: 0
