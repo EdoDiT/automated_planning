@@ -29,7 +29,6 @@
     (are_connected tunnel pod_pickup)
     (are_connected pod_pickup tunnel)
     ;curator
-    (at curator tunnel)
     (at biggie tunnel)
     (is_sealed biggie)
     (= (max_capacity biggie) 2)
