@@ -218,10 +218,9 @@
 	(:action seal
 		:parameters (?agent - sealing_curators)
 		:precondition (and
-			(is_unsealed ?agent)
+			(not (is_sealed ?agent))
 		)
 		:effect (and
-			(not (is_unsealed ?agent))
 			(is_sealed ?agent)
 		)
 	)
@@ -233,7 +232,6 @@
 		)
 		:effect (and
 			(not (is_sealed ?agent))
-			(is_unsealed ?agent)
 		)
 	)
 
@@ -242,7 +240,7 @@
 		:precondition (and
 			(at ?agent pod_pickup)
 			(at ?pod pod_pickup)
-			(is_unsealed ?agent)
+			(not (is_sealed ?agent))
 			(pod_is_empty ?pod)
 			(pod_is_available ?pod)
 			(is_unpodded ?agent)
@@ -252,7 +250,6 @@
 			(not(at ?pod pod_pickup))
 			(not(pod_is_available ?pod))
 			(on ?pod ?agent)
-			(has_pod ?agent ?pod)
 		)
 	)
 
@@ -260,14 +257,12 @@
 		:parameters (?agent - robot ?pod - pod)
 		:precondition (and
 			(at ?agent pod_pickup)
-			(is_unsealed ?agent)
+			(not (is_sealed ?agent))
 			(on ?pod ?agent)
-			(has_pod ?agent ?pod)
 			(pod_is_empty ?pod)
 		)
 		:effect (and
 			(not (on ?pod ?agent))
-			(not (has_pod ?agent ?pod))
 			(at ?pod pod_pickup)
 			(pod_is_available ?pod)
 			(is_unpodded ?agent)
@@ -294,7 +289,7 @@
 		:precondition (and
 			(on ?artifact ?agent)
 			(in ?artifact ?pod)
-			(has_pod ?agent ?pod)
+			(on ?pod ?agent)
 		)
 		:ordered-subtasks (and
 			(safe_drop_thermosensitive_artifact ?agent ?artifact ?pod ?room)
@@ -308,7 +303,7 @@
 		:precondition (and
 			(on ?artifact ?agent)
 			(in ?artifact ?pod)
-			(has_pod ?agent ?pod)
+			(on ?pod ?agent)
 		)
 		:ordered-subtasks (and
 			(safe_drop_seismic_sensitive_artifact ?agent ?artifact ?pod ?room)
@@ -322,7 +317,7 @@
 		:precondition (and
 			(on ?artifact ?agent)
 			(in ?artifact ?pod)
-			(has_pod ?agent ?pod)
+			(on ?pod ?agent)
 		)
 		:ordered-subtasks (and
 			(safe_drop_seismic_and_thermo_sensitive_artifact ?agent ?artifact ?pod ?room)
@@ -344,7 +339,7 @@
 		:precondition (and 
 			(at ?artifact ?room)
 			(at ?agent ?room)
-			(is_not_full ?agent)
+			(not (is_full ?agent))
 		)
 		:ordered-subtasks (and
 			(pickup_standard_artifact ?agent ?artifact ?room)
@@ -358,8 +353,8 @@
 		:precondition (and 
 			(at ?artifact ?room)
 			(at ?agent ?room)
-			(is_not_full ?agent)
-			(has_pod ?agent ?pod)
+			(not (is_full ?agent))
+			(on ?pod ?agent)
 			(pod_is_empty ?pod)
 		)
 		:ordered-subtasks (and
@@ -374,8 +369,8 @@
 		:precondition (and 
 			(at ?artifact ?room)
 			(at ?agent ?room)
-			(is_not_full ?agent)
-			(has_pod ?agent ?pod)
+			(not (is_full ?agent))
+			(on ?pod ?agent)
 			(pod_is_empty ?pod)
 		)
 		:ordered-subtasks (and
@@ -409,7 +404,7 @@
 		:task (robot_travel ?agent ?destination)
 		:precondition (and
 			(at ?agent ?departure)
-			(is_unsealed ?agent)
+			(not (is_sealed ?agent))
 		)
 		:ordered-subtasks (and
 			(seal ?agent)
@@ -530,7 +525,6 @@
 		:precondition (and
 			(at ?agent pod_pickup)
 			(on ?pod ?agent)
-			(has_pod ?agent ?pod)
 			(pod_is_empty ?pod)
 		)
 		:ordered-subtasks (and

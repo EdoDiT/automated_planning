@@ -1,16 +1,22 @@
 #!/usr/bin/env bash
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-domain="$SCRIPT_DIR/interplanetary_museum_domain_3.hddl"
-problem="$SCRIPT_DIR/problem_3.hddl"
+domain="$SCRIPT_DIR/../interplanetary_museum_domain_3.hddl"
+problem="$SCRIPT_DIR/../problem_3.hddl"
 
 start=$(date +%s.%N)
 
 set -o pipefail
-lilotane "$domain" "$problem" -v=2 -co=0 2>&1 \
+timeout --signal=TERM --kill-after=5s 300s \
+    lilotane "$domain" "$problem" -v=2 -co=0 2>&1 \
     | tee "$SCRIPT_DIR/lilotane.log"
 planner_status=${PIPESTATUS[0]}
 set +o pipefail
+
+if [[ "$planner_status" -eq 124 ]]; then
+    echo "Lilotane timed out after 300 seconds; see $SCRIPT_DIR/lilotane.log." >&2
+    exit "$planner_status"
+fi
 
 if [[ "$planner_status" -ne 0 ]]; then
     echo "Lilotane failed; see $SCRIPT_DIR/lilotane.log." >&2

@@ -9,3 +9,118 @@
 by Dominik Schreiber <dominik.schreiber@kit.edu> 2020-2021
 using SAT solver glucose4
 
+0.007 Parser finished.
+0.007 Structures extracted.
+0.007 38 operators and 33 methods created.
+0.011 Mined 37 new reduction preconditions (+74.0%).
+0.011 Iteration 0.
+0.011 Creating initial layer of size 2
+0.011 Attempting to solve formula with 29 clauses (42 literals) and 1 assumptions
+0.011 Unsolvable at layer 0 -- expanding.
+0.011 Iteration 1.
+0.011 New layer size: 2
+0.011 Instantiating ...
+0.012 Collected 13 relevant facts at this layer
+0.012 Encoding ...
+0.012 Attempting to solve formula with 34 clauses (51 literals) and 1 assumptions
+0.012 Unsolvable at layer 1 -- expanding.
+0.012 Iteration 2.
+0.012 New layer size: 2
+0.012 Instantiating ...
+0.013 Collected 13 relevant facts at this layer
+0.013 Encoding ...
+0.013 Attempting to solve formula with 70 clauses (145 literals) and 1 assumptions
+0.013 Unsolvable at layer 2 -- expanding.
+0.013 Iteration 3.
+0.013 New layer size: 4
+0.013 Instantiating ...
+0.013 Collected 15 relevant facts at this layer
+0.013 Encoding ...
+0.013 Attempting to solve formula with 171 clauses (406 literals) and 2 assumptions
+0.013 Unsolvable at layer 3 -- expanding.
+0.013 Iteration 4.
+0.013 New layer size: 7
+0.013 Instantiating ...
+0.015 Collected 27 relevant facts at this layer
+0.015 Encoding ...
+0.015 Attempting to solve formula with 524 clauses (1368 literals) and 4 assumptions
+0.015 Unsolvable at layer 4 -- expanding.
+0.015 Iteration 5.
+0.015 New layer size: 12
+0.015 Instantiating ...
+0.017 Collected 27 relevant facts at this layer
+0.017 Encoding ...
+0.018 Attempting to solve formula with 1133 clauses (3074 literals) and 8 assumptions
+0.018 Unsolvable at layer 5 -- expanding.
+0.018 Iteration 6.
+0.018 New layer size: 21
+0.018 Instantiating ...
+0.022 Collected 30 relevant facts at this layer
+0.022 Encoding ...
+0.023 Attempting to solve formula with 2404 clauses (6592 literals) and 16 assumptions
+0.023 Unsolvable at layer 6 -- expanding.
+0.023 Iteration 7.
+0.023 New layer size: 40
+0.023 Instantiating ...
+0.031 Collected 46 relevant facts at this layer
+0.032 Encoding ...
+0.034 Attempting to solve formula with 6157 clauses (16820 literals) and 32 assumptions
+0.034 Unsolvable at layer 7 -- expanding.
+0.034 Iteration 8.
+0.034 New layer size: 80
+0.034 Instantiating ...
+0.053 Collected 134 relevant facts at this layer
+0.053 Encoding ...
+0.063 Attempting to solve formula with 23598 clauses (65014 literals) and 63 assumptions
+0.063 Unsolvable at layer 8 -- expanding.
+0.063 Iteration 9.
+0.063 New layer size: 158
+0.063 Instantiating ...
+0.109 Collected 134 relevant facts at this layer
+0.109 Encoding ...
+0.131 Attempting to solve formula with 61786 clauses (174944 literals) and 112 assumptions
+0.136 Unsolvable at layer 9 -- expanding.
+0.136 Iteration 10.
+0.136 New layer size: 294
+0.136 Instantiating ...
+0.225 Collected 134 relevant facts at this layer
+0.225 Encoding ...
+0.266 Attempting to solve formula with 134855 clauses (390972 literals) and 183 assumptions
+0.499 Unsolvable at layer 10 -- expanding.
+0.499 Iteration 11.
+0.499 New layer size: 512
+0.499 Instantiating ...
+0.661 Collected 134 relevant facts at this layer
+0.661 Encoding ...
+0.741 Attempting to solve formula with 260350 clauses (768259 literals) and 280 assumptions
+193.005 Unsolvable at layer 11 -- expanding.
+193.005 Iteration 12.
+193.005 New layer size: 840
+193.005 Instantiating ...
+193.274 Collected 134 relevant facts at this layer
+193.274 Encoding ...
+193.408 Attempting to solve formula with 459467 clauses (1373799 literals) and 407 assumptions
+283.855 Termination signal caught.
+283.855 Total amount of clauses encoded: 459467
+283.855 - directframeaxioms : 197616 cls
+283.855 - reductionconstraints : 94152 cls
+283.855 - indirectframeaxioms : 70282 cls
+283.855 - qfactsemantics : 39072 cls
+283.855 - atmostoneelement : 13800 cls
+283.855 - substitutionconstraints : 13685 cls
+283.855 - expansions : 7914 cls
+283.855 - predecessors : 7884 cls
+283.855 - actionconstraints : 5984 cls
+283.855 - qconstequality : 3096 cls
+283.855 - actioneffects : 3088 cls
+283.855 - qtypeconstraints : 2758 cls
+283.855 - truefacts : 134 cls
+283.855 - axiomaticops : 2 cls
+283.855 # instantiated positions: 1973
+283.855 # instantiated actions: 4464
+283.855 # instantiated reductions: 3421
+283.855 # introduced pseudo-constants: 1153
+283.855 # retroactive prunings: 0
+283.855 # retroactively pruned operations: 0
+283.855 # dominated operations: 0
+283.855 Exiting happily.

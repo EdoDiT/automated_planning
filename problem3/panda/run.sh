@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-domain="$SCRIPT_DIR/interplanetary_museum_domain_3.hddl"
-problem="$SCRIPT_DIR/problem_3.hddl"
+PROJECT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
+domain="$PROJECT_DIR/interplanetary_museum_domain_3.hddl"
+problem="$PROJECT_DIR/problem_3.hddl"
 
 # PANDA creates intermediate files in its current working directory. Run it in
 # a temporary folder so that only the log and the final plan remain here.
@@ -25,16 +26,16 @@ fi
 planutils install -y panda
 
 set -o pipefail
-planutils run panda "$domain" "$problem" 2>&1 | tee "$SCRIPT_DIR/panda.log"
+planutils run panda "$domain" "$problem" 2>&1 | tee "$PROJECT_DIR/panda.log"
 planner_status=${PIPESTATUS[0]}
 set +o pipefail
 
 if [[ "$planner_status" -ne 0 ]]; then
-    echo "PANDA failed; see $SCRIPT_DIR/panda.log" >&2
+    echo "PANDA failed; see $PROJECT_DIR/panda.log" >&2
     exit "$planner_status"
 fi
 
-grep -E '^[[:space:]]*[0-9]+ ' "$SCRIPT_DIR/panda.log" > "$SCRIPT_DIR/solution.plan"
+grep -E '^[[:space:]]*[0-9]+ ' "$PROJECT_DIR/panda.log" > "$PROJECT_DIR/solution.plan"
 
 end=$(date +%s.%N)
 
