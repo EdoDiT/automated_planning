@@ -3,7 +3,7 @@
     cryo_chamber - room
     hall_alpha - room
     stasis_lab - room
-    curator - standard_curator
+    ;curator - standard_curator
     biggie - tank_curator
     bee - drone_curator
     pod_1 - pod
@@ -18,9 +18,9 @@
     ;artifact_8 - artifact
     ;artifact_9 - artifact
     ;artifact_10 - artifact
-    martian_artifact_1 - artifact
-    martian_artifact_2 - artifact
-    martian_artifact_3 - artifact
+    ;martian_artifact_1 - artifact
+    ;martian_artifact_2 - artifact
+    ;martian_artifact_3 - artifact
     ;martian_artifact_4 - artifact
     ;martian_artifact_5 - artifact
     ;martian_artifact_6 - artifact
@@ -47,12 +47,12 @@
     (are_connected tunnel pod_pickup)
     (are_connected pod_pickup tunnel)
     ;curator
-    (at curator tunnel)
-    (is_sealed curator)
-    (= (max_capacity curator) 1)
-    (= (max_pod_capacity curator) 1)
-    (= (capacity_available curator) 1)
-    (= (pod_capacity_available curator) 1)
+    ;(at curator tunnel)
+    ;(is_sealed curator)
+    ;(= (max_capacity curator) 1)
+    ;(= (max_pod_capacity curator) 1)
+    ;(= (capacity_available curator) 1)
+    ;(= (pod_capacity_available curator) 1)
     (at biggie tunnel)
     (is_sealed biggie)
     (= (max_capacity biggie) 2)
@@ -100,14 +100,14 @@
     ;(at artifact_10 hall_beta)
     ;(is_sensitive artifact_10)
     ;(is_thermo_and_seismic_sensitive artifact_10)
-    (at martian_artifact_1 cryo_chamber)
-    (is_sturdy martian_artifact_1)
-    (at martian_artifact_2 cryo_chamber)
-    (is_sensitive martian_artifact_2)
-    (is_seismic_sensitive martian_artifact_2)
-    (at martian_artifact_3 cryo_chamber)
-    (is_sensitive martian_artifact_3)
-    (is_thermo_and_seismic_sensitive martian_artifact_3)
+    ;(at martian_artifact_1 cryo_chamber)
+    ;(is_sturdy martian_artifact_1)
+    ;(at martian_artifact_2 cryo_chamber)
+    ;(is_sensitive martian_artifact_2)
+    ;(is_seismic_sensitive martian_artifact_2)
+    ;(at martian_artifact_3 cryo_chamber)
+    ;(is_sensitive martian_artifact_3)
+    ;(is_thermo_and_seismic_sensitive martian_artifact_3)
     ;(at martian_artifact_4 stasis_lab)
     ;(is_sturdy martian_artifact_4)
     ;(at martian_artifact_5 stasis_lab)
@@ -151,9 +151,9 @@
     ;(at artifact_8 hall_alpha)
     ;(at artifact_9 stasis_lab)
     ;(at artifact_10 stasis_lab)
-    (at martian_artifact_1 stasis_lab)
-    (at martian_artifact_2 stasis_lab)
-    (at martian_artifact_3 stasis_lab)
+    ;(at martian_artifact_1 stasis_lab)
+    ;(at martian_artifact_2 stasis_lab)
+    ;(at martian_artifact_3 stasis_lab)
     ;(at martian_artifact_4 hall_alpha)
     ;(at martian_artifact_5 cryo_chamber)
     ;(at martian_artifact_6 cryo_chamber)

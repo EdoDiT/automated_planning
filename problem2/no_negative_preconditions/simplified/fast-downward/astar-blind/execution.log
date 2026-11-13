@@ -1,0 +1,22 @@
+INFO     planner time limit: None
+INFO     planner memory limit: None
+
+INFO     Running translator.
+INFO     translator stdin: None
+INFO     translator time limit: None
+INFO     translator memory limit: None
+INFO     translator command line string: /usr/bin/python3 -m fast_downward.translate /project/problem2/no_negative_preconditions/simplified/fast-downward/astar-blind/../../interplanetary_museum_domain_2.pddl /project/problem2/no_negative_preconditions/simplified/fast-downward/astar-blind/../../problem_2.pddl --sas-file output.sas
+Parsing...
+Parsing domain
+	->Parsing requirements
+Error in requirements.
+Reason: Invalid requirement. Got: :fluents
+Expected: :strips, :adl, :typing, :negation, :equality, :negative-preconditions, :disjunctive-preconditions, :existential-preconditions, :universal-preconditions, :quantified-preconditions, :conditional-effects, :derived-predicates, :action-costs
+translate exit code: 31
+
+Driver aborting after translate
+INFO     Planner time: 0.29s
+Planner did not produce a plan.
+
+Execution time: 0.536824 seconds
+Exit status: 1

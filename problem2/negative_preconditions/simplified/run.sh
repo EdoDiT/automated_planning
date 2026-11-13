@@ -1,18 +1,15 @@
 #!/bin/bash
 
-start=$(date +%s.%N)
-planner_output=$(mktemp)
-log_file="execution.log"
-trap 'rm -f "$planner_output"' EXIT
+set -u
+script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+overall_status=0
 
-enhsp -o interplanetary_museum_domain_2.pddl -f problem_2.pddl -planner sat-hadd > "$planner_output" 2>&1
-grep '^[0-9]' "$planner_output" > solution.plan
+while IFS= read -r planner_script; do
+    printf 'Running %s\n' "${planner_script#"$script_dir"/}"
+    if ! "$planner_script"; then
+        printf 'Planner failed: %s\n' "${planner_script#"$script_dir"/}" >&2
+        overall_status=1
+    fi
+done < <(find "$script_dir" -mindepth 3 -maxdepth 3 -type f -name run.sh -print | sort)
 
-end=$(date +%s.%N)
-execution_time=$(awk -v start="$start" -v end="$end" 'BEGIN { print end - start }')
-statistics=$(grep -E '^(Plan-Length|Metric \(Search\)|Planning Time \(msec\)|Heuristic Time \(msec\)|Search Time \(msec\)|Expanded Nodes|States Evaluated|Number of Dead-Ends detected|Number of Duplicates detected):' "$planner_output" || true)
-
-{
-    printf '%s\n' "$statistics"
-    printf 'Execution time: %s seconds\n\n' "$execution_time"
-} | tee -a "$log_file"
+exit "$overall_status"

@@ -1,0 +1,123 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 31
+Aibr Preprocessing
+|F|:67
+|X|:5
+|A|:116
+|P|:0
+|E|:0
+AIBR selected
+f(n) = 85.0 (Expanded Nodes: 1, Evaluated States: 1, Time: 0.008) Frontier Size: 0
+-------------Time: 10s ; Expanded Nodes: 4241 (Avg-Speed 424.0 n/s); Evaluated States: 17569
+f(n) = 86.0 (Expanded Nodes: 6320, Evaluated States: 23532, Time: 13.86) Frontier Size: 17212
+f(n) = 87.0 (Expanded Nodes: 7618, Evaluated States: 26662, Time: 15.851) Frontier Size: 19044
+f(n) = 88.0 (Expanded Nodes: 8857, Evaluated States: 29703, Time: 17.788) Frontier Size: 20846
+-------------Time: 20s ; Expanded Nodes: 10347 (Avg-Speed 517.0 n/s); Evaluated States: 33141
+f(n) = 89.0 (Expanded Nodes: 10424, Evaluated States: 33312, Time: 20.129) Frontier Size: 22888
+f(n) = 90.0 (Expanded Nodes: 12935, Evaluated States: 41036, Time: 24.825) Frontier Size: 28101
+-------------Time: 30s ; Expanded Nodes: 15478 (Avg-Speed 515.0 n/s); Evaluated States: 49438
+f(n) = 91.0 (Expanded Nodes: 15724, Evaluated States: 49981, Time: 30.409) Frontier Size: 34257
+f(n) = 92.0 (Expanded Nodes: 20730, Evaluated States: 62524, Time: 38.199) Frontier Size: 41794
+-------------Time: 40s ; Expanded Nodes: 21759 (Avg-Speed 543.0 n/s); Evaluated States: 65393
+f(n) = 93.0 (Expanded Nodes: 24131, Evaluated States: 71205, Time: 43.728) Frontier Size: 47074
+-------------Time: 50s ; Expanded Nodes: 28381 (Avg-Speed 567.0 n/s); Evaluated States: 81312
+f(n) = 94.0 (Expanded Nodes: 33598, Evaluated States: 98094, Time: 57.713) Frontier Size: 64491
+-------------Time: 60s ; Expanded Nodes: 35469 (Avg-Speed 591.0 n/s); Evaluated States: 101598
+f(n) = 95.0 (Expanded Nodes: 39910, Evaluated States: 116108, Time: 68.641) Frontier Size: 76184
+-------------Time: 70s ; Expanded Nodes: 40618 (Avg-Speed 580.0 n/s); Evaluated States: 118316
+f(n) = 96.0 (Expanded Nodes: 47852, Evaluated States: 134103, Time: 79.825) Frontier Size: 86237
+-------------Time: 80s ; Expanded Nodes: 47909 (Avg-Speed 598.0 n/s); Evaluated States: 134428
+-------------Time: 90s ; Expanded Nodes: 53544 (Avg-Speed 594.0 n/s); Evaluated States: 153728
+f(n) = 97.0 (Expanded Nodes: 57180, Evaluated States: 162670, Time: 95.615) Frontier Size: 105476
+-------------Time: 100s ; Expanded Nodes: 59990 (Avg-Speed 599.0 n/s); Evaluated States: 169930
+-------------Time: 110s ; Expanded Nodes: 66221 (Avg-Speed 602.0 n/s); Evaluated States: 185751
+f(n) = 98.0 (Expanded Nodes: 70110, Evaluated States: 194762, Time: 113.919) Frontier Size: 124618
+-------------Time: 120s ; Expanded Nodes: 74226 (Avg-Speed 618.0 n/s); Evaluated States: 204721
+-------------Time: 130s ; Expanded Nodes: 79732 (Avg-Speed 613.0 n/s); Evaluated States: 219869
+-------------Time: 140s ; Expanded Nodes: 84987 (Avg-Speed 607.0 n/s); Evaluated States: 236612
+-------------Time: 150s ; Expanded Nodes: 91209 (Avg-Speed 608.0 n/s); Evaluated States: 257351
+f(n) = 99.0 (Expanded Nodes: 95936, Evaluated States: 269919, Time: 157.993) Frontier Size: 173940
+-------------Time: 160s ; Expanded Nodes: 97128 (Avg-Speed 607.0 n/s); Evaluated States: 273396
+-------------Time: 170s ; Expanded Nodes: 103179 (Avg-Speed 606.0 n/s); Evaluated States: 289289
+f(n) = 100.0 (Expanded Nodes: 110348, Evaluated States: 305966, Time: 178.872) Frontier Size: 195549
+-------------Time: 180s ; Expanded Nodes: 110881 (Avg-Speed 616.0 n/s); Evaluated States: 307711
+-------------Time: 190s ; Expanded Nodes: 116219 (Avg-Speed 611.0 n/s); Evaluated States: 323874
+-------------Time: 200s ; Expanded Nodes: 122023 (Avg-Speed 610.0 n/s); Evaluated States: 341018
+-------------Time: 210s ; Expanded Nodes: 128963 (Avg-Speed 614.0 n/s); Evaluated States: 360097
+-------------Time: 220s ; Expanded Nodes: 135552 (Avg-Speed 616.0 n/s); Evaluated States: 375822
+f(n) = 101.0 (Expanded Nodes: 140491, Evaluated States: 386660, Time: 226.325) Frontier Size: 246062
+-------------Time: 230s ; Expanded Nodes: 143126 (Avg-Speed 622.0 n/s); Evaluated States: 392263
+-------------Time: 240s ; Expanded Nodes: 151623 (Avg-Speed 631.0 n/s); Evaluated States: 411462
+-------------Time: 250s ; Expanded Nodes: 158819 (Avg-Speed 635.0 n/s); Evaluated States: 428719
+-------------Time: 260s ; Expanded Nodes: 166534 (Avg-Speed 640.0 n/s); Evaluated States: 447436
+-------------Time: 270s ; Expanded Nodes: 173775 (Avg-Speed 643.0 n/s); Evaluated States: 468037
+f(n) = 102.0 (Expanded Nodes: 177211, Evaluated States: 475141, Time: 273.941) Frontier Size: 297798
+-------------Time: 280s ; Expanded Nodes: 181568 (Avg-Speed 648.0 n/s); Evaluated States: 486915
+-------------Time: 290s ; Expanded Nodes: 190573 (Avg-Speed 657.0 n/s); Evaluated States: 508340
+Problem Solved
+
+Found Plan:
+0.0: (fly bee tunnel pod_pickup)
+1.0: (take_pod bee pod_1)
+2.0: (fly bee pod_pickup tunnel)
+3.0: (fly bee tunnel hall_alpha)
+4.0: (pickup_standard_artifact bee artifact_3 hall_alpha)
+5.0: (fly bee hall_alpha tunnel)
+6.0: (fly bee tunnel stasis_lab)
+7.0: (drop_standard_artifact bee artifact_3 stasis_lab)
+8.0: (fly bee stasis_lab tunnel)
+9.0: (fly bee tunnel hall_alpha)
+10.0: (move biggie tunnel pod_pickup)
+11.0: (pickup_thermosensitive_artifact bee artifact_5 pod_1 hall_alpha)
+12.0: (fly bee hall_alpha tunnel)
+13.0: (fly bee tunnel cryo_chamber)
+14.0: (safe_drop_thermosensitive_artifact bee artifact_5 pod_1 cryo_chamber)
+15.0: (unseal biggie)
+16.0: (take_pod biggie pod_2)
+17.0: (seal biggie)
+18.0: (move biggie pod_pickup tunnel)
+19.0: (move biggie tunnel hall_beta)
+20.0: (start_earthquake)
+21.0: (fly bee cryo_chamber tunnel)
+22.0: (fly bee tunnel pod_pickup)
+23.0: (unseal biggie)
+24.0: (pickup_sensitive_artifact biggie artifact_4 pod_2 hall_beta)
+25.0: (seal biggie)
+26.0: (move biggie hall_beta tunnel)
+27.0: (move biggie tunnel hall_alpha)
+28.0: (fly bee pod_pickup tunnel)
+29.0: (fly bee tunnel hall_beta)
+30.0: (unseal biggie)
+31.0: (safe_drop_seismic_sensitive_artifact biggie artifact_4 pod_2 hall_alpha)
+32.0: (pickup_sensitive_artifact biggie artifact_2 pod_2 hall_alpha)
+33.0: (seal biggie)
+34.0: (move biggie hall_alpha tunnel)
+35.0: (move biggie tunnel stasis_lab)
+36.0: (unseal biggie)
+37.0: (safe_drop_thermosensitive_artifact biggie artifact_2 pod_2 stasis_lab)
+38.0: (seal biggie)
+39.0: (move biggie stasis_lab tunnel)
+40.0: (move biggie tunnel hall_alpha)
+41.0: (stop_earthquake)
+42.0: (unseal biggie)
+43.0: (pickup_standard_artifact biggie artifact_1 hall_alpha)
+44.0: (seal biggie)
+45.0: (move biggie hall_alpha tunnel)
+46.0: (move biggie tunnel cryo_chamber)
+47.0: (unseal biggie)
+48.0: (drop_standard_artifact biggie artifact_1 cryo_chamber)
+
+Plan-Length:49
+Metric (Search):49.0
+Planning Time (msec): 299531
+Heuristic Time (msec): 295963
+Search Time (msec): 299529
+Expanded Nodes:199705
+States Evaluated:530331
+Number of Dead-Ends detected:0
+Number of Duplicates detected:655624
+
+Execution time: 299.96 seconds
+Exit status: 0
