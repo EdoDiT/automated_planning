@@ -1,0 +1,65 @@
+
+
+NUMERIC_THREATS_MODE: 0
+
+; Command line: /root/.planutils/packages/lpg-td/bin/lpg-td -o /project/problem4/interplanetary_museum_domain_4.pddl -f /project/problem4/problem_4.pddl -v off -noout -quality   
+
+
+Parsing domain file:  domain 'INTERPLANETARY_MUSEUM_DOMAIN_4' defined ... done.
+Parsing problem file:  problem 'MARTIAN_MUSEUM_4' defined ... done.
+
+
+WARNING: predicate POD_IS_EMPTY is declared to use unknown or empty type POD
+
+
+WARNING: predicate POD_IS_AVAILABLE is declared to use unknown or empty type POD
+
+
+WARNING: predicate IN is declared to use unknown or empty type POD
+
+
+WARNING: predicate HAS_POD is declared to use unknown or empty type POD
+
+
+warning: parameter ?POD of op DROP_POD has unknown or empty type POD. skipping op
+warning: parameter ?POD of op TAKE_POD has unknown or empty type POD. skipping op
+warning: parameter ?AGENT of op FLY has unknown or empty type DRONE_CURATOR. skipping op
+warning: parameter ?POD of op SAFE_DROP_SEISMIC_AND_THERMO_SENSITIVE_ARTIFACT has unknown or empty type POD. skipping op
+warning: parameter ?POD of op SAFE_DROP_THERMOSENSITIVE_ARTIFACT has unknown or empty type POD. skipping op
+warning: parameter ?POD of op SAFE_DROP_SEISMIC_SENSITIVE_ARTIFACT has unknown or empty type POD. skipping op
+warning: parameter ?POD of op PICKUP_SENSITIVE_ARTIFACT has unknown or empty type POD. skipping op
+warning: parameter ?AGENT of op PICKUP_THERMOSENSITIVE_ARTIFACT has unknown or empty type DRONE_CURATOR. skipping op
+
+Modality: Quality Planner
+
+
+
+
+Plan computed:
+   Time: (ACTION) [action Duration; action Cost]
+ 0.0003: (MOVE CURATOR TUNNEL HALL_ALPHA) [D:4.0000; C:1.0000]
+ 4.0005: (UNSEAL CURATOR) [D:1.0000; C:1.0000]
+ 5.0008: (PICKUP_STANDARD_ARTIFACT CURATOR ARTIFACT_1 HALL_ALPHA) [D:1.0000; C:1.0000]
+ 6.0010: (SEAL CURATOR) [D:1.0000; C:1.0000]
+ 7.0012: (MOVE CURATOR HALL_ALPHA TUNNEL) [D:4.0000; C:1.0000]
+ 11.0015: (MOVE CURATOR TUNNEL CRYO_CHAMBER) [D:4.0000; C:1.0000]
+ 15.0017: (UNSEAL CURATOR) [D:1.0000; C:1.0000]
+ 16.0020: (DROP_STANDARD_ARTIFACT CURATOR ARTIFACT_1 CRYO_CHAMBER) [D:1.0000; C:1.0000]
+
+
+Solution found:
+Total time:      0.76
+Search time:     0.04
+Actions:         8
+Execution cost:  8.00
+Duration:        17.000
+Plan quality:    8.000
+     Plan file:       plan_/project/problem4/problem_4.pddl_1.SOL
+
+
+
+In order to find better solutions, please use option -n.
+
+
+Planner exit status: 0
+Execution time: 0.925925 seconds
