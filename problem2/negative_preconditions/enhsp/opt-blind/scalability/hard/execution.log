@@ -1,0 +1,57 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 81
+|F|:117
+|X|:7
+|A|:307
+|P|:0
+|E|:0
+f(n) = 1.0 (Expanded Nodes: 2, Evaluated States: 19, Time: 0.007) Frontier Size: 17
+f(n) = 2.0 (Expanded Nodes: 20, Evaluated States: 148, Time: 0.027) Frontier Size: 128
+f(n) = 3.0 (Expanded Nodes: 149, Evaluated States: 642, Time: 0.048) Frontier Size: 493
+f(n) = 4.0 (Expanded Nodes: 643, Evaluated States: 1893, Time: 0.078) Frontier Size: 1250
+f(n) = 5.0 (Expanded Nodes: 1894, Evaluated States: 4598, Time: 0.127) Frontier Size: 2704
+f(n) = 6.0 (Expanded Nodes: 4599, Evaluated States: 10171, Time: 0.191) Frontier Size: 5572
+f(n) = 7.0 (Expanded Nodes: 10172, Evaluated States: 21025, Time: 0.314) Frontier Size: 10853
+f(n) = 8.0 (Expanded Nodes: 21026, Evaluated States: 41549, Time: 0.548) Frontier Size: 20523
+f(n) = 9.0 (Expanded Nodes: 41550, Evaluated States: 78992, Time: 0.978) Frontier Size: 37442
+f(n) = 10.0 (Expanded Nodes: 78993, Evaluated States: 143975, Time: 1.783) Frontier Size: 64982
+f(n) = 11.0 (Expanded Nodes: 143976, Evaluated States: 254293, Time: 3.174) Frontier Size: 110317
+f(n) = 12.0 (Expanded Nodes: 254294, Evaluated States: 438431, Time: 5.642) Frontier Size: 184137
+f(n) = 13.0 (Expanded Nodes: 438432, Evaluated States: 739353, Time: 9.988) Frontier Size: 300921
+-------------Time: 10s ; Expanded Nodes: 438890 (Avg-Speed 43889.0 n/s); Evaluated States: 742288
+f(n) = 14.0 (Expanded Nodes: 739354, Evaluated States: 1222214, Time: 16.823) Frontier Size: 482860
+-------------Time: 20s ; Expanded Nodes: 862714 (Avg-Speed 43135.0 n/s); Evaluated States: 1617743
+f(n) = 15.0 (Expanded Nodes: 1222215, Evaluated States: 1977828, Time: 27.812) Frontier Size: 755613
+-------------Time: 30s ; Expanded Nodes: 1327023 (Avg-Speed 44234.0 n/s); Evaluated States: 2294285
+-------------Time: 40s ; Expanded Nodes: 1745742 (Avg-Speed 43643.0 n/s); Evaluated States: 2967301
+f(n) = 16.0 (Expanded Nodes: 1977829, Evaluated States: 3132385, Time: 46.039) Frontier Size: 1154556
+-------------Time: 50s ; Expanded Nodes: 2130169 (Avg-Speed 42603.0 n/s); Evaluated States: 3807133
+-------------Time: 60s ; Expanded Nodes: 2559655 (Avg-Speed 42660.0 n/s); Evaluated States: 4531462
+-------------Time: 70s ; Expanded Nodes: 2983489 (Avg-Speed 42621.0 n/s); Evaluated States: 4835389
+f(n) = 17.0 (Expanded Nodes: 3132386, Evaluated States: 4868809, Time: 73.344) Frontier Size: 1736423
+-------------Time: 80s ; Expanded Nodes: 3389298 (Avg-Speed 42366.0 n/s); Evaluated States: 5903186
+-------------Time: 90s ; Expanded Nodes: 3718253 (Avg-Speed 41313.0 n/s); Evaluated States: 6378590
+-------------Time: 100s ; Expanded Nodes: 4159206 (Avg-Speed 41592.0 n/s); Evaluated States: 6938746
+-------------Time: 111s ; Expanded Nodes: 4305659 (Avg-Speed 38789.0 n/s); Evaluated States: 7084660
+-------------Time: 122s ; Expanded Nodes: 4329374 (Avg-Speed 35486.0 n/s); Evaluated States: 7105794
+-------------Time: 132s ; Expanded Nodes: 4335391 (Avg-Speed 32843.0 n/s); Evaluated States: 7111372
+-------------Time: 142s ; Expanded Nodes: 4340406 (Avg-Speed 30566.0 n/s); Evaluated States: 7115533
+-------------Time: 152s ; Expanded Nodes: 4355841 (Avg-Speed 28656.0 n/s); Evaluated States: 7128947
+-------------Time: 163s ; Expanded Nodes: 4423295 (Avg-Speed 27136.0 n/s); Evaluated States: 7182911
+-------------Time: 174s ; Expanded Nodes: 4429900 (Avg-Speed 25459.0 n/s); Evaluated States: 7188330
+-------------Time: 184s ; Expanded Nodes: 4434938 (Avg-Speed 24102.0 n/s); Evaluated States: 7192378
+-------------Time: 194s ; Expanded Nodes: 4440624 (Avg-Speed 22889.0 n/s); Evaluated States: 7197362
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+	at com.hstairs.ppmajal.PDDLProblem.PDDLState.clone(PDDLState.java:116)
+	at com.hstairs.ppmajal.PDDLProblem.PDDLState.clone(PDDLState.java:39)
+	at com.hstairs.ppmajal.PDDLProblem.PDDLProblem$stateIterator.hasNext(PDDLProblem.java:1453)
+	at com.hstairs.ppmajal.search.WAStar.search(WAStar.java:127)
+	at com.hstairs.ppmajal.PDDLProblem.PDDLPlanner.plan(PDDLPlanner.java:85)
+	at planners.ENHSP.search(ENHSP.java:532)
+	at planners.ENHSP.planning(ENHSP.java:198)
+	at main.main(main.java:31)
+
+Execution time: 206.631 seconds
+Exit status: 1

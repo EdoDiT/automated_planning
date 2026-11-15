@@ -1,0 +1,22 @@
+\begin{table}[htbp]
+\centering
+\caption{Problem 3 (Hierarchical Task Network / HTN Planning) Results comparing PANDA (Progression Search with \texttt{hhRC2(ff)}) and Lilotane (Tree-Rex SAT-based HTN Planner with Glucose4). For PANDA, Expanded/Evaluated/Generated refer to unique visited states, heuristic evaluations, and generated search nodes; HTN Steps is total decomposition length while Plan Len.\ is primitive action count. For Lilotane, Expanded/Evaluated/Generated refer to instantiated positions, instantiated actions, and encoded SAT clauses.}
+\label{tab:problem3_results}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lll rr c rr rrr rr}
+\toprule
+\textbf{Planner} & \textbf{Method} & \textbf{Level} & \textbf{Art.} & \textbf{Rob.} & \textbf{Solved} & \textbf{Search Time (s)} & \textbf{Total Time (s)} & \textbf{Visited / Pos.} & \textbf{Eval. / Inst. Act.} & \textbf{Gen. Nodes / Clauses} & \textbf{HTN / Layer} & \textbf{Primitive Len.} \\
+\midrule
+PANDA & \texttt{progression-rc2-ff} & easy & 3 & 1 & \textbf{Yes} & 28.240 & 38.47 & 755,646 & 1,484,688 & 3,568,787 & 10,515 & 430 \\
+PANDA & \texttt{progression-rc2-ff} & middle & 5 & 2 & \textbf{Yes} & 0.211 & 0.66 & 6,131 & 13,443 & 26,683 & 585 & 31 \\
+PANDA & \texttt{progression-rc2-ff} & hard & 10 & 3 & \textbf{Yes} & 2.840 & 3.40 & 45,776 & 106,153 & 232,363 & 1,933 & 138 \\
+PANDA & \texttt{progression-rc2-ff} & default & 13 & 2 & \textbf{Yes} & 0.620 & 0.62 & 7,349 & 21,100 & 36,319 & 717 & 144 \\
+\midrule
+Lilotane & \texttt{sat-glucose4} & easy & 3 & 1 & \textbf{Yes} & 0.347 & 0.41 & 1,062 & 1,892 & 67,014 & Layer 11 & 38 \\
+Lilotane & \texttt{sat-glucose4} & middle & 5 & 2 & \textbf{Yes} & 1.105 & 1.13 & 1,133 & 2,364 & 143,996 & Layer 11 & 50 \\
+Lilotane & \texttt{sat-glucose4} & hard & 10 & 3 & \textbf{Yes} & 406.128 & 406.18 & 1,973 & 4,464 & 432,508 & Layer 12 & 101 \\
+Lilotane & \texttt{sat-glucose4} & default & 13 & 2 & No (TO) & 283.855 & 283.86 & 1,973 & 4,464 & 459,467 & Layer 12 & --- \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}

@@ -1,0 +1,899 @@
+7 __method_precondition_deploy_one_more_robot[curator]
+8 activate_robot[curator]
+10 __noop
+15 __method_precondition_deploy_one_more_robot[bee]
+16 activate_robot[bee]
+28 __noop
+88 __method_precondition_already_at_destination[bee,pod_pickup]
+89 __method_precondition_already_at_destination[bee,pod_pickup]
+95 __method_precondition_already_at_destination[bee,pod_pickup]
+96 __method_precondition_fetch_pods_from_pod_pickup[bee]
+104 __method_precondition_already_at_destination[bee,pod_pickup]
+113 __method_precondition_already_at_destination[bee,pod_pickup]
+116 __noop
+144 __method_precondition_already_at_destination[bee,pod_pickup]
+145 __method_precondition_already_at_destination[bee,pod_pickup]
+149 __noop
+154 __noop
+163 __method_precondition_already_at_destination[bee,pod_pickup]
+164 __method_precondition_already_at_destination[bee,pod_pickup]
+170 __method_precondition_already_at_destination[bee,pod_pickup]
+171 __method_precondition_fetch_pods_from_pod_pickup[bee]
+179 __method_precondition_already_at_destination[bee,pod_pickup]
+1257 __method_precondition_take_one_pod[bee,pod_1]
+1258 take_pod[bee,pod_1]
+1263 __method_precondition_already_at_destination[bee,pod_pickup]
+1266 __noop
+1275 __method_precondition_already_at_destination[bee,pod_pickup]
+1276 __method_precondition_already_at_destination[bee,pod_pickup]
+1280 __noop
+1284 __noop
+1293 __method_precondition_already_at_destination[bee,pod_pickup]
+1294 __method_precondition_already_at_destination[bee,pod_pickup]
+1298 __noop
+1785 __method_precondition_already_at_destination[bee,pod_pickup]
+1788 __method_precondition_already_at_destination[bee,pod_pickup]
+1789 fly[bee,pod_pickup,tunnel]
+1795 __method_precondition_fly_drone_one_location[bee,tunnel,cryo_chamber]
+1796 fly[bee,tunnel,stasis_lab]
+1807 __method_precondition_flown_at_destination[bee,stasis_lab,stasis_lab]
+1812 __noop
+1816 __noop
+1820 __noop
+1830 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+1831 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+1834 __noop
+1838 __noop
+1848 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+1849 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+1852 __noop
+1856 __noop
+1866 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+1867 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+1870 __noop
+2158 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+2161 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+2162 fly[bee,stasis_lab,tunnel]
+3555 __method_precondition_fly_drone_one_location[bee,tunnel,cryo_chamber]
+3556 fly[bee,tunnel,cryo_chamber]
+3569 __method_precondition_deploy_for_work_once[bee,cryo_chamber]
+3570 fly[bee,cryo_chamber,tunnel]
+3576 __method_precondition_fly_drone_one_location[bee,tunnel,cryo_chamber]
+3577 fly[bee,tunnel,hall_alpha]
+3596 __method_precondition_flown_at_destination[bee,hall_alpha,hall_alpha]
+3601 __noop
+3645 __method_precondition_load_one_standard_more[bee,hall_alpha,artifact_1]
+3646 pickup_standard_artifact[bee,artifact_1,hall_alpha]
+3658 __noop
+20912 __method_precondition_fly_drone_one_location[bee,hall_alpha,tunnel]
+20916 __method_precondition_fly_drone_one_location[bee,hall_alpha,tunnel]
+20917 fly[bee,hall_alpha,tunnel]
+20920 __method_precondition_fly_drone_one_location[bee,tunnel,cryo_chamber]
+20921 fly[bee,tunnel,cryo_chamber]
+20935 __method_precondition_flown_at_destination[bee,cryo_chamber,cryo_chamber]
+21073 __method_precondition_unload_one_standard_more[bee,artifact_1]
+21074 drop_standard_artifact[bee,artifact_1,cryo_chamber]
+21076 __noop
+21080 __noop
+21084 __noop
+21090 __method_precondition_deploy_for_work_once[bee,cryo_chamber]
+21091 __method_precondition_deploy_for_work_once[bee,cryo_chamber]
+21098 __noop
+21804 __method_precondition_deploy_for_work_once[bee,cryo_chamber]
+21810 __method_precondition_deploy_for_work_once[bee,cryo_chamber]
+21811 fly[bee,cryo_chamber,tunnel]
+21817 __method_precondition_fly_drone_one_location[bee,tunnel,cryo_chamber]
+21818 fly[bee,tunnel,hall_alpha]
+21829 __method_precondition_flown_at_destination[bee,hall_alpha,hall_alpha]
+21834 __noop
+21901 __method_precondition_load_one_thermosensitive_more[bee,hall_alpha,artifact_2,pod_1]
+21902 pickup_thermosensitive_artifact[bee,artifact_2,pod_1,hall_alpha]
+21909 __noop
+21913 __noop
+21930 __method_precondition_fly_drone_one_location[bee,hall_alpha,tunnel]
+21931 __method_precondition_fly_drone_one_location[bee,hall_alpha,tunnel]
+21937 __noop
+21941 __noop
+21948 __method_precondition_fly_drone_one_location[bee,hall_alpha,tunnel]
+21949 __method_precondition_fly_drone_one_location[bee,hall_alpha,tunnel]
+21955 __noop
+21959 __noop
+21966 __method_precondition_fly_drone_one_location[bee,hall_alpha,tunnel]
+21967 __method_precondition_fly_drone_one_location[bee,hall_alpha,tunnel]
+21973 __noop
+21977 __noop
+21984 __method_precondition_fly_drone_one_location[bee,hall_alpha,tunnel]
+21985 __method_precondition_fly_drone_one_location[bee,hall_alpha,tunnel]
+21991 __noop
+22850 __method_precondition_fly_drone_one_location[bee,hall_alpha,tunnel]
+22856 __method_precondition_fly_drone_one_location[bee,hall_alpha,tunnel]
+22857 fly[bee,hall_alpha,tunnel]
+22863 __method_precondition_fly_drone_one_location[bee,tunnel,cryo_chamber]
+22864 fly[bee,tunnel,stasis_lab]
+22875 __method_precondition_flown_at_destination[bee,stasis_lab,stasis_lab]
+23201 __method_precondition_unload_one_thermosensitive_more[bee,artifact_2,pod_1]
+23202 safe_drop_thermosensitive_artifact[bee,artifact_2,pod_1,stasis_lab]
+23204 __noop
+23208 __noop
+23212 __noop
+23222 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+23223 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+23226 __noop
+23230 __noop
+23240 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+23241 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+23244 __noop
+23248 __noop
+23258 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+23259 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+23262 __noop
+23266 __noop
+23276 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+23277 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+23280 __noop
+23284 __noop
+23294 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+23295 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+23298 __noop
+23302 __noop
+23312 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+23313 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+23316 __noop
+23320 __noop
+23330 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+23331 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+23334 __noop
+23338 __noop
+23348 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+23349 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+23352 __noop
+23356 __noop
+23366 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+23367 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+23370 __noop
+23374 __noop
+23384 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+23385 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+23388 __noop
+23392 __noop
+23402 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+23403 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+23406 __noop
+23410 __noop
+23420 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+23421 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+23424 __noop
+23428 __noop
+23438 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+23439 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+23442 __noop
+23446 __noop
+23456 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+23457 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+23460 __noop
+23464 __noop
+23474 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+23475 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+23478 __noop
+23570 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+23899 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+23900 fly[bee,stasis_lab,tunnel]
+23906 __method_precondition_fly_drone_one_location[bee,tunnel,cryo_chamber]
+23907 fly[bee,tunnel,hall_alpha]
+23918 __method_precondition_flown_at_destination[bee,hall_alpha,hall_alpha]
+23923 __noop
+23936 __method_precondition_load_one_standard_more[bee,hall_alpha,artifact_3]
+23937 pickup_standard_artifact[bee,artifact_3,hall_alpha]
+23940 __noop
+24597 __method_precondition_fly_drone_one_location[bee,hall_alpha,tunnel]
+24617 __method_precondition_fly_drone_one_location[bee,hall_alpha,tunnel]
+24618 fly[bee,hall_alpha,tunnel]
+24624 __method_precondition_fly_drone_one_location[bee,tunnel,cryo_chamber]
+24625 fly[bee,tunnel,stasis_lab]
+24636 __method_precondition_flown_at_destination[bee,stasis_lab,stasis_lab]
+24943 __method_precondition_unload_one_standard_more[bee,artifact_3]
+24944 drop_standard_artifact[bee,artifact_3,stasis_lab]
+24947 __noop
+24951 __noop
+24955 __noop
+24965 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+24966 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+24969 __noop
+24973 __noop
+24983 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+24984 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+24987 __noop
+24991 __noop
+25001 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+25002 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+25005 __noop
+25009 __noop
+25019 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+25020 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+25023 __noop
+25027 __noop
+25037 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+25038 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+25041 __noop
+25045 __noop
+25055 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+25056 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+25059 __noop
+25063 __noop
+25073 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+25074 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+25077 __noop
+25081 __noop
+25091 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+25092 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+25095 __noop
+25099 __noop
+25109 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+25110 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+25113 __noop
+25117 __noop
+25177 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+25178 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+25181 __noop
+25185 __noop
+25195 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+25196 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+25199 __noop
+25203 __noop
+25213 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+25214 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+25217 __noop
+25672 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+25675 __method_precondition_fly_drone_one_location[bee,stasis_lab,tunnel]
+25676 fly[bee,stasis_lab,tunnel]
+25682 __method_precondition_fly_drone_one_location[bee,tunnel,cryo_chamber]
+25683 fly[bee,tunnel,hall_alpha]
+25694 __method_precondition_flown_at_destination[bee,hall_alpha,hall_alpha]
+25699 __noop
+25749 __method_precondition_load_one_thermosensitive_more[bee,hall_alpha,artifact_5,pod_1]
+25750 pickup_thermosensitive_artifact[bee,artifact_5,pod_1,hall_alpha]
+25754 __noop
+25758 __noop
+25765 __method_precondition_fly_drone_one_location[bee,hall_alpha,tunnel]
+25766 __method_precondition_fly_drone_one_location[bee,hall_alpha,tunnel]
+25772 __noop
+25776 __noop
+25783 __method_precondition_fly_drone_one_location[bee,hall_alpha,tunnel]
+25784 __method_precondition_fly_drone_one_location[bee,hall_alpha,tunnel]
+25790 __noop
+25794 __noop
+25801 __method_precondition_fly_drone_one_location[bee,hall_alpha,tunnel]
+25802 __method_precondition_fly_drone_one_location[bee,hall_alpha,tunnel]
+25808 __noop
+25812 __noop
+25819 __method_precondition_fly_drone_one_location[bee,hall_alpha,tunnel]
+25820 __method_precondition_fly_drone_one_location[bee,hall_alpha,tunnel]
+25826 __noop
+25830 __noop
+25837 __method_precondition_fly_drone_one_location[bee,hall_alpha,tunnel]
+25838 __method_precondition_fly_drone_one_location[bee,hall_alpha,tunnel]
+25844 __noop
+25848 __noop
+25855 __method_precondition_fly_drone_one_location[bee,hall_alpha,tunnel]
+25856 __method_precondition_fly_drone_one_location[bee,hall_alpha,tunnel]
+25862 __noop
+25866 __noop
+25873 __method_precondition_fly_drone_one_location[bee,hall_alpha,tunnel]
+25874 __method_precondition_fly_drone_one_location[bee,hall_alpha,tunnel]
+25880 __noop
+25997 __method_precondition_fly_drone_one_location[bee,hall_alpha,tunnel]
+26326 __method_precondition_fly_drone_one_location[bee,hall_alpha,tunnel]
+26327 fly[bee,hall_alpha,tunnel]
+26330 __method_precondition_fly_drone_one_location[bee,tunnel,cryo_chamber]
+26331 fly[bee,tunnel,cryo_chamber]
+26345 __method_precondition_flown_at_destination[bee,cryo_chamber,cryo_chamber]
+26666 __method_precondition_unload_one_thermosensitive_more[bee,artifact_5,pod_1]
+26667 safe_drop_thermosensitive_artifact[bee,artifact_5,pod_1,cryo_chamber]
+26670 __noop
+26674 __noop
+26678 __noop
+26681 __noop
+26680 make_robot_work[bee] -> finish_work 26681
+26677 conduct_tour[bee] -> finish_tour 26678
+26673 load_phase[bee,cryo_chamber] -> finish_loading 26674
+26669 unload_phase[bee,cryo_chamber] -> finish_unloading 26670
+26665 unload_one_thermosensitive_more_splitted_9[bee,cryo_chamber] -> _splitting_method_unload_one_thermosensitive_more_splitted_9 26666 26667
+26352 unload_phase[bee,cryo_chamber] -> unload_one_thermosensitive_more 26665 26669
+26344 move_robot[bee,cryo_chamber,cryo_chamber] -> flown_at_destination 26345
+26329 move_robot[bee,tunnel,cryo_chamber] -> fly_drone_one_location 26330 26331 26344
+26325 move_robot[bee,hall_alpha,cryo_chamber] -> fly_drone_one_location 26326 26327 26329
+25996 robot_travel[bee,cryo_chamber] -> drone_curator_travel 25997 26325
+25987 tour_next_stop_splitted_1[bee] -> <_splitting_method_tour_next_stop_splitted_1;service_room[bee,cryo_chamber];do_service_room;1;0,-1,-2> 25996 26352 26673
+25885 conduct_tour[bee] -> tour_next_stop 25987 26677
+25879 prepare_robot[bee,hall_alpha] -> prepare_nothing 25880
+25872 deploy_for_work_once_splitted_6[bee] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[bee,hall_alpha];do_tour_around;1;0,-1,-2,-3> 25873 25874 25879 25885
+25870 make_robot_work[bee] -> deploy_for_work_once 25872 26680
+25865 conduct_tour[bee] -> finish_tour 25866
+25861 prepare_robot[bee,hall_alpha] -> prepare_nothing 25862
+25854 deploy_for_work_once_splitted_6[bee] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[bee,hall_alpha];do_tour_around;1;0,-1,-2,-3> 25855 25856 25861 25865
+25852 make_robot_work[bee] -> deploy_for_work_once 25854 25870
+25847 conduct_tour[bee] -> finish_tour 25848
+25843 prepare_robot[bee,hall_alpha] -> prepare_nothing 25844
+25836 deploy_for_work_once_splitted_6[bee] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[bee,hall_alpha];do_tour_around;1;0,-1,-2,-3> 25837 25838 25843 25847
+25834 make_robot_work[bee] -> deploy_for_work_once 25836 25852
+25829 conduct_tour[bee] -> finish_tour 25830
+25825 prepare_robot[bee,hall_alpha] -> prepare_nothing 25826
+25818 deploy_for_work_once_splitted_6[bee] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[bee,hall_alpha];do_tour_around;1;0,-1,-2,-3> 25819 25820 25825 25829
+25816 make_robot_work[bee] -> deploy_for_work_once 25818 25834
+25811 conduct_tour[bee] -> finish_tour 25812
+25807 prepare_robot[bee,hall_alpha] -> prepare_nothing 25808
+25800 deploy_for_work_once_splitted_6[bee] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[bee,hall_alpha];do_tour_around;1;0,-1,-2,-3> 25801 25802 25807 25811
+25798 make_robot_work[bee] -> deploy_for_work_once 25800 25816
+25793 conduct_tour[bee] -> finish_tour 25794
+25789 prepare_robot[bee,hall_alpha] -> prepare_nothing 25790
+25782 deploy_for_work_once_splitted_6[bee] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[bee,hall_alpha];do_tour_around;1;0,-1,-2,-3> 25783 25784 25789 25793
+25780 make_robot_work[bee] -> deploy_for_work_once 25782 25798
+25775 conduct_tour[bee] -> finish_tour 25776
+25771 prepare_robot[bee,hall_alpha] -> prepare_nothing 25772
+25764 deploy_for_work_once_splitted_6[bee] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[bee,hall_alpha];do_tour_around;1;0,-1,-2,-3> 25765 25766 25771 25775
+25762 make_robot_work[bee] -> deploy_for_work_once 25764 25780
+25757 conduct_tour[bee] -> finish_tour 25758
+25753 load_phase[bee,hall_alpha] -> finish_loading 25754
+25748 load_one_thermosensitive_more_splitted_4[bee,hall_alpha] -> _splitting_method_load_one_thermosensitive_more_splitted_4 25749 25750
+25704 load_phase[bee,hall_alpha] -> load_one_thermosensitive_more 25748 25753
+25698 unload_phase[bee,hall_alpha] -> finish_unloading 25699
+25693 move_robot[bee,hall_alpha,hall_alpha] -> flown_at_destination 25694
+25681 move_robot[bee,tunnel,hall_alpha] -> fly_drone_one_location 25682 25683 25693
+25674 move_robot[bee,stasis_lab,hall_alpha] -> fly_drone_one_location 25675 25676 25681
+25671 robot_travel[bee,hall_alpha] -> drone_curator_travel 25672 25674
+25662 tour_next_stop_splitted_1[bee] -> <_splitting_method_tour_next_stop_splitted_1;service_room[bee,hall_alpha];do_service_room;1;0,-1,-2> 25671 25698 25704
+25222 conduct_tour[bee] -> tour_next_stop 25662 25757
+25216 prepare_robot[bee,stasis_lab] -> prepare_nothing 25217
+25212 deploy_for_work_once_splitted_6[bee] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[bee,stasis_lab];do_tour_around;1;0,-1,-2,-3> 25213 25214 25216 25222
+25207 make_robot_work[bee] -> deploy_for_work_once 25212 25762
+25202 conduct_tour[bee] -> finish_tour 25203
+25198 prepare_robot[bee,stasis_lab] -> prepare_nothing 25199
+25194 deploy_for_work_once_splitted_6[bee] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[bee,stasis_lab];do_tour_around;1;0,-1,-2,-3> 25195 25196 25198 25202
+25189 make_robot_work[bee] -> deploy_for_work_once 25194 25207
+25184 conduct_tour[bee] -> finish_tour 25185
+25180 prepare_robot[bee,stasis_lab] -> prepare_nothing 25181
+25176 deploy_for_work_once_splitted_6[bee] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[bee,stasis_lab];do_tour_around;1;0,-1,-2,-3> 25177 25178 25180 25184
+25121 make_robot_work[bee] -> deploy_for_work_once 25176 25189
+25116 conduct_tour[bee] -> finish_tour 25117
+25112 prepare_robot[bee,stasis_lab] -> prepare_nothing 25113
+25108 deploy_for_work_once_splitted_6[bee] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[bee,stasis_lab];do_tour_around;1;0,-1,-2,-3> 25109 25110 25112 25116
+25103 make_robot_work[bee] -> deploy_for_work_once 25108 25121
+25098 conduct_tour[bee] -> finish_tour 25099
+25094 prepare_robot[bee,stasis_lab] -> prepare_nothing 25095
+25090 deploy_for_work_once_splitted_6[bee] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[bee,stasis_lab];do_tour_around;1;0,-1,-2,-3> 25091 25092 25094 25098
+25085 make_robot_work[bee] -> deploy_for_work_once 25090 25103
+25080 conduct_tour[bee] -> finish_tour 25081
+25076 prepare_robot[bee,stasis_lab] -> prepare_nothing 25077
+25072 deploy_for_work_once_splitted_6[bee] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[bee,stasis_lab];do_tour_around;1;0,-1,-2,-3> 25073 25074 25076 25080
+25067 make_robot_work[bee] -> deploy_for_work_once 25072 25085
+25062 conduct_tour[bee] -> finish_tour 25063
+25058 prepare_robot[bee,stasis_lab] -> prepare_nothing 25059
+25054 deploy_for_work_once_splitted_6[bee] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[bee,stasis_lab];do_tour_around;1;0,-1,-2,-3> 25055 25056 25058 25062
+25049 make_robot_work[bee] -> deploy_for_work_once 25054 25067
+25044 conduct_tour[bee] -> finish_tour 25045
+25040 prepare_robot[bee,stasis_lab] -> prepare_nothing 25041
+25036 deploy_for_work_once_splitted_6[bee] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[bee,stasis_lab];do_tour_around;1;0,-1,-2,-3> 25037 25038 25040 25044
+25031 make_robot_work[bee] -> deploy_for_work_once 25036 25049
+25026 conduct_tour[bee] -> finish_tour 25027
+25022 prepare_robot[bee,stasis_lab] -> prepare_nothing 25023
+25018 deploy_for_work_once_splitted_6[bee] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[bee,stasis_lab];do_tour_around;1;0,-1,-2,-3> 25019 25020 25022 25026
+25013 make_robot_work[bee] -> deploy_for_work_once 25018 25031
+25008 conduct_tour[bee] -> finish_tour 25009
+25004 prepare_robot[bee,stasis_lab] -> prepare_nothing 25005
+25000 deploy_for_work_once_splitted_6[bee] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[bee,stasis_lab];do_tour_around;1;0,-1,-2,-3> 25001 25002 25004 25008
+24995 make_robot_work[bee] -> deploy_for_work_once 25000 25013
+24990 conduct_tour[bee] -> finish_tour 24991
+24986 prepare_robot[bee,stasis_lab] -> prepare_nothing 24987
+24982 deploy_for_work_once_splitted_6[bee] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[bee,stasis_lab];do_tour_around;1;0,-1,-2,-3> 24983 24984 24986 24990
+24977 make_robot_work[bee] -> deploy_for_work_once 24982 24995
+24972 conduct_tour[bee] -> finish_tour 24973
+24968 prepare_robot[bee,stasis_lab] -> prepare_nothing 24969
+24964 deploy_for_work_once_splitted_6[bee] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[bee,stasis_lab];do_tour_around;1;0,-1,-2,-3> 24965 24966 24968 24972
+24959 make_robot_work[bee] -> deploy_for_work_once 24964 24977
+24954 conduct_tour[bee] -> finish_tour 24955
+24950 load_phase[bee,stasis_lab] -> finish_loading 24951
+24946 unload_phase[bee,stasis_lab] -> finish_unloading 24947
+24942 unload_one_standard_more_splitted_8[bee,stasis_lab] -> _splitting_method_unload_one_standard_more_splitted_8 24943 24944
+24642 unload_phase[bee,stasis_lab] -> unload_one_standard_more 24942 24946
+24635 move_robot[bee,stasis_lab,stasis_lab] -> flown_at_destination 24636
+24623 move_robot[bee,tunnel,stasis_lab] -> fly_drone_one_location 24624 24625 24635
+24616 move_robot[bee,hall_alpha,stasis_lab] -> fly_drone_one_location 24617 24618 24623
+24596 robot_travel[bee,stasis_lab] -> drone_curator_travel 24597 24616
+24256 tour_next_stop_splitted_1[bee] -> <_splitting_method_tour_next_stop_splitted_1;service_room[bee,stasis_lab];do_service_room;1;0,-1,-2> 24596 24642 24950
+23945 conduct_tour[bee] -> tour_next_stop 24256 24954
+23939 load_phase[bee,hall_alpha] -> finish_loading 23940
+23935 load_one_standard_more_splitted_3[bee,hall_alpha] -> _splitting_method_load_one_standard_more_splitted_3 23936 23937
+23927 load_phase[bee,hall_alpha] -> load_one_standard_more 23935 23939
+23922 unload_phase[bee,hall_alpha] -> finish_unloading 23923
+23917 move_robot[bee,hall_alpha,hall_alpha] -> flown_at_destination 23918
+23905 move_robot[bee,tunnel,hall_alpha] -> fly_drone_one_location 23906 23907 23917
+23898 move_robot[bee,stasis_lab,hall_alpha] -> fly_drone_one_location 23899 23900 23905
+23569 robot_travel[bee,hall_alpha] -> drone_curator_travel 23570 23898
+23560 tour_next_stop_splitted_1[bee] -> <_splitting_method_tour_next_stop_splitted_1;service_room[bee,hall_alpha];do_service_room;1;0,-1,-2> 23569 23922 23927
+23483 conduct_tour[bee] -> tour_next_stop 23560 23945
+23477 prepare_robot[bee,stasis_lab] -> prepare_nothing 23478
+23473 deploy_for_work_once_splitted_6[bee] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[bee,stasis_lab];do_tour_around;1;0,-1,-2,-3> 23474 23475 23477 23483
+23468 make_robot_work[bee] -> deploy_for_work_once 23473 24959
+23463 conduct_tour[bee] -> finish_tour 23464
+23459 prepare_robot[bee,stasis_lab] -> prepare_nothing 23460
+23455 deploy_for_work_once_splitted_6[bee] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[bee,stasis_lab];do_tour_around;1;0,-1,-2,-3> 23456 23457 23459 23463
+23450 make_robot_work[bee] -> deploy_for_work_once 23455 23468
+23445 conduct_tour[bee] -> finish_tour 23446
+23441 prepare_robot[bee,stasis_lab] -> prepare_nothing 23442
+23437 deploy_for_work_once_splitted_6[bee] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[bee,stasis_lab];do_tour_around;1;0,-1,-2,-3> 23438 23439 23441 23445
+23432 make_robot_work[bee] -> deploy_for_work_once 23437 23450
+23427 conduct_tour[bee] -> finish_tour 23428
+23423 prepare_robot[bee,stasis_lab] -> prepare_nothing 23424
+23419 deploy_for_work_once_splitted_6[bee] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[bee,stasis_lab];do_tour_around;1;0,-1,-2,-3> 23420 23421 23423 23427
+23414 make_robot_work[bee] -> deploy_for_work_once 23419 23432
+23409 conduct_tour[bee] -> finish_tour 23410
+23405 prepare_robot[bee,stasis_lab] -> prepare_nothing 23406
+23401 deploy_for_work_once_splitted_6[bee] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[bee,stasis_lab];do_tour_around;1;0,-1,-2,-3> 23402 23403 23405 23409
+23396 make_robot_work[bee] -> deploy_for_work_once 23401 23414
+23391 conduct_tour[bee] -> finish_tour 23392
+23387 prepare_robot[bee,stasis_lab] -> prepare_nothing 23388
+23383 deploy_for_work_once_splitted_6[bee] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[bee,stasis_lab];do_tour_around;1;0,-1,-2,-3> 23384 23385 23387 23391
+23378 make_robot_work[bee] -> deploy_for_work_once 23383 23396
+23373 conduct_tour[bee] -> finish_tour 23374
+23369 prepare_robot[bee,stasis_lab] -> prepare_nothing 23370
+23365 deploy_for_work_once_splitted_6[bee] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[bee,stasis_lab];do_tour_around;1;0,-1,-2,-3> 23366 23367 23369 23373
+23360 make_robot_work[bee] -> deploy_for_work_once 23365 23378
+23355 conduct_tour[bee] -> finish_tour 23356
+23351 prepare_robot[bee,stasis_lab] -> prepare_nothing 23352
+23347 deploy_for_work_once_splitted_6[bee] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[bee,stasis_lab];do_tour_around;1;0,-1,-2,-3> 23348 23349 23351 23355
+23342 make_robot_work[bee] -> deploy_for_work_once 23347 23360
+23337 conduct_tour[bee] -> finish_tour 23338
+23333 prepare_robot[bee,stasis_lab] -> prepare_nothing 23334
+23329 deploy_for_work_once_splitted_6[bee] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[bee,stasis_lab];do_tour_around;1;0,-1,-2,-3> 23330 23331 23333 23337
+23324 make_robot_work[bee] -> deploy_for_work_once 23329 23342
+23319 conduct_tour[bee] -> finish_tour 23320
+23315 prepare_robot[bee,stasis_lab] -> prepare_nothing 23316
+23311 deploy_for_work_once_splitted_6[bee] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[bee,stasis_lab];do_tour_around;1;0,-1,-2,-3> 23312 23313 23315 23319
+23306 make_robot_work[bee] -> deploy_for_work_once 23311 23324
+23301 conduct_tour[bee] -> finish_tour 23302
+23297 prepare_robot[bee,stasis_lab] -> prepare_nothing 23298
+23293 deploy_for_work_once_splitted_6[bee] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[bee,stasis_lab];do_tour_around;1;0,-1,-2,-3> 23294 23295 23297 23301
+23288 make_robot_work[bee] -> deploy_for_work_once 23293 23306
+23283 conduct_tour[bee] -> finish_tour 23284
+23279 prepare_robot[bee,stasis_lab] -> prepare_nothing 23280
+23275 deploy_for_work_once_splitted_6[bee] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[bee,stasis_lab];do_tour_around;1;0,-1,-2,-3> 23276 23277 23279 23283
+23270 make_robot_work[bee] -> deploy_for_work_once 23275 23288
+23265 conduct_tour[bee] -> finish_tour 23266
+23261 prepare_robot[bee,stasis_lab] -> prepare_nothing 23262
+23257 deploy_for_work_once_splitted_6[bee] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[bee,stasis_lab];do_tour_around;1;0,-1,-2,-3> 23258 23259 23261 23265
+23252 make_robot_work[bee] -> deploy_for_work_once 23257 23270
+23247 conduct_tour[bee] -> finish_tour 23248
+23243 prepare_robot[bee,stasis_lab] -> prepare_nothing 23244
+23239 deploy_for_work_once_splitted_6[bee] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[bee,stasis_lab];do_tour_around;1;0,-1,-2,-3> 23240 23241 23243 23247
+23234 make_robot_work[bee] -> deploy_for_work_once 23239 23252
+23229 conduct_tour[bee] -> finish_tour 23230
+23225 prepare_robot[bee,stasis_lab] -> prepare_nothing 23226
+23221 deploy_for_work_once_splitted_6[bee] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[bee,stasis_lab];do_tour_around;1;0,-1,-2,-3> 23222 23223 23225 23229
+23216 make_robot_work[bee] -> deploy_for_work_once 23221 23234
+23211 conduct_tour[bee] -> finish_tour 23212
+23207 load_phase[bee,stasis_lab] -> finish_loading 23208
+23203 unload_phase[bee,stasis_lab] -> finish_unloading 23204
+23200 unload_one_thermosensitive_more_splitted_9[bee,stasis_lab] -> _splitting_method_unload_one_thermosensitive_more_splitted_9 23201 23202
+22882 unload_phase[bee,stasis_lab] -> unload_one_thermosensitive_more 23200 23203
+22874 move_robot[bee,stasis_lab,stasis_lab] -> flown_at_destination 22875
+22862 move_robot[bee,tunnel,stasis_lab] -> fly_drone_one_location 22863 22864 22874
+22855 move_robot[bee,hall_alpha,stasis_lab] -> fly_drone_one_location 22856 22857 22862
+22849 robot_travel[bee,stasis_lab] -> drone_curator_travel 22850 22855
+22620 tour_next_stop_splitted_1[bee] -> <_splitting_method_tour_next_stop_splitted_1;service_room[bee,stasis_lab];do_service_room;1;0,-1,-2> 22849 22882 23207
+21996 conduct_tour[bee] -> tour_next_stop 22620 23211
+21990 prepare_robot[bee,hall_alpha] -> prepare_nothing 21991
+21983 deploy_for_work_once_splitted_6[bee] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[bee,hall_alpha];do_tour_around;1;0,-1,-2,-3> 21984 21985 21990 21996
+21981 make_robot_work[bee] -> deploy_for_work_once 21983 23216
+21976 conduct_tour[bee] -> finish_tour 21977
+21972 prepare_robot[bee,hall_alpha] -> prepare_nothing 21973
+21965 deploy_for_work_once_splitted_6[bee] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[bee,hall_alpha];do_tour_around;1;0,-1,-2,-3> 21966 21967 21972 21976
+21963 make_robot_work[bee] -> deploy_for_work_once 21965 21981
+21958 conduct_tour[bee] -> finish_tour 21959
+21954 prepare_robot[bee,hall_alpha] -> prepare_nothing 21955
+21947 deploy_for_work_once_splitted_6[bee] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[bee,hall_alpha];do_tour_around;1;0,-1,-2,-3> 21948 21949 21954 21958
+21945 make_robot_work[bee] -> deploy_for_work_once 21947 21963
+21940 conduct_tour[bee] -> finish_tour 21941
+21936 prepare_robot[bee,hall_alpha] -> prepare_nothing 21937
+21929 deploy_for_work_once_splitted_6[bee] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[bee,hall_alpha];do_tour_around;1;0,-1,-2,-3> 21930 21931 21936 21940
+21917 make_robot_work[bee] -> deploy_for_work_once 21929 21945
+21912 conduct_tour[bee] -> finish_tour 21913
+21908 load_phase[bee,hall_alpha] -> finish_loading 21909
+21900 load_one_thermosensitive_more_splitted_4[bee,hall_alpha] -> _splitting_method_load_one_thermosensitive_more_splitted_4 21901 21902
+21839 load_phase[bee,hall_alpha] -> load_one_thermosensitive_more 21900 21908
+21833 unload_phase[bee,hall_alpha] -> finish_unloading 21834
+21828 move_robot[bee,hall_alpha,hall_alpha] -> flown_at_destination 21829
+21816 move_robot[bee,tunnel,hall_alpha] -> fly_drone_one_location 21817 21818 21828
+21809 move_robot[bee,cryo_chamber,hall_alpha] -> fly_drone_one_location 21810 21811 21816
+21803 robot_travel[bee,hall_alpha] -> drone_curator_travel 21804 21809
+21797 tour_next_stop_splitted_1[bee] -> <_splitting_method_tour_next_stop_splitted_1;service_room[bee,hall_alpha];do_service_room;1;0,-1,-2> 21803 21833 21839
+21103 conduct_tour[bee] -> tour_next_stop 21797 21912
+21097 prepare_robot[bee,cryo_chamber] -> prepare_nothing 21098
+21089 deploy_for_work_once_splitted_6[bee] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[bee,cryo_chamber];do_tour_around;1;0,-1,-2,-3> 21090 21091 21097 21103
+21088 make_robot_work[bee] -> deploy_for_work_once 21089 21917
+21083 conduct_tour[bee] -> finish_tour 21084
+21079 load_phase[bee,cryo_chamber] -> finish_loading 21080
+21075 unload_phase[bee,cryo_chamber] -> finish_unloading 21076
+21072 unload_one_standard_more_splitted_8[bee,cryo_chamber] -> _splitting_method_unload_one_standard_more_splitted_8 21073 21074
+20941 unload_phase[bee,cryo_chamber] -> unload_one_standard_more 21072 21075
+20934 move_robot[bee,cryo_chamber,cryo_chamber] -> flown_at_destination 20935
+20919 move_robot[bee,tunnel,cryo_chamber] -> fly_drone_one_location 20920 20921 20934
+20915 move_robot[bee,hall_alpha,cryo_chamber] -> fly_drone_one_location 20916 20917 20919
+20911 robot_travel[bee,cryo_chamber] -> drone_curator_travel 20912 20915
+8786 tour_next_stop_splitted_1[bee] -> <_splitting_method_tour_next_stop_splitted_1;service_room[bee,cryo_chamber];do_service_room;1;0,-1,-2> 20911 20941 21079
+3663 conduct_tour[bee] -> tour_next_stop 8786 21083
+3657 load_phase[bee,hall_alpha] -> finish_loading 3658
+3644 load_one_standard_more_splitted_3[bee,hall_alpha] -> _splitting_method_load_one_standard_more_splitted_3 3645 3646
+3605 load_phase[bee,hall_alpha] -> load_one_standard_more 3644 3657
+3600 unload_phase[bee,hall_alpha] -> finish_unloading 3601
+3595 move_robot[bee,hall_alpha,hall_alpha] -> flown_at_destination 3596
+3575 move_robot[bee,tunnel,hall_alpha] -> fly_drone_one_location 3576 3577 3595
+3568 move_robot[bee,cryo_chamber,hall_alpha] -> fly_drone_one_location 3569 3570 3575
+3554 move_robot[bee,tunnel,hall_alpha] -> fly_drone_one_location 3555 3556 3568
+2160 move_robot[bee,stasis_lab,hall_alpha] -> fly_drone_one_location 2161 2162 3554
+2157 robot_travel[bee,hall_alpha] -> drone_curator_travel 2158 2160
+2148 tour_next_stop_splitted_1[bee] -> <_splitting_method_tour_next_stop_splitted_1;service_room[bee,hall_alpha];do_service_room;1;0,-1,-2> 2157 3600 3605
+1875 conduct_tour[bee] -> tour_next_stop 2148 3663
+1869 prepare_robot[bee,stasis_lab] -> prepare_nothing 1870
+1865 deploy_for_work_once_splitted_6[bee] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[bee,stasis_lab];do_tour_around;1;0,-1,-2,-3> 1866 1867 1869 1875
+1860 make_robot_work[bee] -> deploy_for_work_once 1865 21088
+1855 conduct_tour[bee] -> finish_tour 1856
+1851 prepare_robot[bee,stasis_lab] -> prepare_nothing 1852
+1847 deploy_for_work_once_splitted_6[bee] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[bee,stasis_lab];do_tour_around;1;0,-1,-2,-3> 1848 1849 1851 1855
+1842 make_robot_work[bee] -> deploy_for_work_once 1847 1860
+1837 conduct_tour[bee] -> finish_tour 1838
+1833 prepare_robot[bee,stasis_lab] -> prepare_nothing 1834
+1829 deploy_for_work_once_splitted_6[bee] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[bee,stasis_lab];do_tour_around;1;0,-1,-2,-3> 1830 1831 1833 1837
+1824 make_robot_work[bee] -> deploy_for_work_once 1829 1842
+1819 conduct_tour[bee] -> finish_tour 1820
+1815 load_phase[bee,stasis_lab] -> finish_loading 1816
+1811 unload_phase[bee,stasis_lab] -> finish_unloading 1812
+1806 move_robot[bee,stasis_lab,stasis_lab] -> flown_at_destination 1807
+1794 move_robot[bee,tunnel,stasis_lab] -> fly_drone_one_location 1795 1796 1806
+1787 move_robot[bee,pod_pickup,stasis_lab] -> fly_drone_one_location 1788 1789 1794
+1784 robot_travel[bee,stasis_lab] -> drone_curator_travel 1785 1787
+1777 tour_next_stop_splitted_1[bee] -> <_splitting_method_tour_next_stop_splitted_1;service_room[bee,stasis_lab];do_service_room;1;0,-1,-2> 1784 1811 1815
+1303 conduct_tour[bee] -> tour_next_stop 1777 1819
+1297 prepare_robot[bee,pod_pickup] -> prepare_nothing 1298
+1292 deploy_for_work_once_splitted_6[bee] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[bee,pod_pickup];do_tour_around;1;0,-1,-2,-3> 1293 1294 1297 1303
+1288 make_robot_work[bee] -> deploy_for_work_once 1292 1824
+1283 conduct_tour[bee] -> finish_tour 1284
+1279 prepare_robot[bee,pod_pickup] -> prepare_nothing 1280
+1274 deploy_for_work_once_splitted_6[bee] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[bee,pod_pickup];do_tour_around;1;0,-1,-2,-3> 1275 1276 1279 1283
+1270 make_robot_work[bee] -> deploy_for_work_once 1274 1288
+1265 conduct_tour[bee] -> finish_tour 1266
+1262 take_pods[bee] -> finish_taking_pods 1263
+1256 take_one_pod_splitted_7[bee,pod_pickup,pod_pickup] -> _splitting_method_take_one_pod_splitted_7 1257 1258
+189 take_pods[bee] -> take_one_pod 1256 1262
+178 robot_travel[bee,pod_pickup] -> already_at_destination 179
+169 prepare_robot[bee,pod_pickup] -> <prepare_pods;fetch_pods[bee];fetch_pods_from_pod_pickup;1;0,-1,-2,-3> 170 171 178 189
+162 deploy_for_work_once_splitted_6[bee] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[bee,pod_pickup];do_tour_around;1;0,-1,-2,-3> 163 164 169 1265
+158 make_robot_work[bee] -> deploy_for_work_once 162 1270
+153 conduct_tour[bee] -> finish_tour 154
+148 prepare_robot[bee,pod_pickup] -> prepare_nothing 149
+143 deploy_for_work_once_splitted_6[bee] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[bee,pod_pickup];do_tour_around;1;0,-1,-2,-3> 144 145 148 153
+120 make_robot_work[bee] -> deploy_for_work_once 143 158
+115 conduct_tour[bee] -> finish_tour 116
+112 take_pods[bee] -> finish_taking_pods 113
+103 robot_travel[bee,pod_pickup] -> already_at_destination 104
+94 prepare_robot[bee,pod_pickup] -> <prepare_pods;fetch_pods[bee];fetch_pods_from_pod_pickup;1;0,-1,-2,-3> 95 96 103 112
+87 deploy_for_work_once_splitted_6[bee] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[bee,pod_pickup];do_tour_around;1;0,-1,-2,-3> 88 89 94 115
+33 make_robot_work[bee] -> deploy_for_work_once 87 120
+27 manage_workforce[] -> finish_deployment 28
+14 manage_workforce[] -> deploy_one_more_robot 15 16 27 33
+9 make_robot_work[curator] -> finish_work 10
+6 manage_workforce[] -> deploy_one_more_robot 7 8 14 9
+0 __top[] -> <__top_method;solve_problem[];run_main_task;0;-1> 6
+8 activate_robot curator
+16 activate_robot bee
+1258 take_pod bee pod_1
+1789 fly bee pod_pickup tunnel
+1796 fly bee tunnel stasis_lab
+2162 fly bee stasis_lab tunnel
+3556 fly bee tunnel cryo_chamber
+3570 fly bee cryo_chamber tunnel
+3577 fly bee tunnel hall_alpha
+3646 pickup_standard_artifact bee artifact_1 hall_alpha
+20917 fly bee hall_alpha tunnel
+20921 fly bee tunnel cryo_chamber
+21074 drop_standard_artifact bee artifact_1 cryo_chamber
+21811 fly bee cryo_chamber tunnel
+21818 fly bee tunnel hall_alpha
+21902 pickup_thermosensitive_artifact bee artifact_2 pod_1 hall_alpha
+22857 fly bee hall_alpha tunnel
+22864 fly bee tunnel stasis_lab
+23202 safe_drop_thermosensitive_artifact bee artifact_2 pod_1 stasis_lab
+23900 fly bee stasis_lab tunnel
+23907 fly bee tunnel hall_alpha
+23937 pickup_standard_artifact bee artifact_3 hall_alpha
+24618 fly bee hall_alpha tunnel
+24625 fly bee tunnel stasis_lab
+24944 drop_standard_artifact bee artifact_3 stasis_lab
+25676 fly bee stasis_lab tunnel
+25683 fly bee tunnel hall_alpha
+25750 pickup_thermosensitive_artifact bee artifact_5 pod_1 hall_alpha
+26327 fly bee hall_alpha tunnel
+26331 fly bee tunnel cryo_chamber
+26667 safe_drop_thermosensitive_artifact bee artifact_5 pod_1 cryo_chamber
+6 manage_workforce  -> deploy_one_more_robot 8 14 9
+9 make_robot_work curator -> finish_work
+14 manage_workforce  -> deploy_one_more_robot 16 27 33
+27 manage_workforce  -> finish_deployment
+33 make_robot_work bee -> deploy_for_work_once 26683 120
+94 prepare_robot bee pod_pickup -> prepare_pods 26684
+103 robot_travel bee pod_pickup -> already_at_destination
+112 take_pods bee -> finish_taking_pods
+115 conduct_tour bee -> finish_tour
+120 make_robot_work bee -> deploy_for_work_once 26685 158
+148 prepare_robot bee pod_pickup -> prepare_nothing
+153 conduct_tour bee -> finish_tour
+158 make_robot_work bee -> deploy_for_work_once 26686 1270
+169 prepare_robot bee pod_pickup -> prepare_pods 26687
+178 robot_travel bee pod_pickup -> already_at_destination
+189 take_pods bee -> take_one_pod 1258 1262
+1262 take_pods bee -> finish_taking_pods
+1265 conduct_tour bee -> finish_tour
+1270 make_robot_work bee -> deploy_for_work_once 26688 1288
+1279 prepare_robot bee pod_pickup -> prepare_nothing
+1283 conduct_tour bee -> finish_tour
+1288 make_robot_work bee -> deploy_for_work_once 26689 1824
+1297 prepare_robot bee pod_pickup -> prepare_nothing
+1303 conduct_tour bee -> tour_next_stop 1784 26690 1819
+1784 robot_travel bee stasis_lab -> drone_curator_travel 1787
+1787 move_robot bee pod_pickup stasis_lab -> fly_drone_one_location 1789 1794
+1794 move_robot bee tunnel stasis_lab -> fly_drone_one_location 1796 1806
+1806 move_robot bee stasis_lab stasis_lab -> flown_at_destination
+1811 unload_phase bee stasis_lab -> finish_unloading
+1815 load_phase bee stasis_lab -> finish_loading
+1819 conduct_tour bee -> finish_tour
+1824 make_robot_work bee -> deploy_for_work_once 26691 1842
+1833 prepare_robot bee stasis_lab -> prepare_nothing
+1837 conduct_tour bee -> finish_tour
+1842 make_robot_work bee -> deploy_for_work_once 26692 1860
+1851 prepare_robot bee stasis_lab -> prepare_nothing
+1855 conduct_tour bee -> finish_tour
+1860 make_robot_work bee -> deploy_for_work_once 26693 21088
+1869 prepare_robot bee stasis_lab -> prepare_nothing
+1875 conduct_tour bee -> tour_next_stop 2157 26694 3663
+2157 robot_travel bee hall_alpha -> drone_curator_travel 2160
+2160 move_robot bee stasis_lab hall_alpha -> fly_drone_one_location 2162 3554
+3554 move_robot bee tunnel hall_alpha -> fly_drone_one_location 3556 3568
+3568 move_robot bee cryo_chamber hall_alpha -> fly_drone_one_location 3570 3575
+3575 move_robot bee tunnel hall_alpha -> fly_drone_one_location 3577 3595
+3595 move_robot bee hall_alpha hall_alpha -> flown_at_destination
+3600 unload_phase bee hall_alpha -> finish_unloading
+3605 load_phase bee hall_alpha -> load_one_standard_more 3646 3657
+3657 load_phase bee hall_alpha -> finish_loading
+3663 conduct_tour bee -> tour_next_stop 20911 26695 21083
+20911 robot_travel bee cryo_chamber -> drone_curator_travel 20915
+20915 move_robot bee hall_alpha cryo_chamber -> fly_drone_one_location 20917 20919
+20919 move_robot bee tunnel cryo_chamber -> fly_drone_one_location 20921 20934
+20934 move_robot bee cryo_chamber cryo_chamber -> flown_at_destination
+20941 unload_phase bee cryo_chamber -> unload_one_standard_more 21074 21075
+21075 unload_phase bee cryo_chamber -> finish_unloading
+21079 load_phase bee cryo_chamber -> finish_loading
+21083 conduct_tour bee -> finish_tour
+21088 make_robot_work bee -> deploy_for_work_once 26696 21917
+21097 prepare_robot bee cryo_chamber -> prepare_nothing
+21103 conduct_tour bee -> tour_next_stop 21803 26697 21912
+21803 robot_travel bee hall_alpha -> drone_curator_travel 21809
+21809 move_robot bee cryo_chamber hall_alpha -> fly_drone_one_location 21811 21816
+21816 move_robot bee tunnel hall_alpha -> fly_drone_one_location 21818 21828
+21828 move_robot bee hall_alpha hall_alpha -> flown_at_destination
+21833 unload_phase bee hall_alpha -> finish_unloading
+21839 load_phase bee hall_alpha -> load_one_thermosensitive_more 21902 21908
+21908 load_phase bee hall_alpha -> finish_loading
+21912 conduct_tour bee -> finish_tour
+21917 make_robot_work bee -> deploy_for_work_once 26698 21945
+21936 prepare_robot bee hall_alpha -> prepare_nothing
+21940 conduct_tour bee -> finish_tour
+21945 make_robot_work bee -> deploy_for_work_once 26699 21963
+21954 prepare_robot bee hall_alpha -> prepare_nothing
+21958 conduct_tour bee -> finish_tour
+21963 make_robot_work bee -> deploy_for_work_once 26700 21981
+21972 prepare_robot bee hall_alpha -> prepare_nothing
+21976 conduct_tour bee -> finish_tour
+21981 make_robot_work bee -> deploy_for_work_once 26701 23216
+21990 prepare_robot bee hall_alpha -> prepare_nothing
+21996 conduct_tour bee -> tour_next_stop 22849 26702 23211
+22849 robot_travel bee stasis_lab -> drone_curator_travel 22855
+22855 move_robot bee hall_alpha stasis_lab -> fly_drone_one_location 22857 22862
+22862 move_robot bee tunnel stasis_lab -> fly_drone_one_location 22864 22874
+22874 move_robot bee stasis_lab stasis_lab -> flown_at_destination
+22882 unload_phase bee stasis_lab -> unload_one_thermosensitive_more 23202 23203
+23203 unload_phase bee stasis_lab -> finish_unloading
+23207 load_phase bee stasis_lab -> finish_loading
+23211 conduct_tour bee -> finish_tour
+23216 make_robot_work bee -> deploy_for_work_once 26703 23234
+23225 prepare_robot bee stasis_lab -> prepare_nothing
+23229 conduct_tour bee -> finish_tour
+23234 make_robot_work bee -> deploy_for_work_once 26704 23252
+23243 prepare_robot bee stasis_lab -> prepare_nothing
+23247 conduct_tour bee -> finish_tour
+23252 make_robot_work bee -> deploy_for_work_once 26705 23270
+23261 prepare_robot bee stasis_lab -> prepare_nothing
+23265 conduct_tour bee -> finish_tour
+23270 make_robot_work bee -> deploy_for_work_once 26706 23288
+23279 prepare_robot bee stasis_lab -> prepare_nothing
+23283 conduct_tour bee -> finish_tour
+23288 make_robot_work bee -> deploy_for_work_once 26707 23306
+23297 prepare_robot bee stasis_lab -> prepare_nothing
+23301 conduct_tour bee -> finish_tour
+23306 make_robot_work bee -> deploy_for_work_once 26708 23324
+23315 prepare_robot bee stasis_lab -> prepare_nothing
+23319 conduct_tour bee -> finish_tour
+23324 make_robot_work bee -> deploy_for_work_once 26709 23342
+23333 prepare_robot bee stasis_lab -> prepare_nothing
+23337 conduct_tour bee -> finish_tour
+23342 make_robot_work bee -> deploy_for_work_once 26710 23360
+23351 prepare_robot bee stasis_lab -> prepare_nothing
+23355 conduct_tour bee -> finish_tour
+23360 make_robot_work bee -> deploy_for_work_once 26711 23378
+23369 prepare_robot bee stasis_lab -> prepare_nothing
+23373 conduct_tour bee -> finish_tour
+23378 make_robot_work bee -> deploy_for_work_once 26712 23396
+23387 prepare_robot bee stasis_lab -> prepare_nothing
+23391 conduct_tour bee -> finish_tour
+23396 make_robot_work bee -> deploy_for_work_once 26713 23414
+23405 prepare_robot bee stasis_lab -> prepare_nothing
+23409 conduct_tour bee -> finish_tour
+23414 make_robot_work bee -> deploy_for_work_once 26714 23432
+23423 prepare_robot bee stasis_lab -> prepare_nothing
+23427 conduct_tour bee -> finish_tour
+23432 make_robot_work bee -> deploy_for_work_once 26715 23450
+23441 prepare_robot bee stasis_lab -> prepare_nothing
+23445 conduct_tour bee -> finish_tour
+23450 make_robot_work bee -> deploy_for_work_once 26716 23468
+23459 prepare_robot bee stasis_lab -> prepare_nothing
+23463 conduct_tour bee -> finish_tour
+23468 make_robot_work bee -> deploy_for_work_once 26717 24959
+23477 prepare_robot bee stasis_lab -> prepare_nothing
+23483 conduct_tour bee -> tour_next_stop 23569 26718 23945
+23569 robot_travel bee hall_alpha -> drone_curator_travel 23898
+23898 move_robot bee stasis_lab hall_alpha -> fly_drone_one_location 23900 23905
+23905 move_robot bee tunnel hall_alpha -> fly_drone_one_location 23907 23917
+23917 move_robot bee hall_alpha hall_alpha -> flown_at_destination
+23922 unload_phase bee hall_alpha -> finish_unloading
+23927 load_phase bee hall_alpha -> load_one_standard_more 23937 23939
+23939 load_phase bee hall_alpha -> finish_loading
+23945 conduct_tour bee -> tour_next_stop 24596 26719 24954
+24596 robot_travel bee stasis_lab -> drone_curator_travel 24616
+24616 move_robot bee hall_alpha stasis_lab -> fly_drone_one_location 24618 24623
+24623 move_robot bee tunnel stasis_lab -> fly_drone_one_location 24625 24635
+24635 move_robot bee stasis_lab stasis_lab -> flown_at_destination
+24642 unload_phase bee stasis_lab -> unload_one_standard_more 24944 24946
+24946 unload_phase bee stasis_lab -> finish_unloading
+24950 load_phase bee stasis_lab -> finish_loading
+24954 conduct_tour bee -> finish_tour
+24959 make_robot_work bee -> deploy_for_work_once 26720 24977
+24968 prepare_robot bee stasis_lab -> prepare_nothing
+24972 conduct_tour bee -> finish_tour
+24977 make_robot_work bee -> deploy_for_work_once 26721 24995
+24986 prepare_robot bee stasis_lab -> prepare_nothing
+24990 conduct_tour bee -> finish_tour
+24995 make_robot_work bee -> deploy_for_work_once 26722 25013
+25004 prepare_robot bee stasis_lab -> prepare_nothing
+25008 conduct_tour bee -> finish_tour
+25013 make_robot_work bee -> deploy_for_work_once 26723 25031
+25022 prepare_robot bee stasis_lab -> prepare_nothing
+25026 conduct_tour bee -> finish_tour
+25031 make_robot_work bee -> deploy_for_work_once 26724 25049
+25040 prepare_robot bee stasis_lab -> prepare_nothing
+25044 conduct_tour bee -> finish_tour
+25049 make_robot_work bee -> deploy_for_work_once 26725 25067
+25058 prepare_robot bee stasis_lab -> prepare_nothing
+25062 conduct_tour bee -> finish_tour
+25067 make_robot_work bee -> deploy_for_work_once 26726 25085
+25076 prepare_robot bee stasis_lab -> prepare_nothing
+25080 conduct_tour bee -> finish_tour
+25085 make_robot_work bee -> deploy_for_work_once 26727 25103
+25094 prepare_robot bee stasis_lab -> prepare_nothing
+25098 conduct_tour bee -> finish_tour
+25103 make_robot_work bee -> deploy_for_work_once 26728 25121
+25112 prepare_robot bee stasis_lab -> prepare_nothing
+25116 conduct_tour bee -> finish_tour
+25121 make_robot_work bee -> deploy_for_work_once 26729 25189
+25180 prepare_robot bee stasis_lab -> prepare_nothing
+25184 conduct_tour bee -> finish_tour
+25189 make_robot_work bee -> deploy_for_work_once 26730 25207
+25198 prepare_robot bee stasis_lab -> prepare_nothing
+25202 conduct_tour bee -> finish_tour
+25207 make_robot_work bee -> deploy_for_work_once 26731 25762
+25216 prepare_robot bee stasis_lab -> prepare_nothing
+25222 conduct_tour bee -> tour_next_stop 25671 26732 25757
+25671 robot_travel bee hall_alpha -> drone_curator_travel 25674
+25674 move_robot bee stasis_lab hall_alpha -> fly_drone_one_location 25676 25681
+25681 move_robot bee tunnel hall_alpha -> fly_drone_one_location 25683 25693
+25693 move_robot bee hall_alpha hall_alpha -> flown_at_destination
+25698 unload_phase bee hall_alpha -> finish_unloading
+25704 load_phase bee hall_alpha -> load_one_thermosensitive_more 25750 25753
+25753 load_phase bee hall_alpha -> finish_loading
+25757 conduct_tour bee -> finish_tour
+25762 make_robot_work bee -> deploy_for_work_once 26733 25780
+25771 prepare_robot bee hall_alpha -> prepare_nothing
+25775 conduct_tour bee -> finish_tour
+25780 make_robot_work bee -> deploy_for_work_once 26734 25798
+25789 prepare_robot bee hall_alpha -> prepare_nothing
+25793 conduct_tour bee -> finish_tour
+25798 make_robot_work bee -> deploy_for_work_once 26735 25816
+25807 prepare_robot bee hall_alpha -> prepare_nothing
+25811 conduct_tour bee -> finish_tour
+25816 make_robot_work bee -> deploy_for_work_once 26736 25834
+25825 prepare_robot bee hall_alpha -> prepare_nothing
+25829 conduct_tour bee -> finish_tour
+25834 make_robot_work bee -> deploy_for_work_once 26737 25852
+25843 prepare_robot bee hall_alpha -> prepare_nothing
+25847 conduct_tour bee -> finish_tour
+25852 make_robot_work bee -> deploy_for_work_once 26738 25870
+25861 prepare_robot bee hall_alpha -> prepare_nothing
+25865 conduct_tour bee -> finish_tour
+25870 make_robot_work bee -> deploy_for_work_once 26739 26680
+25879 prepare_robot bee hall_alpha -> prepare_nothing
+25885 conduct_tour bee -> tour_next_stop 25996 26740 26677
+25996 robot_travel bee cryo_chamber -> drone_curator_travel 26325
+26325 move_robot bee hall_alpha cryo_chamber -> fly_drone_one_location 26327 26329
+26329 move_robot bee tunnel cryo_chamber -> fly_drone_one_location 26331 26344
+26344 move_robot bee cryo_chamber cryo_chamber -> flown_at_destination
+26352 unload_phase bee cryo_chamber -> unload_one_thermosensitive_more 26667 26669
+26669 unload_phase bee cryo_chamber -> finish_unloading
+26673 load_phase bee cryo_chamber -> finish_loading
+26677 conduct_tour bee -> finish_tour
+26680 make_robot_work bee -> finish_work
+26682 solve_problem  -> run_main_task 6
+26683 tour_around bee pod_pickup -> do_tour_around 94 115
+26684 fetch_pods bee -> fetch_pods_from_pod_pickup 103 112
+26685 tour_around bee pod_pickup -> do_tour_around 148 153
+26686 tour_around bee pod_pickup -> do_tour_around 169 1265
+26687 fetch_pods bee -> fetch_pods_from_pod_pickup 178 189
+26688 tour_around bee pod_pickup -> do_tour_around 1279 1283
+26689 tour_around bee pod_pickup -> do_tour_around 1297 1303
+26690 service_room bee stasis_lab -> do_service_room 1811 1815
+26691 tour_around bee stasis_lab -> do_tour_around 1833 1837
+26692 tour_around bee stasis_lab -> do_tour_around 1851 1855
+26693 tour_around bee stasis_lab -> do_tour_around 1869 1875
+26694 service_room bee hall_alpha -> do_service_room 3600 3605
+26695 service_room bee cryo_chamber -> do_service_room 20941 21079
+26696 tour_around bee cryo_chamber -> do_tour_around 21097 21103
+26697 service_room bee hall_alpha -> do_service_room 21833 21839
+26698 tour_around bee hall_alpha -> do_tour_around 21936 21940
+26699 tour_around bee hall_alpha -> do_tour_around 21954 21958
+26700 tour_around bee hall_alpha -> do_tour_around 21972 21976
+26701 tour_around bee hall_alpha -> do_tour_around 21990 21996
+26702 service_room bee stasis_lab -> do_service_room 22882 23207
+26703 tour_around bee stasis_lab -> do_tour_around 23225 23229
+26704 tour_around bee stasis_lab -> do_tour_around 23243 23247
+26705 tour_around bee stasis_lab -> do_tour_around 23261 23265
+26706 tour_around bee stasis_lab -> do_tour_around 23279 23283
+26707 tour_around bee stasis_lab -> do_tour_around 23297 23301
+26708 tour_around bee stasis_lab -> do_tour_around 23315 23319
+26709 tour_around bee stasis_lab -> do_tour_around 23333 23337
+26710 tour_around bee stasis_lab -> do_tour_around 23351 23355
+26711 tour_around bee stasis_lab -> do_tour_around 23369 23373
+26712 tour_around bee stasis_lab -> do_tour_around 23387 23391
+26713 tour_around bee stasis_lab -> do_tour_around 23405 23409
+26714 tour_around bee stasis_lab -> do_tour_around 23423 23427
+26715 tour_around bee stasis_lab -> do_tour_around 23441 23445
+26716 tour_around bee stasis_lab -> do_tour_around 23459 23463
+26717 tour_around bee stasis_lab -> do_tour_around 23477 23483
+26718 service_room bee hall_alpha -> do_service_room 23922 23927
+26719 service_room bee stasis_lab -> do_service_room 24642 24950
+26720 tour_around bee stasis_lab -> do_tour_around 24968 24972
+26721 tour_around bee stasis_lab -> do_tour_around 24986 24990
+26722 tour_around bee stasis_lab -> do_tour_around 25004 25008
+26723 tour_around bee stasis_lab -> do_tour_around 25022 25026
+26724 tour_around bee stasis_lab -> do_tour_around 25040 25044
+26725 tour_around bee stasis_lab -> do_tour_around 25058 25062
+26726 tour_around bee stasis_lab -> do_tour_around 25076 25080
+26727 tour_around bee stasis_lab -> do_tour_around 25094 25098
+26728 tour_around bee stasis_lab -> do_tour_around 25112 25116
+26729 tour_around bee stasis_lab -> do_tour_around 25180 25184
+26730 tour_around bee stasis_lab -> do_tour_around 25198 25202
+26731 tour_around bee stasis_lab -> do_tour_around 25216 25222
+26732 service_room bee hall_alpha -> do_service_room 25698 25704
+26733 tour_around bee hall_alpha -> do_tour_around 25771 25775
+26734 tour_around bee hall_alpha -> do_tour_around 25789 25793
+26735 tour_around bee hall_alpha -> do_tour_around 25807 25811
+26736 tour_around bee hall_alpha -> do_tour_around 25825 25829
+26737 tour_around bee hall_alpha -> do_tour_around 25843 25847
+26738 tour_around bee hall_alpha -> do_tour_around 25861 25865
+26739 tour_around bee hall_alpha -> do_tour_around 25879 25885
+26740 service_room bee cryo_chamber -> do_service_room 26352 26673

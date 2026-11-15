@@ -1,0 +1,128 @@
+INFO     planner time limit: None
+INFO     planner memory limit: None
+
+INFO     Running translator.
+INFO     translator stdin: None
+INFO     translator time limit: None
+INFO     translator memory limit: None
+INFO     translator command line string: /usr/bin/python3 -m fast_downward.translate /project/problem1/interplanetary_museum_domain_1.pddl /project/problem1/scalability/hard.pddl --sas-file output.sas
+Parsing...
+Parsing: [0.010s CPU, 0.005s wall-clock]
+Normalizing task... [0.000s CPU, 0.000s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.000s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.000s CPU, 0.005s wall-clock]
+Preparing model... [0.000s CPU, 0.001s wall-clock]
+Generated 113 rules.
+Computing model... [0.000s CPU, 0.007s wall-clock]
+537 relevant atoms
+746 auxiliary atoms
+1283 final queue length
+1942 total queue pushes
+Completing instantiation... [0.000s CPU, 0.006s wall-clock]
+Instantiating: [0.010s CPU, 0.020s wall-clock]
+Computing fact groups...
+Finding invariants...
+23 initial candidates
+Finding invariants: [0.000s CPU, 0.004s wall-clock]
+Checking invariant weight... [0.010s CPU, 0.000s wall-clock]
+Instantiating groups... [0.000s CPU, 0.000s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
+Choosing groups...
+5 uncovered facts
+Choosing groups: [0.000s CPU, 0.000s wall-clock]
+Building translation key... [0.000s CPU, 0.000s wall-clock]
+Computing fact groups: [0.010s CPU, 0.005s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.000s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.000s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.000s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Translator axioms removed by simplifying: 0
+Processing axioms: [0.000s CPU, 0.000s wall-clock]
+Translating task: [0.000s CPU, 0.008s wall-clock]
+12 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+0 axioms removed
+23 propositions removed
+Detecting unreachable propositions: [0.010s CPU, 0.003s wall-clock]
+Reordering and filtering variables...
+28 of 28 variables necessary.
+0 of 23 mutex groups necessary.
+288 of 288 operators necessary.
+0 of 0 axiom rules necessary.
+Reordering and filtering variables: [0.000s CPU, 0.002s wall-clock]
+Translator variables: 28
+Translator derived variables: 0
+Translator facts: 124
+Translator goal facts: 10
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 288
+Translator axioms: 0
+Translator task size: 2676
+Translator peak memory: 33012 KB
+Writing output... [0.000s CPU, 0.002s wall-clock]
+Done! [0.040s CPU, 0.047s wall-clock]
+translate exit code: 0
+
+INFO     Running search (release).
+INFO     search stdin: output.sas
+INFO     search time limit: None
+INFO     search memory limit: None
+INFO     search command line string: /workspace/downward/builds/release/bin/downward --search 'astar(blind())' --internal-plan-file sas_plan < output.sas
+[t=0.016656s, 12544 KB] Search code revision: 7ea2755
+[t=0.016797s, 12544 KB] reading input...
+[t=0.018426s, 12676 KB] done reading input!
+[t=0.022699s, 12932 KB] Initializing blind search heuristic...
+[t=0.022787s, 12932 KB] Building successor generator... done!
+[t=0.022983s, 12932 KB] peak memory difference for successor generator creation: 0 KB
+[t=0.023003s, 12932 KB] time for successor generation creation: 0.000133s
+[t=0.023023s, 12932 KB] Variables: 28
+[t=0.023042s, 12932 KB] FactPairs: 124
+[t=0.023060s, 12932 KB] Bytes per state: 8
+[t=0.023080s, 12932 KB] Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+[t=0.023107s, 12932 KB] New best heuristic value for blind: 1
+[t=0.023129s, 12932 KB] g=0, 1 evaluated, 0 expanded
+[t=0.023148s, 12932 KB] f = 1, 1 evaluated, 0 expanded
+[t=0.023167s, 13064 KB] Initial heuristic value for blind: 1
+[t=0.023203s, 13064 KB] pruning method: none
+[t=0.023243s, 13064 KB] f = 2, 16 evaluated, 1 expanded
+[t=0.023385s, 13064 KB] f = 3, 106 evaluated, 16 expanded
+[t=0.023761s, 13064 KB] f = 4, 396 evaluated, 106 expanded
+[t=0.024696s, 13064 KB] f = 5, 1041 evaluated, 396 expanded
+[t=0.029180s, 13064 KB] f = 6, 2523 evaluated, 1041 expanded
+[t=0.035251s, 13188 KB] f = 7, 6147 evaluated, 2523 expanded
+[t=0.047114s, 13456 KB] f = 8, 13272 evaluated, 6147 expanded
+[t=0.069138s, 13988 KB] f = 9, 26778 evaluated, 13272 expanded
+[t=0.112620s, 15044 KB] f = 10, 54000 evaluated, 26778 expanded
+[t=0.194061s, 16900 KB] f = 11, 99553 evaluated, 54000 expanded
+[t=0.327065s, 20068 KB] f = 12, 173444 evaluated, 99553 expanded
+[t=0.601482s, 26140 KB] f = 13, 310689 evaluated, 173444 expanded
+[t=1.123747s, 38380 KB] f = 14, 533823 evaluated, 310689 expanded
+[t=1.959818s, 62948 KB] f = 15, 877553 evaluated, 533823 expanded
+[t=3.077075s, 71980 KB] f = 16, 1461927 evaluated, 877553 expanded
+[t=5.001347s, 113768 KB] f = 17, 2337297 evaluated, 1461927 expanded
+[t=7.911415s, 210312 KB] f = 18, 3572509 evaluated, 2337297 expanded
+[t=12.128141s, 238452 KB] f = 19, 5525639 evaluated, 3572509 expanded
+[t=19.088755s, 407172 KB] f = 20, 8356636 evaluated, 5525639 expanded
+[t=28.609199s, 492888 KB] f = 21, 12124190 evaluated, 8356636 expanded
+[t=43.289353s, 797520 KB] f = 22, 17601800 evaluated, 12124190 expanded
+[t=62.149394s, 994084 KB] f = 23, 25043863 evaluated, 17601800 expanded
+[t=90.263555s, 1568296 KB] f = 24, 34513962 evaluated, 25043863 expanded
+[t=125.821857s, 1893828 KB] f = 25, 47450243 evaluated, 34513962 expanded
+[t=178.811119s, 3097508 KB] f = 26, 64399381 evaluated, 47450243 expanded
+[t=241.859904s, 3469248 KB] f = 27, 84591800 evaluated, 64399381 expanded
+[t=330.547292s, 5989556 KB] f = 28, 110663661 evaluated, 84591800 expanded
+[t=432.253592s, 6182412 KB] f = 29, 143297241 evaluated, 110663661 expanded
+[t=556.474279s, 7252968 KB] f = 30, 181464889 evaluated, 143297241 expanded
+Peak memory: 7613020 KB
+caught signal 15 -- exiting
+
+Execution time: 600.082 seconds
+Exit status: 124

@@ -1,0 +1,50 @@
+15166 activate_robot bee
+15171 fly bee pod_pickup tunnel
+15173 fly bee tunnel pod_pickup
+15246 take_pod bee pod_1
+15282 fly bee pod_pickup tunnel
+15286 fly bee tunnel hall_alpha
+15291 fly bee hall_alpha tunnel
+15295 fly bee tunnel hall_alpha
+15379 pickup_standard_artifact bee artifact_3 hall_alpha
+15446 fly bee hall_alpha tunnel
+15449 fly bee tunnel stasis_lab
+15530 drop_standard_artifact bee artifact_3 stasis_lab
+15688 fly bee stasis_lab tunnel
+15693 fly bee tunnel hall_alpha
+16056 pickup_thermosensitive_artifact bee artifact_2 pod_1 hall_alpha
+16478 fly bee hall_alpha tunnel
+16482 fly bee tunnel stasis_lab
+16566 safe_drop_thermosensitive_artifact bee artifact_2 pod_1 stasis_lab
+16723 fly bee stasis_lab tunnel
+16725 fly bee tunnel hall_alpha
+16876 pickup_standard_artifact bee artifact_1 hall_alpha
+17502 fly bee hall_alpha tunnel
+17506 fly bee tunnel cryo_chamber
+17582 drop_standard_artifact bee artifact_1 cryo_chamber
+17869 pickup_standard_artifact bee artifact_1 cryo_chamber
+18336 drop_standard_artifact bee artifact_1 cryo_chamber
+19248 activate_robot curator
+19252 seal curator
+19327 unseal curator
+19330 take_pod curator pod_2
+19363 seal curator
+19406 move curator pod_pickup tunnel
+19408 move curator tunnel hall_alpha
+19446 unseal curator
+19532 pickup_sensitive_artifact curator artifact_5 pod_2 hall_alpha
+19607 seal curator
+19646 move curator hall_alpha tunnel
+19650 move curator tunnel cryo_chamber
+19682 unseal curator
+19688 safe_drop_thermosensitive_artifact curator artifact_5 pod_2 cryo_chamber
+19762 pickup_standard_artifact curator artifact_1 cryo_chamber
+19904 drop_standard_artifact curator artifact_1 cryo_chamber
+19973 pickup_sensitive_artifact curator artifact_5 pod_2 cryo_chamber
+20613 seal curator
+20681 unseal curator
+20683 safe_drop_thermosensitive_artifact curator artifact_5 pod_2 cryo_chamber
+20755 pickup_sensitive_artifact curator artifact_5 pod_2 cryo_chamber
+21149 seal curator
+21218 unseal curator
+21225 safe_drop_thermosensitive_artifact curator artifact_5 pod_2 cryo_chamber

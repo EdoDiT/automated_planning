@@ -1,0 +1,342 @@
+    _           _         _
+   \ |         \ |       | |                       
+   | |     __  | |      _| |______                
+   | |     \/  | |     /_   ______\                
+   | |      _  | |   __  | |  ___   ___   ___       
+   | |___  | | | |  / .\ | | / , | |   \ / ·_\    
+   \_____\ |_| |__\ \__/ |_| \___) |_|_| \___\  
+[39mL i l o t a n e  version rls-glucose4
+by Dominik Schreiber <dominik.schreiber@kit.edu> 2020-2021
+using SAT solver glucose4
+
+0.005 Parser finished.
+0.005 Structures extracted.
+0.005 38 operators and 33 methods created.
+0.008 Mined 37 new reduction preconditions (+74.0%).
+0.008 Iteration 0.
+0.008 Creating initial layer of size 2
+0.009 Attempting to solve formula with 13 clauses (18 literals) and 1 assumptions
+0.009 Unsolvable at layer 0 -- expanding.
+0.009 Iteration 1.
+0.009 New layer size: 2
+0.009 Instantiating ...
+0.010 Collected 5 relevant facts at this layer
+0.010 Encoding ...
+0.010 Attempting to solve formula with 18 clauses (27 literals) and 1 assumptions
+0.010 Unsolvable at layer 1 -- expanding.
+0.010 Iteration 2.
+0.010 New layer size: 2
+0.010 Instantiating ...
+0.010 Collected 5 relevant facts at this layer
+0.010 Encoding ...
+0.010 Attempting to solve formula with 38 clauses (76 literals) and 1 assumptions
+0.010 Unsolvable at layer 2 -- expanding.
+0.010 Iteration 3.
+0.010 New layer size: 4
+0.010 Instantiating ...
+0.010 Collected 7 relevant facts at this layer
+0.010 Encoding ...
+0.011 Attempting to solve formula with 107 clauses (243 literals) and 2 assumptions
+0.011 Unsolvable at layer 3 -- expanding.
+0.011 Iteration 4.
+0.011 New layer size: 7
+0.011 Instantiating ...
+0.011 Collected 19 relevant facts at this layer
+0.011 Encoding ...
+0.012 Attempting to solve formula with 396 clauses (1017 literals) and 4 assumptions
+0.012 Unsolvable at layer 4 -- expanding.
+0.012 Iteration 5.
+0.012 New layer size: 12
+0.012 Instantiating ...
+0.013 Collected 19 relevant facts at this layer
+0.013 Encoding ...
+0.013 Attempting to solve formula with 893 clauses (2386 literals) and 8 assumptions
+0.013 Unsolvable at layer 5 -- expanding.
+0.013 Iteration 6.
+0.013 New layer size: 21
+0.013 Instantiating ...
+0.016 Collected 22 relevant facts at this layer
+0.016 Encoding ...
+0.017 Attempting to solve formula with 1940 clauses (5248 literals) and 16 assumptions
+0.017 Unsolvable at layer 6 -- expanding.
+0.017 Iteration 7.
+0.017 New layer size: 40
+0.017 Instantiating ...
+0.022 Collected 30 relevant facts at this layer
+0.022 Encoding ...
+0.024 Attempting to solve formula with 4647 clauses (12611 literals) and 32 assumptions
+0.024 Unsolvable at layer 7 -- expanding.
+0.024 Iteration 8.
+0.024 New layer size: 80
+0.024 Instantiating ...
+0.037 Collected 70 relevant facts at this layer
+0.037 Encoding ...
+0.042 Attempting to solve formula with 14537 clauses (40070 literals) and 63 assumptions
+0.042 Unsolvable at layer 8 -- expanding.
+0.042 Iteration 9.
+0.042 New layer size: 158
+0.042 Instantiating ...
+0.074 Collected 70 relevant facts at this layer
+0.074 Encoding ...
+0.086 Attempting to solve formula with 35657 clauses (100698 literals) and 112 assumptions
+0.089 Unsolvable at layer 9 -- expanding.
+0.089 Iteration 10.
+0.089 New layer size: 294
+0.089 Instantiating ...
+0.146 Collected 70 relevant facts at this layer
+0.146 Encoding ...
+0.170 Attempting to solve formula with 75682 clauses (218496 literals) and 183 assumptions
+0.443 Unsolvable at layer 10 -- expanding.
+0.443 Iteration 11.
+0.443 New layer size: 512
+0.443 Instantiating ...
+0.543 Collected 70 relevant facts at this layer
+0.543 Encoding ...
+0.587 Attempting to solve formula with 143996 clauses (422528 literals) and 280 assumptions
+1.105 Found a solution at layer 11.
+==>
+15166 activate_robot bee
+15171 fly bee pod_pickup tunnel
+15173 fly bee tunnel pod_pickup
+15246 take_pod bee pod_1
+15282 fly bee pod_pickup tunnel
+15286 fly bee tunnel hall_alpha
+15291 fly bee hall_alpha tunnel
+15295 fly bee tunnel hall_alpha
+15379 pickup_standard_artifact bee artifact_3 hall_alpha
+15446 fly bee hall_alpha tunnel
+15449 fly bee tunnel stasis_lab
+15530 drop_standard_artifact bee artifact_3 stasis_lab
+15688 fly bee stasis_lab tunnel
+15693 fly bee tunnel hall_alpha
+16056 pickup_thermosensitive_artifact bee artifact_2 pod_1 hall_alpha
+16478 fly bee hall_alpha tunnel
+16482 fly bee tunnel stasis_lab
+16566 safe_drop_thermosensitive_artifact bee artifact_2 pod_1 stasis_lab
+16723 fly bee stasis_lab tunnel
+16725 fly bee tunnel hall_alpha
+16876 pickup_standard_artifact bee artifact_1 hall_alpha
+17502 fly bee hall_alpha tunnel
+17506 fly bee tunnel cryo_chamber
+17582 drop_standard_artifact bee artifact_1 cryo_chamber
+17869 pickup_standard_artifact bee artifact_1 cryo_chamber
+18336 drop_standard_artifact bee artifact_1 cryo_chamber
+19248 activate_robot curator
+19252 seal curator
+19327 unseal curator
+19330 take_pod curator pod_2
+19363 seal curator
+19406 move curator pod_pickup tunnel
+19408 move curator tunnel hall_alpha
+19446 unseal curator
+19532 pickup_sensitive_artifact curator artifact_5 pod_2 hall_alpha
+19607 seal curator
+19646 move curator hall_alpha tunnel
+19650 move curator tunnel cryo_chamber
+19682 unseal curator
+19688 safe_drop_thermosensitive_artifact curator artifact_5 pod_2 cryo_chamber
+19762 pickup_standard_artifact curator artifact_1 cryo_chamber
+19904 drop_standard_artifact curator artifact_1 cryo_chamber
+19973 pickup_sensitive_artifact curator artifact_5 pod_2 cryo_chamber
+20613 seal curator
+20681 unseal curator
+20683 safe_drop_thermosensitive_artifact curator artifact_5 pod_2 cryo_chamber
+20755 pickup_sensitive_artifact curator artifact_5 pod_2 cryo_chamber
+21149 seal curator
+21218 unseal curator
+21225 safe_drop_thermosensitive_artifact curator artifact_5 pod_2 cryo_chamber
+root 15
+15 solve_problem -> run_main_task 20
+20 manage_workforce -> deploy_one_more_robot 15166 33 40
+33 make_robot_work bee -> deploy_for_work_once 71 75
+40 manage_workforce -> deploy_one_more_robot 19248 119 132
+71 tour_around bee pod_pickup -> do_tour_around 173 177
+75 make_robot_work bee -> deploy_for_work_once 199 203
+119 make_robot_work curator -> deploy_for_work_once 234 238
+132 manage_workforce -> finish_deployment
+173 prepare_robot bee pod_pickup -> prepare_pods 316
+177 conduct_tour bee -> tour_next_stop 321 337 354
+199 tour_around bee hall_alpha -> do_tour_around 375 380
+203 make_robot_work bee -> deploy_for_work_once 409 414
+234 tour_around curator pod_pickup -> do_tour_around 451 455
+238 make_robot_work curator -> deploy_for_work_once 484 489
+316 fetch_pods bee -> fetch_pods_from_pod_pickup 626 630
+321 robot_travel bee hall_alpha -> drone_curator_travel 652
+337 service_room bee hall_alpha -> do_service_room 715 720
+354 conduct_tour bee -> tour_next_stop 736 757 773
+375 prepare_robot bee hall_alpha -> prepare_nothing
+380 conduct_tour bee -> tour_next_stop 816 837 853
+409 tour_around bee hall_alpha -> do_tour_around 882 895
+414 make_robot_work bee -> deploy_for_work_once 932 943
+451 prepare_robot curator pod_pickup -> prepare_pods 994
+455 conduct_tour curator -> tour_next_stop 1000 1020 1036
+484 tour_around curator cryo_chamber -> do_tour_around 1065 1078
+489 make_robot_work curator -> deploy_for_work_once 1115 1126
+626 robot_travel bee pod_pickup -> drone_curator_travel 1438
+630 take_pods bee -> take_one_pod 15246 1477
+652 move_robot bee pod_pickup hall_alpha -> fly_drone_one_location 15282 1519
+715 unload_phase bee hall_alpha -> finish_unloading
+720 load_phase bee hall_alpha -> load_one_standard_more 15379 1595
+736 robot_travel bee stasis_lab -> drone_curator_travel 1642
+757 service_room bee stasis_lab -> do_service_room 1725 1742
+773 conduct_tour bee -> tour_next_stop 1818 1864 1880
+816 robot_travel bee stasis_lab -> drone_curator_travel 2026
+837 service_room bee stasis_lab -> do_service_room 2103 2124
+853 conduct_tour bee -> tour_next_stop 2199 2246 2263
+882 prepare_robot bee hall_alpha -> prepare_nothing
+895 conduct_tour bee -> tour_next_stop 2371 2409 2425
+932 tour_around bee cryo_chamber -> do_tour_around 2490 2533
+943 make_robot_work bee -> finish_work
+994 fetch_pods curator -> fetch_pods_from_pod_pickup 2759 2772
+1000 robot_travel curator hall_alpha -> sealing_curator_travel 19363 2839 19446
+1020 service_room curator hall_alpha -> do_service_room 2882 2900
+1036 conduct_tour curator -> tour_next_stop 2974 3022 3038
+1065 prepare_robot curator cryo_chamber -> prepare_nothing
+1078 conduct_tour curator -> tour_next_stop 3145 3185 3201
+1115 tour_around curator cryo_chamber -> do_tour_around 3266 3308
+1126 make_robot_work curator -> finish_work
+1438 move_robot bee pod_pickup pod_pickup -> fly_drone_one_location 15171 4426
+1477 take_pods bee -> finish_taking_pods
+1519 move_robot bee tunnel hall_alpha -> fly_drone_one_location 15286 4506
+1595 load_phase bee hall_alpha -> finish_loading
+1642 move_robot bee hall_alpha stasis_lab -> fly_drone_one_location 15446 4640
+1725 unload_phase bee stasis_lab -> unload_one_standard_more 15530 4712
+1742 load_phase bee stasis_lab -> finish_loading
+1818 robot_travel bee hall_alpha -> drone_curator_travel 4842
+1864 service_room bee hall_alpha -> do_service_room 4896 4916
+1880 conduct_tour bee -> tour_next_stop 4993 5004 5021
+2026 move_robot bee hall_alpha stasis_lab -> fly_drone_one_location 16478 5174
+2103 unload_phase bee stasis_lab -> unload_one_thermosensitive_more 16566 5251
+2124 load_phase bee stasis_lab -> finish_loading
+2199 robot_travel bee hall_alpha -> drone_curator_travel 5379
+2246 service_room bee hall_alpha -> do_service_room 5435 5455
+2263 conduct_tour bee -> finish_tour
+2371 robot_travel bee cryo_chamber -> drone_curator_travel 5664
+2409 service_room bee cryo_chamber -> do_service_room 5718 5739
+2425 conduct_tour bee -> tour_next_stop 5814 5825 5842
+2490 prepare_robot bee cryo_chamber -> prepare_nothing
+2533 conduct_tour bee -> tour_next_stop 5911 5924 5940
+2759 robot_travel curator pod_pickup -> sealing_curator_travel 19252 6171 19327
+2772 take_pods curator -> take_one_pod 19330 6219
+2839 move_robot curator pod_pickup hall_alpha -> move_robot_one_location 19406 6285
+2882 unload_phase curator hall_alpha -> finish_unloading
+2900 load_phase curator hall_alpha -> load_one_sensitive_more 19532 6389
+2974 robot_travel curator cryo_chamber -> sealing_curator_travel 19607 6463 19682
+3022 service_room curator cryo_chamber -> do_service_room 6508 6529
+3038 conduct_tour curator -> tour_next_stop 6601 6614 6631
+3145 robot_travel curator cryo_chamber -> already_at_destination
+3185 service_room curator cryo_chamber -> do_service_room 6791 6812
+3201 conduct_tour curator -> tour_next_stop 6885 6898 6915
+3266 prepare_robot curator cryo_chamber -> prepare_nothing
+3308 conduct_tour curator -> tour_next_stop 6985 6997 7014
+4426 move_robot bee tunnel pod_pickup -> fly_drone_one_location 15173 8363
+4506 move_robot bee hall_alpha hall_alpha -> fly_drone_one_location 15291 8458
+4640 move_robot bee tunnel stasis_lab -> fly_drone_one_location 15449 8602
+4712 unload_phase bee stasis_lab -> finish_unloading
+4842 move_robot bee stasis_lab hall_alpha -> fly_drone_one_location 15688 8822
+4896 unload_phase bee hall_alpha -> finish_unloading
+4916 load_phase bee hall_alpha -> finish_loading
+4993 robot_travel bee hall_alpha -> already_at_destination
+5004 service_room bee hall_alpha -> do_service_room 9085 9103
+5021 conduct_tour bee -> finish_tour
+5174 move_robot bee tunnel stasis_lab -> fly_drone_one_location 16482 9384
+5251 unload_phase bee stasis_lab -> finish_unloading
+5379 move_robot bee stasis_lab hall_alpha -> fly_drone_one_location 16723 9604
+5435 unload_phase bee hall_alpha -> finish_unloading
+5455 load_phase bee hall_alpha -> load_one_standard_more 16876 9746
+5664 move_robot bee hall_alpha cryo_chamber -> fly_drone_one_location 17502 10141
+5718 unload_phase bee cryo_chamber -> unload_one_standard_more 17582 10212
+5739 load_phase bee cryo_chamber -> finish_loading
+5814 robot_travel bee cryo_chamber -> already_at_destination
+5825 service_room bee cryo_chamber -> do_service_room 10399 10418
+5842 conduct_tour bee -> finish_tour
+5911 robot_travel bee cryo_chamber -> drone_curator_travel 10630
+5924 service_room bee cryo_chamber -> do_service_room 10684 10704
+5940 conduct_tour bee -> finish_tour
+6171 move_robot curator pod_pickup pod_pickup -> arrived_at_destination
+6219 take_pods curator -> finish_taking_pods
+6285 move_robot curator tunnel hall_alpha -> move_robot_one_location 19408 11271
+6389 load_phase curator hall_alpha -> finish_loading
+6463 move_robot curator hall_alpha cryo_chamber -> move_robot_one_location 19646 11493
+6508 unload_phase curator cryo_chamber -> unload_one_thermosensitive_more 19688 11529
+6529 load_phase curator cryo_chamber -> load_one_standard_more 19762 11596
+6601 robot_travel curator cryo_chamber -> already_at_destination
+6614 service_room curator cryo_chamber -> do_service_room 11715 11737
+6631 conduct_tour curator -> finish_tour
+6791 unload_phase curator cryo_chamber -> finish_unloading
+6812 load_phase curator cryo_chamber -> finish_loading
+6885 robot_travel curator cryo_chamber -> sealing_curator_travel 20613 12209 20681
+6898 service_room curator cryo_chamber -> do_service_room 12253 12273
+6915 conduct_tour curator -> finish_tour
+6985 robot_travel curator cryo_chamber -> sealing_curator_travel 21149 12495 21218
+6997 service_room curator cryo_chamber -> do_service_room 12539 12558
+7014 conduct_tour curator -> finish_tour
+8363 move_robot bee pod_pickup pod_pickup -> flown_at_destination
+8458 move_robot bee tunnel hall_alpha -> fly_drone_one_location 15295 15300
+8602 move_robot bee stasis_lab stasis_lab -> flown_at_destination
+8822 move_robot bee tunnel hall_alpha -> fly_drone_one_location 15693 15700
+9085 unload_phase bee hall_alpha -> finish_unloading
+9103 load_phase bee hall_alpha -> load_one_thermosensitive_more 16056 16063
+9384 move_robot bee stasis_lab stasis_lab -> flown_at_destination
+9604 move_robot bee tunnel hall_alpha -> fly_drone_one_location 16725 16731
+9746 load_phase bee hall_alpha -> finish_loading
+10141 move_robot bee tunnel cryo_chamber -> fly_drone_one_location 17506 17511
+10212 unload_phase bee cryo_chamber -> finish_unloading
+10399 unload_phase bee cryo_chamber -> finish_unloading
+10418 load_phase bee cryo_chamber -> load_one_standard_more 17869 17874
+10630 move_robot bee cryo_chamber cryo_chamber -> flown_at_destination
+10684 unload_phase bee cryo_chamber -> unload_one_standard_more 18336 18343
+10704 load_phase bee cryo_chamber -> finish_loading
+11271 move_robot curator hall_alpha hall_alpha -> arrived_at_destination
+11493 move_robot curator tunnel cryo_chamber -> move_robot_one_location 19650 19656
+11529 unload_phase curator cryo_chamber -> finish_unloading
+11596 load_phase curator cryo_chamber -> finish_loading
+11715 unload_phase curator cryo_chamber -> unload_one_standard_more 19904 19915
+11737 load_phase curator cryo_chamber -> load_one_sensitive_more 19973 19979
+12209 move_robot curator cryo_chamber cryo_chamber -> arrived_at_destination
+12253 unload_phase curator cryo_chamber -> unload_one_thermosensitive_more 20683 20694
+12273 load_phase curator cryo_chamber -> load_one_sensitive_more 20755 20762
+12495 move_robot curator cryo_chamber cryo_chamber -> arrived_at_destination
+12539 unload_phase curator cryo_chamber -> unload_one_thermosensitive_more 21225 21229
+12558 load_phase curator cryo_chamber -> finish_loading
+15300 move_robot bee hall_alpha hall_alpha -> flown_at_destination
+15700 move_robot bee hall_alpha hall_alpha -> flown_at_destination
+16063 load_phase bee hall_alpha -> finish_loading
+16731 move_robot bee hall_alpha hall_alpha -> flown_at_destination
+17511 move_robot bee cryo_chamber cryo_chamber -> flown_at_destination
+17874 load_phase bee cryo_chamber -> finish_loading
+18343 unload_phase bee cryo_chamber -> finish_unloading
+19656 move_robot curator cryo_chamber cryo_chamber -> arrived_at_destination
+19915 unload_phase curator cryo_chamber -> finish_unloading
+19979 load_phase curator cryo_chamber -> finish_loading
+20694 unload_phase curator cryo_chamber -> finish_unloading
+20762 load_phase curator cryo_chamber -> finish_loading
+21229 unload_phase curator cryo_chamber -> finish_unloading
+<==
+1.110 End of solution plan. (counted length of 50)
+1.110 Total amount of clauses encoded: 143996
+1.110 - directframeaxioms : 64244 cls
+1.110 - reductionconstraints : 20733 cls
+1.110 - indirectframeaxioms : 15901 cls
+1.110 - qfactsemantics : 12840 cls
+1.110 - atmostoneelement : 7602 cls
+1.110 - substitutionconstraints : 5907 cls
+1.110 - predecessors : 4419 cls
+1.110 - expansions : 4370 cls
+1.110 - actionconstraints : 3318 cls
+1.110 - actioneffects : 1548 cls
+1.110 - qtypeconstraints : 1530 cls
+1.110 - qconstequality : 1512 cls
+1.110 - truefacts : 70 cls
+1.110 - axiomaticops : 2 cls
+1.110 # instantiated positions: 1133
+1.110 # instantiated actions: 2364
+1.110 # instantiated reductions: 2056
+1.110 # introduced pseudo-constants: 689
+1.110 # retroactive prunings: 0
+1.110 # retroactively pruned operations: 0
+1.110 # dominated operations: 0
+1.110 Exiting happily (no cleaning up).
+
+Execution time: 1.12641 seconds
+Exit status: 0

@@ -1,0 +1,64 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 24
+Aibr Preprocessing
+|F|:35
+|X|:0
+|A|:40
+|P|:0
+|E|:0
+H1 Setup Time (msec): 14
+f(n) = 4.0 (Expanded Nodes: 1, Evaluated States: 1, Time: 0.008) Frontier Size: 0
+f(n) = 5.0 (Expanded Nodes: 2, Evaluated States: 6, Time: 0.035) Frontier Size: 4
+f(n) = 6.0 (Expanded Nodes: 3, Evaluated States: 8, Time: 0.036) Frontier Size: 5
+f(n) = 7.0 (Expanded Nodes: 11, Evaluated States: 20, Time: 0.043) Frontier Size: 9
+f(n) = 8.0 (Expanded Nodes: 13, Evaluated States: 22, Time: 0.045) Frontier Size: 9
+f(n) = 9.0 (Expanded Nodes: 23, Evaluated States: 36, Time: 0.048) Frontier Size: 13
+f(n) = 10.0 (Expanded Nodes: 33, Evaluated States: 46, Time: 0.049) Frontier Size: 13
+f(n) = 11.0 (Expanded Nodes: 57, Evaluated States: 106, Time: 0.054) Frontier Size: 49
+f(n) = 12.0 (Expanded Nodes: 81, Evaluated States: 140, Time: 0.056) Frontier Size: 59
+f(n) = 13.0 (Expanded Nodes: 153, Evaluated States: 222, Time: 0.065) Frontier Size: 69
+f(n) = 14.0 (Expanded Nodes: 167, Evaluated States: 238, Time: 0.066) Frontier Size: 71
+f(n) = 15.0 (Expanded Nodes: 244, Evaluated States: 330, Time: 0.08) Frontier Size: 86
+f(n) = 16.0 (Expanded Nodes: 294, Evaluated States: 382, Time: 0.083) Frontier Size: 88
+f(n) = 17.0 (Expanded Nodes: 413, Evaluated States: 580, Time: 0.097) Frontier Size: 167
+f(n) = 18.0 (Expanded Nodes: 489, Evaluated States: 640, Time: 0.099) Frontier Size: 151
+f(n) = 19.0 (Expanded Nodes: 667, Evaluated States: 784, Time: 0.104) Frontier Size: 117
+f(n) = 20.0 (Expanded Nodes: 690, Evaluated States: 815, Time: 0.105) Frontier Size: 125
+Problem Solved
+
+Found Plan:
+0.0: (move_in_room curator hall_beta)
+1.0: (pickup_standard_artifact curator artifact_3 hall_beta)
+2.0: (move_out_room curator hall_beta)
+3.0: (move_in_room curator stasis_lab)
+4.0: (drop_standard_artifact curator artifact_3 stasis_lab)
+5.0: (move_out_room curator stasis_lab)
+6.0: (move_in_room curator hall_alpha)
+7.0: (pickup_standard_artifact curator artifact_2 hall_alpha)
+8.0: (move_out_room curator hall_alpha)
+9.0: (move_in_room curator stasis_lab)
+10.0: (drop_standard_artifact curator artifact_2 stasis_lab)
+11.0: (move_out_room curator stasis_lab)
+12.0: (move_in_room curator pod_pickup)
+13.0: (take_pod curator pod_2)
+14.0: (move_out_room curator pod_pickup)
+15.0: (move_in_room curator hall_alpha)
+16.0: (pickup_sensitive_artifact curator artifact_1 pod_2 hall_alpha)
+17.0: (move_out_room curator hall_alpha)
+18.0: (move_in_room curator cryo-chamber)
+19.0: (safe_drop_thermosensitive_artifact curator artifact_1 pod_2 cryo-chamber)
+
+Plan-Length:20
+Metric (Search):20.0
+Planning Time (msec): 108
+Heuristic Time (msec): 46
+Search Time (msec): 105
+Expanded Nodes:693
+States Evaluated:821
+Number of Dead-Ends detected:0
+Number of Duplicates detected:845
+
+Execution time: 0.510897 seconds
+Exit status: 0

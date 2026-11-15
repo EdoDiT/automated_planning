@@ -1,0 +1,46 @@
+\begin{table}[htbp]
+\centering
+\caption{Problem Instances and Active Domain Entities across Problems 1--5. Artifacts are broken down into Sturdy (St.), Thermosensitive (Th.), Seismic-sensitive (Se.), and Thermo+Seismic-sensitive (Both). Robots are broken down into Standard/Tank/Drone curators (S/T/D). Rooms include active rooms in \texttt{:objects} plus \texttt{hall\_beta} when declared in domain \texttt{:constants}.}
+\label{tab:problem_instances}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lll rrrrrr rr rr rr}
+\toprule
+ & & & \multicolumn{6}{c}{\textbf{Active Artifacts}} & \multicolumn{2}{c}{\textbf{Active Robots}} & \multicolumn{2}{c}{\textbf{Pods \& Rooms}} & \multicolumn{2}{c}{\textbf{Init / Goal}} \\
+\cmidrule(lr){4-9} \cmidrule(lr){10-11} \cmidrule(lr){12-13} \cmidrule(lr){14-15}
+\textbf{Problem} & \textbf{Variant} & \textbf{Level} & \textbf{Tot.} & \textbf{St.} & \textbf{Th.} & \textbf{Se.} & \textbf{Both} & \textbf{Move} & \textbf{Tot.} & \textbf{(S/T/D)} & \textbf{Pods} & \textbf{Rooms (Loc.)} & \textbf{Init} & \textbf{Goal} \\
+\midrule
+problem1 & Default & default & 10 & 4 & 3 & 1 & 2 & 9 & 1 & (1/0/0) & 2 & 4 (6) & 51 & 10 \\
+problem1 & Default & easy & 3 & 2 & 1 & 0 & 0 & 3 & 1 & (1/0/0) & 2 & 4 (6) & 32 & 3 \\
+problem1 & Default & middle & 5 & 2 & 1 & 1 & 1 & 5 & 2 & (2/0/0) & 2 & 4 (6) & 42 & 5 \\
+problem1 & Default & hard & 10 & 3 & 1 & 3 & 3 & 10 & 3 & (3/0/0) & 2 & 4 (6) & 60 & 10 \\
+\midrule
+problem2 & No Neg. Prec. & default & 5 & 2 & 2 & 1 & 0 & 5 & 2 & (0/1/1) & 2 & 4 (6) & 54 & 5 \\
+problem2 & No Neg. Prec. & easy & 3 & 2 & 1 & 0 & 0 & 3 & 1 & (0/1/0) & 2 & 4 (6) & 42 & 3 \\
+problem2 & No Neg. Prec. & middle & 5 & 2 & 2 & 1 & 0 & 5 & 2 & (0/1/1) & 2 & 4 (6) & 54 & 5 \\
+problem2 & No Neg. Prec. & hard & 10 & 3 & 2 & 3 & 2 & 10 & 3 & (1/1/1) & 2 & 4 (6) & 74 & 10 \\
+problem2 & Hard Ver. (No Neg.) & default & 3 & 1 & 1 & 1 & 0 & 3 & 2 & (0/1/1) & 2 & 4 (6) & 53 & 3 \\
+problem2 & Neg. Prec. & default & 5 & 2 & 2 & 1 & 0 & 5 & 2 & (0/1/1) & 2 & 4 (6) & 45 & 5 \\
+problem2 & Neg. Prec. & easy & 3 & 2 & 1 & 0 & 0 & 3 & 1 & (0/1/0) & 2 & 4 (6) & 35 & 3 \\
+problem2 & Neg. Prec. & middle & 5 & 2 & 2 & 1 & 0 & 5 & 2 & (0/1/1) & 2 & 4 (6) & 45 & 5 \\
+problem2 & Neg. Prec. & hard & 10 & 3 & 2 & 3 & 2 & 10 & 3 & (1/1/1) & 2 & 4 (6) & 65 & 10 \\
+problem2 & Hard Ver. (Neg.) & default & 3 & 1 & 1 & 1 & 0 & 3 & 2 & (0/1/1) & 2 & 4 (6) & 48 & 3 \\
+\midrule
+problem3 & Default & default & 13 & 4 & 2 & 4 & 3 & 12 & 2 & (1/0/1) & 2 & 4 (6) & 64 & 13 \\
+problem3 & Default & easy & 3 & 2 & 1 & 0 & 0 & 3 & 1 & (1/0/0) & 2 & 4 (6) & 30 & 3 \\
+problem3 & Default & middle & 5 & 2 & 2 & 1 & 0 & 4 & 2 & (1/0/1) & 2 & 4 (6) & 39 & 5 \\
+problem3 & Default & hard & 10 & 3 & 2 & 3 & 2 & 9 & 3 & (1/1/1) & 2 & 4 (6) & 58 & 10 \\
+problem3 & Fluent HTN & default & 20 & 5 & 5 & 6 & 4 & 17 & 3 & (1/1/1) & 2 & 4 (6) & 104 & 20 \\
+\midrule
+problem4 & Default & default & 1 & 1 & 0 & 0 & 0 & 1 & 1 & (1/0/0) & 0 & 3 (5) & 28 & 1 \\
+problem4 & Default & easy & 3 & 2 & 1 & 0 & 0 & 3 & 1 & (1/0/0) & 2 & 4 (6) & 44 & 3 \\
+problem4 & Default & middle & 5 & 2 & 2 & 1 & 0 & 5 & 2 & (1/1/0) & 2 & 4 (6) & 59 & 5 \\
+problem4 & Default & hard & 10 & 3 & 2 & 3 & 2 & 10 & 3 & (1/1/1) & 2 & 4 (6) & 82 & 10 \\
+\midrule
+problem5 & Default & default & 20 & 5 & 5 & 6 & 4 & 18 & 3 & (1/1/1) & 2 & 4 (6) & 90 & 20 \\
+problem5 & Default & easy & 3 & 2 & 1 & 0 & 0 & 3 & 1 & (1/0/0) & 2 & 4 (6) & 40 & 3 \\
+problem5 & Default & middle & 5 & 2 & 2 & 1 & 0 & 5 & 2 & (1/1/0) & 2 & 4 (6) & 51 & 5 \\
+problem5 & Default & hard & 10 & 3 & 2 & 3 & 2 & 10 & 3 & (1/1/1) & 2 & 4 (6) & 66 & 10 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}

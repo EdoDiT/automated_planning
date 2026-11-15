@@ -1,0 +1,21 @@
+Number of literals: 131
+Constructing lookup tables: [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%]
+Post filtering unreachable actions:  [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%]
+(battery_level curator) has a finite upper bound: [-inf,1000.000]
+(battery_level biggie) has a finite upper bound: [-inf,2000.000]
+(battery_level bee) has a finite upper bound: [-inf,1000.000]
+(seismic_counter) has a finite lower bound: [0.000,inf]
+Have identified that bigger values of (battery_level curator) are preferable
+Have identified that bigger values of (battery_level biggie) are preferable
+Have identified that bigger values of (battery_level bee) are preferable
+[01;34mNo analytic limits found, not considering limit effects of goal-only operators[00m
+Assignment numeric effect ((battery_level bee) = 1000.000) makes effects on 8 be order-dependent
+Assignment numeric effect ((battery_level biggie) = 2000.000) makes effects on 5 be order-dependent
+Assignment numeric effect ((battery_level curator) = 1000.000) makes effects on 2 be order-dependent
+Assignment numeric effect ((seismic_counter) = 0.000) makes effects on 9 be order-dependent
+0% of the ground temporal actions in this problem are compression-safe
+Initial heuristic = 64.000, admissible cost estimate 0.000
+b (55.000 | 2.000)b (54.000 | 2.000)Planner did not produce a solution plan.
+
+Planner exit status: 124
+Execution time: 588.473 seconds

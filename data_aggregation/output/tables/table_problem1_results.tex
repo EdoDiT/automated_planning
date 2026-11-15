@@ -1,0 +1,42 @@
+\begin{table}[htbp]
+\centering
+\caption{Problem 1 (Classical Planning) Results across ENHSP and Fast Downward Configurations. Instances: \texttt{easy} (3 artifacts, 1 robot), \texttt{middle} (5 artifacts, 2 robots), \texttt{default} (10 artifacts, 1 robot), \texttt{hard} (10 artifacts, 3 robots). For OOM/TO runs, expanded and evaluated states reflect the last logged search frontier before termination.}
+\label{tab:problem1_results}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lll rrr c rrr rr}
+\toprule
+\textbf{Planner} & \textbf{Configuration} & \textbf{Level} & \textbf{Art.} & \textbf{Rob.} & \textbf{Actions ($|A|$)} & \textbf{Solved} & \textbf{Search Time (s)} & \textbf{Total Time (s)} & \textbf{Expanded States} & \textbf{Evaluated States} & \textbf{Plan Len.} \\
+\midrule
+ENHSP & \texttt{opt-blind} & easy & 3 & 1 & 42 & \textbf{Yes} & 0.040 & 0.30 & 1,200 & 1,294 & 20 \\
+ENHSP & \texttt{opt-blind} & middle & 5 & 2 & 128 & \textbf{Yes} & 1.387 & 1.64 & 265,014 & 280,044 & 29 \\
+ENHSP & \texttt{opt-blind} & default & 10 & 1 & 134 & \textbf{Yes} & 30.922 & 31.72 & 5,463,906 & 5,523,856 & 50 \\
+ENHSP & \texttt{opt-blind} & hard & 10 & 3 & 348 & No (OOM) & --- & 102.50 & 4,245,129 & 7,174,392 & --- \\
+\midrule
+ENHSP & \texttt{opt-hmax} & easy & 3 & 1 & 40 & \textbf{Yes} & 0.105 & 0.51 & 693 & 821 & 20 \\
+ENHSP & \texttt{opt-hmax} & middle & 5 & 2 & 112 & \textbf{Yes} & 8.185 & 8.60 & 185,260 & 216,898 & 29 \\
+ENHSP & \texttt{opt-hmax} & default & 10 & 1 & 102 & \textbf{Yes} & 158.640 & 159.17 & 4,776,419 & 5,004,955 & 50 \\
+ENHSP & \texttt{opt-hmax} & hard & 10 & 3 & 288 & No (TO) & --- & 602.17 & 3,305,754 & 6,235,239 & --- \\
+\midrule
+ENHSP & \texttt{sat-aibr} & easy & 3 & 1 & 40 & \textbf{Yes} & 0.100 & 0.46 & 114 & 150 & 20 \\
+ENHSP & \texttt{sat-aibr} & middle & 5 & 2 & 112 & \textbf{Yes} & 2.236 & 2.61 & 3,819 & 9,771 & 38 \\
+ENHSP & \texttt{sat-aibr} & default & 10 & 1 & 102 & \textbf{Yes} & 0.520 & 0.84 & 1,091 & 1,725 & 52 \\
+ENHSP & \texttt{sat-aibr} & hard & 10 & 3 & 288 & No (TO) & --- & 600.10 & 203,502 & 1,123,414 & --- \\
+\midrule
+Fast Downward & \texttt{astar-blind} & easy & 3 & 1 & 40 & \textbf{Yes} & 0.0026 & 0.77 & 1,084 & 1,227 & 20 \\
+Fast Downward & \texttt{astar-blind} & middle & 5 & 2 & 112 & \textbf{Yes} & 0.519 & 1.24 & 256,200 & 271,121 & 29 \\
+Fast Downward & \texttt{astar-blind} & default & 10 & 1 & 102 & \textbf{Yes} & 9.361 & 11.07 & 5,404,265 & 5,495,998 & 50 \\
+Fast Downward & \texttt{astar-blind} & hard & 10 & 3 & 288 & No (TO) & 556.474 & 600.08 & 143,297,241 & 181,464,889 & --- \\
+\midrule
+Fast Downward & \texttt{lama-first} & easy & 3 & 1 & 40 & \textbf{Yes} & 0.0019 & 1.31 & 43 & 44 & 20 \\
+Fast Downward & \texttt{lama-first} & middle & 5 & 2 & 112 & \textbf{Yes} & 0.0074 & 0.65 & 129 & 130 & 33 \\
+Fast Downward & \texttt{lama-first} & default & 10 & 1 & 102 & \textbf{Yes} & 0.010 & 0.66 & 154 & 155 & 52 \\
+Fast Downward & \texttt{lama-first} & hard & 10 & 3 & 288 & \textbf{Yes} & 0.167 & 1.07 & 2,007 & 2,008 & 78 \\
+\midrule
+Fast Downward & \texttt{seq-opt-lmcut} & easy & 3 & 1 & 40 & \textbf{Yes} & 0.011 & 0.77 & 325 & 456 & 20 \\
+Fast Downward & \texttt{seq-opt-lmcut} & middle & 5 & 2 & 112 & \textbf{Yes} & 2.773 & 3.59 & 50,177 & 74,655 & 29 \\
+Fast Downward & \texttt{seq-opt-lmcut} & default & 10 & 1 & 102 & \textbf{Yes} & 54.006 & 54.33 & 1,276,881 & 1,528,704 & 50 \\
+Fast Downward & \texttt{seq-opt-lmcut} & hard & 10 & 3 & 288 & No (TO) & 525.321 & 600.00 & 2,052,361 & 4,414,656 & --- \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}

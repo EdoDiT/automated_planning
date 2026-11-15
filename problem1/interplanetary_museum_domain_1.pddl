@@ -11,7 +11,7 @@
 		standard_curator - robot
     )
 	(:constants
-		pod_pickup - room
+		pod_pickup - location
 		tunnel - location)
     (:predicates
         (at ?arg0 - entity ?arg1 - location)

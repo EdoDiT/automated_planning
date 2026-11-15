@@ -1,0 +1,48 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 59
+|F|:131
+|X|:7
+|A|:307
+|P|:0
+|E|:0
+f(n) = 1.0 (Expanded Nodes: 2, Evaluated States: 19, Time: 0.01) Frontier Size: 17
+f(n) = 2.0 (Expanded Nodes: 20, Evaluated States: 148, Time: 0.035) Frontier Size: 128
+f(n) = 3.0 (Expanded Nodes: 149, Evaluated States: 645, Time: 0.048) Frontier Size: 496
+f(n) = 4.0 (Expanded Nodes: 646, Evaluated States: 1949, Time: 0.072) Frontier Size: 1303
+f(n) = 5.0 (Expanded Nodes: 1950, Evaluated States: 5029, Time: 0.133) Frontier Size: 3079
+f(n) = 6.0 (Expanded Nodes: 5030, Evaluated States: 12109, Time: 0.253) Frontier Size: 7079
+f(n) = 7.0 (Expanded Nodes: 12110, Evaluated States: 27349, Time: -0.105) Frontier Size: 15239
+f(n) = 8.0 (Expanded Nodes: 27350, Evaluated States: 58503, Time: 0.137) Frontier Size: 31153
+f(n) = 9.0 (Expanded Nodes: 58504, Evaluated States: 119269, Time: 0.602) Frontier Size: 60765
+f(n) = 10.0 (Expanded Nodes: 119270, Evaluated States: 232268, Time: 1.537) Frontier Size: 112998
+f(n) = 11.0 (Expanded Nodes: 232269, Evaluated States: 435368, Time: 3.504) Frontier Size: 203099
+f(n) = 12.0 (Expanded Nodes: 435369, Evaluated States: 789171, Time: 7.439) Frontier Size: 353802
+-------------Time: 10s ; Expanded Nodes: 579288 (Avg-Speed 57928.0 n/s); Evaluated States: 1177944
+f(n) = 13.0 (Expanded Nodes: 789172, Evaluated States: 1388374, Time: 14.403) Frontier Size: 599202
+-------------Time: 20s ; Expanded Nodes: 1105036 (Avg-Speed 55251.0 n/s); Evaluated States: 2185566
+f(n) = 14.0 (Expanded Nodes: 1388375, Evaluated States: 2377551, Time: 25.33) Frontier Size: 989176
+-------------Time: 30s ; Expanded Nodes: 1602038 (Avg-Speed 53401.0 n/s); Evaluated States: 3162897
+-------------Time: 40s ; Expanded Nodes: 2254821 (Avg-Speed 56370.0 n/s); Evaluated States: 3924338
+f(n) = 15.0 (Expanded Nodes: 2377552, Evaluated States: 3970592, Time: 41.95) Frontier Size: 1593040
+-------------Time: 50s ; Expanded Nodes: 2804090 (Avg-Speed 56081.0 n/s); Evaluated States: 5070941
+-------------Time: 60s ; Expanded Nodes: 3310140 (Avg-Speed 55169.0 n/s); Evaluated States: 5881801
+-------------Time: 70s ; Expanded Nodes: 3745493 (Avg-Speed 53507.0 n/s); Evaluated States: 6403152
+f(n) = 16.0 (Expanded Nodes: 3970593, Evaluated States: 6482215, Time: 74.012) Frontier Size: 2511622
+-------------Time: 80s ; Expanded Nodes: 4099323 (Avg-Speed 51241.0 n/s); Evaluated States: 7140242
+-------------Time: 91s ; Expanded Nodes: 4123132 (Avg-Speed 45309.0 n/s); Evaluated States: 7246403
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+	at java.base/java.util.BitSet.clone(BitSet.java:1103)
+	at com.hstairs.ppmajal.PDDLProblem.PDDLState.<init>(PDDLState.java:50)
+	at com.hstairs.ppmajal.PDDLProblem.PDDLState.clone(PDDLState.java:116)
+	at com.hstairs.ppmajal.PDDLProblem.PDDLState.clone(PDDLState.java:39)
+	at com.hstairs.ppmajal.PDDLProblem.PDDLProblem$stateIterator.hasNext(PDDLProblem.java:1453)
+	at com.hstairs.ppmajal.search.WAStar.search(WAStar.java:127)
+	at com.hstairs.ppmajal.PDDLProblem.PDDLPlanner.plan(PDDLPlanner.java:85)
+	at planners.ENHSP.search(ENHSP.java:532)
+	at planners.ENHSP.planning(ENHSP.java:198)
+	at main.main(main.java:31)
+
+Execution time: 102.365 seconds
+Exit status: 1

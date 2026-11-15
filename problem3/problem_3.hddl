@@ -4,6 +4,7 @@
     hall_alpha - room
     stasis_lab - room
     curator - standard_curator
+    ;biggie - tank_curator
     bee - drone_curator
     pod_1 - pod
     pod_2 - pod
@@ -49,6 +50,9 @@
     (at curator pod_pickup)
     (is_unpodded curator)
     (is_idle curator)
+    ;(at biggie pod_pickup)
+    ;(is_unpodded biggie)
+    ;(is_idle biggie)
     (at bee pod_pickup)
     (is_unpodded bee)
     (is_idle bee)

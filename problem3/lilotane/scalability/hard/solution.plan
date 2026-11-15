@@ -1,0 +1,101 @@
+41104 activate_robot curator
+41196 take_pod curator pod_2
+41240 seal curator
+41295 move curator pod_pickup tunnel
+41298 move curator tunnel hall_alpha
+41348 unseal curator
+41353 pickup_sensitive_artifact curator artifact_2 pod_2 hall_alpha
+41467 seal curator
+41518 move curator hall_alpha tunnel
+41520 move curator tunnel stasis_lab
+41567 unseal curator
+41570 safe_drop_thermosensitive_artifact curator artifact_2 pod_2 stasis_lab
+41849 seal curator
+41895 move curator stasis_lab tunnel
+41901 move curator tunnel hall_beta
+41942 unseal curator
+42082 pickup_sensitive_artifact curator artifact_10 pod_2 hall_beta
+42213 seal curator
+42255 move curator hall_beta tunnel
+42261 move curator tunnel stasis_lab
+42298 unseal curator
+42304 safe_drop_seismic_sensitive_artifact curator artifact_10 pod_2 stasis_lab
+42433 pickup_sensitive_artifact curator artifact_2 pod_2 stasis_lab
+42557 seal curator
+42638 unseal curator
+42641 safe_drop_thermosensitive_artifact curator artifact_2 pod_2 stasis_lab
+43413 seal curator
+43465 move curator stasis_lab tunnel
+43467 move curator tunnel hall_alpha
+43514 unseal curator
+43658 pickup_sensitive_artifact curator artifact_5 pod_2 hall_alpha
+43796 seal curator
+43844 move curator hall_alpha tunnel
+43847 move curator tunnel cryo_chamber
+43889 unseal curator
+43893 safe_drop_thermosensitive_artifact curator artifact_5 pod_2 cryo_chamber
+44161 seal curator
+44202 move curator cryo_chamber tunnel
+44209 move curator tunnel hall_beta
+44245 unseal curator
+44377 pickup_sensitive_artifact curator artifact_9 pod_2 hall_beta
+44505 seal curator
+44585 unseal curator
+45348 seal curator
+45395 move curator hall_beta tunnel
+45400 move curator tunnel stasis_lab
+45442 unseal curator
+45448 safe_drop_seismic_and_thermo_sensitive_artifact curator artifact_9 pod_2 stasis_lab
+45714 seal curator
+45756 move curator stasis_lab tunnel
+45760 move curator tunnel hall_beta
+45798 unseal curator
+45930 pickup_sensitive_artifact curator artifact_7 pod_2 hall_beta
+46893 seal curator
+46937 move curator hall_beta tunnel
+46941 move curator tunnel stasis_lab
+46979 unseal curator
+48142 safe_drop_seismic_sensitive_artifact curator artifact_7 pod_2 stasis_lab
+49633 activate_robot bee
+49774 fly bee pod_pickup tunnel
+49778 fly bee tunnel cryo_chamber
+49783 fly bee cryo_chamber tunnel
+49788 fly bee tunnel hall_alpha
+50019 pickup_standard_artifact bee artifact_3 hall_alpha
+50157 fly bee hall_alpha tunnel
+50162 fly bee tunnel stasis_lab
+50257 drop_standard_artifact bee artifact_3 stasis_lab
+50521 fly bee stasis_lab tunnel
+50524 fly bee tunnel hall_beta
+51073 pickup_standard_artifact bee artifact_6 hall_beta
+51582 fly bee hall_beta tunnel
+51589 fly bee tunnel pod_pickup
+51709 fly bee pod_pickup tunnel
+51713 fly bee tunnel stasis_lab
+51809 drop_standard_artifact bee artifact_6 stasis_lab
+52075 fly bee stasis_lab tunnel
+52080 fly bee tunnel hall_alpha
+52625 pickup_standard_artifact bee artifact_1 hall_alpha
+53254 fly bee hall_alpha tunnel
+53260 fly bee tunnel cryo_chamber
+53347 drop_standard_artifact bee artifact_1 cryo_chamber
+55994 activate_robot biggie
+55996 seal biggie
+56040 move biggie pod_pickup tunnel
+56044 move biggie tunnel pod_pickup
+56083 unseal biggie
+56086 take_pod biggie pod_1
+56122 seal biggie
+56171 move biggie pod_pickup tunnel
+56175 move biggie tunnel hall_beta
+56217 unseal biggie
+56356 pickup_sensitive_artifact biggie artifact_8 pod_1 hall_beta
+56486 seal biggie
+56532 move biggie hall_beta tunnel
+56536 move biggie tunnel hall_alpha
+56573 unseal biggie
+56578 safe_drop_seismic_sensitive_artifact biggie artifact_8 pod_1 hall_alpha
+57041 pickup_sensitive_artifact biggie artifact_8 pod_1 hall_alpha
+58830 seal biggie
+58912 unseal biggie
+58915 safe_drop_seismic_sensitive_artifact biggie artifact_8 pod_1 hall_alpha

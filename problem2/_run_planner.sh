@@ -20,10 +20,12 @@ rm -f "$plan_file" "$planner_dir/sas_plan"
 (
     cd "$planner_dir" || exit 1
     if [[ "$planner" == "downward" ]]; then
-        planutils run downward "$domain_file" "$problem_file" \
+        timeout 600s \
+            planutils run downward "$domain_file" "$problem_file" \
             -- --search "$heuristic"
     else
-        enhsp -o "$domain_file" -f "$problem_file" \
+        timeout 600s \
+            enhsp -o "$domain_file" -f "$problem_file" \
             -planner "$heuristic" -sp "$plan_file"
     fi
 ) >"$planner_output" 2>&1 || status=$?

@@ -1,0 +1,55 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 21
+Aibr Preprocessing
+|F|:35
+|X|:0
+|A|:40
+|P|:0
+|E|:0
+AIBR selected
+f(n) = 30.0 (Expanded Nodes: 1, Evaluated States: 1, Time: 0.006) Frontier Size: 0
+f(n) = 32.0 (Expanded Nodes: 2, Evaluated States: 6, Time: 0.035) Frontier Size: 4
+f(n) = 34.0 (Expanded Nodes: 4, Evaluated States: 6, Time: 0.035) Frontier Size: 2
+f(n) = 36.0 (Expanded Nodes: 8, Evaluated States: 10, Time: 0.044) Frontier Size: 2
+f(n) = 37.0 (Expanded Nodes: 23, Evaluated States: 29, Time: 0.054) Frontier Size: 6
+f(n) = 38.0 (Expanded Nodes: 25, Evaluated States: 32, Time: 0.055) Frontier Size: 7
+f(n) = 40.0 (Expanded Nodes: 68, Evaluated States: 87, Time: 0.082) Frontier Size: 19
+f(n) = 43.0 (Expanded Nodes: 72, Evaluated States: 87, Time: 0.082) Frontier Size: 15
+Problem Solved
+
+Found Plan:
+0.0: (move_in_room curator pod_pickup)
+1.0: (take_pod curator pod_2)
+2.0: (move_out_room curator pod_pickup)
+3.0: (move_in_room curator hall_alpha)
+4.0: (pickup_standard_artifact curator artifact_2 hall_alpha)
+5.0: (move_out_room curator hall_alpha)
+6.0: (move_in_room curator stasis_lab)
+7.0: (drop_standard_artifact curator artifact_2 stasis_lab)
+8.0: (move_out_room curator stasis_lab)
+9.0: (move_in_room curator hall_alpha)
+10.0: (pickup_sensitive_artifact curator artifact_1 pod_2 hall_alpha)
+11.0: (move_out_room curator hall_alpha)
+12.0: (move_in_room curator cryo-chamber)
+13.0: (safe_drop_thermosensitive_artifact curator artifact_1 pod_2 cryo-chamber)
+14.0: (move_out_room curator cryo-chamber)
+15.0: (move_in_room curator hall_beta)
+16.0: (pickup_standard_artifact curator artifact_3 hall_beta)
+17.0: (move_out_room curator hall_beta)
+18.0: (move_in_room curator stasis_lab)
+19.0: (drop_standard_artifact curator artifact_3 stasis_lab)
+
+Plan-Length:20
+Metric (Search):20.0
+Planning Time (msec): 103
+Heuristic Time (msec): 60
+Search Time (msec): 100
+Expanded Nodes:114
+States Evaluated:150
+Number of Dead-Ends detected:0
+Number of Duplicates detected:111
+
+Execution time: 0.461762 seconds
+Exit status: 0

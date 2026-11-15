@@ -1,0 +1,102 @@
+problem_id,variant,level,planner_family,planner_config,active_artifacts,goal_artifacts,active_robots,active_pods,active_rooms,solution_found,status,time_spent_sec,execution_time_sec,search_time_sec,expanded_states,evaluated_states,generated_states,plan_length,plan_cost,makespan,log_file
+problem1,default,easy,ENHSP,opt-blind,3,3,1,2,4,True,solved,0.043,0.296141,0.04,1200,1294,,20,20.0,,problem1/enhsp/opt-blind/scalability/easy/execution.log
+problem1,default,middle,ENHSP,opt-blind,5,5,2,2,4,True,solved,1.39,1.63853,1.387,265014,280044,,29,29.0,,problem1/enhsp/opt-blind/scalability/middle/execution.log
+problem1,default,default,ENHSP,opt-blind,10,10,1,2,4,True,solved,30.927,31.7151,30.922,5463906,5523856,,50,50.0,,problem1/enhsp/opt-blind/execution.log
+problem1,default,hard,ENHSP,opt-blind,10,10,3,2,4,False,out_of_memory,102.501,102.501,,4245129,7174392,,,,,problem1/enhsp/opt-blind/scalability/hard/execution.log
+problem1,default,easy,ENHSP,opt-hmax,3,3,1,2,4,True,solved,0.108,0.510897,0.105,693,821,,20,20.0,,problem1/enhsp/opt-hmax/scalability/easy/execution.log
+problem1,default,middle,ENHSP,opt-hmax,5,5,2,2,4,True,solved,8.191,8.59944,8.185,185260,216898,,29,29.0,,problem1/enhsp/opt-hmax/scalability/middle/execution.log
+problem1,default,default,ENHSP,opt-hmax,10,10,1,2,4,True,solved,158.643,159.172,158.64,4776419,5004955,,50,50.0,,problem1/enhsp/opt-hmax/execution.log
+problem1,default,hard,ENHSP,opt-hmax,10,10,3,2,4,False,timeout,602.175,602.175,,3305754,6235239,,,,,problem1/enhsp/opt-hmax/scalability/hard/execution.log
+problem1,default,easy,ENHSP,sat-aibr,3,3,1,2,4,True,solved,0.103,0.461762,0.1,114,150,,20,20.0,,problem1/enhsp/sat-aibr/scalability/easy/execution.log
+problem1,default,middle,ENHSP,sat-aibr,5,5,2,2,4,True,solved,2.241,2.611,2.236,3819,9771,,38,38.0,,problem1/enhsp/sat-aibr/scalability/middle/execution.log
+problem1,default,default,ENHSP,sat-aibr,10,10,1,2,4,True,solved,0.523,0.837535,0.52,1091,1725,,52,52.0,,problem1/enhsp/sat-aibr/execution.log
+problem1,default,hard,ENHSP,sat-aibr,10,10,3,2,4,False,timeout,600.103,600.103,,203502,1123414,,,,,problem1/enhsp/sat-aibr/scalability/hard/execution.log
+problem1,default,easy,Fast Downward,astar-blind,3,3,1,2,4,True,solved,0.023255,0.771278,0.002568,1084,1227,2546,20,20.0,,problem1/fast-downward/astar-blind/scalability/easy/execution.log
+problem1,default,middle,Fast Downward,astar-blind,5,5,2,2,4,True,solved,0.541542,1.23594,0.519204,256200,271121,1160975,29,29.0,,problem1/fast-downward/astar-blind/scalability/middle/execution.log
+problem1,default,default,Fast Downward,astar-blind,10,10,1,2,4,True,solved,9.380913,11.0674,9.360696,5404265,5495998,13110912,50,50.0,,problem1/fast-downward/astar-blind/execution.log
+problem1,default,hard,Fast Downward,astar-blind,10,10,3,2,4,False,timeout,600.082,600.082,556.474279,143297241,181464889,,,,,problem1/fast-downward/astar-blind/scalability/hard/execution.log
+problem1,default,easy,Fast Downward,seq-opt-lmcut,3,3,1,2,4,True,solved,0.036308,0.772665,0.011384,325,456,815,20,20.0,,problem1/fast-downward/seq-opt-lmcut/scalability/easy/execution.log
+problem1,default,middle,Fast Downward,seq-opt-lmcut,5,5,2,2,4,True,solved,2.797589,3.58854,2.773019,50177,74655,239339,29,29.0,,problem1/fast-downward/seq-opt-lmcut/scalability/middle/execution.log
+problem1,default,default,Fast Downward,seq-opt-lmcut,10,10,1,2,4,True,solved,54.026872,54.3312,54.005728,1276881,1528704,3170620,50,50.0,,problem1/fast-downward/seq-opt-lmcut/execution.log
+problem1,default,hard,Fast Downward,seq-opt-lmcut,10,10,3,2,4,False,timeout,600.005,600.005,525.320728,2052361,4414656,,,,,problem1/fast-downward/seq-opt-lmcut/scalability/hard/execution.log
+problem1,default,easy,Fast Downward,lama-first,3,3,1,2,4,True,solved,0.027566,1.3103,0.001883,43,44,113,20,20.0,,problem1/fast-downward/lama-first/scalability/easy/execution.log
+problem1,default,middle,Fast Downward,lama-first,5,5,2,2,4,True,solved,0.032429,0.650949,0.0074,129,130,723,33,33.0,,problem1/fast-downward/lama-first/scalability/middle/execution.log
+problem1,default,default,Fast Downward,lama-first,10,10,1,2,4,True,solved,0.039684,0.660589,0.010236,154,155,449,52,52.0,,problem1/fast-downward/lama-first/execution.log
+problem1,default,hard,Fast Downward,lama-first,10,10,3,2,4,True,solved,0.200665,1.06866,0.167195,2007,2008,15828,78,78.0,,problem1/fast-downward/lama-first/scalability/hard/execution.log
+problem2,no_negative_preconditions,easy,ENHSP,opt-blind,3,3,1,2,4,True,solved,0.542,0.952269,0.539,58293,69041,,26,26.0,,problem2/no_negative_preconditions/enhsp/opt-blind/scalability/easy/execution.log
+problem2,no_negative_preconditions,middle,ENHSP,opt-blind,5,5,2,2,4,False,out_of_memory,121.975,121.975,,6220676,7735643,,,,,problem2/no_negative_preconditions/enhsp/opt-blind/scalability/middle/execution.log
+problem2,no_negative_preconditions,default,ENHSP,opt-blind,5,5,2,2,4,False,out_of_memory,94.4531,94.4531,,6222028,7738077,,,,,problem2/no_negative_preconditions/enhsp/opt-blind/execution.log
+problem2,no_negative_preconditions,hard,ENHSP,opt-blind,10,10,3,2,4,False,out_of_memory,102.365,102.365,,4123132,7246403,,,,,problem2/no_negative_preconditions/enhsp/opt-blind/scalability/hard/execution.log
+problem2,no_negative_preconditions,easy,ENHSP,opt-hmax,3,3,1,2,4,True,solved,0.886,1.24008,0.885,27185,36093,,26,26.0,,problem2/no_negative_preconditions/enhsp/opt-hmax/scalability/easy/execution.log
+problem2,no_negative_preconditions,middle,ENHSP,opt-hmax,5,5,2,2,4,True,solved,180.351,180.928,180.349,2695950,4058877,,34,34.0,,problem2/no_negative_preconditions/enhsp/opt-hmax/scalability/middle/execution.log
+problem2,no_negative_preconditions,default,ENHSP,opt-hmax,5,5,2,2,4,True,solved,175.352,175.927,175.351,2695950,4058877,,34,34.0,,problem2/no_negative_preconditions/enhsp/opt-hmax/execution.log
+problem2,no_negative_preconditions,hard,ENHSP,opt-hmax,10,10,3,2,4,False,timeout,589.501,589.501,,2023046,5277064,,,,,problem2/no_negative_preconditions/enhsp/opt-hmax/scalability/hard/execution.log
+problem2,no_negative_preconditions,easy,ENHSP,sat-aibr,3,3,1,2,4,True,solved,3.781,4.30434,3.774,6339,11899,,34,34.0,,problem2/no_negative_preconditions/enhsp/sat-aibr/scalability/easy/execution.log
+problem2,no_negative_preconditions,middle,ENHSP,sat-aibr,5,5,2,2,4,True,solved,350.74,351.226,350.737,199705,530331,,49,49.0,,problem2/no_negative_preconditions/enhsp/sat-aibr/scalability/middle/execution.log
+problem2,no_negative_preconditions,default,ENHSP,sat-aibr,5,5,2,2,4,True,solved,299.531,299.96,299.529,199705,530331,,49,49.0,,problem2/no_negative_preconditions/enhsp/sat-aibr/execution.log
+problem2,no_negative_preconditions,hard,ENHSP,sat-aibr,10,10,3,2,4,False,timeout,588.351,588.351,,78356,328492,,,,,problem2/no_negative_preconditions/enhsp/sat-aibr/scalability/hard/execution.log
+problem2,no_negative_preconditions,easy,ENHSP,sat-hadd,3,3,1,2,4,True,solved,0.071,0.40609,0.068,318,687,,26,26.0,,problem2/no_negative_preconditions/enhsp/sat-hadd/scalability/easy/execution.log
+problem2,no_negative_preconditions,middle,ENHSP,sat-hadd,5,5,2,2,4,True,solved,1.42,1.82847,1.418,8174,25218,,45,45.0,,problem2/no_negative_preconditions/enhsp/sat-hadd/scalability/middle/execution.log
+problem2,no_negative_preconditions,default,ENHSP,sat-hadd,5,5,2,2,4,True,solved,1.417,1.8241,1.415,8174,25218,,45,45.0,,problem2/no_negative_preconditions/enhsp/sat-hadd/execution.log
+problem2,no_negative_preconditions,hard,ENHSP,sat-hadd,10,10,3,2,4,False,timeout,588.307,588.307,,1796993,4909374,,,,,problem2/no_negative_preconditions/enhsp/sat-hadd/scalability/hard/execution.log
+problem2,no_negative_preconditions,easy,Fast Downward,astar-blind,3,3,1,2,4,False,unsupported_fluents,0.510495,0.510495,,,,,,,,problem2/no_negative_preconditions/fast-downward/astar-blind/scalability/easy/execution.log
+problem2,no_negative_preconditions,middle,Fast Downward,astar-blind,5,5,2,2,4,False,unsupported_fluents,0.525034,0.525034,,,,,,,,problem2/no_negative_preconditions/fast-downward/astar-blind/scalability/middle/execution.log
+problem2,no_negative_preconditions,default,Fast Downward,astar-blind,5,5,2,2,4,False,unsupported_fluents,0.536824,0.536824,,,,,,,,problem2/no_negative_preconditions/fast-downward/astar-blind/execution.log
+problem2,no_negative_preconditions,hard,Fast Downward,astar-blind,10,10,3,2,4,False,unsupported_fluents,0.513069,0.513069,,,,,,,,problem2/no_negative_preconditions/fast-downward/astar-blind/scalability/hard/execution.log
+problem2,no_negative_preconditions,easy,Fast Downward,seq-opt-lmcut,3,3,1,2,4,False,unsupported_fluents,0.526369,0.526369,,,,,,,,problem2/no_negative_preconditions/fast-downward/seq-opt-lmcut/scalability/easy/execution.log
+problem2,no_negative_preconditions,middle,Fast Downward,seq-opt-lmcut,5,5,2,2,4,False,unsupported_fluents,0.504954,0.504954,,,,,,,,problem2/no_negative_preconditions/fast-downward/seq-opt-lmcut/scalability/middle/execution.log
+problem2,no_negative_preconditions,default,Fast Downward,seq-opt-lmcut,5,5,2,2,4,False,unsupported_fluents,0.522887,0.522887,,,,,,,,problem2/no_negative_preconditions/fast-downward/seq-opt-lmcut/execution.log
+problem2,no_negative_preconditions,hard,Fast Downward,seq-opt-lmcut,10,10,3,2,4,False,unsupported_fluents,0.48909,0.48909,,,,,,,,problem2/no_negative_preconditions/fast-downward/seq-opt-lmcut/scalability/hard/execution.log
+problem2,no_negative_preconditions,easy,Fast Downward,lama-first,3,3,1,2,4,False,unsupported_fluents,0.517971,0.517971,,,,,,,,problem2/no_negative_preconditions/fast-downward/lama-first/scalability/easy/execution.log
+problem2,no_negative_preconditions,middle,Fast Downward,lama-first,5,5,2,2,4,False,unsupported_fluents,0.503772,0.503772,,,,,,,,problem2/no_negative_preconditions/fast-downward/lama-first/scalability/middle/execution.log
+problem2,no_negative_preconditions,default,Fast Downward,lama-first,5,5,2,2,4,False,unsupported_fluents,0.520093,0.520093,,,,,,,,problem2/no_negative_preconditions/fast-downward/lama-first/execution.log
+problem2,no_negative_preconditions,hard,Fast Downward,lama-first,10,10,3,2,4,False,unsupported_fluents,0.51826,0.51826,,,,,,,,problem2/no_negative_preconditions/fast-downward/lama-first/scalability/hard/execution.log
+problem2,negative_preconditions,easy,ENHSP,opt-blind,3,3,1,2,4,True,solved,0.158,0.769182,0.154,12009,14848,,22,22.0,,problem2/negative_preconditions/enhsp/opt-blind/scalability/easy/execution.log
+problem2,negative_preconditions,middle,ENHSP,opt-blind,5,5,2,2,4,True,solved,63.656,64.1267,63.653,5528262,6545000,,34,34.0,,problem2/negative_preconditions/enhsp/opt-blind/scalability/middle/execution.log
+problem2,negative_preconditions,default,ENHSP,opt-blind,5,5,2,2,4,True,solved,61.041,61.5426,61.038,5528262,6545000,,34,34.0,,problem2/negative_preconditions/enhsp/opt-blind/execution.log
+problem2,negative_preconditions,hard,ENHSP,opt-blind,10,10,3,2,4,False,out_of_memory,206.631,206.631,,4440624,7197362,,,,,problem2/negative_preconditions/enhsp/opt-blind/scalability/hard/execution.log
+problem2,negative_preconditions,easy,ENHSP,opt-hmax,3,3,1,2,4,True,solved,0.24,0.612954,0.238,4023,6308,,22,22.0,,problem2/negative_preconditions/enhsp/opt-hmax/scalability/easy/execution.log
+problem2,negative_preconditions,middle,ENHSP,opt-hmax,5,5,2,2,4,True,solved,68.776,69.2075,68.774,1131140,1667825,,34,34.0,,problem2/negative_preconditions/enhsp/opt-hmax/scalability/middle/execution.log
+problem2,negative_preconditions,default,ENHSP,opt-hmax,5,5,2,2,4,True,solved,68.418,68.859,68.416,1131140,1667825,,34,34.0,,problem2/negative_preconditions/enhsp/opt-hmax/execution.log
+problem2,negative_preconditions,hard,ENHSP,opt-hmax,10,10,3,2,4,False,timeout,596.138,596.138,,2565409,5433048,,,,,problem2/negative_preconditions/enhsp/opt-hmax/scalability/hard/execution.log
+problem2,negative_preconditions,easy,ENHSP,sat-aibr,3,3,1,2,4,True,solved,1.119,1.47396,1.116,2106,3837,,30,30.0,,problem2/negative_preconditions/enhsp/sat-aibr/scalability/easy/execution.log
+problem2,negative_preconditions,middle,ENHSP,sat-aibr,5,5,2,2,4,True,solved,132.9,133.306,132.897,85669,229326,,43,43.0,,problem2/negative_preconditions/enhsp/sat-aibr/scalability/middle/execution.log
+problem2,negative_preconditions,default,ENHSP,sat-aibr,5,5,2,2,4,True,solved,131.532,131.947,131.53,85669,229326,,43,43.0,,problem2/negative_preconditions/enhsp/sat-aibr/execution.log
+problem2,negative_preconditions,hard,ENHSP,sat-aibr,10,10,3,2,4,False,timeout,598.764,598.764,,57217,300475,,,,,problem2/negative_preconditions/enhsp/sat-aibr/scalability/hard/execution.log
+problem2,negative_preconditions,easy,ENHSP,sat-hadd,3,3,1,2,4,True,solved,0.081,0.518821,0.079,348,676,,26,26.0,,problem2/negative_preconditions/enhsp/sat-hadd/scalability/easy/execution.log
+problem2,negative_preconditions,middle,ENHSP,sat-hadd,5,5,2,2,4,True,solved,1.014,1.41243,1.012,6899,17570,,47,47.0,,problem2/negative_preconditions/enhsp/sat-hadd/scalability/middle/execution.log
+problem2,negative_preconditions,default,ENHSP,sat-hadd,5,5,2,2,4,True,solved,0.956,1.36836,0.954,6899,17570,,47,47.0,,problem2/negative_preconditions/enhsp/sat-hadd/execution.log
+problem2,negative_preconditions,hard,ENHSP,sat-hadd,10,10,3,2,4,False,timeout,594.021,594.021,,1275779,4562930,,,,,problem2/negative_preconditions/enhsp/sat-hadd/scalability/hard/execution.log
+problem2,negative_preconditions,easy,Fast Downward,astar-blind,3,3,1,2,4,False,unsupported_fluents,0.828262,0.828262,,,,,,,,problem2/negative_preconditions/fast-downward/astar-blind/scalability/easy/execution.log
+problem2,negative_preconditions,middle,Fast Downward,astar-blind,5,5,2,2,4,False,unsupported_fluents,0.580872,0.580872,,,,,,,,problem2/negative_preconditions/fast-downward/astar-blind/scalability/middle/execution.log
+problem2,negative_preconditions,default,Fast Downward,astar-blind,5,5,2,2,4,False,unsupported_fluents,0.538566,0.538566,,,,,,,,problem2/negative_preconditions/fast-downward/astar-blind/execution.log
+problem2,negative_preconditions,hard,Fast Downward,astar-blind,10,10,3,2,4,False,unsupported_fluents,0.581825,0.581825,,,,,,,,problem2/negative_preconditions/fast-downward/astar-blind/scalability/hard/execution.log
+problem2,negative_preconditions,easy,Fast Downward,seq-opt-lmcut,3,3,1,2,4,False,unsupported_fluents,0.560698,0.560698,,,,,,,,problem2/negative_preconditions/fast-downward/seq-opt-lmcut/scalability/easy/execution.log
+problem2,negative_preconditions,middle,Fast Downward,seq-opt-lmcut,5,5,2,2,4,False,unsupported_fluents,0.843111,0.843111,,,,,,,,problem2/negative_preconditions/fast-downward/seq-opt-lmcut/scalability/middle/execution.log
+problem2,negative_preconditions,default,Fast Downward,seq-opt-lmcut,5,5,2,2,4,False,unsupported_fluents,0.528994,0.528994,,,,,,,,problem2/negative_preconditions/fast-downward/seq-opt-lmcut/execution.log
+problem2,negative_preconditions,hard,Fast Downward,seq-opt-lmcut,10,10,3,2,4,False,unsupported_fluents,0.557871,0.557871,,,,,,,,problem2/negative_preconditions/fast-downward/seq-opt-lmcut/scalability/hard/execution.log
+problem2,negative_preconditions,easy,Fast Downward,lama-first,3,3,1,2,4,False,unsupported_fluents,0.591756,0.591756,,,,,,,,problem2/negative_preconditions/fast-downward/lama-first/scalability/easy/execution.log
+problem2,negative_preconditions,middle,Fast Downward,lama-first,5,5,2,2,4,False,unsupported_fluents,0.633006,0.633006,,,,,,,,problem2/negative_preconditions/fast-downward/lama-first/scalability/middle/execution.log
+problem2,negative_preconditions,default,Fast Downward,lama-first,5,5,2,2,4,False,unsupported_fluents,0.53284,0.53284,,,,,,,,problem2/negative_preconditions/fast-downward/lama-first/execution.log
+problem2,negative_preconditions,hard,Fast Downward,lama-first,10,10,3,2,4,False,unsupported_fluents,0.557178,0.557178,,,,,,,,problem2/negative_preconditions/fast-downward/lama-first/scalability/hard/execution.log
+problem3,default,easy,PANDA,progression-rc2-ff,3,3,1,2,4,True,solved,38.4655,38.4655,28.24,755646,1484688,3568787,430,430.0,,problem3/panda/scalability/easy/panda.log
+problem3,default,middle,PANDA,progression-rc2-ff,5,5,2,2,4,True,solved,0.663421,0.663421,0.211,6131,13443,26683,31,31.0,,problem3/panda/scalability/middle/panda.log
+problem3,default,hard,PANDA,progression-rc2-ff,10,10,3,2,4,True,solved,3.39635,3.39635,2.84,45776,106153,232363,138,138.0,,problem3/panda/scalability/hard/panda.log
+problem3,default,default,PANDA,progression-rc2-ff,13,13,2,2,4,True,solved,0.62,0.62,0.62,7349,21100,36319,144,144.0,,problem3/panda.log
+problem3,default,easy,Lilotane,sat-glucose4,3,3,1,2,4,True,solved,0.405285,0.405285,0.347,1062,1892,67014,38,38.0,,problem3/lilotane/scalability/easy/lilotane.log
+problem3,default,middle,Lilotane,sat-glucose4,5,5,2,2,4,True,solved,1.12641,1.12641,1.105,1133,2364,143996,50,50.0,,problem3/lilotane/scalability/middle/lilotane.log
+problem3,default,hard,Lilotane,sat-glucose4,10,10,3,2,4,True,solved,406.178,406.178,406.128,1973,4464,432508,101,101.0,,problem3/lilotane/scalability/hard/lilotane.log
+problem3,default,default,Lilotane,sat-glucose4,13,13,2,2,4,False,timeout,283.855,283.855,283.855,1973,4464,459467,,,,problem3/lilotane/lilotane.log
+problem4,default,default,TFD,tfd,1,1,1,0,3,False,unsolvable_exhausted,59.8735,59.8735,50.37,1170585,4930525,6115163,,,,problem4/tfd/tfd.log
+problem4,default,easy,TFD,tfd,3,3,1,2,4,False,timeout,591.097,591.097,447.0,1594805,6085758,7809479,,,,problem4/tfd/scalability/easy/tfd.log
+problem4,default,middle,TFD,tfd,5,5,2,2,4,True,solved,2.63008,4.21405,2.31,21073,21073,,71,125.621,125.621,problem4/tfd/scalability/middle/tfd.log
+problem4,default,hard,TFD,tfd,10,10,3,2,4,False,timeout,587.376,587.376,188.0,538864,778308,4896072,,,,problem4/tfd/scalability/hard/tfd.log
+problem4,default,default,LPG-TD,lpg-td,1,1,1,0,3,True,solved,0.76,0.925925,0.04,,,,8,8.0,17.0,problem4/lpg-td/lpg-td.log
+problem4,default,easy,LPG-TD,lpg-td,3,3,1,2,4,False,relaxed_plan_error,0.198443,0.198443,,,,,,,,problem4/lpg-td/scalability/easy/lpg-td.log
+problem4,default,middle,LPG-TD,lpg-td,5,5,2,2,4,False,relaxed_plan_error,0.185661,0.185661,,,,,,,,problem4/lpg-td/scalability/middle/lpg-td.log
+problem4,default,hard,LPG-TD,lpg-td,10,10,3,2,4,False,relaxed_plan_error,0.454244,0.454244,,,,,,,,problem4/lpg-td/scalability/hard/lpg-td.log
+problem4,default,default,OPTIC,optic,1,1,1,0,3,True,solved,0.64,0.961808,0.1,34,1925,,8,17.007,17.007,problem4/optic/optic.log
+problem4,default,easy,OPTIC,optic,3,3,1,2,4,True,solved_anytime_timeout,0.31,588.706,0.31,372,372,,34,74.032,74.032,problem4/optic/scalability/easy/optic.log
+problem4,default,middle,OPTIC,optic,5,5,2,2,4,True,solved_anytime_timeout,31.75,588.165,31.75,21095,21095,,73,120.059,120.059,problem4/optic/scalability/middle/optic.log
+problem4,default,hard,OPTIC,optic,10,10,3,2,4,False,timeout,588.473,588.473,,,,,,,,problem4/optic/scalability/hard/optic.log
+problem5,default,default,PlanSys2 (Kairos),kairos,20,20,3,2,4,True,solved,,,,,,,155,4315.15,4315.15,problem5/plan_output.txt

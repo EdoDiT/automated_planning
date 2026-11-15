@@ -1,0 +1,70 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 27
+Aibr Preprocessing
+|F|:64
+|X|:0
+|A|:112
+|P|:0
+|E|:0
+AIBR selected
+f(n) = 67.0 (Expanded Nodes: 1, Evaluated States: 1, Time: 0.01) Frontier Size: 0
+f(n) = 68.0 (Expanded Nodes: 179, Evaluated States: 400, Time: 0.216) Frontier Size: 221
+f(n) = 69.0 (Expanded Nodes: 261, Evaluated States: 559, Time: 0.265) Frontier Size: 298
+f(n) = 70.0 (Expanded Nodes: 270, Evaluated States: 593, Time: 0.274) Frontier Size: 322
+f(n) = 71.0 (Expanded Nodes: 595, Evaluated States: 1270, Time: 0.473) Frontier Size: 657
+Problem Solved
+
+Found Plan:
+0.0: (move_in_room curator_2 pod_pickup)
+1.0: (take_pod curator_2 pod_2)
+2.0: (move_out_room curator_2 pod_pickup)
+3.0: (move_in_room curator hall_beta)
+4.0: (move_in_room curator_2 hall_beta)
+5.0: (pickup_standard_artifact curator_2 artifact_3 hall_beta)
+6.0: (move_out_room curator_2 hall_beta)
+7.0: (move_in_room curator_2 stasis_lab)
+8.0: (drop_standard_artifact curator_2 artifact_3 stasis_lab)
+9.0: (move_out_room curator_2 stasis_lab)
+10.0: (move_in_room curator_2 hall_beta)
+11.0: (pickup_sensitive_artifact curator_2 artifact_5 pod_2 hall_beta)
+12.0: (move_out_room curator_2 hall_beta)
+13.0: (move_out_room curator hall_beta)
+14.0: (move_in_room curator_2 hall_alpha)
+15.0: (safe_drop_seismic_sensitive_artifact curator_2 artifact_5 pod_2 hall_alpha)
+16.0: (pickup_standard_artifact curator_2 artifact_2 hall_alpha)
+17.0: (move_out_room curator_2 hall_alpha)
+18.0: (move_in_room curator_2 stasis_lab)
+19.0: (drop_standard_artifact curator_2 artifact_2 stasis_lab)
+20.0: (move_out_room curator_2 stasis_lab)
+21.0: (move_in_room curator_2 pod_pickup)
+22.0: (drop_pod curator_2 pod_2)
+23.0: (take_pod curator_2 pod_1)
+24.0: (move_out_room curator_2 pod_pickup)
+25.0: (move_in_room curator pod_pickup)
+26.0: (take_pod curator pod_2)
+27.0: (move_out_room curator pod_pickup)
+28.0: (move_in_room curator hall_alpha)
+29.0: (move_in_room curator_2 hall_beta)
+30.0: (pickup_sensitive_artifact curator artifact_1 pod_2 hall_alpha)
+31.0: (pickup_sensitive_artifact curator_2 artifact_4 pod_1 hall_beta)
+32.0: (move_out_room curator_2 hall_beta)
+33.0: (move_out_room curator hall_alpha)
+34.0: (move_in_room curator cryo-chamber)
+35.0: (move_in_room curator_2 stasis_lab)
+36.0: (safe_drop_thermosensitive_artifact curator artifact_1 pod_2 cryo-chamber)
+37.0: (safe_drop_seismic_and_thermo_sensitive_artifact curator_2 artifact_4 pod_1 stasis_lab)
+
+Plan-Length:38
+Metric (Search):38.0
+Planning Time (msec): 2241
+Heuristic Time (msec): 2087
+Search Time (msec): 2236
+Expanded Nodes:3819
+States Evaluated:9771
+Number of Dead-Ends detected:0
+Number of Duplicates detected:8900
+
+Execution time: 2.611 seconds
+Exit status: 0

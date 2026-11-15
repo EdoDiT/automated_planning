@@ -1,0 +1,34 @@
+\begin{table}[htbp]
+\centering
+\caption{Problem 2 (Numeric Planning with Fluents \& Earthquakes) Results using ENHSP: Comparison between \texttt{no\_negative\_preconditions} and \texttt{negative\_preconditions}. (Note: Fast Downward configurations \texttt{astar-blind}, \texttt{seq-opt-lmcut}, and \texttt{lama-first} abort during translation on all Problem 2 instances with exit code 31 because PDDL \texttt{:fluents} are unsupported.)}
+\label{tab:problem2_results}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{ll rr crrr crrr}
+\toprule
+ & & & & \multicolumn{4}{c}{\textbf{No Negative Preconditions}} & \multicolumn{4}{c}{\textbf{With Negative Preconditions}} \\
+\cmidrule(lr){5-8} \cmidrule(lr){9-12}
+\textbf{Config.} & \textbf{Level} & \textbf{Art.} & \textbf{Rob.} & \textbf{Solved} & \textbf{Time (s)} & \textbf{Expanded} & \textbf{Len.} & \textbf{Solved} & \textbf{Time (s)} & \textbf{Expanded} & \textbf{Len.} \\
+\midrule
+\texttt{opt-blind} & easy & 3 & 1 & \textbf{Yes} & 0.54 & 58,293 & 26 & \textbf{Yes} & 0.16 & 12,009 & 22 \\
+\texttt{opt-blind} & middle & 5 & 2 & No (OOM) & 121.97 & 6,220,676 & --- & \textbf{Yes} & 63.66 & 5,528,262 & 34 \\
+\texttt{opt-blind} & default & 5 & 2 & No (OOM) & 94.45 & 6,222,028 & --- & \textbf{Yes} & 61.04 & 5,528,262 & 34 \\
+\texttt{opt-blind} & hard & 10 & 3 & No (OOM) & 102.36 & 4,123,132 & --- & No (OOM) & 206.63 & 4,440,624 & --- \\
+\midrule
+\texttt{opt-hmax} & easy & 3 & 1 & \textbf{Yes} & 0.89 & 27,185 & 26 & \textbf{Yes} & 0.24 & 4,023 & 22 \\
+\texttt{opt-hmax} & middle & 5 & 2 & \textbf{Yes} & 180.35 & 2,695,950 & 34 & \textbf{Yes} & 68.78 & 1,131,140 & 34 \\
+\texttt{opt-hmax} & default & 5 & 2 & \textbf{Yes} & 175.35 & 2,695,950 & 34 & \textbf{Yes} & 68.42 & 1,131,140 & 34 \\
+\texttt{opt-hmax} & hard & 10 & 3 & No (TO) & 589.50 & 2,023,046 & --- & No (TO) & 596.14 & 2,565,409 & --- \\
+\midrule
+\texttt{sat-aibr} & easy & 3 & 1 & \textbf{Yes} & 3.78 & 6,339 & 34 & \textbf{Yes} & 1.12 & 2,106 & 30 \\
+\texttt{sat-aibr} & middle & 5 & 2 & \textbf{Yes} & 350.74 & 199,705 & 49 & \textbf{Yes} & 132.90 & 85,669 & 43 \\
+\texttt{sat-aibr} & default & 5 & 2 & \textbf{Yes} & 299.53 & 199,705 & 49 & \textbf{Yes} & 131.53 & 85,669 & 43 \\
+\texttt{sat-aibr} & hard & 10 & 3 & No (TO) & 588.35 & 78,356 & --- & No (TO) & 598.76 & 57,217 & --- \\
+\midrule
+\texttt{sat-hadd} & easy & 3 & 1 & \textbf{Yes} & 0.07 & 318 & 26 & \textbf{Yes} & 0.08 & 348 & 26 \\
+\texttt{sat-hadd} & middle & 5 & 2 & \textbf{Yes} & 1.42 & 8,174 & 45 & \textbf{Yes} & 1.01 & 6,899 & 47 \\
+\texttt{sat-hadd} & default & 5 & 2 & \textbf{Yes} & 1.42 & 8,174 & 45 & \textbf{Yes} & 0.96 & 6,899 & 47 \\
+\texttt{sat-hadd} & hard & 10 & 3 & No (TO) & 588.31 & 1,796,993 & --- & No (TO) & 594.02 & 1,275,779 & --- \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}

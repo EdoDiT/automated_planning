@@ -1,0 +1,255 @@
+    _           _         _
+   \ |         \ |       | |                       
+   | |     __  | |      _| |______                
+   | |     \/  | |     /_   ______\                
+   | |      _  | |   __  | |  ___   ___   ___       
+   | |___  | | | |  / .\ | | / , | |   \ / ·_\    
+   \_____\ |_| |__\ \__/ |_| \___) |_|_| \___\  
+[39mL i l o t a n e  version rls-glucose4
+by Dominik Schreiber <dominik.schreiber@kit.edu> 2020-2021
+using SAT solver glucose4
+
+0.014 Parser finished.
+0.015 Structures extracted.
+0.015 38 operators and 33 methods created.
+0.018 Mined 37 new reduction preconditions (+74.0%).
+0.018 Iteration 0.
+0.018 Creating initial layer of size 2
+0.019 Attempting to solve formula with 9 clauses (12 literals) and 1 assumptions
+0.019 Unsolvable at layer 0 -- expanding.
+0.019 Iteration 1.
+0.019 New layer size: 2
+0.019 Instantiating ...
+0.019 Collected 3 relevant facts at this layer
+0.019 Encoding ...
+0.019 Attempting to solve formula with 14 clauses (21 literals) and 1 assumptions
+0.019 Unsolvable at layer 1 -- expanding.
+0.019 Iteration 2.
+0.019 New layer size: 2
+0.019 Instantiating ...
+0.019 Collected 3 relevant facts at this layer
+0.019 Encoding ...
+0.019 Attempting to solve formula with 28 clauses (54 literals) and 1 assumptions
+0.019 Unsolvable at layer 2 -- expanding.
+0.019 Iteration 3.
+0.019 New layer size: 4
+0.019 Instantiating ...
+0.019 Collected 4 relevant facts at this layer
+0.019 Encoding ...
+0.020 Attempting to solve formula with 77 clauses (165 literals) and 2 assumptions
+0.020 Unsolvable at layer 3 -- expanding.
+0.020 Iteration 4.
+0.020 New layer size: 7
+0.020 Instantiating ...
+0.020 Collected 10 relevant facts at this layer
+0.020 Encoding ...
+0.020 Attempting to solve formula with 273 clauses (651 literals) and 4 assumptions
+0.021 Unsolvable at layer 4 -- expanding.
+0.021 Iteration 5.
+0.021 New layer size: 12
+0.021 Instantiating ...
+0.021 Collected 10 relevant facts at this layer
+0.021 Encoding ...
+0.022 Attempting to solve formula with 615 clauses (1524 literals) and 8 assumptions
+0.022 Unsolvable at layer 5 -- expanding.
+0.022 Iteration 6.
+0.022 New layer size: 21
+0.022 Instantiating ...
+0.023 Collected 12 relevant facts at this layer
+0.023 Encoding ...
+0.024 Attempting to solve formula with 1318 clauses (3326 literals) and 16 assumptions
+0.024 Unsolvable at layer 6 -- expanding.
+0.024 Iteration 7.
+0.024 New layer size: 40
+0.024 Instantiating ...
+0.026 Collected 17 relevant facts at this layer
+0.026 Encoding ...
+0.027 Attempting to solve formula with 2978 clauses (7631 literals) and 31 assumptions
+0.027 Unsolvable at layer 7 -- expanding.
+0.027 Iteration 8.
+0.028 New layer size: 79
+0.028 Instantiating ...
+0.033 Collected 39 relevant facts at this layer
+0.033 Encoding ...
+0.036 Attempting to solve formula with 8214 clauses (21616 literals) and 58 assumptions
+0.036 Unsolvable at layer 8 -- expanding.
+0.036 Iteration 9.
+0.036 New layer size: 152
+0.036 Instantiating ...
+0.049 Collected 39 relevant facts at this layer
+0.049 Encoding ...
+0.055 Attempting to solve formula with 18463 clauses (49510 literals) and 99 assumptions
+0.056 Unsolvable at layer 9 -- expanding.
+0.056 Iteration 10.
+0.056 New layer size: 275
+0.056 Instantiating ...
+0.082 Collected 39 relevant facts at this layer
+0.082 Encoding ...
+0.094 Attempting to solve formula with 36799 clauses (100125 literals) and 157 assumptions
+0.103 Unsolvable at layer 10 -- expanding.
+0.103 Iteration 11.
+0.104 New layer size: 467
+0.104 Instantiating ...
+0.145 Collected 39 relevant facts at this layer
+0.145 Encoding ...
+0.165 Attempting to solve formula with 67014 clauses (184332 literals) and 235 assumptions
+0.347 Found a solution at layer 11.
+==>
+9263 activate_robot curator
+9266 seal curator
+9268 move curator pod_pickup tunnel
+9272 move curator tunnel pod_pickup
+9294 unseal curator
+9297 take_pod curator pod_1
+9329 seal curator
+9331 move curator pod_pickup tunnel
+9334 move curator tunnel hall_alpha
+9364 unseal curator
+9371 pickup_standard_artifact curator artifact_1 hall_alpha
+9419 seal curator
+9421 move curator hall_alpha tunnel
+9425 move curator tunnel cryo_chamber
+9451 unseal curator
+9454 drop_standard_artifact curator artifact_1 cryo_chamber
+9563 seal curator
+9565 move curator cryo_chamber tunnel
+9569 move curator tunnel hall_alpha
+9592 unseal curator
+9645 pickup_standard_artifact curator artifact_3 hall_alpha
+10024 seal curator
+10027 move curator hall_alpha tunnel
+10029 move curator tunnel stasis_lab
+10056 unseal curator
+10061 drop_standard_artifact curator artifact_3 stasis_lab
+10168 seal curator
+10171 move curator stasis_lab tunnel
+10174 move curator tunnel hall_alpha
+10197 unseal curator
+10301 seal curator
+10327 unseal curator
+10376 pickup_sensitive_artifact curator artifact_2 pod_1 hall_alpha
+10623 seal curator
+10626 move curator hall_alpha tunnel
+10629 move curator tunnel stasis_lab
+10652 unseal curator
+11101 safe_drop_thermosensitive_artifact curator artifact_2 pod_1 stasis_lab
+root 11
+11 solve_problem -> run_main_task 16
+16 manage_workforce -> deploy_one_more_robot 9263 26 30
+26 make_robot_work curator -> deploy_for_work_once 50 54
+30 manage_workforce -> finish_deployment
+50 tour_around curator pod_pickup -> do_tour_around 120 123
+54 make_robot_work curator -> deploy_for_work_once 138 142
+120 prepare_robot curator pod_pickup -> prepare_pods 225
+123 conduct_tour curator -> tour_next_stop 229 243 253
+138 tour_around curator hall_alpha -> do_tour_around 269 273
+142 make_robot_work curator -> deploy_for_work_once 293 298
+225 fetch_pods curator -> fetch_pods_from_pod_pickup 451 454
+229 robot_travel curator hall_alpha -> sealing_curator_travel 9329 476 9364
+243 service_room curator hall_alpha -> do_service_room 498 502
+253 conduct_tour curator -> tour_next_stop 515 532 542
+269 prepare_robot curator hall_alpha -> prepare_nothing
+273 conduct_tour curator -> tour_next_stop 572 589 599
+293 tour_around curator hall_alpha -> do_tour_around 620 628
+298 make_robot_work curator -> deploy_for_work_once 653 661
+451 robot_travel curator pod_pickup -> sealing_curator_travel 9266 1005 9294
+454 take_pods curator -> take_one_pod 9297 1023
+476 move_robot curator pod_pickup hall_alpha -> move_robot_one_location 9331 1055
+498 unload_phase curator hall_alpha -> finish_unloading
+502 load_phase curator hall_alpha -> load_one_standard_more 9371 1086
+515 robot_travel curator cryo_chamber -> sealing_curator_travel 9419 1134 9451
+532 service_room curator cryo_chamber -> do_service_room 1156 1170
+542 conduct_tour curator -> tour_next_stop 1215 1245 1256
+572 robot_travel curator stasis_lab -> sealing_curator_travel 10024 1358 10056
+589 service_room curator stasis_lab -> do_service_room 1379 1394
+599 conduct_tour curator -> tour_next_stop 1439 1468 1478
+620 prepare_robot curator hall_alpha -> prepare_nothing
+628 conduct_tour curator -> tour_next_stop 1542 1566 1577
+653 tour_around curator stasis_lab -> do_tour_around 1614 1638
+661 make_robot_work curator -> finish_work
+1005 move_robot curator pod_pickup pod_pickup -> move_robot_one_location 9268 2776
+1023 take_pods curator -> finish_taking_pods
+1055 move_robot curator tunnel hall_alpha -> move_robot_one_location 9334 2826
+1086 load_phase curator hall_alpha -> finish_loading
+1134 move_robot curator hall_alpha cryo_chamber -> move_robot_one_location 9421 2899
+1156 unload_phase curator cryo_chamber -> unload_one_standard_more 9454 2927
+1170 load_phase curator cryo_chamber -> finish_loading
+1215 robot_travel curator hall_alpha -> sealing_curator_travel 9563 3017 9592
+1245 service_room curator hall_alpha -> do_service_room 3039 3055
+1256 conduct_tour curator -> finish_tour
+1358 move_robot curator hall_alpha stasis_lab -> move_robot_one_location 10027 3213
+1379 unload_phase curator stasis_lab -> unload_one_standard_more 10061 3242
+1394 load_phase curator stasis_lab -> finish_loading
+1439 robot_travel curator hall_alpha -> sealing_curator_travel 10168 3332 10197
+1468 service_room curator hall_alpha -> do_service_room 3356 3369
+1478 conduct_tour curator -> tour_next_stop 3414 3425 3436
+1542 robot_travel curator stasis_lab -> sealing_curator_travel 10623 3504 10652
+1566 service_room curator stasis_lab -> do_service_room 3527 3542
+1577 conduct_tour curator -> finish_tour
+1614 prepare_robot curator stasis_lab -> prepare_nothing
+1638 conduct_tour curator -> tour_next_stop 3650 3662 3673
+2776 move_robot curator tunnel pod_pickup -> move_robot_one_location 9272 5176
+2826 move_robot curator hall_alpha hall_alpha -> arrived_at_destination
+2899 move_robot curator tunnel cryo_chamber -> move_robot_one_location 9425 5310
+2927 unload_phase curator cryo_chamber -> finish_unloading
+3017 move_robot curator cryo_chamber hall_alpha -> move_robot_one_location 9565 5441
+3039 unload_phase curator hall_alpha -> finish_unloading
+3055 load_phase curator hall_alpha -> load_one_standard_more 9645 5514
+3213 move_robot curator tunnel stasis_lab -> move_robot_one_location 10029 5765
+3242 unload_phase curator stasis_lab -> finish_unloading
+3332 move_robot curator stasis_lab hall_alpha -> move_robot_one_location 10171 5896
+3356 unload_phase curator hall_alpha -> finish_unloading
+3369 load_phase curator hall_alpha -> finish_loading
+3414 robot_travel curator hall_alpha -> sealing_curator_travel 10301 6014 10327
+3425 service_room curator hall_alpha -> do_service_room 6037 6052
+3436 conduct_tour curator -> finish_tour
+3504 move_robot curator hall_alpha stasis_lab -> move_robot_one_location 10626 6211
+3527 unload_phase curator stasis_lab -> finish_unloading
+3542 load_phase curator stasis_lab -> finish_loading
+3650 robot_travel curator stasis_lab -> already_at_destination
+3662 service_room curator stasis_lab -> do_service_room 6523 6539
+3673 conduct_tour curator -> finish_tour
+5176 move_robot curator pod_pickup pod_pickup -> arrived_at_destination
+5310 move_robot curator cryo_chamber cryo_chamber -> arrived_at_destination
+5441 move_robot curator tunnel hall_alpha -> move_robot_one_location 9569 9573
+5514 load_phase curator hall_alpha -> finish_loading
+5765 move_robot curator stasis_lab stasis_lab -> arrived_at_destination
+5896 move_robot curator tunnel hall_alpha -> move_robot_one_location 10174 10178
+6014 move_robot curator hall_alpha hall_alpha -> arrived_at_destination
+6037 unload_phase curator hall_alpha -> finish_unloading
+6052 load_phase curator hall_alpha -> load_one_sensitive_more 10376 10383
+6211 move_robot curator tunnel stasis_lab -> move_robot_one_location 10629 10633
+6523 unload_phase curator stasis_lab -> unload_one_thermosensitive_more 11101 11107
+6539 load_phase curator stasis_lab -> finish_loading
+9573 move_robot curator hall_alpha hall_alpha -> arrived_at_destination
+10178 move_robot curator hall_alpha hall_alpha -> arrived_at_destination
+10383 load_phase curator hall_alpha -> finish_loading
+10633 move_robot curator stasis_lab stasis_lab -> arrived_at_destination
+11107 unload_phase curator stasis_lab -> finish_unloading
+<==
+0.351 End of solution plan. (counted length of 38)
+0.351 Total amount of clauses encoded: 67014
+0.351 - directframeaxioms : 33396 cls
+0.351 - reductionconstraints : 8300 cls
+0.351 - qfactsemantics : 5828 cls
+0.351 - indirectframeaxioms : 4408 cls
+0.351 - atmostoneelement : 3365 cls
+0.351 - expansions : 3237 cls
+0.351 - predecessors : 3138 cls
+0.351 - actionconstraints : 2186 cls
+0.351 - substitutionconstraints : 1562 cls
+0.351 - actioneffects : 797 cls
+0.351 - qconstequality : 756 cls
+0.351 - truefacts : 39 cls
+0.351 - axiomaticops : 2 cls
+0.351 # instantiated positions: 1062
+0.351 # instantiated actions: 1892
+0.351 # instantiated reductions: 1247
+0.351 # introduced pseudo-constants: 591
+0.351 # retroactive prunings: 0
+0.351 # retroactively pruned operations: 0
+0.351 # dominated operations: 0
+0.351 Exiting happily (no cleaning up).
+
+Execution time: 0.405285 seconds
+Exit status: 0

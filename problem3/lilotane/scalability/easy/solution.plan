@@ -1,0 +1,38 @@
+9263 activate_robot curator
+9266 seal curator
+9268 move curator pod_pickup tunnel
+9272 move curator tunnel pod_pickup
+9294 unseal curator
+9297 take_pod curator pod_1
+9329 seal curator
+9331 move curator pod_pickup tunnel
+9334 move curator tunnel hall_alpha
+9364 unseal curator
+9371 pickup_standard_artifact curator artifact_1 hall_alpha
+9419 seal curator
+9421 move curator hall_alpha tunnel
+9425 move curator tunnel cryo_chamber
+9451 unseal curator
+9454 drop_standard_artifact curator artifact_1 cryo_chamber
+9563 seal curator
+9565 move curator cryo_chamber tunnel
+9569 move curator tunnel hall_alpha
+9592 unseal curator
+9645 pickup_standard_artifact curator artifact_3 hall_alpha
+10024 seal curator
+10027 move curator hall_alpha tunnel
+10029 move curator tunnel stasis_lab
+10056 unseal curator
+10061 drop_standard_artifact curator artifact_3 stasis_lab
+10168 seal curator
+10171 move curator stasis_lab tunnel
+10174 move curator tunnel hall_alpha
+10197 unseal curator
+10301 seal curator
+10327 unseal curator
+10376 pickup_sensitive_artifact curator artifact_2 pod_1 hall_alpha
+10623 seal curator
+10626 move curator hall_alpha tunnel
+10629 move curator tunnel stasis_lab
+10652 unseal curator
+11101 safe_drop_thermosensitive_artifact curator artifact_2 pod_1 stasis_lab

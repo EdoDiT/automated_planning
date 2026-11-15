@@ -1,0 +1,22 @@
+
+
+NUMERIC_THREATS_MODE: 0
+
+; Command line: /root/.planutils/packages/lpg-td/bin/lpg-td -o /project/problem4/interplanetary_museum_domain_4.pddl -f /project/problem4/scalability/hard.pddl -v off -noout -quality   
+
+
+Parsing domain file:  domain 'INTERPLANETARY_MUSEUM_DOMAIN_4' defined ... done.
+Parsing problem file:  problem 'MARTIAN_MUSEUM_4' defined ... done.
+
+
+
+Modality: Quality Planner
+
+
+
+ERROR in file H_relaxed.c:1525 ; Warning: Errore nel calcolo dei valori di raggiungibilità, la variabile non è una precondizione 
+
+Planner did not produce a solution plan.
+
+Planner exit status: 1
+Execution time: -0.454244 seconds

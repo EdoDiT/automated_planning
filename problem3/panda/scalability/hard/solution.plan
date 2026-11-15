@@ -1,0 +1,2979 @@
+10 __method_precondition_deploy_one_more_robot[biggie]
+11 activate_robot[biggie]
+20 __noop
+33 __method_precondition_already_at_destination[biggie,pod_pickup]
+34 __method_precondition_already_at_destination[biggie,pod_pickup]
+40 __method_precondition_already_at_destination[biggie,pod_pickup]
+41 __method_precondition_fetch_pods_from_pod_pickup[biggie]
+46 __method_precondition_already_at_destination[biggie,pod_pickup]
+71 __method_precondition_take_one_pod[biggie,pod_2]
+72 take_pod[biggie,pod_2]
+74 __method_precondition_already_at_destination[biggie,pod_pickup]
+124 __method_precondition_sealing_curator_travel[biggie,pod_pickup]
+125 seal[biggie]
+139 __method_precondition_move_robot_one_location[biggie,pod_pickup,tunnel]
+140 move[biggie,pod_pickup,tunnel]
+143 __method_precondition_move_robot_one_location[biggie,tunnel,hall_beta]
+144 move[biggie,tunnel,stasis_lab]
+178 __method_precondition_arrived_at_destination[biggie,stasis_lab,stasis_lab]
+179 unseal[biggie]
+184 __noop
+190 __noop
+258 __method_precondition_sealing_curator_travel[biggie,stasis_lab]
+259 seal[biggie]
+2239 __method_precondition_move_robot_one_location[biggie,stasis_lab,tunnel]
+2240 move[biggie,stasis_lab,tunnel]
+4054 __method_precondition_move_robot_one_location[biggie,tunnel,hall_beta]
+4055 move[biggie,tunnel,hall_beta]
+4064 __method_precondition_arrived_at_destination[biggie,hall_beta,hall_beta]
+4065 unseal[biggie]
+4070 __noop
+4130 __method_precondition_load_one_sensitive_more[biggie,hall_beta,artifact_8,pod_2]
+4131 pickup_sensitive_artifact[biggie,artifact_8,pod_2,hall_beta]
+4150 __noop
+4301 __method_precondition_sealing_curator_travel[biggie,hall_beta]
+4302 seal[biggie]
+11048 __method_precondition_move_robot_one_location[biggie,hall_beta,tunnel]
+11049 move[biggie,hall_beta,tunnel]
+11055 __method_precondition_move_robot_one_location[biggie,tunnel,hall_beta]
+11056 move[biggie,tunnel,hall_alpha]
+11067 __method_precondition_arrived_at_destination[biggie,hall_alpha,hall_alpha]
+11068 unseal[biggie]
+11281 __method_precondition_unload_one_seismic_sensitive_more[biggie,artifact_8,pod_2]
+11282 safe_drop_seismic_sensitive_artifact[biggie,artifact_8,pod_2,hall_alpha]
+11286 __noop
+12022 __method_precondition_load_one_sensitive_more[biggie,hall_alpha,artifact_5,pod_2]
+12023 pickup_sensitive_artifact[biggie,artifact_5,pod_2,hall_alpha]
+12033 __noop
+12037 __noop
+12078 __method_precondition_already_at_destination[biggie,hall_alpha]
+12079 __method_precondition_already_at_destination[biggie,hall_alpha]
+12085 __noop
+12089 __noop
+12096 __method_precondition_already_at_destination[biggie,hall_alpha]
+12097 __method_precondition_already_at_destination[biggie,hall_alpha]
+12103 __noop
+12107 __noop
+12114 __method_precondition_already_at_destination[biggie,hall_alpha]
+12115 __method_precondition_already_at_destination[biggie,hall_alpha]
+12121 __noop
+12125 __noop
+12132 __method_precondition_already_at_destination[biggie,hall_alpha]
+12133 __method_precondition_already_at_destination[biggie,hall_alpha]
+12139 __noop
+12143 __noop
+12150 __method_precondition_already_at_destination[biggie,hall_alpha]
+12151 __method_precondition_already_at_destination[biggie,hall_alpha]
+12157 __noop
+12161 __noop
+12178 __method_precondition_already_at_destination[biggie,hall_alpha]
+12179 __method_precondition_already_at_destination[biggie,hall_alpha]
+12185 __noop
+12477 __method_precondition_sealing_curator_travel[biggie,hall_alpha]
+12478 seal[biggie]
+12511 __method_precondition_move_robot_one_location[biggie,hall_alpha,tunnel]
+12512 move[biggie,hall_alpha,tunnel]
+12524 __method_precondition_move_robot_one_location[biggie,tunnel,hall_beta]
+12525 move[biggie,tunnel,cryo_chamber]
+12530 __method_precondition_arrived_at_destination[biggie,cryo_chamber,cryo_chamber]
+12531 unseal[biggie]
+12734 __method_precondition_unload_one_thermosensitive_more[biggie,artifact_5,pod_2]
+12735 safe_drop_thermosensitive_artifact[biggie,artifact_5,pod_2,cryo_chamber]
+12738 __noop
+12742 __noop
+12746 __noop
+12752 __method_precondition_deploy_for_work_once[biggie,cryo_chamber]
+12753 __method_precondition_deploy_for_work_once[biggie,cryo_chamber]
+12760 __noop
+12764 __noop
+12844 __method_precondition_deploy_for_work_once[biggie,cryo_chamber]
+12845 __method_precondition_deploy_for_work_once[biggie,cryo_chamber]
+12852 __noop
+13437 __method_precondition_sealing_curator_travel[biggie,cryo_chamber]
+13438 seal[biggie]
+22610 __method_precondition_move_robot_one_location[biggie,cryo_chamber,tunnel]
+22611 move[biggie,cryo_chamber,tunnel]
+22614 __method_precondition_move_robot_one_location[biggie,tunnel,hall_beta]
+22615 move[biggie,tunnel,hall_beta]
+22630 __method_precondition_move_robot_one_location[biggie,hall_beta,tunnel]
+22631 move[biggie,hall_beta,tunnel]
+22634 __method_precondition_move_robot_one_location[biggie,tunnel,hall_beta]
+22635 move[biggie,tunnel,hall_beta]
+22747 __method_precondition_move_robot_one_location[biggie,hall_beta,tunnel]
+22748 move[biggie,hall_beta,tunnel]
+22754 __method_precondition_move_robot_one_location[biggie,tunnel,hall_beta]
+22755 move[biggie,tunnel,hall_alpha]
+22769 __method_precondition_move_robot_one_location[biggie,hall_alpha,tunnel]
+22770 move[biggie,hall_alpha,tunnel]
+22794 __method_precondition_move_robot_one_location[biggie,tunnel,hall_beta]
+22795 move[biggie,tunnel,hall_alpha]
+22809 __method_precondition_move_robot_one_location[biggie,hall_alpha,tunnel]
+22810 move[biggie,hall_alpha,tunnel]
+22842 __method_precondition_move_robot_one_location[biggie,tunnel,hall_beta]
+22843 move[biggie,tunnel,hall_beta]
+22858 __method_precondition_move_robot_one_location[biggie,hall_beta,tunnel]
+22859 move[biggie,hall_beta,tunnel]
+22881 __method_precondition_move_robot_one_location[biggie,tunnel,hall_beta]
+22882 move[biggie,tunnel,hall_beta]
+23003 __method_precondition_move_robot_one_location[biggie,hall_beta,tunnel]
+23004 move[biggie,hall_beta,tunnel]
+23007 __method_precondition_move_robot_one_location[biggie,tunnel,hall_beta]
+23008 move[biggie,tunnel,hall_beta]
+23451 __method_precondition_move_robot_one_location[biggie,hall_beta,tunnel]
+23452 move[biggie,hall_beta,tunnel]
+26089 __method_precondition_move_robot_one_location[biggie,tunnel,hall_beta]
+26090 move[biggie,tunnel,hall_alpha]
+26101 __method_precondition_arrived_at_destination[biggie,hall_alpha,hall_alpha]
+26102 unseal[biggie]
+26107 __noop
+26122 __method_precondition_load_one_standard_more[biggie,hall_alpha,artifact_1]
+26123 pickup_standard_artifact[biggie,artifact_1,hall_alpha]
+26138 __noop
+26142 __noop
+26149 __method_precondition_already_at_destination[biggie,hall_alpha]
+26150 __method_precondition_already_at_destination[biggie,hall_alpha]
+26156 __noop
+26160 __noop
+26167 __method_precondition_already_at_destination[biggie,hall_alpha]
+26168 __method_precondition_already_at_destination[biggie,hall_alpha]
+26174 __noop
+26178 __noop
+26245 __method_precondition_already_at_destination[biggie,hall_alpha]
+26246 __method_precondition_already_at_destination[biggie,hall_alpha]
+26252 __noop
+26492 __method_precondition_sealing_curator_travel[biggie,hall_alpha]
+26493 seal[biggie]
+26500 __method_precondition_move_robot_one_location[biggie,hall_alpha,tunnel]
+26501 move[biggie,hall_alpha,tunnel]
+26513 __method_precondition_move_robot_one_location[biggie,tunnel,hall_beta]
+26514 move[biggie,tunnel,cryo_chamber]
+26519 __method_precondition_arrived_at_destination[biggie,cryo_chamber,cryo_chamber]
+26520 unseal[biggie]
+26525 __noop
+26529 __noop
+26533 __noop
+26539 __method_precondition_deploy_for_work_once[biggie,cryo_chamber]
+26540 __method_precondition_deploy_for_work_once[biggie,cryo_chamber]
+26547 __noop
+26551 __noop
+26557 __method_precondition_deploy_for_work_once[biggie,cryo_chamber]
+26558 __method_precondition_deploy_for_work_once[biggie,cryo_chamber]
+26565 __noop
+26569 __noop
+26575 __method_precondition_deploy_for_work_once[biggie,cryo_chamber]
+26576 __method_precondition_deploy_for_work_once[biggie,cryo_chamber]
+26583 __noop
+26587 __noop
+26593 __method_precondition_deploy_for_work_once[biggie,cryo_chamber]
+26594 __method_precondition_deploy_for_work_once[biggie,cryo_chamber]
+26601 __noop
+26605 __noop
+26611 __method_precondition_deploy_for_work_once[biggie,cryo_chamber]
+26612 __method_precondition_deploy_for_work_once[biggie,cryo_chamber]
+26619 __noop
+26623 __noop
+26629 __method_precondition_deploy_for_work_once[biggie,cryo_chamber]
+26630 __method_precondition_deploy_for_work_once[biggie,cryo_chamber]
+26637 __noop
+26641 __noop
+26647 __method_precondition_deploy_for_work_once[biggie,cryo_chamber]
+26648 __method_precondition_deploy_for_work_once[biggie,cryo_chamber]
+26655 __noop
+39701 __method_precondition_sealing_curator_travel[biggie,cryo_chamber]
+39702 seal[biggie]
+40228 __method_precondition_move_robot_one_location[biggie,cryo_chamber,tunnel]
+40229 move[biggie,cryo_chamber,tunnel]
+40235 __method_precondition_move_robot_one_location[biggie,tunnel,hall_beta]
+40236 move[biggie,tunnel,cryo_chamber]
+40248 __method_precondition_move_robot_one_location[biggie,cryo_chamber,tunnel]
+40249 move[biggie,cryo_chamber,tunnel]
+40261 __method_precondition_move_robot_one_location[biggie,tunnel,hall_beta]
+40262 move[biggie,tunnel,hall_beta]
+44421 __method_precondition_arrived_at_destination[biggie,hall_beta,hall_beta]
+44422 unseal[biggie]
+49706 __method_precondition_unload_one_standard_more[biggie,artifact_1]
+49707 drop_standard_artifact[biggie,artifact_1,hall_beta]
+49711 __noop
+49857 __method_precondition_load_one_sensitive_more[biggie,hall_beta,artifact_7,pod_2]
+49858 pickup_sensitive_artifact[biggie,artifact_7,pod_2,hall_beta]
+49884 __noop
+52824 __method_precondition_sealing_curator_travel[biggie,hall_beta]
+52825 seal[biggie]
+67420 __method_precondition_move_robot_one_location[biggie,hall_beta,tunnel]
+67421 move[biggie,hall_beta,tunnel]
+67424 __method_precondition_move_robot_one_location[biggie,tunnel,hall_beta]
+67425 move[biggie,tunnel,stasis_lab]
+67439 __method_precondition_arrived_at_destination[biggie,stasis_lab,stasis_lab]
+67440 unseal[biggie]
+67549 __method_precondition_unload_one_seismic_sensitive_more[biggie,artifact_7,pod_2]
+67550 safe_drop_seismic_sensitive_artifact[biggie,artifact_7,pod_2,stasis_lab]
+67553 __noop
+67559 __noop
+67563 __noop
+67617 __method_precondition_already_at_destination[biggie,stasis_lab]
+67618 __method_precondition_already_at_destination[biggie,stasis_lab]
+67621 __noop
+67625 __noop
+67635 __method_precondition_already_at_destination[biggie,stasis_lab]
+67636 __method_precondition_already_at_destination[biggie,stasis_lab]
+67639 __noop
+67643 __noop
+67653 __method_precondition_already_at_destination[biggie,stasis_lab]
+67654 __method_precondition_already_at_destination[biggie,stasis_lab]
+67657 __noop
+67661 __noop
+67671 __method_precondition_already_at_destination[biggie,stasis_lab]
+67672 __method_precondition_already_at_destination[biggie,stasis_lab]
+67675 __noop
+67679 __noop
+67689 __method_precondition_already_at_destination[biggie,stasis_lab]
+67690 __method_precondition_already_at_destination[biggie,stasis_lab]
+67693 __noop
+67697 __noop
+67707 __method_precondition_already_at_destination[biggie,stasis_lab]
+67708 __method_precondition_already_at_destination[biggie,stasis_lab]
+67711 __noop
+67715 __noop
+67725 __method_precondition_already_at_destination[biggie,stasis_lab]
+67726 __method_precondition_already_at_destination[biggie,stasis_lab]
+67729 __noop
+67733 __noop
+67743 __method_precondition_already_at_destination[biggie,stasis_lab]
+67744 __method_precondition_already_at_destination[biggie,stasis_lab]
+67747 __noop
+67751 __noop
+67761 __method_precondition_already_at_destination[biggie,stasis_lab]
+67762 __method_precondition_already_at_destination[biggie,stasis_lab]
+67765 __noop
+67769 __noop
+67779 __method_precondition_already_at_destination[biggie,stasis_lab]
+67780 __method_precondition_already_at_destination[biggie,stasis_lab]
+67783 __noop
+67787 __noop
+67797 __method_precondition_already_at_destination[biggie,stasis_lab]
+67798 __method_precondition_already_at_destination[biggie,stasis_lab]
+67801 __noop
+67805 __noop
+67815 __method_precondition_already_at_destination[biggie,stasis_lab]
+67816 __method_precondition_already_at_destination[biggie,stasis_lab]
+67819 __noop
+67823 __noop
+67833 __method_precondition_already_at_destination[biggie,stasis_lab]
+67834 __method_precondition_already_at_destination[biggie,stasis_lab]
+67837 __noop
+67841 __noop
+67851 __method_precondition_already_at_destination[biggie,stasis_lab]
+67852 __method_precondition_already_at_destination[biggie,stasis_lab]
+67855 __noop
+67859 __noop
+67869 __method_precondition_already_at_destination[biggie,stasis_lab]
+67870 __method_precondition_already_at_destination[biggie,stasis_lab]
+67873 __noop
+67877 __noop
+67887 __method_precondition_already_at_destination[biggie,stasis_lab]
+67888 __method_precondition_already_at_destination[biggie,stasis_lab]
+67891 __noop
+70877 __method_precondition_sealing_curator_travel[biggie,stasis_lab]
+70878 seal[biggie]
+70881 __method_precondition_move_robot_one_location[biggie,stasis_lab,tunnel]
+70882 move[biggie,stasis_lab,tunnel]
+71155 __method_precondition_move_robot_one_location[biggie,tunnel,hall_beta]
+71156 move[biggie,tunnel,hall_beta]
+71161 __method_precondition_arrived_at_destination[biggie,hall_beta,hall_beta]
+71162 unseal[biggie]
+71167 __noop
+71244 __method_precondition_load_one_sensitive_more[biggie,hall_beta,artifact_9,pod_2]
+71245 pickup_sensitive_artifact[biggie,artifact_9,pod_2,hall_beta]
+71263 __noop
+71699 __method_precondition_sealing_curator_travel[biggie,hall_beta]
+71700 seal[biggie]
+72123 __method_precondition_move_robot_one_location[biggie,hall_beta,tunnel]
+72124 move[biggie,hall_beta,tunnel]
+72149 __method_precondition_move_robot_one_location[biggie,tunnel,hall_beta]
+72150 move[biggie,tunnel,stasis_lab]
+72164 __method_precondition_arrived_at_destination[biggie,stasis_lab,stasis_lab]
+72165 unseal[biggie]
+72370 __method_precondition_unload_one_thermosensitive_more[biggie,artifact_9,pod_2]
+72371 safe_drop_thermosensitive_artifact[biggie,artifact_9,pod_2,stasis_lab]
+72378 __noop
+72384 __noop
+72388 __noop
+72398 __method_precondition_already_at_destination[biggie,stasis_lab]
+72399 __method_precondition_already_at_destination[biggie,stasis_lab]
+72402 __noop
+72406 __noop
+72706 __method_precondition_already_at_destination[biggie,stasis_lab]
+72707 __method_precondition_already_at_destination[biggie,stasis_lab]
+72710 __noop
+72714 __noop
+72724 __method_precondition_already_at_destination[biggie,stasis_lab]
+72725 __method_precondition_already_at_destination[biggie,stasis_lab]
+72728 __noop
+72732 __noop
+72742 __method_precondition_already_at_destination[biggie,stasis_lab]
+72743 __method_precondition_already_at_destination[biggie,stasis_lab]
+72746 __noop
+72750 __noop
+72760 __method_precondition_already_at_destination[biggie,stasis_lab]
+72761 __method_precondition_already_at_destination[biggie,stasis_lab]
+72764 __noop
+72768 __noop
+72778 __method_precondition_already_at_destination[biggie,stasis_lab]
+72779 __method_precondition_already_at_destination[biggie,stasis_lab]
+72782 __noop
+84712 __method_precondition_sealing_curator_travel[biggie,stasis_lab]
+84713 seal[biggie]
+84716 __method_precondition_move_robot_one_location[biggie,stasis_lab,tunnel]
+84717 move[biggie,stasis_lab,tunnel]
+84729 __method_precondition_move_robot_one_location[biggie,tunnel,hall_beta]
+84730 move[biggie,tunnel,hall_beta]
+84739 __method_precondition_arrived_at_destination[biggie,hall_beta,hall_beta]
+84740 unseal[biggie]
+84745 __noop
+84894 __method_precondition_load_one_sensitive_more[biggie,hall_beta,artifact_10,pod_2]
+84895 pickup_sensitive_artifact[biggie,artifact_10,pod_2,hall_beta]
+84904 __noop
+84908 __noop
+84916 __method_precondition_already_at_destination[biggie,hall_beta]
+84917 __method_precondition_already_at_destination[biggie,hall_beta]
+84922 __noop
+84926 __noop
+84934 __method_precondition_already_at_destination[biggie,hall_beta]
+84935 __method_precondition_already_at_destination[biggie,hall_beta]
+84940 __noop
+84944 __noop
+84955 __method_precondition_already_at_destination[biggie,hall_beta]
+84956 __method_precondition_already_at_destination[biggie,hall_beta]
+84961 __noop
+85785 __method_precondition_sealing_curator_travel[biggie,hall_beta]
+85786 seal[biggie]
+86286 __method_precondition_move_robot_one_location[biggie,hall_beta,tunnel]
+86287 move[biggie,hall_beta,tunnel]
+87168 __method_precondition_move_robot_one_location[biggie,tunnel,hall_beta]
+87169 move[biggie,tunnel,hall_beta]
+87224 __method_precondition_move_robot_one_location[biggie,hall_beta,tunnel]
+87225 move[biggie,hall_beta,tunnel]
+87255 __method_precondition_move_robot_one_location[biggie,tunnel,hall_beta]
+87256 move[biggie,tunnel,hall_alpha]
+92091 __method_precondition_arrived_at_destination[biggie,hall_alpha,hall_alpha]
+92092 unseal[biggie]
+100757 __method_precondition_unload_one_thermosensitive_more[biggie,artifact_10,pod_2]
+100758 safe_drop_seismic_sensitive_artifact[biggie,artifact_10,pod_2,hall_alpha]
+100767 __noop
+100885 __method_precondition_load_one_sensitive_more[biggie,hall_alpha,artifact_2,pod_2]
+100886 pickup_sensitive_artifact[biggie,artifact_2,pod_2,hall_alpha]
+100890 __noop
+100894 __noop
+100924 __method_precondition_already_at_destination[biggie,hall_alpha]
+100925 __method_precondition_already_at_destination[biggie,hall_alpha]
+100931 __noop
+100935 __noop
+100942 __method_precondition_already_at_destination[biggie,hall_alpha]
+100943 __method_precondition_already_at_destination[biggie,hall_alpha]
+100949 __noop
+100953 __noop
+100960 __method_precondition_already_at_destination[biggie,hall_alpha]
+100961 __method_precondition_already_at_destination[biggie,hall_alpha]
+100967 __noop
+100971 __noop
+100978 __method_precondition_already_at_destination[biggie,hall_alpha]
+100979 __method_precondition_already_at_destination[biggie,hall_alpha]
+100985 __noop
+100989 __noop
+100996 __method_precondition_already_at_destination[biggie,hall_alpha]
+100997 __method_precondition_already_at_destination[biggie,hall_alpha]
+101003 __noop
+101007 __noop
+101014 __method_precondition_already_at_destination[biggie,hall_alpha]
+101015 __method_precondition_already_at_destination[biggie,hall_alpha]
+101021 __noop
+101025 __noop
+101032 __method_precondition_already_at_destination[biggie,hall_alpha]
+101033 __method_precondition_already_at_destination[biggie,hall_alpha]
+101039 __noop
+101043 __noop
+101050 __method_precondition_already_at_destination[biggie,hall_alpha]
+101051 __method_precondition_already_at_destination[biggie,hall_alpha]
+101057 __noop
+101061 __noop
+101068 __method_precondition_already_at_destination[biggie,hall_alpha]
+101069 __method_precondition_already_at_destination[biggie,hall_alpha]
+101075 __noop
+101079 __noop
+101086 __method_precondition_already_at_destination[biggie,hall_alpha]
+101087 __method_precondition_already_at_destination[biggie,hall_alpha]
+101093 __noop
+101097 __noop
+101104 __method_precondition_already_at_destination[biggie,hall_alpha]
+101105 __method_precondition_already_at_destination[biggie,hall_alpha]
+101111 __noop
+101115 __noop
+101122 __method_precondition_already_at_destination[biggie,hall_alpha]
+101123 __method_precondition_already_at_destination[biggie,hall_alpha]
+101129 __noop
+101133 __noop
+101140 __method_precondition_already_at_destination[biggie,hall_alpha]
+101141 __method_precondition_already_at_destination[biggie,hall_alpha]
+101147 __noop
+101151 __noop
+101158 __method_precondition_already_at_destination[biggie,hall_alpha]
+101159 __method_precondition_already_at_destination[biggie,hall_alpha]
+101165 __noop
+101169 __noop
+101176 __method_precondition_already_at_destination[biggie,hall_alpha]
+101177 __method_precondition_already_at_destination[biggie,hall_alpha]
+101183 __noop
+101187 __noop
+101194 __method_precondition_already_at_destination[biggie,hall_alpha]
+101195 __method_precondition_already_at_destination[biggie,hall_alpha]
+101201 __noop
+101205 __noop
+101212 __method_precondition_already_at_destination[biggie,hall_alpha]
+101213 __method_precondition_already_at_destination[biggie,hall_alpha]
+101219 __noop
+101223 __noop
+101230 __method_precondition_already_at_destination[biggie,hall_alpha]
+101231 __method_precondition_already_at_destination[biggie,hall_alpha]
+101237 __noop
+101241 __noop
+101248 __method_precondition_already_at_destination[biggie,hall_alpha]
+101249 __method_precondition_already_at_destination[biggie,hall_alpha]
+101255 __noop
+101259 __noop
+101266 __method_precondition_already_at_destination[biggie,hall_alpha]
+101267 __method_precondition_already_at_destination[biggie,hall_alpha]
+101273 __noop
+101277 __noop
+101284 __method_precondition_already_at_destination[biggie,hall_alpha]
+101285 __method_precondition_already_at_destination[biggie,hall_alpha]
+101291 __noop
+101295 __noop
+101302 __method_precondition_already_at_destination[biggie,hall_alpha]
+101303 __method_precondition_already_at_destination[biggie,hall_alpha]
+101309 __noop
+101313 __noop
+101320 __method_precondition_already_at_destination[biggie,hall_alpha]
+101321 __method_precondition_already_at_destination[biggie,hall_alpha]
+101327 __noop
+101331 __noop
+101338 __method_precondition_already_at_destination[biggie,hall_alpha]
+101339 __method_precondition_already_at_destination[biggie,hall_alpha]
+101345 __noop
+101349 __noop
+101356 __method_precondition_already_at_destination[biggie,hall_alpha]
+101357 __method_precondition_already_at_destination[biggie,hall_alpha]
+101363 __noop
+101367 __noop
+101374 __method_precondition_already_at_destination[biggie,hall_alpha]
+101375 __method_precondition_already_at_destination[biggie,hall_alpha]
+101381 __noop
+101385 __noop
+101392 __method_precondition_already_at_destination[biggie,hall_alpha]
+101393 __method_precondition_already_at_destination[biggie,hall_alpha]
+101399 __noop
+101403 __noop
+101410 __method_precondition_already_at_destination[biggie,hall_alpha]
+101411 __method_precondition_already_at_destination[biggie,hall_alpha]
+101417 __noop
+101421 __noop
+101428 __method_precondition_already_at_destination[biggie,hall_alpha]
+101429 __method_precondition_already_at_destination[biggie,hall_alpha]
+101435 __noop
+101439 __noop
+101446 __method_precondition_already_at_destination[biggie,hall_alpha]
+101447 __method_precondition_already_at_destination[biggie,hall_alpha]
+101453 __noop
+101457 __noop
+101464 __method_precondition_already_at_destination[biggie,hall_alpha]
+101465 __method_precondition_already_at_destination[biggie,hall_alpha]
+101471 __noop
+101475 __noop
+101482 __method_precondition_already_at_destination[biggie,hall_alpha]
+101483 __method_precondition_already_at_destination[biggie,hall_alpha]
+101489 __noop
+101493 __noop
+101500 __method_precondition_already_at_destination[biggie,hall_alpha]
+101501 __method_precondition_already_at_destination[biggie,hall_alpha]
+101507 __noop
+101511 __noop
+101518 __method_precondition_already_at_destination[biggie,hall_alpha]
+101519 __method_precondition_already_at_destination[biggie,hall_alpha]
+101525 __noop
+101529 __noop
+101536 __method_precondition_already_at_destination[biggie,hall_alpha]
+101537 __method_precondition_already_at_destination[biggie,hall_alpha]
+101543 __noop
+101547 __noop
+101554 __method_precondition_already_at_destination[biggie,hall_alpha]
+101555 __method_precondition_already_at_destination[biggie,hall_alpha]
+101561 __noop
+101565 __noop
+101572 __method_precondition_already_at_destination[biggie,hall_alpha]
+101573 __method_precondition_already_at_destination[biggie,hall_alpha]
+101579 __noop
+101583 __noop
+101590 __method_precondition_already_at_destination[biggie,hall_alpha]
+101591 __method_precondition_already_at_destination[biggie,hall_alpha]
+101597 __noop
+101601 __noop
+101608 __method_precondition_already_at_destination[biggie,hall_alpha]
+101609 __method_precondition_already_at_destination[biggie,hall_alpha]
+101615 __noop
+101619 __noop
+101626 __method_precondition_already_at_destination[biggie,hall_alpha]
+101627 __method_precondition_already_at_destination[biggie,hall_alpha]
+101633 __noop
+101637 __noop
+101644 __method_precondition_already_at_destination[biggie,hall_alpha]
+101645 __method_precondition_already_at_destination[biggie,hall_alpha]
+101651 __noop
+101655 __noop
+101662 __method_precondition_already_at_destination[biggie,hall_alpha]
+101663 __method_precondition_already_at_destination[biggie,hall_alpha]
+101669 __noop
+101673 __noop
+101680 __method_precondition_already_at_destination[biggie,hall_alpha]
+101681 __method_precondition_already_at_destination[biggie,hall_alpha]
+101687 __noop
+101691 __noop
+101698 __method_precondition_already_at_destination[biggie,hall_alpha]
+101699 __method_precondition_already_at_destination[biggie,hall_alpha]
+101705 __noop
+101709 __noop
+101716 __method_precondition_already_at_destination[biggie,hall_alpha]
+101717 __method_precondition_already_at_destination[biggie,hall_alpha]
+101723 __noop
+101727 __noop
+101734 __method_precondition_already_at_destination[biggie,hall_alpha]
+101735 __method_precondition_already_at_destination[biggie,hall_alpha]
+101741 __noop
+101745 __noop
+101752 __method_precondition_already_at_destination[biggie,hall_alpha]
+101753 __method_precondition_already_at_destination[biggie,hall_alpha]
+101759 __noop
+101763 __noop
+101770 __method_precondition_already_at_destination[biggie,hall_alpha]
+101771 __method_precondition_already_at_destination[biggie,hall_alpha]
+101777 __noop
+101781 __noop
+101788 __method_precondition_already_at_destination[biggie,hall_alpha]
+101789 __method_precondition_already_at_destination[biggie,hall_alpha]
+101795 __noop
+101799 __noop
+101806 __method_precondition_already_at_destination[biggie,hall_alpha]
+101807 __method_precondition_already_at_destination[biggie,hall_alpha]
+101813 __noop
+101817 __noop
+101824 __method_precondition_already_at_destination[biggie,hall_alpha]
+101825 __method_precondition_already_at_destination[biggie,hall_alpha]
+101831 __noop
+101835 __noop
+101842 __method_precondition_already_at_destination[biggie,hall_alpha]
+101843 __method_precondition_already_at_destination[biggie,hall_alpha]
+101849 __noop
+101853 __noop
+101860 __method_precondition_already_at_destination[biggie,hall_alpha]
+101861 __method_precondition_already_at_destination[biggie,hall_alpha]
+101867 __noop
+101871 __noop
+101878 __method_precondition_already_at_destination[biggie,hall_alpha]
+101879 __method_precondition_already_at_destination[biggie,hall_alpha]
+101885 __noop
+101889 __noop
+101896 __method_precondition_already_at_destination[biggie,hall_alpha]
+101897 __method_precondition_already_at_destination[biggie,hall_alpha]
+101903 __noop
+101907 __noop
+101914 __method_precondition_already_at_destination[biggie,hall_alpha]
+101915 __method_precondition_already_at_destination[biggie,hall_alpha]
+101921 __noop
+101925 __noop
+101932 __method_precondition_already_at_destination[biggie,hall_alpha]
+101933 __method_precondition_already_at_destination[biggie,hall_alpha]
+101939 __noop
+101943 __noop
+101950 __method_precondition_already_at_destination[biggie,hall_alpha]
+101951 __method_precondition_already_at_destination[biggie,hall_alpha]
+101957 __noop
+101961 __noop
+101968 __method_precondition_already_at_destination[biggie,hall_alpha]
+101969 __method_precondition_already_at_destination[biggie,hall_alpha]
+101975 __noop
+101979 __noop
+101986 __method_precondition_already_at_destination[biggie,hall_alpha]
+101987 __method_precondition_already_at_destination[biggie,hall_alpha]
+101993 __noop
+101997 __noop
+102004 __method_precondition_already_at_destination[biggie,hall_alpha]
+102005 __method_precondition_already_at_destination[biggie,hall_alpha]
+102011 __noop
+102015 __noop
+102022 __method_precondition_already_at_destination[biggie,hall_alpha]
+102023 __method_precondition_already_at_destination[biggie,hall_alpha]
+102029 __noop
+102033 __noop
+102040 __method_precondition_already_at_destination[biggie,hall_alpha]
+102041 __method_precondition_already_at_destination[biggie,hall_alpha]
+102047 __noop
+102051 __noop
+102058 __method_precondition_already_at_destination[biggie,hall_alpha]
+102059 __method_precondition_already_at_destination[biggie,hall_alpha]
+102065 __noop
+102069 __noop
+102076 __method_precondition_already_at_destination[biggie,hall_alpha]
+102077 __method_precondition_already_at_destination[biggie,hall_alpha]
+102083 __noop
+102087 __noop
+102094 __method_precondition_already_at_destination[biggie,hall_alpha]
+102095 __method_precondition_already_at_destination[biggie,hall_alpha]
+102101 __noop
+102105 __noop
+102112 __method_precondition_already_at_destination[biggie,hall_alpha]
+102113 __method_precondition_already_at_destination[biggie,hall_alpha]
+102119 __noop
+102123 __noop
+102130 __method_precondition_already_at_destination[biggie,hall_alpha]
+102131 __method_precondition_already_at_destination[biggie,hall_alpha]
+102137 __noop
+102141 __noop
+102148 __method_precondition_already_at_destination[biggie,hall_alpha]
+102149 __method_precondition_already_at_destination[biggie,hall_alpha]
+102155 __noop
+102159 __noop
+102166 __method_precondition_already_at_destination[biggie,hall_alpha]
+102167 __method_precondition_already_at_destination[biggie,hall_alpha]
+102173 __noop
+102177 __noop
+102184 __method_precondition_already_at_destination[biggie,hall_alpha]
+102185 __method_precondition_already_at_destination[biggie,hall_alpha]
+102191 __noop
+102195 __noop
+102202 __method_precondition_already_at_destination[biggie,hall_alpha]
+102203 __method_precondition_already_at_destination[biggie,hall_alpha]
+102209 __noop
+102213 __noop
+102220 __method_precondition_already_at_destination[biggie,hall_alpha]
+102221 __method_precondition_already_at_destination[biggie,hall_alpha]
+102227 __noop
+102231 __noop
+102238 __method_precondition_already_at_destination[biggie,hall_alpha]
+102239 __method_precondition_already_at_destination[biggie,hall_alpha]
+102245 __noop
+105883 __method_precondition_sealing_curator_travel[biggie,hall_alpha]
+105884 seal[biggie]
+105890 __method_precondition_move_robot_one_location[biggie,hall_alpha,tunnel]
+105891 move[biggie,hall_alpha,tunnel]
+105960 __method_precondition_move_robot_one_location[biggie,tunnel,hall_beta]
+105961 move[biggie,tunnel,stasis_lab]
+105978 __method_precondition_move_robot_one_location[biggie,stasis_lab,tunnel]
+105979 move[biggie,stasis_lab,tunnel]
+106110 __method_precondition_move_robot_one_location[biggie,tunnel,hall_beta]
+106111 move[biggie,tunnel,stasis_lab]
+106125 __method_precondition_arrived_at_destination[biggie,stasis_lab,stasis_lab]
+106126 unseal[biggie]
+106322 __method_precondition_unload_one_thermosensitive_more[biggie,artifact_2,pod_2]
+106323 safe_drop_thermosensitive_artifact[biggie,artifact_2,pod_2,stasis_lab]
+106327 __noop
+106333 __noop
+174670 __method_precondition_sealing_curator_travel[biggie,stasis_lab]
+174671 seal[biggie]
+174674 __method_precondition_move_robot_one_location[biggie,stasis_lab,tunnel]
+174675 move[biggie,stasis_lab,tunnel]
+174681 __method_precondition_move_robot_one_location[biggie,tunnel,hall_beta]
+174682 move[biggie,tunnel,hall_alpha]
+174697 __method_precondition_arrived_at_destination[biggie,hall_alpha,hall_alpha]
+174698 unseal[biggie]
+174703 __noop
+174737 __method_precondition_load_one_standard_more[biggie,hall_alpha,artifact_3]
+174738 pickup_standard_artifact[biggie,artifact_3,hall_alpha]
+174740 __noop
+174744 __noop
+174751 __method_precondition_already_at_destination[biggie,hall_alpha]
+174752 __method_precondition_already_at_destination[biggie,hall_alpha]
+174758 __noop
+188858 __method_precondition_sealing_curator_travel[biggie,hall_alpha]
+188859 seal[biggie]
+188865 __method_precondition_move_robot_one_location[biggie,hall_alpha,tunnel]
+188866 move[biggie,hall_alpha,tunnel]
+188869 __method_precondition_move_robot_one_location[biggie,tunnel,hall_beta]
+188870 move[biggie,tunnel,stasis_lab]
+188884 __method_precondition_arrived_at_destination[biggie,stasis_lab,stasis_lab]
+188885 unseal[biggie]
+188947 __method_precondition_unload_one_standard_more[biggie,artifact_3]
+188948 drop_standard_artifact[biggie,artifact_3,stasis_lab]
+188951 __noop
+188957 __noop
+188961 __noop
+188971 __method_precondition_already_at_destination[biggie,stasis_lab]
+188972 __method_precondition_already_at_destination[biggie,stasis_lab]
+188975 __noop
+188979 __noop
+188989 __method_precondition_already_at_destination[biggie,stasis_lab]
+188990 __method_precondition_already_at_destination[biggie,stasis_lab]
+188993 __noop
+188997 __noop
+189022 __method_precondition_already_at_destination[biggie,stasis_lab]
+189023 __method_precondition_already_at_destination[biggie,stasis_lab]
+189026 __noop
+189030 __noop
+189040 __method_precondition_already_at_destination[biggie,stasis_lab]
+189041 __method_precondition_already_at_destination[biggie,stasis_lab]
+189044 __noop
+189048 __noop
+189058 __method_precondition_already_at_destination[biggie,stasis_lab]
+189059 __method_precondition_already_at_destination[biggie,stasis_lab]
+189062 __noop
+189066 __noop
+189076 __method_precondition_already_at_destination[biggie,stasis_lab]
+189077 __method_precondition_already_at_destination[biggie,stasis_lab]
+189080 __noop
+189084 __noop
+189094 __method_precondition_already_at_destination[biggie,stasis_lab]
+189095 __method_precondition_already_at_destination[biggie,stasis_lab]
+189098 __noop
+189102 __noop
+189112 __method_precondition_already_at_destination[biggie,stasis_lab]
+189113 __method_precondition_already_at_destination[biggie,stasis_lab]
+189116 __noop
+206333 __method_precondition_sealing_curator_travel[biggie,stasis_lab]
+206334 seal[biggie]
+209393 __method_precondition_move_robot_one_location[biggie,stasis_lab,tunnel]
+209394 move[biggie,stasis_lab,tunnel]
+209406 __method_precondition_move_robot_one_location[biggie,tunnel,hall_beta]
+209407 move[biggie,tunnel,hall_beta]
+209416 __method_precondition_arrived_at_destination[biggie,hall_beta,hall_beta]
+209417 unseal[biggie]
+209422 __noop
+209501 __method_precondition_load_one_standard_more[biggie,hall_beta,artifact_6]
+209502 pickup_standard_artifact[biggie,artifact_6,hall_beta]
+209504 __noop
+209508 __noop
+209565 __method_precondition_already_at_destination[biggie,hall_beta]
+209566 __method_precondition_already_at_destination[biggie,hall_beta]
+209571 __noop
+209575 __noop
+209583 __method_precondition_already_at_destination[biggie,hall_beta]
+209584 __method_precondition_already_at_destination[biggie,hall_beta]
+209589 __noop
+209593 __noop
+209601 __method_precondition_already_at_destination[biggie,hall_beta]
+209602 __method_precondition_already_at_destination[biggie,hall_beta]
+209607 __noop
+209611 __noop
+209619 __method_precondition_already_at_destination[biggie,hall_beta]
+209620 __method_precondition_already_at_destination[biggie,hall_beta]
+209625 __noop
+209629 __noop
+209637 __method_precondition_already_at_destination[biggie,hall_beta]
+209638 __method_precondition_already_at_destination[biggie,hall_beta]
+209643 __noop
+209647 __noop
+209655 __method_precondition_already_at_destination[biggie,hall_beta]
+209656 __method_precondition_already_at_destination[biggie,hall_beta]
+209661 __noop
+209665 __noop
+209673 __method_precondition_already_at_destination[biggie,hall_beta]
+209674 __method_precondition_already_at_destination[biggie,hall_beta]
+209679 __noop
+209683 __noop
+209691 __method_precondition_already_at_destination[biggie,hall_beta]
+209692 __method_precondition_already_at_destination[biggie,hall_beta]
+209697 __noop
+209701 __noop
+209709 __method_precondition_already_at_destination[biggie,hall_beta]
+209710 __method_precondition_already_at_destination[biggie,hall_beta]
+209715 __noop
+209719 __noop
+209763 __method_precondition_already_at_destination[biggie,hall_beta]
+209764 __method_precondition_already_at_destination[biggie,hall_beta]
+209769 __noop
+209773 __noop
+209781 __method_precondition_already_at_destination[biggie,hall_beta]
+209782 __method_precondition_already_at_destination[biggie,hall_beta]
+209787 __noop
+209791 __noop
+209799 __method_precondition_already_at_destination[biggie,hall_beta]
+209800 __method_precondition_already_at_destination[biggie,hall_beta]
+209805 __noop
+209809 __noop
+209817 __method_precondition_already_at_destination[biggie,hall_beta]
+209818 __method_precondition_already_at_destination[biggie,hall_beta]
+209823 __noop
+209827 __noop
+209835 __method_precondition_already_at_destination[biggie,hall_beta]
+209836 __method_precondition_already_at_destination[biggie,hall_beta]
+209841 __noop
+209845 __noop
+209853 __method_precondition_already_at_destination[biggie,hall_beta]
+209854 __method_precondition_already_at_destination[biggie,hall_beta]
+209859 __noop
+209863 __noop
+209871 __method_precondition_already_at_destination[biggie,hall_beta]
+209872 __method_precondition_already_at_destination[biggie,hall_beta]
+209877 __noop
+209881 __noop
+209889 __method_precondition_already_at_destination[biggie,hall_beta]
+209890 __method_precondition_already_at_destination[biggie,hall_beta]
+209895 __noop
+209899 __noop
+209907 __method_precondition_already_at_destination[biggie,hall_beta]
+209908 __method_precondition_already_at_destination[biggie,hall_beta]
+209913 __noop
+209917 __noop
+209925 __method_precondition_already_at_destination[biggie,hall_beta]
+209926 __method_precondition_already_at_destination[biggie,hall_beta]
+209931 __noop
+209935 __noop
+209943 __method_precondition_already_at_destination[biggie,hall_beta]
+209944 __method_precondition_already_at_destination[biggie,hall_beta]
+209949 __noop
+209953 __noop
+209961 __method_precondition_already_at_destination[biggie,hall_beta]
+209962 __method_precondition_already_at_destination[biggie,hall_beta]
+209967 __noop
+210963 __method_precondition_sealing_curator_travel[biggie,hall_beta]
+210964 seal[biggie]
+211457 __method_precondition_move_robot_one_location[biggie,hall_beta,tunnel]
+211458 move[biggie,hall_beta,tunnel]
+211461 __method_precondition_move_robot_one_location[biggie,tunnel,hall_beta]
+211462 move[biggie,tunnel,stasis_lab]
+211476 __method_precondition_arrived_at_destination[biggie,stasis_lab,stasis_lab]
+211477 unseal[biggie]
+211692 __method_precondition_unload_one_standard_more[biggie,artifact_6]
+211693 drop_standard_artifact[biggie,artifact_6,stasis_lab]
+211695 __noop
+211701 __noop
+211705 __noop
+211715 __method_precondition_already_at_destination[biggie,stasis_lab]
+211716 __method_precondition_already_at_destination[biggie,stasis_lab]
+211719 __noop
+211723 __noop
+211733 __method_precondition_already_at_destination[biggie,stasis_lab]
+211734 __method_precondition_already_at_destination[biggie,stasis_lab]
+211737 __noop
+211741 __noop
+211751 __method_precondition_already_at_destination[biggie,stasis_lab]
+211752 __method_precondition_already_at_destination[biggie,stasis_lab]
+211755 __noop
+211759 __noop
+211769 __method_precondition_already_at_destination[biggie,stasis_lab]
+211770 __method_precondition_already_at_destination[biggie,stasis_lab]
+211773 __noop
+211777 __noop
+211787 __method_precondition_already_at_destination[biggie,stasis_lab]
+211788 __method_precondition_already_at_destination[biggie,stasis_lab]
+211791 __noop
+211795 __noop
+211805 __method_precondition_already_at_destination[biggie,stasis_lab]
+211806 __method_precondition_already_at_destination[biggie,stasis_lab]
+211809 __noop
+217990 __method_precondition_sealing_curator_travel[biggie,stasis_lab]
+217991 seal[biggie]
+217994 __method_precondition_move_robot_one_location[biggie,stasis_lab,tunnel]
+217995 move[biggie,stasis_lab,tunnel]
+218007 __method_precondition_move_robot_one_location[biggie,tunnel,hall_beta]
+218008 move[biggie,tunnel,hall_beta]
+218013 __method_precondition_arrived_at_destination[biggie,hall_beta,hall_beta]
+218014 unseal[biggie]
+218019 __noop
+218033 __method_precondition_load_one_standard_more[biggie,hall_beta,artifact_1]
+218034 pickup_standard_artifact[biggie,artifact_1,hall_beta]
+218037 __noop
+218041 __noop
+218049 __method_precondition_already_at_destination[biggie,hall_beta]
+218050 __method_precondition_already_at_destination[biggie,hall_beta]
+218055 __noop
+218059 __noop
+218067 __method_precondition_already_at_destination[biggie,hall_beta]
+218068 __method_precondition_already_at_destination[biggie,hall_beta]
+218073 __noop
+218077 __noop
+218085 __method_precondition_already_at_destination[biggie,hall_beta]
+218086 __method_precondition_already_at_destination[biggie,hall_beta]
+218091 __noop
+218095 __noop
+218103 __method_precondition_already_at_destination[biggie,hall_beta]
+218104 __method_precondition_already_at_destination[biggie,hall_beta]
+218109 __noop
+218113 __noop
+218121 __method_precondition_already_at_destination[biggie,hall_beta]
+218122 __method_precondition_already_at_destination[biggie,hall_beta]
+218127 __noop
+218131 __noop
+218139 __method_precondition_already_at_destination[biggie,hall_beta]
+218140 __method_precondition_already_at_destination[biggie,hall_beta]
+218145 __noop
+218149 __noop
+218157 __method_precondition_already_at_destination[biggie,hall_beta]
+218158 __method_precondition_already_at_destination[biggie,hall_beta]
+218163 __noop
+218274 __method_precondition_sealing_curator_travel[biggie,hall_beta]
+218275 seal[biggie]
+218282 __method_precondition_move_robot_one_location[biggie,hall_beta,tunnel]
+218283 move[biggie,hall_beta,tunnel]
+218292 __method_precondition_move_robot_one_location[biggie,tunnel,hall_beta]
+218293 move[biggie,tunnel,hall_alpha]
+218326 __method_precondition_move_robot_one_location[biggie,hall_alpha,tunnel]
+218327 move[biggie,hall_alpha,tunnel]
+218336 __method_precondition_move_robot_one_location[biggie,tunnel,hall_beta]
+218337 move[biggie,tunnel,hall_alpha]
+218350 __method_precondition_move_robot_one_location[biggie,hall_alpha,tunnel]
+218351 move[biggie,hall_alpha,tunnel]
+218354 __method_precondition_move_robot_one_location[biggie,tunnel,hall_beta]
+218355 move[biggie,tunnel,stasis_lab]
+218373 __method_precondition_arrived_at_destination[biggie,stasis_lab,stasis_lab]
+218374 unseal[biggie]
+218547 __method_precondition_unload_one_standard_more[biggie,artifact_1]
+218548 drop_standard_artifact[biggie,artifact_1,stasis_lab]
+218552 __noop
+218571 __method_precondition_load_one_standard_more[biggie,stasis_lab,artifact_1]
+218572 pickup_standard_artifact[biggie,artifact_1,stasis_lab]
+218577 __noop
+218581 __noop
+218611 __method_precondition_already_at_destination[biggie,stasis_lab]
+218612 __method_precondition_already_at_destination[biggie,stasis_lab]
+218615 __noop
+218619 __noop
+218629 __method_precondition_already_at_destination[biggie,stasis_lab]
+218630 __method_precondition_already_at_destination[biggie,stasis_lab]
+218633 __noop
+218637 __noop
+218647 __method_precondition_already_at_destination[biggie,stasis_lab]
+218648 __method_precondition_already_at_destination[biggie,stasis_lab]
+218651 __noop
+222207 __method_precondition_sealing_curator_travel[biggie,stasis_lab]
+222208 seal[biggie]
+222211 __method_precondition_move_robot_one_location[biggie,stasis_lab,tunnel]
+222212 move[biggie,stasis_lab,tunnel]
+222224 __method_precondition_move_robot_one_location[biggie,tunnel,hall_beta]
+222225 move[biggie,tunnel,cryo_chamber]
+222230 __method_precondition_arrived_at_destination[biggie,cryo_chamber,cryo_chamber]
+222231 unseal[biggie]
+222262 __method_precondition_unload_one_standard_more[biggie,artifact_1]
+222263 drop_standard_artifact[biggie,artifact_1,cryo_chamber]
+222267 __noop
+222271 __noop
+222275 __noop
+222296 __method_precondition_deploy_for_work_once[biggie,cryo_chamber]
+222297 __method_precondition_deploy_for_work_once[biggie,cryo_chamber]
+222304 __noop
+222308 __noop
+222314 __method_precondition_deploy_for_work_once[biggie,cryo_chamber]
+222315 __method_precondition_deploy_for_work_once[biggie,cryo_chamber]
+222322 __noop
+222326 __noop
+222332 __method_precondition_deploy_for_work_once[biggie,cryo_chamber]
+222333 __method_precondition_deploy_for_work_once[biggie,cryo_chamber]
+222340 __noop
+222344 __noop
+222350 __method_precondition_deploy_for_work_once[biggie,cryo_chamber]
+222351 __method_precondition_deploy_for_work_once[biggie,cryo_chamber]
+222358 __noop
+227968 __method_precondition_sealing_curator_travel[biggie,cryo_chamber]
+227969 seal[biggie]
+227975 __method_precondition_move_robot_one_location[biggie,cryo_chamber,tunnel]
+227976 move[biggie,cryo_chamber,tunnel]
+229646 __method_precondition_move_robot_one_location[biggie,tunnel,hall_beta]
+229647 move[biggie,tunnel,hall_alpha]
+229658 __method_precondition_arrived_at_destination[biggie,hall_alpha,hall_alpha]
+229659 unseal[biggie]
+229664 __noop
+229678 __method_precondition_load_one_sensitive_more[biggie,hall_alpha,artifact_10,pod_2]
+229679 pickup_sensitive_artifact[biggie,artifact_10,pod_2,hall_alpha]
+229698 __noop
+229702 __noop
+229729 __method_precondition_already_at_destination[biggie,hall_alpha]
+229730 __method_precondition_already_at_destination[biggie,hall_alpha]
+229736 __noop
+232143 __method_precondition_sealing_curator_travel[biggie,hall_alpha]
+232144 seal[biggie]
+232150 __method_precondition_move_robot_one_location[biggie,hall_alpha,tunnel]
+232151 move[biggie,hall_alpha,tunnel]
+232154 __method_precondition_move_robot_one_location[biggie,tunnel,hall_beta]
+232155 move[biggie,tunnel,stasis_lab]
+232169 __method_precondition_arrived_at_destination[biggie,stasis_lab,stasis_lab]
+232170 unseal[biggie]
+232338 __method_precondition_unload_one_thermosensitive_more[biggie,artifact_10,pod_2]
+232339 safe_drop_thermosensitive_artifact[biggie,artifact_10,pod_2,stasis_lab]
+232348 __noop
+232354 __noop
+232358 __noop
+232361 __noop
+232360 make_robot_work[biggie] -> finish_work 232361
+232357 conduct_tour[biggie] -> finish_tour 232358
+232353 load_phase[biggie,stasis_lab] -> finish_loading 232354
+232347 unload_phase[biggie,stasis_lab] -> finish_unloading 232348
+232337 unload_one_thermosensitive_more_splitted_9[biggie,stasis_lab] -> _splitting_method_unload_one_thermosensitive_more_splitted_9 232338 232339
+232177 unload_phase[biggie,stasis_lab] -> unload_one_thermosensitive_more 232337 232347
+232168 move_robot[biggie,stasis_lab,stasis_lab] -> arrived_at_destination 232169
+232153 move_robot[biggie,tunnel,stasis_lab] -> move_robot_one_location 232154 232155 232168
+232149 move_robot[biggie,hall_alpha,stasis_lab] -> move_robot_one_location 232150 232151 232153
+232142 robot_travel[biggie,stasis_lab] -> sealing_curator_travel 232143 232144 232149 232170
+229785 tour_next_stop_splitted_1[biggie] -> <_splitting_method_tour_next_stop_splitted_1;service_room[biggie,stasis_lab];do_service_room;1;0,-1,-2> 232142 232177 232353
+229741 conduct_tour[biggie] -> tour_next_stop 229785 232357
+229735 prepare_robot[biggie,hall_alpha] -> prepare_nothing 229736
+229728 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 229729 229730 229735 229741
+229706 make_robot_work[biggie] -> deploy_for_work_once 229728 232360
+229701 conduct_tour[biggie] -> finish_tour 229702
+229697 load_phase[biggie,hall_alpha] -> finish_loading 229698
+229677 load_one_sensitive_more_splitted_5[biggie,hall_alpha] -> _splitting_method_load_one_sensitive_more_splitted_5 229678 229679
+229670 load_phase[biggie,hall_alpha] -> load_one_sensitive_more 229677 229697
+229663 unload_phase[biggie,hall_alpha] -> finish_unloading 229664
+229657 move_robot[biggie,hall_alpha,hall_alpha] -> arrived_at_destination 229658
+229645 move_robot[biggie,tunnel,hall_alpha] -> move_robot_one_location 229646 229647 229657
+227974 move_robot[biggie,cryo_chamber,hall_alpha] -> move_robot_one_location 227975 227976 229645
+227967 robot_travel[biggie,hall_alpha] -> sealing_curator_travel 227968 227969 227974 229659
+223769 tour_next_stop_splitted_1[biggie] -> <_splitting_method_tour_next_stop_splitted_1;service_room[biggie,hall_alpha];do_service_room;1;0,-1,-2> 227967 229663 229670
+222363 conduct_tour[biggie] -> tour_next_stop 223769 229701
+222357 prepare_robot[biggie,cryo_chamber] -> prepare_nothing 222358
+222349 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,cryo_chamber];do_tour_around;1;0,-1,-2,-3> 222350 222351 222357 222363
+222348 make_robot_work[biggie] -> deploy_for_work_once 222349 229706
+222343 conduct_tour[biggie] -> finish_tour 222344
+222339 prepare_robot[biggie,cryo_chamber] -> prepare_nothing 222340
+222331 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,cryo_chamber];do_tour_around;1;0,-1,-2,-3> 222332 222333 222339 222343
+222330 make_robot_work[biggie] -> deploy_for_work_once 222331 222348
+222325 conduct_tour[biggie] -> finish_tour 222326
+222321 prepare_robot[biggie,cryo_chamber] -> prepare_nothing 222322
+222313 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,cryo_chamber];do_tour_around;1;0,-1,-2,-3> 222314 222315 222321 222325
+222312 make_robot_work[biggie] -> deploy_for_work_once 222313 222330
+222307 conduct_tour[biggie] -> finish_tour 222308
+222303 prepare_robot[biggie,cryo_chamber] -> prepare_nothing 222304
+222295 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,cryo_chamber];do_tour_around;1;0,-1,-2,-3> 222296 222297 222303 222307
+222279 make_robot_work[biggie] -> deploy_for_work_once 222295 222312
+222274 conduct_tour[biggie] -> finish_tour 222275
+222270 load_phase[biggie,cryo_chamber] -> finish_loading 222271
+222266 unload_phase[biggie,cryo_chamber] -> finish_unloading 222267
+222261 unload_one_standard_more_splitted_8[biggie,cryo_chamber] -> _splitting_method_unload_one_standard_more_splitted_8 222262 222263
+222237 unload_phase[biggie,cryo_chamber] -> unload_one_standard_more 222261 222266
+222229 move_robot[biggie,cryo_chamber,cryo_chamber] -> arrived_at_destination 222230
+222223 move_robot[biggie,tunnel,cryo_chamber] -> move_robot_one_location 222224 222225 222229
+222210 move_robot[biggie,stasis_lab,cryo_chamber] -> move_robot_one_location 222211 222212 222223
+222206 robot_travel[biggie,cryo_chamber] -> sealing_curator_travel 222207 222208 222210 222231
+222196 tour_next_stop_splitted_1[biggie] -> <_splitting_method_tour_next_stop_splitted_1;service_room[biggie,cryo_chamber];do_service_room;1;0,-1,-2> 222206 222237 222270
+218656 conduct_tour[biggie] -> tour_next_stop 222196 222274
+218650 prepare_robot[biggie,stasis_lab] -> prepare_nothing 218651
+218646 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,stasis_lab];do_tour_around;1;0,-1,-2,-3> 218647 218648 218650 218656
+218641 make_robot_work[biggie] -> deploy_for_work_once 218646 222279
+218636 conduct_tour[biggie] -> finish_tour 218637
+218632 prepare_robot[biggie,stasis_lab] -> prepare_nothing 218633
+218628 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,stasis_lab];do_tour_around;1;0,-1,-2,-3> 218629 218630 218632 218636
+218623 make_robot_work[biggie] -> deploy_for_work_once 218628 218641
+218618 conduct_tour[biggie] -> finish_tour 218619
+218614 prepare_robot[biggie,stasis_lab] -> prepare_nothing 218615
+218610 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,stasis_lab];do_tour_around;1;0,-1,-2,-3> 218611 218612 218614 218618
+218585 make_robot_work[biggie] -> deploy_for_work_once 218610 218623
+218580 conduct_tour[biggie] -> finish_tour 218581
+218576 load_phase[biggie,stasis_lab] -> finish_loading 218577
+218570 load_one_standard_more_splitted_3[biggie,stasis_lab] -> _splitting_method_load_one_standard_more_splitted_3 218571 218572
+218559 load_phase[biggie,stasis_lab] -> load_one_standard_more 218570 218576
+218551 unload_phase[biggie,stasis_lab] -> finish_unloading 218552
+218546 unload_one_standard_more_splitted_8[biggie,stasis_lab] -> _splitting_method_unload_one_standard_more_splitted_8 218547 218548
+218380 unload_phase[biggie,stasis_lab] -> unload_one_standard_more 218546 218551
+218372 move_robot[biggie,stasis_lab,stasis_lab] -> arrived_at_destination 218373
+218353 move_robot[biggie,tunnel,stasis_lab] -> move_robot_one_location 218354 218355 218372
+218349 move_robot[biggie,hall_alpha,stasis_lab] -> move_robot_one_location 218350 218351 218353
+218335 move_robot[biggie,tunnel,stasis_lab] -> move_robot_one_location 218336 218337 218349
+218325 move_robot[biggie,hall_alpha,stasis_lab] -> move_robot_one_location 218326 218327 218335
+218291 move_robot[biggie,tunnel,stasis_lab] -> move_robot_one_location 218292 218293 218325
+218281 move_robot[biggie,hall_beta,stasis_lab] -> move_robot_one_location 218282 218283 218291
+218273 robot_travel[biggie,stasis_lab] -> sealing_curator_travel 218274 218275 218281 218374
+218270 tour_next_stop_splitted_1[biggie] -> <_splitting_method_tour_next_stop_splitted_1;service_room[biggie,stasis_lab];do_service_room;1;0,-1,-2> 218273 218380 218559
+218168 conduct_tour[biggie] -> tour_next_stop 218270 218580
+218162 prepare_robot[biggie,hall_beta] -> prepare_nothing 218163
+218156 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_beta];do_tour_around;1;0,-1,-2,-3> 218157 218158 218162 218168
+218153 make_robot_work[biggie] -> deploy_for_work_once 218156 218585
+218148 conduct_tour[biggie] -> finish_tour 218149
+218144 prepare_robot[biggie,hall_beta] -> prepare_nothing 218145
+218138 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_beta];do_tour_around;1;0,-1,-2,-3> 218139 218140 218144 218148
+218135 make_robot_work[biggie] -> deploy_for_work_once 218138 218153
+218130 conduct_tour[biggie] -> finish_tour 218131
+218126 prepare_robot[biggie,hall_beta] -> prepare_nothing 218127
+218120 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_beta];do_tour_around;1;0,-1,-2,-3> 218121 218122 218126 218130
+218117 make_robot_work[biggie] -> deploy_for_work_once 218120 218135
+218112 conduct_tour[biggie] -> finish_tour 218113
+218108 prepare_robot[biggie,hall_beta] -> prepare_nothing 218109
+218102 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_beta];do_tour_around;1;0,-1,-2,-3> 218103 218104 218108 218112
+218099 make_robot_work[biggie] -> deploy_for_work_once 218102 218117
+218094 conduct_tour[biggie] -> finish_tour 218095
+218090 prepare_robot[biggie,hall_beta] -> prepare_nothing 218091
+218084 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_beta];do_tour_around;1;0,-1,-2,-3> 218085 218086 218090 218094
+218081 make_robot_work[biggie] -> deploy_for_work_once 218084 218099
+218076 conduct_tour[biggie] -> finish_tour 218077
+218072 prepare_robot[biggie,hall_beta] -> prepare_nothing 218073
+218066 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_beta];do_tour_around;1;0,-1,-2,-3> 218067 218068 218072 218076
+218063 make_robot_work[biggie] -> deploy_for_work_once 218066 218081
+218058 conduct_tour[biggie] -> finish_tour 218059
+218054 prepare_robot[biggie,hall_beta] -> prepare_nothing 218055
+218048 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_beta];do_tour_around;1;0,-1,-2,-3> 218049 218050 218054 218058
+218045 make_robot_work[biggie] -> deploy_for_work_once 218048 218063
+218040 conduct_tour[biggie] -> finish_tour 218041
+218036 load_phase[biggie,hall_beta] -> finish_loading 218037
+218032 load_one_standard_more_splitted_3[biggie,hall_beta] -> _splitting_method_load_one_standard_more_splitted_3 218033 218034
+218023 load_phase[biggie,hall_beta] -> load_one_standard_more 218032 218036
+218018 unload_phase[biggie,hall_beta] -> finish_unloading 218019
+218012 move_robot[biggie,hall_beta,hall_beta] -> arrived_at_destination 218013
+218006 move_robot[biggie,tunnel,hall_beta] -> move_robot_one_location 218007 218008 218012
+217993 move_robot[biggie,stasis_lab,hall_beta] -> move_robot_one_location 217994 217995 218006
+217989 robot_travel[biggie,hall_beta] -> sealing_curator_travel 217990 217991 217993 218014
+212991 tour_next_stop_splitted_1[biggie] -> <_splitting_method_tour_next_stop_splitted_1;service_room[biggie,hall_beta];do_service_room;1;0,-1,-2> 217989 218018 218023
+211814 conduct_tour[biggie] -> tour_next_stop 212991 218040
+211808 prepare_robot[biggie,stasis_lab] -> prepare_nothing 211809
+211804 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,stasis_lab];do_tour_around;1;0,-1,-2,-3> 211805 211806 211808 211814
+211799 make_robot_work[biggie] -> deploy_for_work_once 211804 218045
+211794 conduct_tour[biggie] -> finish_tour 211795
+211790 prepare_robot[biggie,stasis_lab] -> prepare_nothing 211791
+211786 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,stasis_lab];do_tour_around;1;0,-1,-2,-3> 211787 211788 211790 211794
+211781 make_robot_work[biggie] -> deploy_for_work_once 211786 211799
+211776 conduct_tour[biggie] -> finish_tour 211777
+211772 prepare_robot[biggie,stasis_lab] -> prepare_nothing 211773
+211768 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,stasis_lab];do_tour_around;1;0,-1,-2,-3> 211769 211770 211772 211776
+211763 make_robot_work[biggie] -> deploy_for_work_once 211768 211781
+211758 conduct_tour[biggie] -> finish_tour 211759
+211754 prepare_robot[biggie,stasis_lab] -> prepare_nothing 211755
+211750 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,stasis_lab];do_tour_around;1;0,-1,-2,-3> 211751 211752 211754 211758
+211745 make_robot_work[biggie] -> deploy_for_work_once 211750 211763
+211740 conduct_tour[biggie] -> finish_tour 211741
+211736 prepare_robot[biggie,stasis_lab] -> prepare_nothing 211737
+211732 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,stasis_lab];do_tour_around;1;0,-1,-2,-3> 211733 211734 211736 211740
+211727 make_robot_work[biggie] -> deploy_for_work_once 211732 211745
+211722 conduct_tour[biggie] -> finish_tour 211723
+211718 prepare_robot[biggie,stasis_lab] -> prepare_nothing 211719
+211714 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,stasis_lab];do_tour_around;1;0,-1,-2,-3> 211715 211716 211718 211722
+211709 make_robot_work[biggie] -> deploy_for_work_once 211714 211727
+211704 conduct_tour[biggie] -> finish_tour 211705
+211700 load_phase[biggie,stasis_lab] -> finish_loading 211701
+211694 unload_phase[biggie,stasis_lab] -> finish_unloading 211695
+211691 unload_one_standard_more_splitted_8[biggie,stasis_lab] -> _splitting_method_unload_one_standard_more_splitted_8 211692 211693
+211483 unload_phase[biggie,stasis_lab] -> unload_one_standard_more 211691 211694
+211475 move_robot[biggie,stasis_lab,stasis_lab] -> arrived_at_destination 211476
+211460 move_robot[biggie,tunnel,stasis_lab] -> move_robot_one_location 211461 211462 211475
+211456 move_robot[biggie,hall_beta,stasis_lab] -> move_robot_one_location 211457 211458 211460
+210962 robot_travel[biggie,stasis_lab] -> sealing_curator_travel 210963 210964 211456 211477
+210959 tour_next_stop_splitted_1[biggie] -> <_splitting_method_tour_next_stop_splitted_1;service_room[biggie,stasis_lab];do_service_room;1;0,-1,-2> 210962 211483 211700
+209972 conduct_tour[biggie] -> tour_next_stop 210959 211704
+209966 prepare_robot[biggie,hall_beta] -> prepare_nothing 209967
+209960 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_beta];do_tour_around;1;0,-1,-2,-3> 209961 209962 209966 209972
+209957 make_robot_work[biggie] -> deploy_for_work_once 209960 211709
+209952 conduct_tour[biggie] -> finish_tour 209953
+209948 prepare_robot[biggie,hall_beta] -> prepare_nothing 209949
+209942 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_beta];do_tour_around;1;0,-1,-2,-3> 209943 209944 209948 209952
+209939 make_robot_work[biggie] -> deploy_for_work_once 209942 209957
+209934 conduct_tour[biggie] -> finish_tour 209935
+209930 prepare_robot[biggie,hall_beta] -> prepare_nothing 209931
+209924 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_beta];do_tour_around;1;0,-1,-2,-3> 209925 209926 209930 209934
+209921 make_robot_work[biggie] -> deploy_for_work_once 209924 209939
+209916 conduct_tour[biggie] -> finish_tour 209917
+209912 prepare_robot[biggie,hall_beta] -> prepare_nothing 209913
+209906 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_beta];do_tour_around;1;0,-1,-2,-3> 209907 209908 209912 209916
+209903 make_robot_work[biggie] -> deploy_for_work_once 209906 209921
+209898 conduct_tour[biggie] -> finish_tour 209899
+209894 prepare_robot[biggie,hall_beta] -> prepare_nothing 209895
+209888 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_beta];do_tour_around;1;0,-1,-2,-3> 209889 209890 209894 209898
+209885 make_robot_work[biggie] -> deploy_for_work_once 209888 209903
+209880 conduct_tour[biggie] -> finish_tour 209881
+209876 prepare_robot[biggie,hall_beta] -> prepare_nothing 209877
+209870 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_beta];do_tour_around;1;0,-1,-2,-3> 209871 209872 209876 209880
+209867 make_robot_work[biggie] -> deploy_for_work_once 209870 209885
+209862 conduct_tour[biggie] -> finish_tour 209863
+209858 prepare_robot[biggie,hall_beta] -> prepare_nothing 209859
+209852 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_beta];do_tour_around;1;0,-1,-2,-3> 209853 209854 209858 209862
+209849 make_robot_work[biggie] -> deploy_for_work_once 209852 209867
+209844 conduct_tour[biggie] -> finish_tour 209845
+209840 prepare_robot[biggie,hall_beta] -> prepare_nothing 209841
+209834 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_beta];do_tour_around;1;0,-1,-2,-3> 209835 209836 209840 209844
+209831 make_robot_work[biggie] -> deploy_for_work_once 209834 209849
+209826 conduct_tour[biggie] -> finish_tour 209827
+209822 prepare_robot[biggie,hall_beta] -> prepare_nothing 209823
+209816 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_beta];do_tour_around;1;0,-1,-2,-3> 209817 209818 209822 209826
+209813 make_robot_work[biggie] -> deploy_for_work_once 209816 209831
+209808 conduct_tour[biggie] -> finish_tour 209809
+209804 prepare_robot[biggie,hall_beta] -> prepare_nothing 209805
+209798 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_beta];do_tour_around;1;0,-1,-2,-3> 209799 209800 209804 209808
+209795 make_robot_work[biggie] -> deploy_for_work_once 209798 209813
+209790 conduct_tour[biggie] -> finish_tour 209791
+209786 prepare_robot[biggie,hall_beta] -> prepare_nothing 209787
+209780 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_beta];do_tour_around;1;0,-1,-2,-3> 209781 209782 209786 209790
+209777 make_robot_work[biggie] -> deploy_for_work_once 209780 209795
+209772 conduct_tour[biggie] -> finish_tour 209773
+209768 prepare_robot[biggie,hall_beta] -> prepare_nothing 209769
+209762 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_beta];do_tour_around;1;0,-1,-2,-3> 209763 209764 209768 209772
+209723 make_robot_work[biggie] -> deploy_for_work_once 209762 209777
+209718 conduct_tour[biggie] -> finish_tour 209719
+209714 prepare_robot[biggie,hall_beta] -> prepare_nothing 209715
+209708 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_beta];do_tour_around;1;0,-1,-2,-3> 209709 209710 209714 209718
+209705 make_robot_work[biggie] -> deploy_for_work_once 209708 209723
+209700 conduct_tour[biggie] -> finish_tour 209701
+209696 prepare_robot[biggie,hall_beta] -> prepare_nothing 209697
+209690 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_beta];do_tour_around;1;0,-1,-2,-3> 209691 209692 209696 209700
+209687 make_robot_work[biggie] -> deploy_for_work_once 209690 209705
+209682 conduct_tour[biggie] -> finish_tour 209683
+209678 prepare_robot[biggie,hall_beta] -> prepare_nothing 209679
+209672 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_beta];do_tour_around;1;0,-1,-2,-3> 209673 209674 209678 209682
+209669 make_robot_work[biggie] -> deploy_for_work_once 209672 209687
+209664 conduct_tour[biggie] -> finish_tour 209665
+209660 prepare_robot[biggie,hall_beta] -> prepare_nothing 209661
+209654 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_beta];do_tour_around;1;0,-1,-2,-3> 209655 209656 209660 209664
+209651 make_robot_work[biggie] -> deploy_for_work_once 209654 209669
+209646 conduct_tour[biggie] -> finish_tour 209647
+209642 prepare_robot[biggie,hall_beta] -> prepare_nothing 209643
+209636 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_beta];do_tour_around;1;0,-1,-2,-3> 209637 209638 209642 209646
+209633 make_robot_work[biggie] -> deploy_for_work_once 209636 209651
+209628 conduct_tour[biggie] -> finish_tour 209629
+209624 prepare_robot[biggie,hall_beta] -> prepare_nothing 209625
+209618 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_beta];do_tour_around;1;0,-1,-2,-3> 209619 209620 209624 209628
+209615 make_robot_work[biggie] -> deploy_for_work_once 209618 209633
+209610 conduct_tour[biggie] -> finish_tour 209611
+209606 prepare_robot[biggie,hall_beta] -> prepare_nothing 209607
+209600 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_beta];do_tour_around;1;0,-1,-2,-3> 209601 209602 209606 209610
+209597 make_robot_work[biggie] -> deploy_for_work_once 209600 209615
+209592 conduct_tour[biggie] -> finish_tour 209593
+209588 prepare_robot[biggie,hall_beta] -> prepare_nothing 209589
+209582 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_beta];do_tour_around;1;0,-1,-2,-3> 209583 209584 209588 209592
+209579 make_robot_work[biggie] -> deploy_for_work_once 209582 209597
+209574 conduct_tour[biggie] -> finish_tour 209575
+209570 prepare_robot[biggie,hall_beta] -> prepare_nothing 209571
+209564 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_beta];do_tour_around;1;0,-1,-2,-3> 209565 209566 209570 209574
+209512 make_robot_work[biggie] -> deploy_for_work_once 209564 209579
+209507 conduct_tour[biggie] -> finish_tour 209508
+209503 load_phase[biggie,hall_beta] -> finish_loading 209504
+209500 load_one_standard_more_splitted_3[biggie,hall_beta] -> _splitting_method_load_one_standard_more_splitted_3 209501 209502
+209426 load_phase[biggie,hall_beta] -> load_one_standard_more 209500 209503
+209421 unload_phase[biggie,hall_beta] -> finish_unloading 209422
+209415 move_robot[biggie,hall_beta,hall_beta] -> arrived_at_destination 209416
+209405 move_robot[biggie,tunnel,hall_beta] -> move_robot_one_location 209406 209407 209415
+209392 move_robot[biggie,stasis_lab,hall_beta] -> move_robot_one_location 209393 209394 209405
+206332 robot_travel[biggie,hall_beta] -> sealing_curator_travel 206333 206334 209392 209417
+206259 tour_next_stop_splitted_1[biggie] -> <_splitting_method_tour_next_stop_splitted_1;service_room[biggie,hall_beta];do_service_room;1;0,-1,-2> 206332 209421 209426
+189121 conduct_tour[biggie] -> tour_next_stop 206259 209507
+189115 prepare_robot[biggie,stasis_lab] -> prepare_nothing 189116
+189111 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,stasis_lab];do_tour_around;1;0,-1,-2,-3> 189112 189113 189115 189121
+189106 make_robot_work[biggie] -> deploy_for_work_once 189111 209512
+189101 conduct_tour[biggie] -> finish_tour 189102
+189097 prepare_robot[biggie,stasis_lab] -> prepare_nothing 189098
+189093 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,stasis_lab];do_tour_around;1;0,-1,-2,-3> 189094 189095 189097 189101
+189088 make_robot_work[biggie] -> deploy_for_work_once 189093 189106
+189083 conduct_tour[biggie] -> finish_tour 189084
+189079 prepare_robot[biggie,stasis_lab] -> prepare_nothing 189080
+189075 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,stasis_lab];do_tour_around;1;0,-1,-2,-3> 189076 189077 189079 189083
+189070 make_robot_work[biggie] -> deploy_for_work_once 189075 189088
+189065 conduct_tour[biggie] -> finish_tour 189066
+189061 prepare_robot[biggie,stasis_lab] -> prepare_nothing 189062
+189057 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,stasis_lab];do_tour_around;1;0,-1,-2,-3> 189058 189059 189061 189065
+189052 make_robot_work[biggie] -> deploy_for_work_once 189057 189070
+189047 conduct_tour[biggie] -> finish_tour 189048
+189043 prepare_robot[biggie,stasis_lab] -> prepare_nothing 189044
+189039 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,stasis_lab];do_tour_around;1;0,-1,-2,-3> 189040 189041 189043 189047
+189034 make_robot_work[biggie] -> deploy_for_work_once 189039 189052
+189029 conduct_tour[biggie] -> finish_tour 189030
+189025 prepare_robot[biggie,stasis_lab] -> prepare_nothing 189026
+189021 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,stasis_lab];do_tour_around;1;0,-1,-2,-3> 189022 189023 189025 189029
+189001 make_robot_work[biggie] -> deploy_for_work_once 189021 189034
+188996 conduct_tour[biggie] -> finish_tour 188997
+188992 prepare_robot[biggie,stasis_lab] -> prepare_nothing 188993
+188988 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,stasis_lab];do_tour_around;1;0,-1,-2,-3> 188989 188990 188992 188996
+188983 make_robot_work[biggie] -> deploy_for_work_once 188988 189001
+188978 conduct_tour[biggie] -> finish_tour 188979
+188974 prepare_robot[biggie,stasis_lab] -> prepare_nothing 188975
+188970 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,stasis_lab];do_tour_around;1;0,-1,-2,-3> 188971 188972 188974 188978
+188965 make_robot_work[biggie] -> deploy_for_work_once 188970 188983
+188960 conduct_tour[biggie] -> finish_tour 188961
+188956 load_phase[biggie,stasis_lab] -> finish_loading 188957
+188950 unload_phase[biggie,stasis_lab] -> finish_unloading 188951
+188946 unload_one_standard_more_splitted_8[biggie,stasis_lab] -> _splitting_method_unload_one_standard_more_splitted_8 188947 188948
+188891 unload_phase[biggie,stasis_lab] -> unload_one_standard_more 188946 188950
+188883 move_robot[biggie,stasis_lab,stasis_lab] -> arrived_at_destination 188884
+188868 move_robot[biggie,tunnel,stasis_lab] -> move_robot_one_location 188869 188870 188883
+188864 move_robot[biggie,hall_alpha,stasis_lab] -> move_robot_one_location 188865 188866 188868
+188857 robot_travel[biggie,stasis_lab] -> sealing_curator_travel 188858 188859 188864 188885
+175911 tour_next_stop_splitted_1[biggie] -> <_splitting_method_tour_next_stop_splitted_1;service_room[biggie,stasis_lab];do_service_room;1;0,-1,-2> 188857 188891 188956
+174763 conduct_tour[biggie] -> tour_next_stop 175911 188960
+174757 prepare_robot[biggie,hall_alpha] -> prepare_nothing 174758
+174750 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 174751 174752 174757 174763
+174748 make_robot_work[biggie] -> deploy_for_work_once 174750 188965
+174743 conduct_tour[biggie] -> finish_tour 174744
+174739 load_phase[biggie,hall_alpha] -> finish_loading 174740
+174736 load_one_standard_more_splitted_3[biggie,hall_alpha] -> _splitting_method_load_one_standard_more_splitted_3 174737 174738
+174708 load_phase[biggie,hall_alpha] -> load_one_standard_more 174736 174739
+174702 unload_phase[biggie,hall_alpha] -> finish_unloading 174703
+174696 move_robot[biggie,hall_alpha,hall_alpha] -> arrived_at_destination 174697
+174680 move_robot[biggie,tunnel,hall_alpha] -> move_robot_one_location 174681 174682 174696
+174673 move_robot[biggie,stasis_lab,hall_alpha] -> move_robot_one_location 174674 174675 174680
+174669 robot_travel[biggie,hall_alpha] -> sealing_curator_travel 174670 174671 174673 174698
+173659 tour_next_stop_splitted_1[biggie] -> <_splitting_method_tour_next_stop_splitted_1;service_room[biggie,hall_alpha];do_service_room;1;0,-1,-2> 174669 174702 174708
+106338 conduct_tour[biggie] -> tour_next_stop 173659 174743
+106332 load_phase[biggie,stasis_lab] -> finish_loading 106333
+106326 unload_phase[biggie,stasis_lab] -> finish_unloading 106327
+106321 unload_one_thermosensitive_more_splitted_9[biggie,stasis_lab] -> _splitting_method_unload_one_thermosensitive_more_splitted_9 106322 106323
+106133 unload_phase[biggie,stasis_lab] -> unload_one_thermosensitive_more 106321 106326
+106124 move_robot[biggie,stasis_lab,stasis_lab] -> arrived_at_destination 106125
+106109 move_robot[biggie,tunnel,stasis_lab] -> move_robot_one_location 106110 106111 106124
+105977 move_robot[biggie,stasis_lab,stasis_lab] -> move_robot_one_location 105978 105979 106109
+105959 move_robot[biggie,tunnel,stasis_lab] -> move_robot_one_location 105960 105961 105977
+105889 move_robot[biggie,hall_alpha,stasis_lab] -> move_robot_one_location 105890 105891 105959
+105882 robot_travel[biggie,stasis_lab] -> sealing_curator_travel 105883 105884 105889 106126
+102597 tour_next_stop_splitted_1[biggie] -> <_splitting_method_tour_next_stop_splitted_1;service_room[biggie,stasis_lab];do_service_room;1;0,-1,-2> 105882 106133 106332
+102250 conduct_tour[biggie] -> tour_next_stop 102597 106338
+102244 prepare_robot[biggie,hall_alpha] -> prepare_nothing 102245
+102237 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 102238 102239 102244 102250
+102235 make_robot_work[biggie] -> deploy_for_work_once 102237 174748
+102230 conduct_tour[biggie] -> finish_tour 102231
+102226 prepare_robot[biggie,hall_alpha] -> prepare_nothing 102227
+102219 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 102220 102221 102226 102230
+102217 make_robot_work[biggie] -> deploy_for_work_once 102219 102235
+102212 conduct_tour[biggie] -> finish_tour 102213
+102208 prepare_robot[biggie,hall_alpha] -> prepare_nothing 102209
+102201 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 102202 102203 102208 102212
+102199 make_robot_work[biggie] -> deploy_for_work_once 102201 102217
+102194 conduct_tour[biggie] -> finish_tour 102195
+102190 prepare_robot[biggie,hall_alpha] -> prepare_nothing 102191
+102183 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 102184 102185 102190 102194
+102181 make_robot_work[biggie] -> deploy_for_work_once 102183 102199
+102176 conduct_tour[biggie] -> finish_tour 102177
+102172 prepare_robot[biggie,hall_alpha] -> prepare_nothing 102173
+102165 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 102166 102167 102172 102176
+102163 make_robot_work[biggie] -> deploy_for_work_once 102165 102181
+102158 conduct_tour[biggie] -> finish_tour 102159
+102154 prepare_robot[biggie,hall_alpha] -> prepare_nothing 102155
+102147 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 102148 102149 102154 102158
+102145 make_robot_work[biggie] -> deploy_for_work_once 102147 102163
+102140 conduct_tour[biggie] -> finish_tour 102141
+102136 prepare_robot[biggie,hall_alpha] -> prepare_nothing 102137
+102129 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 102130 102131 102136 102140
+102127 make_robot_work[biggie] -> deploy_for_work_once 102129 102145
+102122 conduct_tour[biggie] -> finish_tour 102123
+102118 prepare_robot[biggie,hall_alpha] -> prepare_nothing 102119
+102111 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 102112 102113 102118 102122
+102109 make_robot_work[biggie] -> deploy_for_work_once 102111 102127
+102104 conduct_tour[biggie] -> finish_tour 102105
+102100 prepare_robot[biggie,hall_alpha] -> prepare_nothing 102101
+102093 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 102094 102095 102100 102104
+102091 make_robot_work[biggie] -> deploy_for_work_once 102093 102109
+102086 conduct_tour[biggie] -> finish_tour 102087
+102082 prepare_robot[biggie,hall_alpha] -> prepare_nothing 102083
+102075 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 102076 102077 102082 102086
+102073 make_robot_work[biggie] -> deploy_for_work_once 102075 102091
+102068 conduct_tour[biggie] -> finish_tour 102069
+102064 prepare_robot[biggie,hall_alpha] -> prepare_nothing 102065
+102057 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 102058 102059 102064 102068
+102055 make_robot_work[biggie] -> deploy_for_work_once 102057 102073
+102050 conduct_tour[biggie] -> finish_tour 102051
+102046 prepare_robot[biggie,hall_alpha] -> prepare_nothing 102047
+102039 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 102040 102041 102046 102050
+102037 make_robot_work[biggie] -> deploy_for_work_once 102039 102055
+102032 conduct_tour[biggie] -> finish_tour 102033
+102028 prepare_robot[biggie,hall_alpha] -> prepare_nothing 102029
+102021 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 102022 102023 102028 102032
+102019 make_robot_work[biggie] -> deploy_for_work_once 102021 102037
+102014 conduct_tour[biggie] -> finish_tour 102015
+102010 prepare_robot[biggie,hall_alpha] -> prepare_nothing 102011
+102003 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 102004 102005 102010 102014
+102001 make_robot_work[biggie] -> deploy_for_work_once 102003 102019
+101996 conduct_tour[biggie] -> finish_tour 101997
+101992 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101993
+101985 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101986 101987 101992 101996
+101983 make_robot_work[biggie] -> deploy_for_work_once 101985 102001
+101978 conduct_tour[biggie] -> finish_tour 101979
+101974 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101975
+101967 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101968 101969 101974 101978
+101965 make_robot_work[biggie] -> deploy_for_work_once 101967 101983
+101960 conduct_tour[biggie] -> finish_tour 101961
+101956 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101957
+101949 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101950 101951 101956 101960
+101947 make_robot_work[biggie] -> deploy_for_work_once 101949 101965
+101942 conduct_tour[biggie] -> finish_tour 101943
+101938 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101939
+101931 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101932 101933 101938 101942
+101929 make_robot_work[biggie] -> deploy_for_work_once 101931 101947
+101924 conduct_tour[biggie] -> finish_tour 101925
+101920 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101921
+101913 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101914 101915 101920 101924
+101911 make_robot_work[biggie] -> deploy_for_work_once 101913 101929
+101906 conduct_tour[biggie] -> finish_tour 101907
+101902 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101903
+101895 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101896 101897 101902 101906
+101893 make_robot_work[biggie] -> deploy_for_work_once 101895 101911
+101888 conduct_tour[biggie] -> finish_tour 101889
+101884 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101885
+101877 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101878 101879 101884 101888
+101875 make_robot_work[biggie] -> deploy_for_work_once 101877 101893
+101870 conduct_tour[biggie] -> finish_tour 101871
+101866 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101867
+101859 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101860 101861 101866 101870
+101857 make_robot_work[biggie] -> deploy_for_work_once 101859 101875
+101852 conduct_tour[biggie] -> finish_tour 101853
+101848 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101849
+101841 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101842 101843 101848 101852
+101839 make_robot_work[biggie] -> deploy_for_work_once 101841 101857
+101834 conduct_tour[biggie] -> finish_tour 101835
+101830 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101831
+101823 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101824 101825 101830 101834
+101821 make_robot_work[biggie] -> deploy_for_work_once 101823 101839
+101816 conduct_tour[biggie] -> finish_tour 101817
+101812 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101813
+101805 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101806 101807 101812 101816
+101803 make_robot_work[biggie] -> deploy_for_work_once 101805 101821
+101798 conduct_tour[biggie] -> finish_tour 101799
+101794 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101795
+101787 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101788 101789 101794 101798
+101785 make_robot_work[biggie] -> deploy_for_work_once 101787 101803
+101780 conduct_tour[biggie] -> finish_tour 101781
+101776 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101777
+101769 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101770 101771 101776 101780
+101767 make_robot_work[biggie] -> deploy_for_work_once 101769 101785
+101762 conduct_tour[biggie] -> finish_tour 101763
+101758 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101759
+101751 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101752 101753 101758 101762
+101749 make_robot_work[biggie] -> deploy_for_work_once 101751 101767
+101744 conduct_tour[biggie] -> finish_tour 101745
+101740 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101741
+101733 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101734 101735 101740 101744
+101731 make_robot_work[biggie] -> deploy_for_work_once 101733 101749
+101726 conduct_tour[biggie] -> finish_tour 101727
+101722 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101723
+101715 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101716 101717 101722 101726
+101713 make_robot_work[biggie] -> deploy_for_work_once 101715 101731
+101708 conduct_tour[biggie] -> finish_tour 101709
+101704 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101705
+101697 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101698 101699 101704 101708
+101695 make_robot_work[biggie] -> deploy_for_work_once 101697 101713
+101690 conduct_tour[biggie] -> finish_tour 101691
+101686 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101687
+101679 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101680 101681 101686 101690
+101677 make_robot_work[biggie] -> deploy_for_work_once 101679 101695
+101672 conduct_tour[biggie] -> finish_tour 101673
+101668 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101669
+101661 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101662 101663 101668 101672
+101659 make_robot_work[biggie] -> deploy_for_work_once 101661 101677
+101654 conduct_tour[biggie] -> finish_tour 101655
+101650 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101651
+101643 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101644 101645 101650 101654
+101641 make_robot_work[biggie] -> deploy_for_work_once 101643 101659
+101636 conduct_tour[biggie] -> finish_tour 101637
+101632 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101633
+101625 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101626 101627 101632 101636
+101623 make_robot_work[biggie] -> deploy_for_work_once 101625 101641
+101618 conduct_tour[biggie] -> finish_tour 101619
+101614 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101615
+101607 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101608 101609 101614 101618
+101605 make_robot_work[biggie] -> deploy_for_work_once 101607 101623
+101600 conduct_tour[biggie] -> finish_tour 101601
+101596 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101597
+101589 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101590 101591 101596 101600
+101587 make_robot_work[biggie] -> deploy_for_work_once 101589 101605
+101582 conduct_tour[biggie] -> finish_tour 101583
+101578 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101579
+101571 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101572 101573 101578 101582
+101569 make_robot_work[biggie] -> deploy_for_work_once 101571 101587
+101564 conduct_tour[biggie] -> finish_tour 101565
+101560 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101561
+101553 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101554 101555 101560 101564
+101551 make_robot_work[biggie] -> deploy_for_work_once 101553 101569
+101546 conduct_tour[biggie] -> finish_tour 101547
+101542 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101543
+101535 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101536 101537 101542 101546
+101533 make_robot_work[biggie] -> deploy_for_work_once 101535 101551
+101528 conduct_tour[biggie] -> finish_tour 101529
+101524 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101525
+101517 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101518 101519 101524 101528
+101515 make_robot_work[biggie] -> deploy_for_work_once 101517 101533
+101510 conduct_tour[biggie] -> finish_tour 101511
+101506 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101507
+101499 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101500 101501 101506 101510
+101497 make_robot_work[biggie] -> deploy_for_work_once 101499 101515
+101492 conduct_tour[biggie] -> finish_tour 101493
+101488 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101489
+101481 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101482 101483 101488 101492
+101479 make_robot_work[biggie] -> deploy_for_work_once 101481 101497
+101474 conduct_tour[biggie] -> finish_tour 101475
+101470 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101471
+101463 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101464 101465 101470 101474
+101461 make_robot_work[biggie] -> deploy_for_work_once 101463 101479
+101456 conduct_tour[biggie] -> finish_tour 101457
+101452 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101453
+101445 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101446 101447 101452 101456
+101443 make_robot_work[biggie] -> deploy_for_work_once 101445 101461
+101438 conduct_tour[biggie] -> finish_tour 101439
+101434 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101435
+101427 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101428 101429 101434 101438
+101425 make_robot_work[biggie] -> deploy_for_work_once 101427 101443
+101420 conduct_tour[biggie] -> finish_tour 101421
+101416 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101417
+101409 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101410 101411 101416 101420
+101407 make_robot_work[biggie] -> deploy_for_work_once 101409 101425
+101402 conduct_tour[biggie] -> finish_tour 101403
+101398 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101399
+101391 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101392 101393 101398 101402
+101389 make_robot_work[biggie] -> deploy_for_work_once 101391 101407
+101384 conduct_tour[biggie] -> finish_tour 101385
+101380 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101381
+101373 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101374 101375 101380 101384
+101371 make_robot_work[biggie] -> deploy_for_work_once 101373 101389
+101366 conduct_tour[biggie] -> finish_tour 101367
+101362 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101363
+101355 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101356 101357 101362 101366
+101353 make_robot_work[biggie] -> deploy_for_work_once 101355 101371
+101348 conduct_tour[biggie] -> finish_tour 101349
+101344 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101345
+101337 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101338 101339 101344 101348
+101335 make_robot_work[biggie] -> deploy_for_work_once 101337 101353
+101330 conduct_tour[biggie] -> finish_tour 101331
+101326 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101327
+101319 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101320 101321 101326 101330
+101317 make_robot_work[biggie] -> deploy_for_work_once 101319 101335
+101312 conduct_tour[biggie] -> finish_tour 101313
+101308 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101309
+101301 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101302 101303 101308 101312
+101299 make_robot_work[biggie] -> deploy_for_work_once 101301 101317
+101294 conduct_tour[biggie] -> finish_tour 101295
+101290 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101291
+101283 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101284 101285 101290 101294
+101281 make_robot_work[biggie] -> deploy_for_work_once 101283 101299
+101276 conduct_tour[biggie] -> finish_tour 101277
+101272 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101273
+101265 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101266 101267 101272 101276
+101263 make_robot_work[biggie] -> deploy_for_work_once 101265 101281
+101258 conduct_tour[biggie] -> finish_tour 101259
+101254 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101255
+101247 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101248 101249 101254 101258
+101245 make_robot_work[biggie] -> deploy_for_work_once 101247 101263
+101240 conduct_tour[biggie] -> finish_tour 101241
+101236 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101237
+101229 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101230 101231 101236 101240
+101227 make_robot_work[biggie] -> deploy_for_work_once 101229 101245
+101222 conduct_tour[biggie] -> finish_tour 101223
+101218 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101219
+101211 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101212 101213 101218 101222
+101209 make_robot_work[biggie] -> deploy_for_work_once 101211 101227
+101204 conduct_tour[biggie] -> finish_tour 101205
+101200 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101201
+101193 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101194 101195 101200 101204
+101191 make_robot_work[biggie] -> deploy_for_work_once 101193 101209
+101186 conduct_tour[biggie] -> finish_tour 101187
+101182 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101183
+101175 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101176 101177 101182 101186
+101173 make_robot_work[biggie] -> deploy_for_work_once 101175 101191
+101168 conduct_tour[biggie] -> finish_tour 101169
+101164 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101165
+101157 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101158 101159 101164 101168
+101155 make_robot_work[biggie] -> deploy_for_work_once 101157 101173
+101150 conduct_tour[biggie] -> finish_tour 101151
+101146 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101147
+101139 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101140 101141 101146 101150
+101137 make_robot_work[biggie] -> deploy_for_work_once 101139 101155
+101132 conduct_tour[biggie] -> finish_tour 101133
+101128 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101129
+101121 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101122 101123 101128 101132
+101119 make_robot_work[biggie] -> deploy_for_work_once 101121 101137
+101114 conduct_tour[biggie] -> finish_tour 101115
+101110 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101111
+101103 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101104 101105 101110 101114
+101101 make_robot_work[biggie] -> deploy_for_work_once 101103 101119
+101096 conduct_tour[biggie] -> finish_tour 101097
+101092 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101093
+101085 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101086 101087 101092 101096
+101083 make_robot_work[biggie] -> deploy_for_work_once 101085 101101
+101078 conduct_tour[biggie] -> finish_tour 101079
+101074 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101075
+101067 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101068 101069 101074 101078
+101065 make_robot_work[biggie] -> deploy_for_work_once 101067 101083
+101060 conduct_tour[biggie] -> finish_tour 101061
+101056 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101057
+101049 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101050 101051 101056 101060
+101047 make_robot_work[biggie] -> deploy_for_work_once 101049 101065
+101042 conduct_tour[biggie] -> finish_tour 101043
+101038 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101039
+101031 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101032 101033 101038 101042
+101029 make_robot_work[biggie] -> deploy_for_work_once 101031 101047
+101024 conduct_tour[biggie] -> finish_tour 101025
+101020 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101021
+101013 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 101014 101015 101020 101024
+101011 make_robot_work[biggie] -> deploy_for_work_once 101013 101029
+101006 conduct_tour[biggie] -> finish_tour 101007
+101002 prepare_robot[biggie,hall_alpha] -> prepare_nothing 101003
+100995 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 100996 100997 101002 101006
+100993 make_robot_work[biggie] -> deploy_for_work_once 100995 101011
+100988 conduct_tour[biggie] -> finish_tour 100989
+100984 prepare_robot[biggie,hall_alpha] -> prepare_nothing 100985
+100977 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 100978 100979 100984 100988
+100975 make_robot_work[biggie] -> deploy_for_work_once 100977 100993
+100970 conduct_tour[biggie] -> finish_tour 100971
+100966 prepare_robot[biggie,hall_alpha] -> prepare_nothing 100967
+100959 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 100960 100961 100966 100970
+100957 make_robot_work[biggie] -> deploy_for_work_once 100959 100975
+100952 conduct_tour[biggie] -> finish_tour 100953
+100948 prepare_robot[biggie,hall_alpha] -> prepare_nothing 100949
+100941 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 100942 100943 100948 100952
+100939 make_robot_work[biggie] -> deploy_for_work_once 100941 100957
+100934 conduct_tour[biggie] -> finish_tour 100935
+100930 prepare_robot[biggie,hall_alpha] -> prepare_nothing 100931
+100923 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 100924 100925 100930 100934
+100898 make_robot_work[biggie] -> deploy_for_work_once 100923 100939
+100893 conduct_tour[biggie] -> finish_tour 100894
+100889 load_phase[biggie,hall_alpha] -> finish_loading 100890
+100884 load_one_sensitive_more_splitted_5[biggie,hall_alpha] -> _splitting_method_load_one_sensitive_more_splitted_5 100885 100886
+100773 load_phase[biggie,hall_alpha] -> load_one_sensitive_more 100884 100889
+100766 unload_phase[biggie,hall_alpha] -> finish_unloading 100767
+100756 unload_one_seismic_sensitive_more_splitted_10[biggie,hall_alpha] -> _splitting_method_unload_one_seismic_sensitive_more_splitted_10 100757 100758
+92099 unload_phase[biggie,hall_alpha] -> unload_one_seismic_sensitive_more 100756 100766
+92090 move_robot[biggie,hall_alpha,hall_alpha] -> arrived_at_destination 92091
+87254 move_robot[biggie,tunnel,hall_alpha] -> move_robot_one_location 87255 87256 92090
+87223 move_robot[biggie,hall_beta,hall_alpha] -> move_robot_one_location 87224 87225 87254
+87167 move_robot[biggie,tunnel,hall_alpha] -> move_robot_one_location 87168 87169 87223
+86285 move_robot[biggie,hall_beta,hall_alpha] -> move_robot_one_location 86286 86287 87167
+85784 robot_travel[biggie,hall_alpha] -> sealing_curator_travel 85785 85786 86285 92092
+85780 tour_next_stop_splitted_1[biggie] -> <_splitting_method_tour_next_stop_splitted_1;service_room[biggie,hall_alpha];do_service_room;1;0,-1,-2> 85784 92099 100773
+84966 conduct_tour[biggie] -> tour_next_stop 85780 100893
+84960 prepare_robot[biggie,hall_beta] -> prepare_nothing 84961
+84954 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_beta];do_tour_around;1;0,-1,-2,-3> 84955 84956 84960 84966
+84948 make_robot_work[biggie] -> deploy_for_work_once 84954 100898
+84943 conduct_tour[biggie] -> finish_tour 84944
+84939 prepare_robot[biggie,hall_beta] -> prepare_nothing 84940
+84933 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_beta];do_tour_around;1;0,-1,-2,-3> 84934 84935 84939 84943
+84930 make_robot_work[biggie] -> deploy_for_work_once 84933 84948
+84925 conduct_tour[biggie] -> finish_tour 84926
+84921 prepare_robot[biggie,hall_beta] -> prepare_nothing 84922
+84915 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_beta];do_tour_around;1;0,-1,-2,-3> 84916 84917 84921 84925
+84912 make_robot_work[biggie] -> deploy_for_work_once 84915 84930
+84907 conduct_tour[biggie] -> finish_tour 84908
+84903 load_phase[biggie,hall_beta] -> finish_loading 84904
+84893 load_one_sensitive_more_splitted_5[biggie,hall_beta] -> _splitting_method_load_one_sensitive_more_splitted_5 84894 84895
+84750 load_phase[biggie,hall_beta] -> load_one_sensitive_more 84893 84903
+84744 unload_phase[biggie,hall_beta] -> finish_unloading 84745
+84738 move_robot[biggie,hall_beta,hall_beta] -> arrived_at_destination 84739
+84728 move_robot[biggie,tunnel,hall_beta] -> move_robot_one_location 84729 84730 84738
+84715 move_robot[biggie,stasis_lab,hall_beta] -> move_robot_one_location 84716 84717 84728
+84711 robot_travel[biggie,hall_beta] -> sealing_curator_travel 84712 84713 84715 84740
+73690 tour_next_stop_splitted_1[biggie] -> <_splitting_method_tour_next_stop_splitted_1;service_room[biggie,hall_beta];do_service_room;1;0,-1,-2> 84711 84744 84750
+72787 conduct_tour[biggie] -> tour_next_stop 73690 84907
+72781 prepare_robot[biggie,stasis_lab] -> prepare_nothing 72782
+72777 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,stasis_lab];do_tour_around;1;0,-1,-2,-3> 72778 72779 72781 72787
+72772 make_robot_work[biggie] -> deploy_for_work_once 72777 84912
+72767 conduct_tour[biggie] -> finish_tour 72768
+72763 prepare_robot[biggie,stasis_lab] -> prepare_nothing 72764
+72759 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,stasis_lab];do_tour_around;1;0,-1,-2,-3> 72760 72761 72763 72767
+72754 make_robot_work[biggie] -> deploy_for_work_once 72759 72772
+72749 conduct_tour[biggie] -> finish_tour 72750
+72745 prepare_robot[biggie,stasis_lab] -> prepare_nothing 72746
+72741 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,stasis_lab];do_tour_around;1;0,-1,-2,-3> 72742 72743 72745 72749
+72736 make_robot_work[biggie] -> deploy_for_work_once 72741 72754
+72731 conduct_tour[biggie] -> finish_tour 72732
+72727 prepare_robot[biggie,stasis_lab] -> prepare_nothing 72728
+72723 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,stasis_lab];do_tour_around;1;0,-1,-2,-3> 72724 72725 72727 72731
+72718 make_robot_work[biggie] -> deploy_for_work_once 72723 72736
+72713 conduct_tour[biggie] -> finish_tour 72714
+72709 prepare_robot[biggie,stasis_lab] -> prepare_nothing 72710
+72705 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,stasis_lab];do_tour_around;1;0,-1,-2,-3> 72706 72707 72709 72713
+72410 make_robot_work[biggie] -> deploy_for_work_once 72705 72718
+72405 conduct_tour[biggie] -> finish_tour 72406
+72401 prepare_robot[biggie,stasis_lab] -> prepare_nothing 72402
+72397 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,stasis_lab];do_tour_around;1;0,-1,-2,-3> 72398 72399 72401 72405
+72392 make_robot_work[biggie] -> deploy_for_work_once 72397 72410
+72387 conduct_tour[biggie] -> finish_tour 72388
+72383 load_phase[biggie,stasis_lab] -> finish_loading 72384
+72377 unload_phase[biggie,stasis_lab] -> finish_unloading 72378
+72369 unload_one_thermosensitive_more_splitted_9[biggie,stasis_lab] -> _splitting_method_unload_one_thermosensitive_more_splitted_9 72370 72371
+72172 unload_phase[biggie,stasis_lab] -> unload_one_thermosensitive_more 72369 72377
+72163 move_robot[biggie,stasis_lab,stasis_lab] -> arrived_at_destination 72164
+72148 move_robot[biggie,tunnel,stasis_lab] -> move_robot_one_location 72149 72150 72163
+72122 move_robot[biggie,hall_beta,stasis_lab] -> move_robot_one_location 72123 72124 72148
+71698 robot_travel[biggie,stasis_lab] -> sealing_curator_travel 71699 71700 72122 72165
+71686 tour_next_stop_splitted_1[biggie] -> <_splitting_method_tour_next_stop_splitted_1;service_room[biggie,stasis_lab];do_service_room;1;0,-1,-2> 71698 72172 72383
+71268 conduct_tour[biggie] -> tour_next_stop 71686 72387
+71262 load_phase[biggie,hall_beta] -> finish_loading 71263
+71243 load_one_sensitive_more_splitted_5[biggie,hall_beta] -> _splitting_method_load_one_sensitive_more_splitted_5 71244 71245
+71172 load_phase[biggie,hall_beta] -> load_one_sensitive_more 71243 71262
+71166 unload_phase[biggie,hall_beta] -> finish_unloading 71167
+71160 move_robot[biggie,hall_beta,hall_beta] -> arrived_at_destination 71161
+71154 move_robot[biggie,tunnel,hall_beta] -> move_robot_one_location 71155 71156 71160
+70880 move_robot[biggie,stasis_lab,hall_beta] -> move_robot_one_location 70881 70882 71154
+70876 robot_travel[biggie,hall_beta] -> sealing_curator_travel 70877 70878 70880 71162
+70647 tour_next_stop_splitted_1[biggie] -> <_splitting_method_tour_next_stop_splitted_1;service_room[biggie,hall_beta];do_service_room;1;0,-1,-2> 70876 71166 71172
+67896 conduct_tour[biggie] -> tour_next_stop 70647 71268
+67890 prepare_robot[biggie,stasis_lab] -> prepare_nothing 67891
+67886 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,stasis_lab];do_tour_around;1;0,-1,-2,-3> 67887 67888 67890 67896
+67881 make_robot_work[biggie] -> deploy_for_work_once 67886 72392
+67876 conduct_tour[biggie] -> finish_tour 67877
+67872 prepare_robot[biggie,stasis_lab] -> prepare_nothing 67873
+67868 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,stasis_lab];do_tour_around;1;0,-1,-2,-3> 67869 67870 67872 67876
+67863 make_robot_work[biggie] -> deploy_for_work_once 67868 67881
+67858 conduct_tour[biggie] -> finish_tour 67859
+67854 prepare_robot[biggie,stasis_lab] -> prepare_nothing 67855
+67850 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,stasis_lab];do_tour_around;1;0,-1,-2,-3> 67851 67852 67854 67858
+67845 make_robot_work[biggie] -> deploy_for_work_once 67850 67863
+67840 conduct_tour[biggie] -> finish_tour 67841
+67836 prepare_robot[biggie,stasis_lab] -> prepare_nothing 67837
+67832 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,stasis_lab];do_tour_around;1;0,-1,-2,-3> 67833 67834 67836 67840
+67827 make_robot_work[biggie] -> deploy_for_work_once 67832 67845
+67822 conduct_tour[biggie] -> finish_tour 67823
+67818 prepare_robot[biggie,stasis_lab] -> prepare_nothing 67819
+67814 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,stasis_lab];do_tour_around;1;0,-1,-2,-3> 67815 67816 67818 67822
+67809 make_robot_work[biggie] -> deploy_for_work_once 67814 67827
+67804 conduct_tour[biggie] -> finish_tour 67805
+67800 prepare_robot[biggie,stasis_lab] -> prepare_nothing 67801
+67796 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,stasis_lab];do_tour_around;1;0,-1,-2,-3> 67797 67798 67800 67804
+67791 make_robot_work[biggie] -> deploy_for_work_once 67796 67809
+67786 conduct_tour[biggie] -> finish_tour 67787
+67782 prepare_robot[biggie,stasis_lab] -> prepare_nothing 67783
+67778 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,stasis_lab];do_tour_around;1;0,-1,-2,-3> 67779 67780 67782 67786
+67773 make_robot_work[biggie] -> deploy_for_work_once 67778 67791
+67768 conduct_tour[biggie] -> finish_tour 67769
+67764 prepare_robot[biggie,stasis_lab] -> prepare_nothing 67765
+67760 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,stasis_lab];do_tour_around;1;0,-1,-2,-3> 67761 67762 67764 67768
+67755 make_robot_work[biggie] -> deploy_for_work_once 67760 67773
+67750 conduct_tour[biggie] -> finish_tour 67751
+67746 prepare_robot[biggie,stasis_lab] -> prepare_nothing 67747
+67742 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,stasis_lab];do_tour_around;1;0,-1,-2,-3> 67743 67744 67746 67750
+67737 make_robot_work[biggie] -> deploy_for_work_once 67742 67755
+67732 conduct_tour[biggie] -> finish_tour 67733
+67728 prepare_robot[biggie,stasis_lab] -> prepare_nothing 67729
+67724 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,stasis_lab];do_tour_around;1;0,-1,-2,-3> 67725 67726 67728 67732
+67719 make_robot_work[biggie] -> deploy_for_work_once 67724 67737
+67714 conduct_tour[biggie] -> finish_tour 67715
+67710 prepare_robot[biggie,stasis_lab] -> prepare_nothing 67711
+67706 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,stasis_lab];do_tour_around;1;0,-1,-2,-3> 67707 67708 67710 67714
+67701 make_robot_work[biggie] -> deploy_for_work_once 67706 67719
+67696 conduct_tour[biggie] -> finish_tour 67697
+67692 prepare_robot[biggie,stasis_lab] -> prepare_nothing 67693
+67688 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,stasis_lab];do_tour_around;1;0,-1,-2,-3> 67689 67690 67692 67696
+67683 make_robot_work[biggie] -> deploy_for_work_once 67688 67701
+67678 conduct_tour[biggie] -> finish_tour 67679
+67674 prepare_robot[biggie,stasis_lab] -> prepare_nothing 67675
+67670 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,stasis_lab];do_tour_around;1;0,-1,-2,-3> 67671 67672 67674 67678
+67665 make_robot_work[biggie] -> deploy_for_work_once 67670 67683
+67660 conduct_tour[biggie] -> finish_tour 67661
+67656 prepare_robot[biggie,stasis_lab] -> prepare_nothing 67657
+67652 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,stasis_lab];do_tour_around;1;0,-1,-2,-3> 67653 67654 67656 67660
+67647 make_robot_work[biggie] -> deploy_for_work_once 67652 67665
+67642 conduct_tour[biggie] -> finish_tour 67643
+67638 prepare_robot[biggie,stasis_lab] -> prepare_nothing 67639
+67634 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,stasis_lab];do_tour_around;1;0,-1,-2,-3> 67635 67636 67638 67642
+67629 make_robot_work[biggie] -> deploy_for_work_once 67634 67647
+67624 conduct_tour[biggie] -> finish_tour 67625
+67620 prepare_robot[biggie,stasis_lab] -> prepare_nothing 67621
+67616 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,stasis_lab];do_tour_around;1;0,-1,-2,-3> 67617 67618 67620 67624
+67567 make_robot_work[biggie] -> deploy_for_work_once 67616 67629
+67562 conduct_tour[biggie] -> finish_tour 67563
+67558 load_phase[biggie,stasis_lab] -> finish_loading 67559
+67552 unload_phase[biggie,stasis_lab] -> finish_unloading 67553
+67548 unload_one_seismic_sensitive_more_splitted_10[biggie,stasis_lab] -> _splitting_method_unload_one_seismic_sensitive_more_splitted_10 67549 67550
+67448 unload_phase[biggie,stasis_lab] -> unload_one_seismic_sensitive_more 67548 67552
+67438 move_robot[biggie,stasis_lab,stasis_lab] -> arrived_at_destination 67439
+67423 move_robot[biggie,tunnel,stasis_lab] -> move_robot_one_location 67424 67425 67438
+67419 move_robot[biggie,hall_beta,stasis_lab] -> move_robot_one_location 67420 67421 67423
+52823 robot_travel[biggie,stasis_lab] -> sealing_curator_travel 52824 52825 67419 67440
+52642 tour_next_stop_splitted_1[biggie] -> <_splitting_method_tour_next_stop_splitted_1;service_room[biggie,stasis_lab];do_service_room;1;0,-1,-2> 52823 67448 67558
+49889 conduct_tour[biggie] -> tour_next_stop 52642 67562
+49883 load_phase[biggie,hall_beta] -> finish_loading 49884
+49856 load_one_sensitive_more_splitted_5[biggie,hall_beta] -> _splitting_method_load_one_sensitive_more_splitted_5 49857 49858
+49716 load_phase[biggie,hall_beta] -> load_one_sensitive_more 49856 49883
+49710 unload_phase[biggie,hall_beta] -> finish_unloading 49711
+49705 unload_one_standard_more_splitted_8[biggie,hall_beta] -> _splitting_method_unload_one_standard_more_splitted_8 49706 49707
+44428 unload_phase[biggie,hall_beta] -> unload_one_standard_more 49705 49710
+44420 move_robot[biggie,hall_beta,hall_beta] -> arrived_at_destination 44421
+40260 move_robot[biggie,tunnel,hall_beta] -> move_robot_one_location 40261 40262 44420
+40247 move_robot[biggie,cryo_chamber,hall_beta] -> move_robot_one_location 40248 40249 40260
+40234 move_robot[biggie,tunnel,hall_beta] -> move_robot_one_location 40235 40236 40247
+40227 move_robot[biggie,cryo_chamber,hall_beta] -> move_robot_one_location 40228 40229 40234
+39700 robot_travel[biggie,hall_beta] -> sealing_curator_travel 39701 39702 40227 44422
+39496 tour_next_stop_splitted_1[biggie] -> <_splitting_method_tour_next_stop_splitted_1;service_room[biggie,hall_beta];do_service_room;1;0,-1,-2> 39700 44428 49716
+26660 conduct_tour[biggie] -> tour_next_stop 39496 49889
+26654 prepare_robot[biggie,cryo_chamber] -> prepare_nothing 26655
+26646 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,cryo_chamber];do_tour_around;1;0,-1,-2,-3> 26647 26648 26654 26660
+26645 make_robot_work[biggie] -> deploy_for_work_once 26646 67567
+26640 conduct_tour[biggie] -> finish_tour 26641
+26636 prepare_robot[biggie,cryo_chamber] -> prepare_nothing 26637
+26628 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,cryo_chamber];do_tour_around;1;0,-1,-2,-3> 26629 26630 26636 26640
+26627 make_robot_work[biggie] -> deploy_for_work_once 26628 26645
+26622 conduct_tour[biggie] -> finish_tour 26623
+26618 prepare_robot[biggie,cryo_chamber] -> prepare_nothing 26619
+26610 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,cryo_chamber];do_tour_around;1;0,-1,-2,-3> 26611 26612 26618 26622
+26609 make_robot_work[biggie] -> deploy_for_work_once 26610 26627
+26604 conduct_tour[biggie] -> finish_tour 26605
+26600 prepare_robot[biggie,cryo_chamber] -> prepare_nothing 26601
+26592 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,cryo_chamber];do_tour_around;1;0,-1,-2,-3> 26593 26594 26600 26604
+26591 make_robot_work[biggie] -> deploy_for_work_once 26592 26609
+26586 conduct_tour[biggie] -> finish_tour 26587
+26582 prepare_robot[biggie,cryo_chamber] -> prepare_nothing 26583
+26574 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,cryo_chamber];do_tour_around;1;0,-1,-2,-3> 26575 26576 26582 26586
+26573 make_robot_work[biggie] -> deploy_for_work_once 26574 26591
+26568 conduct_tour[biggie] -> finish_tour 26569
+26564 prepare_robot[biggie,cryo_chamber] -> prepare_nothing 26565
+26556 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,cryo_chamber];do_tour_around;1;0,-1,-2,-3> 26557 26558 26564 26568
+26555 make_robot_work[biggie] -> deploy_for_work_once 26556 26573
+26550 conduct_tour[biggie] -> finish_tour 26551
+26546 prepare_robot[biggie,cryo_chamber] -> prepare_nothing 26547
+26538 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,cryo_chamber];do_tour_around;1;0,-1,-2,-3> 26539 26540 26546 26550
+26537 make_robot_work[biggie] -> deploy_for_work_once 26538 26555
+26532 conduct_tour[biggie] -> finish_tour 26533
+26528 load_phase[biggie,cryo_chamber] -> finish_loading 26529
+26524 unload_phase[biggie,cryo_chamber] -> finish_unloading 26525
+26518 move_robot[biggie,cryo_chamber,cryo_chamber] -> arrived_at_destination 26519
+26512 move_robot[biggie,tunnel,cryo_chamber] -> move_robot_one_location 26513 26514 26518
+26499 move_robot[biggie,hall_alpha,cryo_chamber] -> move_robot_one_location 26500 26501 26512
+26491 robot_travel[biggie,cryo_chamber] -> sealing_curator_travel 26492 26493 26499 26520
+26485 tour_next_stop_splitted_1[biggie] -> <_splitting_method_tour_next_stop_splitted_1;service_room[biggie,cryo_chamber];do_service_room;1;0,-1,-2> 26491 26524 26528
+26257 conduct_tour[biggie] -> tour_next_stop 26485 26532
+26251 prepare_robot[biggie,hall_alpha] -> prepare_nothing 26252
+26244 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 26245 26246 26251 26257
+26182 make_robot_work[biggie] -> deploy_for_work_once 26244 26537
+26177 conduct_tour[biggie] -> finish_tour 26178
+26173 prepare_robot[biggie,hall_alpha] -> prepare_nothing 26174
+26166 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 26167 26168 26173 26177
+26164 make_robot_work[biggie] -> deploy_for_work_once 26166 26182
+26159 conduct_tour[biggie] -> finish_tour 26160
+26155 prepare_robot[biggie,hall_alpha] -> prepare_nothing 26156
+26148 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 26149 26150 26155 26159
+26146 make_robot_work[biggie] -> deploy_for_work_once 26148 26164
+26141 conduct_tour[biggie] -> finish_tour 26142
+26137 load_phase[biggie,hall_alpha] -> finish_loading 26138
+26121 load_one_standard_more_splitted_3[biggie,hall_alpha] -> _splitting_method_load_one_standard_more_splitted_3 26122 26123
+26112 load_phase[biggie,hall_alpha] -> load_one_standard_more 26121 26137
+26106 unload_phase[biggie,hall_alpha] -> finish_unloading 26107
+26100 move_robot[biggie,hall_alpha,hall_alpha] -> arrived_at_destination 26101
+26088 move_robot[biggie,tunnel,hall_alpha] -> move_robot_one_location 26089 26090 26100
+23450 move_robot[biggie,hall_beta,hall_alpha] -> move_robot_one_location 23451 23452 26088
+23006 move_robot[biggie,tunnel,hall_alpha] -> move_robot_one_location 23007 23008 23450
+23002 move_robot[biggie,hall_beta,hall_alpha] -> move_robot_one_location 23003 23004 23006
+22880 move_robot[biggie,tunnel,hall_alpha] -> move_robot_one_location 22881 22882 23002
+22857 move_robot[biggie,hall_beta,hall_alpha] -> move_robot_one_location 22858 22859 22880
+22841 move_robot[biggie,tunnel,hall_alpha] -> move_robot_one_location 22842 22843 22857
+22808 move_robot[biggie,hall_alpha,hall_alpha] -> move_robot_one_location 22809 22810 22841
+22793 move_robot[biggie,tunnel,hall_alpha] -> move_robot_one_location 22794 22795 22808
+22768 move_robot[biggie,hall_alpha,hall_alpha] -> move_robot_one_location 22769 22770 22793
+22753 move_robot[biggie,tunnel,hall_alpha] -> move_robot_one_location 22754 22755 22768
+22746 move_robot[biggie,hall_beta,hall_alpha] -> move_robot_one_location 22747 22748 22753
+22633 move_robot[biggie,tunnel,hall_alpha] -> move_robot_one_location 22634 22635 22746
+22629 move_robot[biggie,hall_beta,hall_alpha] -> move_robot_one_location 22630 22631 22633
+22613 move_robot[biggie,tunnel,hall_alpha] -> move_robot_one_location 22614 22615 22629
+22609 move_robot[biggie,cryo_chamber,hall_alpha] -> move_robot_one_location 22610 22611 22613
+13436 robot_travel[biggie,hall_alpha] -> sealing_curator_travel 13437 13438 22609 26102
+13430 tour_next_stop_splitted_1[biggie] -> <_splitting_method_tour_next_stop_splitted_1;service_room[biggie,hall_alpha];do_service_room;1;0,-1,-2> 13436 26106 26112
+12857 conduct_tour[biggie] -> tour_next_stop 13430 26141
+12851 prepare_robot[biggie,cryo_chamber] -> prepare_nothing 12852
+12843 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,cryo_chamber];do_tour_around;1;0,-1,-2,-3> 12844 12845 12851 12857
+12768 make_robot_work[biggie] -> deploy_for_work_once 12843 26146
+12763 conduct_tour[biggie] -> finish_tour 12764
+12759 prepare_robot[biggie,cryo_chamber] -> prepare_nothing 12760
+12751 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,cryo_chamber];do_tour_around;1;0,-1,-2,-3> 12752 12753 12759 12763
+12750 make_robot_work[biggie] -> deploy_for_work_once 12751 12768
+12745 conduct_tour[biggie] -> finish_tour 12746
+12741 load_phase[biggie,cryo_chamber] -> finish_loading 12742
+12737 unload_phase[biggie,cryo_chamber] -> finish_unloading 12738
+12733 unload_one_thermosensitive_more_splitted_9[biggie,cryo_chamber] -> _splitting_method_unload_one_thermosensitive_more_splitted_9 12734 12735
+12538 unload_phase[biggie,cryo_chamber] -> unload_one_thermosensitive_more 12733 12737
+12529 move_robot[biggie,cryo_chamber,cryo_chamber] -> arrived_at_destination 12530
+12523 move_robot[biggie,tunnel,cryo_chamber] -> move_robot_one_location 12524 12525 12529
+12510 move_robot[biggie,hall_alpha,cryo_chamber] -> move_robot_one_location 12511 12512 12523
+12476 robot_travel[biggie,cryo_chamber] -> sealing_curator_travel 12477 12478 12510 12531
+12259 tour_next_stop_splitted_1[biggie] -> <_splitting_method_tour_next_stop_splitted_1;service_room[biggie,cryo_chamber];do_service_room;1;0,-1,-2> 12476 12538 12741
+12190 conduct_tour[biggie] -> tour_next_stop 12259 12745
+12184 prepare_robot[biggie,hall_alpha] -> prepare_nothing 12185
+12177 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 12178 12179 12184 12190
+12165 make_robot_work[biggie] -> deploy_for_work_once 12177 12750
+12160 conduct_tour[biggie] -> finish_tour 12161
+12156 prepare_robot[biggie,hall_alpha] -> prepare_nothing 12157
+12149 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 12150 12151 12156 12160
+12147 make_robot_work[biggie] -> deploy_for_work_once 12149 12165
+12142 conduct_tour[biggie] -> finish_tour 12143
+12138 prepare_robot[biggie,hall_alpha] -> prepare_nothing 12139
+12131 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 12132 12133 12138 12142
+12129 make_robot_work[biggie] -> deploy_for_work_once 12131 12147
+12124 conduct_tour[biggie] -> finish_tour 12125
+12120 prepare_robot[biggie,hall_alpha] -> prepare_nothing 12121
+12113 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 12114 12115 12120 12124
+12111 make_robot_work[biggie] -> deploy_for_work_once 12113 12129
+12106 conduct_tour[biggie] -> finish_tour 12107
+12102 prepare_robot[biggie,hall_alpha] -> prepare_nothing 12103
+12095 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 12096 12097 12102 12106
+12093 make_robot_work[biggie] -> deploy_for_work_once 12095 12111
+12088 conduct_tour[biggie] -> finish_tour 12089
+12084 prepare_robot[biggie,hall_alpha] -> prepare_nothing 12085
+12077 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,hall_alpha];do_tour_around;1;0,-1,-2,-3> 12078 12079 12084 12088
+12041 make_robot_work[biggie] -> deploy_for_work_once 12077 12093
+12036 conduct_tour[biggie] -> finish_tour 12037
+12032 load_phase[biggie,hall_alpha] -> finish_loading 12033
+12021 load_one_sensitive_more_splitted_5[biggie,hall_alpha] -> _splitting_method_load_one_sensitive_more_splitted_5 12022 12023
+11292 load_phase[biggie,hall_alpha] -> load_one_sensitive_more 12021 12032
+11285 unload_phase[biggie,hall_alpha] -> finish_unloading 11286
+11280 unload_one_seismic_sensitive_more_splitted_10[biggie,hall_alpha] -> _splitting_method_unload_one_seismic_sensitive_more_splitted_10 11281 11282
+11075 unload_phase[biggie,hall_alpha] -> unload_one_seismic_sensitive_more 11280 11285
+11066 move_robot[biggie,hall_alpha,hall_alpha] -> arrived_at_destination 11067
+11054 move_robot[biggie,tunnel,hall_alpha] -> move_robot_one_location 11055 11056 11066
+11047 move_robot[biggie,hall_beta,hall_alpha] -> move_robot_one_location 11048 11049 11054
+4300 robot_travel[biggie,hall_alpha] -> sealing_curator_travel 4301 4302 11047 11068
+4296 tour_next_stop_splitted_1[biggie] -> <_splitting_method_tour_next_stop_splitted_1;service_room[biggie,hall_alpha];do_service_room;1;0,-1,-2> 4300 11075 11292
+4155 conduct_tour[biggie] -> tour_next_stop 4296 12036
+4149 load_phase[biggie,hall_beta] -> finish_loading 4150
+4129 load_one_sensitive_more_splitted_5[biggie,hall_beta] -> _splitting_method_load_one_sensitive_more_splitted_5 4130 4131
+4075 load_phase[biggie,hall_beta] -> load_one_sensitive_more 4129 4149
+4069 unload_phase[biggie,hall_beta] -> finish_unloading 4070
+4063 move_robot[biggie,hall_beta,hall_beta] -> arrived_at_destination 4064
+4053 move_robot[biggie,tunnel,hall_beta] -> move_robot_one_location 4054 4055 4063
+2238 move_robot[biggie,stasis_lab,hall_beta] -> move_robot_one_location 2239 2240 4053
+257 robot_travel[biggie,hall_beta] -> sealing_curator_travel 258 259 2238 4065
+249 tour_next_stop_splitted_1[biggie] -> <_splitting_method_tour_next_stop_splitted_1;service_room[biggie,hall_beta];do_service_room;1;0,-1,-2> 257 4069 4075
+195 conduct_tour[biggie] -> tour_next_stop 249 4155
+189 load_phase[biggie,stasis_lab] -> finish_loading 190
+183 unload_phase[biggie,stasis_lab] -> finish_unloading 184
+177 move_robot[biggie,stasis_lab,stasis_lab] -> arrived_at_destination 178
+142 move_robot[biggie,tunnel,stasis_lab] -> move_robot_one_location 143 144 177
+138 move_robot[biggie,pod_pickup,stasis_lab] -> move_robot_one_location 139 140 142
+123 robot_travel[biggie,stasis_lab] -> sealing_curator_travel 124 125 138 179
+118 tour_next_stop_splitted_1[biggie] -> <_splitting_method_tour_next_stop_splitted_1;service_room[biggie,stasis_lab];do_service_room;1;0,-1,-2> 123 183 189
+78 conduct_tour[biggie] -> tour_next_stop 118 195
+73 take_pods[biggie] -> finish_taking_pods 74
+70 take_one_pod_splitted_7[biggie,pod_pickup,pod_pickup] -> _splitting_method_take_one_pod_splitted_7 71 72
+57 take_pods[biggie] -> take_one_pod 70 73
+45 robot_travel[biggie,pod_pickup] -> already_at_destination 46
+39 prepare_robot[biggie,pod_pickup] -> <prepare_pods;fetch_pods[biggie];fetch_pods_from_pod_pickup;1;0,-1,-2,-3> 40 41 45 57
+32 deploy_for_work_once_splitted_6[biggie] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[biggie,pod_pickup];do_tour_around;1;0,-1,-2,-3> 33 34 39 78
+28 make_robot_work[biggie] -> deploy_for_work_once 32 12041
+19 manage_workforce[] -> finish_deployment 20
+9 manage_workforce[] -> deploy_one_more_robot 10 11 19 28
+0 __top[] -> <__top_method;solve_problem[];run_main_task;0;-1> 9
+11 activate_robot biggie
+72 take_pod biggie pod_2
+125 seal biggie
+140 move biggie pod_pickup tunnel
+144 move biggie tunnel stasis_lab
+179 unseal biggie
+259 seal biggie
+2240 move biggie stasis_lab tunnel
+4055 move biggie tunnel hall_beta
+4065 unseal biggie
+4131 pickup_sensitive_artifact biggie artifact_8 pod_2 hall_beta
+4302 seal biggie
+11049 move biggie hall_beta tunnel
+11056 move biggie tunnel hall_alpha
+11068 unseal biggie
+11282 safe_drop_seismic_sensitive_artifact biggie artifact_8 pod_2 hall_alpha
+12023 pickup_sensitive_artifact biggie artifact_5 pod_2 hall_alpha
+12478 seal biggie
+12512 move biggie hall_alpha tunnel
+12525 move biggie tunnel cryo_chamber
+12531 unseal biggie
+12735 safe_drop_thermosensitive_artifact biggie artifact_5 pod_2 cryo_chamber
+13438 seal biggie
+22611 move biggie cryo_chamber tunnel
+22615 move biggie tunnel hall_beta
+22631 move biggie hall_beta tunnel
+22635 move biggie tunnel hall_beta
+22748 move biggie hall_beta tunnel
+22755 move biggie tunnel hall_alpha
+22770 move biggie hall_alpha tunnel
+22795 move biggie tunnel hall_alpha
+22810 move biggie hall_alpha tunnel
+22843 move biggie tunnel hall_beta
+22859 move biggie hall_beta tunnel
+22882 move biggie tunnel hall_beta
+23004 move biggie hall_beta tunnel
+23008 move biggie tunnel hall_beta
+23452 move biggie hall_beta tunnel
+26090 move biggie tunnel hall_alpha
+26102 unseal biggie
+26123 pickup_standard_artifact biggie artifact_1 hall_alpha
+26493 seal biggie
+26501 move biggie hall_alpha tunnel
+26514 move biggie tunnel cryo_chamber
+26520 unseal biggie
+39702 seal biggie
+40229 move biggie cryo_chamber tunnel
+40236 move biggie tunnel cryo_chamber
+40249 move biggie cryo_chamber tunnel
+40262 move biggie tunnel hall_beta
+44422 unseal biggie
+49707 drop_standard_artifact biggie artifact_1 hall_beta
+49858 pickup_sensitive_artifact biggie artifact_7 pod_2 hall_beta
+52825 seal biggie
+67421 move biggie hall_beta tunnel
+67425 move biggie tunnel stasis_lab
+67440 unseal biggie
+67550 safe_drop_seismic_sensitive_artifact biggie artifact_7 pod_2 stasis_lab
+70878 seal biggie
+70882 move biggie stasis_lab tunnel
+71156 move biggie tunnel hall_beta
+71162 unseal biggie
+71245 pickup_sensitive_artifact biggie artifact_9 pod_2 hall_beta
+71700 seal biggie
+72124 move biggie hall_beta tunnel
+72150 move biggie tunnel stasis_lab
+72165 unseal biggie
+72371 safe_drop_thermosensitive_artifact biggie artifact_9 pod_2 stasis_lab
+84713 seal biggie
+84717 move biggie stasis_lab tunnel
+84730 move biggie tunnel hall_beta
+84740 unseal biggie
+84895 pickup_sensitive_artifact biggie artifact_10 pod_2 hall_beta
+85786 seal biggie
+86287 move biggie hall_beta tunnel
+87169 move biggie tunnel hall_beta
+87225 move biggie hall_beta tunnel
+87256 move biggie tunnel hall_alpha
+92092 unseal biggie
+100758 safe_drop_seismic_sensitive_artifact biggie artifact_10 pod_2 hall_alpha
+100886 pickup_sensitive_artifact biggie artifact_2 pod_2 hall_alpha
+105884 seal biggie
+105891 move biggie hall_alpha tunnel
+105961 move biggie tunnel stasis_lab
+105979 move biggie stasis_lab tunnel
+106111 move biggie tunnel stasis_lab
+106126 unseal biggie
+106323 safe_drop_thermosensitive_artifact biggie artifact_2 pod_2 stasis_lab
+174671 seal biggie
+174675 move biggie stasis_lab tunnel
+174682 move biggie tunnel hall_alpha
+174698 unseal biggie
+174738 pickup_standard_artifact biggie artifact_3 hall_alpha
+188859 seal biggie
+188866 move biggie hall_alpha tunnel
+188870 move biggie tunnel stasis_lab
+188885 unseal biggie
+188948 drop_standard_artifact biggie artifact_3 stasis_lab
+206334 seal biggie
+209394 move biggie stasis_lab tunnel
+209407 move biggie tunnel hall_beta
+209417 unseal biggie
+209502 pickup_standard_artifact biggie artifact_6 hall_beta
+210964 seal biggie
+211458 move biggie hall_beta tunnel
+211462 move biggie tunnel stasis_lab
+211477 unseal biggie
+211693 drop_standard_artifact biggie artifact_6 stasis_lab
+217991 seal biggie
+217995 move biggie stasis_lab tunnel
+218008 move biggie tunnel hall_beta
+218014 unseal biggie
+218034 pickup_standard_artifact biggie artifact_1 hall_beta
+218275 seal biggie
+218283 move biggie hall_beta tunnel
+218293 move biggie tunnel hall_alpha
+218327 move biggie hall_alpha tunnel
+218337 move biggie tunnel hall_alpha
+218351 move biggie hall_alpha tunnel
+218355 move biggie tunnel stasis_lab
+218374 unseal biggie
+218548 drop_standard_artifact biggie artifact_1 stasis_lab
+218572 pickup_standard_artifact biggie artifact_1 stasis_lab
+222208 seal biggie
+222212 move biggie stasis_lab tunnel
+222225 move biggie tunnel cryo_chamber
+222231 unseal biggie
+222263 drop_standard_artifact biggie artifact_1 cryo_chamber
+227969 seal biggie
+227976 move biggie cryo_chamber tunnel
+229647 move biggie tunnel hall_alpha
+229659 unseal biggie
+229679 pickup_sensitive_artifact biggie artifact_10 pod_2 hall_alpha
+232144 seal biggie
+232151 move biggie hall_alpha tunnel
+232155 move biggie tunnel stasis_lab
+232170 unseal biggie
+232339 safe_drop_thermosensitive_artifact biggie artifact_10 pod_2 stasis_lab
+9 manage_workforce  -> deploy_one_more_robot 11 19 28
+19 manage_workforce  -> finish_deployment
+28 make_robot_work biggie -> deploy_for_work_once 232363 12041
+39 prepare_robot biggie pod_pickup -> prepare_pods 232364
+45 robot_travel biggie pod_pickup -> already_at_destination
+57 take_pods biggie -> take_one_pod 72 73
+73 take_pods biggie -> finish_taking_pods
+78 conduct_tour biggie -> tour_next_stop 123 232365 195
+123 robot_travel biggie stasis_lab -> sealing_curator_travel 125 138 179
+138 move_robot biggie pod_pickup stasis_lab -> move_robot_one_location 140 142
+142 move_robot biggie tunnel stasis_lab -> move_robot_one_location 144 177
+177 move_robot biggie stasis_lab stasis_lab -> arrived_at_destination
+183 unload_phase biggie stasis_lab -> finish_unloading
+189 load_phase biggie stasis_lab -> finish_loading
+195 conduct_tour biggie -> tour_next_stop 257 232366 4155
+257 robot_travel biggie hall_beta -> sealing_curator_travel 259 2238 4065
+2238 move_robot biggie stasis_lab hall_beta -> move_robot_one_location 2240 4053
+4053 move_robot biggie tunnel hall_beta -> move_robot_one_location 4055 4063
+4063 move_robot biggie hall_beta hall_beta -> arrived_at_destination
+4069 unload_phase biggie hall_beta -> finish_unloading
+4075 load_phase biggie hall_beta -> load_one_sensitive_more 4131 4149
+4149 load_phase biggie hall_beta -> finish_loading
+4155 conduct_tour biggie -> tour_next_stop 4300 232367 12036
+4300 robot_travel biggie hall_alpha -> sealing_curator_travel 4302 11047 11068
+11047 move_robot biggie hall_beta hall_alpha -> move_robot_one_location 11049 11054
+11054 move_robot biggie tunnel hall_alpha -> move_robot_one_location 11056 11066
+11066 move_robot biggie hall_alpha hall_alpha -> arrived_at_destination
+11075 unload_phase biggie hall_alpha -> unload_one_seismic_sensitive_more 11282 11285
+11285 unload_phase biggie hall_alpha -> finish_unloading
+11292 load_phase biggie hall_alpha -> load_one_sensitive_more 12023 12032
+12032 load_phase biggie hall_alpha -> finish_loading
+12036 conduct_tour biggie -> finish_tour
+12041 make_robot_work biggie -> deploy_for_work_once 232368 12093
+12084 prepare_robot biggie hall_alpha -> prepare_nothing
+12088 conduct_tour biggie -> finish_tour
+12093 make_robot_work biggie -> deploy_for_work_once 232369 12111
+12102 prepare_robot biggie hall_alpha -> prepare_nothing
+12106 conduct_tour biggie -> finish_tour
+12111 make_robot_work biggie -> deploy_for_work_once 232370 12129
+12120 prepare_robot biggie hall_alpha -> prepare_nothing
+12124 conduct_tour biggie -> finish_tour
+12129 make_robot_work biggie -> deploy_for_work_once 232371 12147
+12138 prepare_robot biggie hall_alpha -> prepare_nothing
+12142 conduct_tour biggie -> finish_tour
+12147 make_robot_work biggie -> deploy_for_work_once 232372 12165
+12156 prepare_robot biggie hall_alpha -> prepare_nothing
+12160 conduct_tour biggie -> finish_tour
+12165 make_robot_work biggie -> deploy_for_work_once 232373 12750
+12184 prepare_robot biggie hall_alpha -> prepare_nothing
+12190 conduct_tour biggie -> tour_next_stop 12476 232374 12745
+12476 robot_travel biggie cryo_chamber -> sealing_curator_travel 12478 12510 12531
+12510 move_robot biggie hall_alpha cryo_chamber -> move_robot_one_location 12512 12523
+12523 move_robot biggie tunnel cryo_chamber -> move_robot_one_location 12525 12529
+12529 move_robot biggie cryo_chamber cryo_chamber -> arrived_at_destination
+12538 unload_phase biggie cryo_chamber -> unload_one_thermosensitive_more 12735 12737
+12737 unload_phase biggie cryo_chamber -> finish_unloading
+12741 load_phase biggie cryo_chamber -> finish_loading
+12745 conduct_tour biggie -> finish_tour
+12750 make_robot_work biggie -> deploy_for_work_once 232375 12768
+12759 prepare_robot biggie cryo_chamber -> prepare_nothing
+12763 conduct_tour biggie -> finish_tour
+12768 make_robot_work biggie -> deploy_for_work_once 232376 26146
+12851 prepare_robot biggie cryo_chamber -> prepare_nothing
+12857 conduct_tour biggie -> tour_next_stop 13436 232377 26141
+13436 robot_travel biggie hall_alpha -> sealing_curator_travel 13438 22609 26102
+22609 move_robot biggie cryo_chamber hall_alpha -> move_robot_one_location 22611 22613
+22613 move_robot biggie tunnel hall_alpha -> move_robot_one_location 22615 22629
+22629 move_robot biggie hall_beta hall_alpha -> move_robot_one_location 22631 22633
+22633 move_robot biggie tunnel hall_alpha -> move_robot_one_location 22635 22746
+22746 move_robot biggie hall_beta hall_alpha -> move_robot_one_location 22748 22753
+22753 move_robot biggie tunnel hall_alpha -> move_robot_one_location 22755 22768
+22768 move_robot biggie hall_alpha hall_alpha -> move_robot_one_location 22770 22793
+22793 move_robot biggie tunnel hall_alpha -> move_robot_one_location 22795 22808
+22808 move_robot biggie hall_alpha hall_alpha -> move_robot_one_location 22810 22841
+22841 move_robot biggie tunnel hall_alpha -> move_robot_one_location 22843 22857
+22857 move_robot biggie hall_beta hall_alpha -> move_robot_one_location 22859 22880
+22880 move_robot biggie tunnel hall_alpha -> move_robot_one_location 22882 23002
+23002 move_robot biggie hall_beta hall_alpha -> move_robot_one_location 23004 23006
+23006 move_robot biggie tunnel hall_alpha -> move_robot_one_location 23008 23450
+23450 move_robot biggie hall_beta hall_alpha -> move_robot_one_location 23452 26088
+26088 move_robot biggie tunnel hall_alpha -> move_robot_one_location 26090 26100
+26100 move_robot biggie hall_alpha hall_alpha -> arrived_at_destination
+26106 unload_phase biggie hall_alpha -> finish_unloading
+26112 load_phase biggie hall_alpha -> load_one_standard_more 26123 26137
+26137 load_phase biggie hall_alpha -> finish_loading
+26141 conduct_tour biggie -> finish_tour
+26146 make_robot_work biggie -> deploy_for_work_once 232378 26164
+26155 prepare_robot biggie hall_alpha -> prepare_nothing
+26159 conduct_tour biggie -> finish_tour
+26164 make_robot_work biggie -> deploy_for_work_once 232379 26182
+26173 prepare_robot biggie hall_alpha -> prepare_nothing
+26177 conduct_tour biggie -> finish_tour
+26182 make_robot_work biggie -> deploy_for_work_once 232380 26537
+26251 prepare_robot biggie hall_alpha -> prepare_nothing
+26257 conduct_tour biggie -> tour_next_stop 26491 232381 26532
+26491 robot_travel biggie cryo_chamber -> sealing_curator_travel 26493 26499 26520
+26499 move_robot biggie hall_alpha cryo_chamber -> move_robot_one_location 26501 26512
+26512 move_robot biggie tunnel cryo_chamber -> move_robot_one_location 26514 26518
+26518 move_robot biggie cryo_chamber cryo_chamber -> arrived_at_destination
+26524 unload_phase biggie cryo_chamber -> finish_unloading
+26528 load_phase biggie cryo_chamber -> finish_loading
+26532 conduct_tour biggie -> finish_tour
+26537 make_robot_work biggie -> deploy_for_work_once 232382 26555
+26546 prepare_robot biggie cryo_chamber -> prepare_nothing
+26550 conduct_tour biggie -> finish_tour
+26555 make_robot_work biggie -> deploy_for_work_once 232383 26573
+26564 prepare_robot biggie cryo_chamber -> prepare_nothing
+26568 conduct_tour biggie -> finish_tour
+26573 make_robot_work biggie -> deploy_for_work_once 232384 26591
+26582 prepare_robot biggie cryo_chamber -> prepare_nothing
+26586 conduct_tour biggie -> finish_tour
+26591 make_robot_work biggie -> deploy_for_work_once 232385 26609
+26600 prepare_robot biggie cryo_chamber -> prepare_nothing
+26604 conduct_tour biggie -> finish_tour
+26609 make_robot_work biggie -> deploy_for_work_once 232386 26627
+26618 prepare_robot biggie cryo_chamber -> prepare_nothing
+26622 conduct_tour biggie -> finish_tour
+26627 make_robot_work biggie -> deploy_for_work_once 232387 26645
+26636 prepare_robot biggie cryo_chamber -> prepare_nothing
+26640 conduct_tour biggie -> finish_tour
+26645 make_robot_work biggie -> deploy_for_work_once 232388 67567
+26654 prepare_robot biggie cryo_chamber -> prepare_nothing
+26660 conduct_tour biggie -> tour_next_stop 39700 232389 49889
+39700 robot_travel biggie hall_beta -> sealing_curator_travel 39702 40227 44422
+40227 move_robot biggie cryo_chamber hall_beta -> move_robot_one_location 40229 40234
+40234 move_robot biggie tunnel hall_beta -> move_robot_one_location 40236 40247
+40247 move_robot biggie cryo_chamber hall_beta -> move_robot_one_location 40249 40260
+40260 move_robot biggie tunnel hall_beta -> move_robot_one_location 40262 44420
+44420 move_robot biggie hall_beta hall_beta -> arrived_at_destination
+44428 unload_phase biggie hall_beta -> unload_one_standard_more 49707 49710
+49710 unload_phase biggie hall_beta -> finish_unloading
+49716 load_phase biggie hall_beta -> load_one_sensitive_more 49858 49883
+49883 load_phase biggie hall_beta -> finish_loading
+49889 conduct_tour biggie -> tour_next_stop 52823 232390 67562
+52823 robot_travel biggie stasis_lab -> sealing_curator_travel 52825 67419 67440
+67419 move_robot biggie hall_beta stasis_lab -> move_robot_one_location 67421 67423
+67423 move_robot biggie tunnel stasis_lab -> move_robot_one_location 67425 67438
+67438 move_robot biggie stasis_lab stasis_lab -> arrived_at_destination
+67448 unload_phase biggie stasis_lab -> unload_one_seismic_sensitive_more 67550 67552
+67552 unload_phase biggie stasis_lab -> finish_unloading
+67558 load_phase biggie stasis_lab -> finish_loading
+67562 conduct_tour biggie -> finish_tour
+67567 make_robot_work biggie -> deploy_for_work_once 232391 67629
+67620 prepare_robot biggie stasis_lab -> prepare_nothing
+67624 conduct_tour biggie -> finish_tour
+67629 make_robot_work biggie -> deploy_for_work_once 232392 67647
+67638 prepare_robot biggie stasis_lab -> prepare_nothing
+67642 conduct_tour biggie -> finish_tour
+67647 make_robot_work biggie -> deploy_for_work_once 232393 67665
+67656 prepare_robot biggie stasis_lab -> prepare_nothing
+67660 conduct_tour biggie -> finish_tour
+67665 make_robot_work biggie -> deploy_for_work_once 232394 67683
+67674 prepare_robot biggie stasis_lab -> prepare_nothing
+67678 conduct_tour biggie -> finish_tour
+67683 make_robot_work biggie -> deploy_for_work_once 232395 67701
+67692 prepare_robot biggie stasis_lab -> prepare_nothing
+67696 conduct_tour biggie -> finish_tour
+67701 make_robot_work biggie -> deploy_for_work_once 232396 67719
+67710 prepare_robot biggie stasis_lab -> prepare_nothing
+67714 conduct_tour biggie -> finish_tour
+67719 make_robot_work biggie -> deploy_for_work_once 232397 67737
+67728 prepare_robot biggie stasis_lab -> prepare_nothing
+67732 conduct_tour biggie -> finish_tour
+67737 make_robot_work biggie -> deploy_for_work_once 232398 67755
+67746 prepare_robot biggie stasis_lab -> prepare_nothing
+67750 conduct_tour biggie -> finish_tour
+67755 make_robot_work biggie -> deploy_for_work_once 232399 67773
+67764 prepare_robot biggie stasis_lab -> prepare_nothing
+67768 conduct_tour biggie -> finish_tour
+67773 make_robot_work biggie -> deploy_for_work_once 232400 67791
+67782 prepare_robot biggie stasis_lab -> prepare_nothing
+67786 conduct_tour biggie -> finish_tour
+67791 make_robot_work biggie -> deploy_for_work_once 232401 67809
+67800 prepare_robot biggie stasis_lab -> prepare_nothing
+67804 conduct_tour biggie -> finish_tour
+67809 make_robot_work biggie -> deploy_for_work_once 232402 67827
+67818 prepare_robot biggie stasis_lab -> prepare_nothing
+67822 conduct_tour biggie -> finish_tour
+67827 make_robot_work biggie -> deploy_for_work_once 232403 67845
+67836 prepare_robot biggie stasis_lab -> prepare_nothing
+67840 conduct_tour biggie -> finish_tour
+67845 make_robot_work biggie -> deploy_for_work_once 232404 67863
+67854 prepare_robot biggie stasis_lab -> prepare_nothing
+67858 conduct_tour biggie -> finish_tour
+67863 make_robot_work biggie -> deploy_for_work_once 232405 67881
+67872 prepare_robot biggie stasis_lab -> prepare_nothing
+67876 conduct_tour biggie -> finish_tour
+67881 make_robot_work biggie -> deploy_for_work_once 232406 72392
+67890 prepare_robot biggie stasis_lab -> prepare_nothing
+67896 conduct_tour biggie -> tour_next_stop 70876 232407 71268
+70876 robot_travel biggie hall_beta -> sealing_curator_travel 70878 70880 71162
+70880 move_robot biggie stasis_lab hall_beta -> move_robot_one_location 70882 71154
+71154 move_robot biggie tunnel hall_beta -> move_robot_one_location 71156 71160
+71160 move_robot biggie hall_beta hall_beta -> arrived_at_destination
+71166 unload_phase biggie hall_beta -> finish_unloading
+71172 load_phase biggie hall_beta -> load_one_sensitive_more 71245 71262
+71262 load_phase biggie hall_beta -> finish_loading
+71268 conduct_tour biggie -> tour_next_stop 71698 232408 72387
+71698 robot_travel biggie stasis_lab -> sealing_curator_travel 71700 72122 72165
+72122 move_robot biggie hall_beta stasis_lab -> move_robot_one_location 72124 72148
+72148 move_robot biggie tunnel stasis_lab -> move_robot_one_location 72150 72163
+72163 move_robot biggie stasis_lab stasis_lab -> arrived_at_destination
+72172 unload_phase biggie stasis_lab -> unload_one_thermosensitive_more 72371 72377
+72377 unload_phase biggie stasis_lab -> finish_unloading
+72383 load_phase biggie stasis_lab -> finish_loading
+72387 conduct_tour biggie -> finish_tour
+72392 make_robot_work biggie -> deploy_for_work_once 232409 72410
+72401 prepare_robot biggie stasis_lab -> prepare_nothing
+72405 conduct_tour biggie -> finish_tour
+72410 make_robot_work biggie -> deploy_for_work_once 232410 72718
+72709 prepare_robot biggie stasis_lab -> prepare_nothing
+72713 conduct_tour biggie -> finish_tour
+72718 make_robot_work biggie -> deploy_for_work_once 232411 72736
+72727 prepare_robot biggie stasis_lab -> prepare_nothing
+72731 conduct_tour biggie -> finish_tour
+72736 make_robot_work biggie -> deploy_for_work_once 232412 72754
+72745 prepare_robot biggie stasis_lab -> prepare_nothing
+72749 conduct_tour biggie -> finish_tour
+72754 make_robot_work biggie -> deploy_for_work_once 232413 72772
+72763 prepare_robot biggie stasis_lab -> prepare_nothing
+72767 conduct_tour biggie -> finish_tour
+72772 make_robot_work biggie -> deploy_for_work_once 232414 84912
+72781 prepare_robot biggie stasis_lab -> prepare_nothing
+72787 conduct_tour biggie -> tour_next_stop 84711 232415 84907
+84711 robot_travel biggie hall_beta -> sealing_curator_travel 84713 84715 84740
+84715 move_robot biggie stasis_lab hall_beta -> move_robot_one_location 84717 84728
+84728 move_robot biggie tunnel hall_beta -> move_robot_one_location 84730 84738
+84738 move_robot biggie hall_beta hall_beta -> arrived_at_destination
+84744 unload_phase biggie hall_beta -> finish_unloading
+84750 load_phase biggie hall_beta -> load_one_sensitive_more 84895 84903
+84903 load_phase biggie hall_beta -> finish_loading
+84907 conduct_tour biggie -> finish_tour
+84912 make_robot_work biggie -> deploy_for_work_once 232416 84930
+84921 prepare_robot biggie hall_beta -> prepare_nothing
+84925 conduct_tour biggie -> finish_tour
+84930 make_robot_work biggie -> deploy_for_work_once 232417 84948
+84939 prepare_robot biggie hall_beta -> prepare_nothing
+84943 conduct_tour biggie -> finish_tour
+84948 make_robot_work biggie -> deploy_for_work_once 232418 100898
+84960 prepare_robot biggie hall_beta -> prepare_nothing
+84966 conduct_tour biggie -> tour_next_stop 85784 232419 100893
+85784 robot_travel biggie hall_alpha -> sealing_curator_travel 85786 86285 92092
+86285 move_robot biggie hall_beta hall_alpha -> move_robot_one_location 86287 87167
+87167 move_robot biggie tunnel hall_alpha -> move_robot_one_location 87169 87223
+87223 move_robot biggie hall_beta hall_alpha -> move_robot_one_location 87225 87254
+87254 move_robot biggie tunnel hall_alpha -> move_robot_one_location 87256 92090
+92090 move_robot biggie hall_alpha hall_alpha -> arrived_at_destination
+92099 unload_phase biggie hall_alpha -> unload_one_seismic_sensitive_more 100758 100766
+100766 unload_phase biggie hall_alpha -> finish_unloading
+100773 load_phase biggie hall_alpha -> load_one_sensitive_more 100886 100889
+100889 load_phase biggie hall_alpha -> finish_loading
+100893 conduct_tour biggie -> finish_tour
+100898 make_robot_work biggie -> deploy_for_work_once 232420 100939
+100930 prepare_robot biggie hall_alpha -> prepare_nothing
+100934 conduct_tour biggie -> finish_tour
+100939 make_robot_work biggie -> deploy_for_work_once 232421 100957
+100948 prepare_robot biggie hall_alpha -> prepare_nothing
+100952 conduct_tour biggie -> finish_tour
+100957 make_robot_work biggie -> deploy_for_work_once 232422 100975
+100966 prepare_robot biggie hall_alpha -> prepare_nothing
+100970 conduct_tour biggie -> finish_tour
+100975 make_robot_work biggie -> deploy_for_work_once 232423 100993
+100984 prepare_robot biggie hall_alpha -> prepare_nothing
+100988 conduct_tour biggie -> finish_tour
+100993 make_robot_work biggie -> deploy_for_work_once 232424 101011
+101002 prepare_robot biggie hall_alpha -> prepare_nothing
+101006 conduct_tour biggie -> finish_tour
+101011 make_robot_work biggie -> deploy_for_work_once 232425 101029
+101020 prepare_robot biggie hall_alpha -> prepare_nothing
+101024 conduct_tour biggie -> finish_tour
+101029 make_robot_work biggie -> deploy_for_work_once 232426 101047
+101038 prepare_robot biggie hall_alpha -> prepare_nothing
+101042 conduct_tour biggie -> finish_tour
+101047 make_robot_work biggie -> deploy_for_work_once 232427 101065
+101056 prepare_robot biggie hall_alpha -> prepare_nothing
+101060 conduct_tour biggie -> finish_tour
+101065 make_robot_work biggie -> deploy_for_work_once 232428 101083
+101074 prepare_robot biggie hall_alpha -> prepare_nothing
+101078 conduct_tour biggie -> finish_tour
+101083 make_robot_work biggie -> deploy_for_work_once 232429 101101
+101092 prepare_robot biggie hall_alpha -> prepare_nothing
+101096 conduct_tour biggie -> finish_tour
+101101 make_robot_work biggie -> deploy_for_work_once 232430 101119
+101110 prepare_robot biggie hall_alpha -> prepare_nothing
+101114 conduct_tour biggie -> finish_tour
+101119 make_robot_work biggie -> deploy_for_work_once 232431 101137
+101128 prepare_robot biggie hall_alpha -> prepare_nothing
+101132 conduct_tour biggie -> finish_tour
+101137 make_robot_work biggie -> deploy_for_work_once 232432 101155
+101146 prepare_robot biggie hall_alpha -> prepare_nothing
+101150 conduct_tour biggie -> finish_tour
+101155 make_robot_work biggie -> deploy_for_work_once 232433 101173
+101164 prepare_robot biggie hall_alpha -> prepare_nothing
+101168 conduct_tour biggie -> finish_tour
+101173 make_robot_work biggie -> deploy_for_work_once 232434 101191
+101182 prepare_robot biggie hall_alpha -> prepare_nothing
+101186 conduct_tour biggie -> finish_tour
+101191 make_robot_work biggie -> deploy_for_work_once 232435 101209
+101200 prepare_robot biggie hall_alpha -> prepare_nothing
+101204 conduct_tour biggie -> finish_tour
+101209 make_robot_work biggie -> deploy_for_work_once 232436 101227
+101218 prepare_robot biggie hall_alpha -> prepare_nothing
+101222 conduct_tour biggie -> finish_tour
+101227 make_robot_work biggie -> deploy_for_work_once 232437 101245
+101236 prepare_robot biggie hall_alpha -> prepare_nothing
+101240 conduct_tour biggie -> finish_tour
+101245 make_robot_work biggie -> deploy_for_work_once 232438 101263
+101254 prepare_robot biggie hall_alpha -> prepare_nothing
+101258 conduct_tour biggie -> finish_tour
+101263 make_robot_work biggie -> deploy_for_work_once 232439 101281
+101272 prepare_robot biggie hall_alpha -> prepare_nothing
+101276 conduct_tour biggie -> finish_tour
+101281 make_robot_work biggie -> deploy_for_work_once 232440 101299
+101290 prepare_robot biggie hall_alpha -> prepare_nothing
+101294 conduct_tour biggie -> finish_tour
+101299 make_robot_work biggie -> deploy_for_work_once 232441 101317
+101308 prepare_robot biggie hall_alpha -> prepare_nothing
+101312 conduct_tour biggie -> finish_tour
+101317 make_robot_work biggie -> deploy_for_work_once 232442 101335
+101326 prepare_robot biggie hall_alpha -> prepare_nothing
+101330 conduct_tour biggie -> finish_tour
+101335 make_robot_work biggie -> deploy_for_work_once 232443 101353
+101344 prepare_robot biggie hall_alpha -> prepare_nothing
+101348 conduct_tour biggie -> finish_tour
+101353 make_robot_work biggie -> deploy_for_work_once 232444 101371
+101362 prepare_robot biggie hall_alpha -> prepare_nothing
+101366 conduct_tour biggie -> finish_tour
+101371 make_robot_work biggie -> deploy_for_work_once 232445 101389
+101380 prepare_robot biggie hall_alpha -> prepare_nothing
+101384 conduct_tour biggie -> finish_tour
+101389 make_robot_work biggie -> deploy_for_work_once 232446 101407
+101398 prepare_robot biggie hall_alpha -> prepare_nothing
+101402 conduct_tour biggie -> finish_tour
+101407 make_robot_work biggie -> deploy_for_work_once 232447 101425
+101416 prepare_robot biggie hall_alpha -> prepare_nothing
+101420 conduct_tour biggie -> finish_tour
+101425 make_robot_work biggie -> deploy_for_work_once 232448 101443
+101434 prepare_robot biggie hall_alpha -> prepare_nothing
+101438 conduct_tour biggie -> finish_tour
+101443 make_robot_work biggie -> deploy_for_work_once 232449 101461
+101452 prepare_robot biggie hall_alpha -> prepare_nothing
+101456 conduct_tour biggie -> finish_tour
+101461 make_robot_work biggie -> deploy_for_work_once 232450 101479
+101470 prepare_robot biggie hall_alpha -> prepare_nothing
+101474 conduct_tour biggie -> finish_tour
+101479 make_robot_work biggie -> deploy_for_work_once 232451 101497
+101488 prepare_robot biggie hall_alpha -> prepare_nothing
+101492 conduct_tour biggie -> finish_tour
+101497 make_robot_work biggie -> deploy_for_work_once 232452 101515
+101506 prepare_robot biggie hall_alpha -> prepare_nothing
+101510 conduct_tour biggie -> finish_tour
+101515 make_robot_work biggie -> deploy_for_work_once 232453 101533
+101524 prepare_robot biggie hall_alpha -> prepare_nothing
+101528 conduct_tour biggie -> finish_tour
+101533 make_robot_work biggie -> deploy_for_work_once 232454 101551
+101542 prepare_robot biggie hall_alpha -> prepare_nothing
+101546 conduct_tour biggie -> finish_tour
+101551 make_robot_work biggie -> deploy_for_work_once 232455 101569
+101560 prepare_robot biggie hall_alpha -> prepare_nothing
+101564 conduct_tour biggie -> finish_tour
+101569 make_robot_work biggie -> deploy_for_work_once 232456 101587
+101578 prepare_robot biggie hall_alpha -> prepare_nothing
+101582 conduct_tour biggie -> finish_tour
+101587 make_robot_work biggie -> deploy_for_work_once 232457 101605
+101596 prepare_robot biggie hall_alpha -> prepare_nothing
+101600 conduct_tour biggie -> finish_tour
+101605 make_robot_work biggie -> deploy_for_work_once 232458 101623
+101614 prepare_robot biggie hall_alpha -> prepare_nothing
+101618 conduct_tour biggie -> finish_tour
+101623 make_robot_work biggie -> deploy_for_work_once 232459 101641
+101632 prepare_robot biggie hall_alpha -> prepare_nothing
+101636 conduct_tour biggie -> finish_tour
+101641 make_robot_work biggie -> deploy_for_work_once 232460 101659
+101650 prepare_robot biggie hall_alpha -> prepare_nothing
+101654 conduct_tour biggie -> finish_tour
+101659 make_robot_work biggie -> deploy_for_work_once 232461 101677
+101668 prepare_robot biggie hall_alpha -> prepare_nothing
+101672 conduct_tour biggie -> finish_tour
+101677 make_robot_work biggie -> deploy_for_work_once 232462 101695
+101686 prepare_robot biggie hall_alpha -> prepare_nothing
+101690 conduct_tour biggie -> finish_tour
+101695 make_robot_work biggie -> deploy_for_work_once 232463 101713
+101704 prepare_robot biggie hall_alpha -> prepare_nothing
+101708 conduct_tour biggie -> finish_tour
+101713 make_robot_work biggie -> deploy_for_work_once 232464 101731
+101722 prepare_robot biggie hall_alpha -> prepare_nothing
+101726 conduct_tour biggie -> finish_tour
+101731 make_robot_work biggie -> deploy_for_work_once 232465 101749
+101740 prepare_robot biggie hall_alpha -> prepare_nothing
+101744 conduct_tour biggie -> finish_tour
+101749 make_robot_work biggie -> deploy_for_work_once 232466 101767
+101758 prepare_robot biggie hall_alpha -> prepare_nothing
+101762 conduct_tour biggie -> finish_tour
+101767 make_robot_work biggie -> deploy_for_work_once 232467 101785
+101776 prepare_robot biggie hall_alpha -> prepare_nothing
+101780 conduct_tour biggie -> finish_tour
+101785 make_robot_work biggie -> deploy_for_work_once 232468 101803
+101794 prepare_robot biggie hall_alpha -> prepare_nothing
+101798 conduct_tour biggie -> finish_tour
+101803 make_robot_work biggie -> deploy_for_work_once 232469 101821
+101812 prepare_robot biggie hall_alpha -> prepare_nothing
+101816 conduct_tour biggie -> finish_tour
+101821 make_robot_work biggie -> deploy_for_work_once 232470 101839
+101830 prepare_robot biggie hall_alpha -> prepare_nothing
+101834 conduct_tour biggie -> finish_tour
+101839 make_robot_work biggie -> deploy_for_work_once 232471 101857
+101848 prepare_robot biggie hall_alpha -> prepare_nothing
+101852 conduct_tour biggie -> finish_tour
+101857 make_robot_work biggie -> deploy_for_work_once 232472 101875
+101866 prepare_robot biggie hall_alpha -> prepare_nothing
+101870 conduct_tour biggie -> finish_tour
+101875 make_robot_work biggie -> deploy_for_work_once 232473 101893
+101884 prepare_robot biggie hall_alpha -> prepare_nothing
+101888 conduct_tour biggie -> finish_tour
+101893 make_robot_work biggie -> deploy_for_work_once 232474 101911
+101902 prepare_robot biggie hall_alpha -> prepare_nothing
+101906 conduct_tour biggie -> finish_tour
+101911 make_robot_work biggie -> deploy_for_work_once 232475 101929
+101920 prepare_robot biggie hall_alpha -> prepare_nothing
+101924 conduct_tour biggie -> finish_tour
+101929 make_robot_work biggie -> deploy_for_work_once 232476 101947
+101938 prepare_robot biggie hall_alpha -> prepare_nothing
+101942 conduct_tour biggie -> finish_tour
+101947 make_robot_work biggie -> deploy_for_work_once 232477 101965
+101956 prepare_robot biggie hall_alpha -> prepare_nothing
+101960 conduct_tour biggie -> finish_tour
+101965 make_robot_work biggie -> deploy_for_work_once 232478 101983
+101974 prepare_robot biggie hall_alpha -> prepare_nothing
+101978 conduct_tour biggie -> finish_tour
+101983 make_robot_work biggie -> deploy_for_work_once 232479 102001
+101992 prepare_robot biggie hall_alpha -> prepare_nothing
+101996 conduct_tour biggie -> finish_tour
+102001 make_robot_work biggie -> deploy_for_work_once 232480 102019
+102010 prepare_robot biggie hall_alpha -> prepare_nothing
+102014 conduct_tour biggie -> finish_tour
+102019 make_robot_work biggie -> deploy_for_work_once 232481 102037
+102028 prepare_robot biggie hall_alpha -> prepare_nothing
+102032 conduct_tour biggie -> finish_tour
+102037 make_robot_work biggie -> deploy_for_work_once 232482 102055
+102046 prepare_robot biggie hall_alpha -> prepare_nothing
+102050 conduct_tour biggie -> finish_tour
+102055 make_robot_work biggie -> deploy_for_work_once 232483 102073
+102064 prepare_robot biggie hall_alpha -> prepare_nothing
+102068 conduct_tour biggie -> finish_tour
+102073 make_robot_work biggie -> deploy_for_work_once 232484 102091
+102082 prepare_robot biggie hall_alpha -> prepare_nothing
+102086 conduct_tour biggie -> finish_tour
+102091 make_robot_work biggie -> deploy_for_work_once 232485 102109
+102100 prepare_robot biggie hall_alpha -> prepare_nothing
+102104 conduct_tour biggie -> finish_tour
+102109 make_robot_work biggie -> deploy_for_work_once 232486 102127
+102118 prepare_robot biggie hall_alpha -> prepare_nothing
+102122 conduct_tour biggie -> finish_tour
+102127 make_robot_work biggie -> deploy_for_work_once 232487 102145
+102136 prepare_robot biggie hall_alpha -> prepare_nothing
+102140 conduct_tour biggie -> finish_tour
+102145 make_robot_work biggie -> deploy_for_work_once 232488 102163
+102154 prepare_robot biggie hall_alpha -> prepare_nothing
+102158 conduct_tour biggie -> finish_tour
+102163 make_robot_work biggie -> deploy_for_work_once 232489 102181
+102172 prepare_robot biggie hall_alpha -> prepare_nothing
+102176 conduct_tour biggie -> finish_tour
+102181 make_robot_work biggie -> deploy_for_work_once 232490 102199
+102190 prepare_robot biggie hall_alpha -> prepare_nothing
+102194 conduct_tour biggie -> finish_tour
+102199 make_robot_work biggie -> deploy_for_work_once 232491 102217
+102208 prepare_robot biggie hall_alpha -> prepare_nothing
+102212 conduct_tour biggie -> finish_tour
+102217 make_robot_work biggie -> deploy_for_work_once 232492 102235
+102226 prepare_robot biggie hall_alpha -> prepare_nothing
+102230 conduct_tour biggie -> finish_tour
+102235 make_robot_work biggie -> deploy_for_work_once 232493 174748
+102244 prepare_robot biggie hall_alpha -> prepare_nothing
+102250 conduct_tour biggie -> tour_next_stop 105882 232494 106338
+105882 robot_travel biggie stasis_lab -> sealing_curator_travel 105884 105889 106126
+105889 move_robot biggie hall_alpha stasis_lab -> move_robot_one_location 105891 105959
+105959 move_robot biggie tunnel stasis_lab -> move_robot_one_location 105961 105977
+105977 move_robot biggie stasis_lab stasis_lab -> move_robot_one_location 105979 106109
+106109 move_robot biggie tunnel stasis_lab -> move_robot_one_location 106111 106124
+106124 move_robot biggie stasis_lab stasis_lab -> arrived_at_destination
+106133 unload_phase biggie stasis_lab -> unload_one_thermosensitive_more 106323 106326
+106326 unload_phase biggie stasis_lab -> finish_unloading
+106332 load_phase biggie stasis_lab -> finish_loading
+106338 conduct_tour biggie -> tour_next_stop 174669 232495 174743
+174669 robot_travel biggie hall_alpha -> sealing_curator_travel 174671 174673 174698
+174673 move_robot biggie stasis_lab hall_alpha -> move_robot_one_location 174675 174680
+174680 move_robot biggie tunnel hall_alpha -> move_robot_one_location 174682 174696
+174696 move_robot biggie hall_alpha hall_alpha -> arrived_at_destination
+174702 unload_phase biggie hall_alpha -> finish_unloading
+174708 load_phase biggie hall_alpha -> load_one_standard_more 174738 174739
+174739 load_phase biggie hall_alpha -> finish_loading
+174743 conduct_tour biggie -> finish_tour
+174748 make_robot_work biggie -> deploy_for_work_once 232496 188965
+174757 prepare_robot biggie hall_alpha -> prepare_nothing
+174763 conduct_tour biggie -> tour_next_stop 188857 232497 188960
+188857 robot_travel biggie stasis_lab -> sealing_curator_travel 188859 188864 188885
+188864 move_robot biggie hall_alpha stasis_lab -> move_robot_one_location 188866 188868
+188868 move_robot biggie tunnel stasis_lab -> move_robot_one_location 188870 188883
+188883 move_robot biggie stasis_lab stasis_lab -> arrived_at_destination
+188891 unload_phase biggie stasis_lab -> unload_one_standard_more 188948 188950
+188950 unload_phase biggie stasis_lab -> finish_unloading
+188956 load_phase biggie stasis_lab -> finish_loading
+188960 conduct_tour biggie -> finish_tour
+188965 make_robot_work biggie -> deploy_for_work_once 232498 188983
+188974 prepare_robot biggie stasis_lab -> prepare_nothing
+188978 conduct_tour biggie -> finish_tour
+188983 make_robot_work biggie -> deploy_for_work_once 232499 189001
+188992 prepare_robot biggie stasis_lab -> prepare_nothing
+188996 conduct_tour biggie -> finish_tour
+189001 make_robot_work biggie -> deploy_for_work_once 232500 189034
+189025 prepare_robot biggie stasis_lab -> prepare_nothing
+189029 conduct_tour biggie -> finish_tour
+189034 make_robot_work biggie -> deploy_for_work_once 232501 189052
+189043 prepare_robot biggie stasis_lab -> prepare_nothing
+189047 conduct_tour biggie -> finish_tour
+189052 make_robot_work biggie -> deploy_for_work_once 232502 189070
+189061 prepare_robot biggie stasis_lab -> prepare_nothing
+189065 conduct_tour biggie -> finish_tour
+189070 make_robot_work biggie -> deploy_for_work_once 232503 189088
+189079 prepare_robot biggie stasis_lab -> prepare_nothing
+189083 conduct_tour biggie -> finish_tour
+189088 make_robot_work biggie -> deploy_for_work_once 232504 189106
+189097 prepare_robot biggie stasis_lab -> prepare_nothing
+189101 conduct_tour biggie -> finish_tour
+189106 make_robot_work biggie -> deploy_for_work_once 232505 209512
+189115 prepare_robot biggie stasis_lab -> prepare_nothing
+189121 conduct_tour biggie -> tour_next_stop 206332 232506 209507
+206332 robot_travel biggie hall_beta -> sealing_curator_travel 206334 209392 209417
+209392 move_robot biggie stasis_lab hall_beta -> move_robot_one_location 209394 209405
+209405 move_robot biggie tunnel hall_beta -> move_robot_one_location 209407 209415
+209415 move_robot biggie hall_beta hall_beta -> arrived_at_destination
+209421 unload_phase biggie hall_beta -> finish_unloading
+209426 load_phase biggie hall_beta -> load_one_standard_more 209502 209503
+209503 load_phase biggie hall_beta -> finish_loading
+209507 conduct_tour biggie -> finish_tour
+209512 make_robot_work biggie -> deploy_for_work_once 232507 209579
+209570 prepare_robot biggie hall_beta -> prepare_nothing
+209574 conduct_tour biggie -> finish_tour
+209579 make_robot_work biggie -> deploy_for_work_once 232508 209597
+209588 prepare_robot biggie hall_beta -> prepare_nothing
+209592 conduct_tour biggie -> finish_tour
+209597 make_robot_work biggie -> deploy_for_work_once 232509 209615
+209606 prepare_robot biggie hall_beta -> prepare_nothing
+209610 conduct_tour biggie -> finish_tour
+209615 make_robot_work biggie -> deploy_for_work_once 232510 209633
+209624 prepare_robot biggie hall_beta -> prepare_nothing
+209628 conduct_tour biggie -> finish_tour
+209633 make_robot_work biggie -> deploy_for_work_once 232511 209651
+209642 prepare_robot biggie hall_beta -> prepare_nothing
+209646 conduct_tour biggie -> finish_tour
+209651 make_robot_work biggie -> deploy_for_work_once 232512 209669
+209660 prepare_robot biggie hall_beta -> prepare_nothing
+209664 conduct_tour biggie -> finish_tour
+209669 make_robot_work biggie -> deploy_for_work_once 232513 209687
+209678 prepare_robot biggie hall_beta -> prepare_nothing
+209682 conduct_tour biggie -> finish_tour
+209687 make_robot_work biggie -> deploy_for_work_once 232514 209705
+209696 prepare_robot biggie hall_beta -> prepare_nothing
+209700 conduct_tour biggie -> finish_tour
+209705 make_robot_work biggie -> deploy_for_work_once 232515 209723
+209714 prepare_robot biggie hall_beta -> prepare_nothing
+209718 conduct_tour biggie -> finish_tour
+209723 make_robot_work biggie -> deploy_for_work_once 232516 209777
+209768 prepare_robot biggie hall_beta -> prepare_nothing
+209772 conduct_tour biggie -> finish_tour
+209777 make_robot_work biggie -> deploy_for_work_once 232517 209795
+209786 prepare_robot biggie hall_beta -> prepare_nothing
+209790 conduct_tour biggie -> finish_tour
+209795 make_robot_work biggie -> deploy_for_work_once 232518 209813
+209804 prepare_robot biggie hall_beta -> prepare_nothing
+209808 conduct_tour biggie -> finish_tour
+209813 make_robot_work biggie -> deploy_for_work_once 232519 209831
+209822 prepare_robot biggie hall_beta -> prepare_nothing
+209826 conduct_tour biggie -> finish_tour
+209831 make_robot_work biggie -> deploy_for_work_once 232520 209849
+209840 prepare_robot biggie hall_beta -> prepare_nothing
+209844 conduct_tour biggie -> finish_tour
+209849 make_robot_work biggie -> deploy_for_work_once 232521 209867
+209858 prepare_robot biggie hall_beta -> prepare_nothing
+209862 conduct_tour biggie -> finish_tour
+209867 make_robot_work biggie -> deploy_for_work_once 232522 209885
+209876 prepare_robot biggie hall_beta -> prepare_nothing
+209880 conduct_tour biggie -> finish_tour
+209885 make_robot_work biggie -> deploy_for_work_once 232523 209903
+209894 prepare_robot biggie hall_beta -> prepare_nothing
+209898 conduct_tour biggie -> finish_tour
+209903 make_robot_work biggie -> deploy_for_work_once 232524 209921
+209912 prepare_robot biggie hall_beta -> prepare_nothing
+209916 conduct_tour biggie -> finish_tour
+209921 make_robot_work biggie -> deploy_for_work_once 232525 209939
+209930 prepare_robot biggie hall_beta -> prepare_nothing
+209934 conduct_tour biggie -> finish_tour
+209939 make_robot_work biggie -> deploy_for_work_once 232526 209957
+209948 prepare_robot biggie hall_beta -> prepare_nothing
+209952 conduct_tour biggie -> finish_tour
+209957 make_robot_work biggie -> deploy_for_work_once 232527 211709
+209966 prepare_robot biggie hall_beta -> prepare_nothing
+209972 conduct_tour biggie -> tour_next_stop 210962 232528 211704
+210962 robot_travel biggie stasis_lab -> sealing_curator_travel 210964 211456 211477
+211456 move_robot biggie hall_beta stasis_lab -> move_robot_one_location 211458 211460
+211460 move_robot biggie tunnel stasis_lab -> move_robot_one_location 211462 211475
+211475 move_robot biggie stasis_lab stasis_lab -> arrived_at_destination
+211483 unload_phase biggie stasis_lab -> unload_one_standard_more 211693 211694
+211694 unload_phase biggie stasis_lab -> finish_unloading
+211700 load_phase biggie stasis_lab -> finish_loading
+211704 conduct_tour biggie -> finish_tour
+211709 make_robot_work biggie -> deploy_for_work_once 232529 211727
+211718 prepare_robot biggie stasis_lab -> prepare_nothing
+211722 conduct_tour biggie -> finish_tour
+211727 make_robot_work biggie -> deploy_for_work_once 232530 211745
+211736 prepare_robot biggie stasis_lab -> prepare_nothing
+211740 conduct_tour biggie -> finish_tour
+211745 make_robot_work biggie -> deploy_for_work_once 232531 211763
+211754 prepare_robot biggie stasis_lab -> prepare_nothing
+211758 conduct_tour biggie -> finish_tour
+211763 make_robot_work biggie -> deploy_for_work_once 232532 211781
+211772 prepare_robot biggie stasis_lab -> prepare_nothing
+211776 conduct_tour biggie -> finish_tour
+211781 make_robot_work biggie -> deploy_for_work_once 232533 211799
+211790 prepare_robot biggie stasis_lab -> prepare_nothing
+211794 conduct_tour biggie -> finish_tour
+211799 make_robot_work biggie -> deploy_for_work_once 232534 218045
+211808 prepare_robot biggie stasis_lab -> prepare_nothing
+211814 conduct_tour biggie -> tour_next_stop 217989 232535 218040
+217989 robot_travel biggie hall_beta -> sealing_curator_travel 217991 217993 218014
+217993 move_robot biggie stasis_lab hall_beta -> move_robot_one_location 217995 218006
+218006 move_robot biggie tunnel hall_beta -> move_robot_one_location 218008 218012
+218012 move_robot biggie hall_beta hall_beta -> arrived_at_destination
+218018 unload_phase biggie hall_beta -> finish_unloading
+218023 load_phase biggie hall_beta -> load_one_standard_more 218034 218036
+218036 load_phase biggie hall_beta -> finish_loading
+218040 conduct_tour biggie -> finish_tour
+218045 make_robot_work biggie -> deploy_for_work_once 232536 218063
+218054 prepare_robot biggie hall_beta -> prepare_nothing
+218058 conduct_tour biggie -> finish_tour
+218063 make_robot_work biggie -> deploy_for_work_once 232537 218081
+218072 prepare_robot biggie hall_beta -> prepare_nothing
+218076 conduct_tour biggie -> finish_tour
+218081 make_robot_work biggie -> deploy_for_work_once 232538 218099
+218090 prepare_robot biggie hall_beta -> prepare_nothing
+218094 conduct_tour biggie -> finish_tour
+218099 make_robot_work biggie -> deploy_for_work_once 232539 218117
+218108 prepare_robot biggie hall_beta -> prepare_nothing
+218112 conduct_tour biggie -> finish_tour
+218117 make_robot_work biggie -> deploy_for_work_once 232540 218135
+218126 prepare_robot biggie hall_beta -> prepare_nothing
+218130 conduct_tour biggie -> finish_tour
+218135 make_robot_work biggie -> deploy_for_work_once 232541 218153
+218144 prepare_robot biggie hall_beta -> prepare_nothing
+218148 conduct_tour biggie -> finish_tour
+218153 make_robot_work biggie -> deploy_for_work_once 232542 218585
+218162 prepare_robot biggie hall_beta -> prepare_nothing
+218168 conduct_tour biggie -> tour_next_stop 218273 232543 218580
+218273 robot_travel biggie stasis_lab -> sealing_curator_travel 218275 218281 218374
+218281 move_robot biggie hall_beta stasis_lab -> move_robot_one_location 218283 218291
+218291 move_robot biggie tunnel stasis_lab -> move_robot_one_location 218293 218325
+218325 move_robot biggie hall_alpha stasis_lab -> move_robot_one_location 218327 218335
+218335 move_robot biggie tunnel stasis_lab -> move_robot_one_location 218337 218349
+218349 move_robot biggie hall_alpha stasis_lab -> move_robot_one_location 218351 218353
+218353 move_robot biggie tunnel stasis_lab -> move_robot_one_location 218355 218372
+218372 move_robot biggie stasis_lab stasis_lab -> arrived_at_destination
+218380 unload_phase biggie stasis_lab -> unload_one_standard_more 218548 218551
+218551 unload_phase biggie stasis_lab -> finish_unloading
+218559 load_phase biggie stasis_lab -> load_one_standard_more 218572 218576
+218576 load_phase biggie stasis_lab -> finish_loading
+218580 conduct_tour biggie -> finish_tour
+218585 make_robot_work biggie -> deploy_for_work_once 232544 218623
+218614 prepare_robot biggie stasis_lab -> prepare_nothing
+218618 conduct_tour biggie -> finish_tour
+218623 make_robot_work biggie -> deploy_for_work_once 232545 218641
+218632 prepare_robot biggie stasis_lab -> prepare_nothing
+218636 conduct_tour biggie -> finish_tour
+218641 make_robot_work biggie -> deploy_for_work_once 232546 222279
+218650 prepare_robot biggie stasis_lab -> prepare_nothing
+218656 conduct_tour biggie -> tour_next_stop 222206 232547 222274
+222206 robot_travel biggie cryo_chamber -> sealing_curator_travel 222208 222210 222231
+222210 move_robot biggie stasis_lab cryo_chamber -> move_robot_one_location 222212 222223
+222223 move_robot biggie tunnel cryo_chamber -> move_robot_one_location 222225 222229
+222229 move_robot biggie cryo_chamber cryo_chamber -> arrived_at_destination
+222237 unload_phase biggie cryo_chamber -> unload_one_standard_more 222263 222266
+222266 unload_phase biggie cryo_chamber -> finish_unloading
+222270 load_phase biggie cryo_chamber -> finish_loading
+222274 conduct_tour biggie -> finish_tour
+222279 make_robot_work biggie -> deploy_for_work_once 232548 222312
+222303 prepare_robot biggie cryo_chamber -> prepare_nothing
+222307 conduct_tour biggie -> finish_tour
+222312 make_robot_work biggie -> deploy_for_work_once 232549 222330
+222321 prepare_robot biggie cryo_chamber -> prepare_nothing
+222325 conduct_tour biggie -> finish_tour
+222330 make_robot_work biggie -> deploy_for_work_once 232550 222348
+222339 prepare_robot biggie cryo_chamber -> prepare_nothing
+222343 conduct_tour biggie -> finish_tour
+222348 make_robot_work biggie -> deploy_for_work_once 232551 229706
+222357 prepare_robot biggie cryo_chamber -> prepare_nothing
+222363 conduct_tour biggie -> tour_next_stop 227967 232552 229701
+227967 robot_travel biggie hall_alpha -> sealing_curator_travel 227969 227974 229659
+227974 move_robot biggie cryo_chamber hall_alpha -> move_robot_one_location 227976 229645
+229645 move_robot biggie tunnel hall_alpha -> move_robot_one_location 229647 229657
+229657 move_robot biggie hall_alpha hall_alpha -> arrived_at_destination
+229663 unload_phase biggie hall_alpha -> finish_unloading
+229670 load_phase biggie hall_alpha -> load_one_sensitive_more 229679 229697
+229697 load_phase biggie hall_alpha -> finish_loading
+229701 conduct_tour biggie -> finish_tour
+229706 make_robot_work biggie -> deploy_for_work_once 232553 232360
+229735 prepare_robot biggie hall_alpha -> prepare_nothing
+229741 conduct_tour biggie -> tour_next_stop 232142 232554 232357
+232142 robot_travel biggie stasis_lab -> sealing_curator_travel 232144 232149 232170
+232149 move_robot biggie hall_alpha stasis_lab -> move_robot_one_location 232151 232153
+232153 move_robot biggie tunnel stasis_lab -> move_robot_one_location 232155 232168
+232168 move_robot biggie stasis_lab stasis_lab -> arrived_at_destination
+232177 unload_phase biggie stasis_lab -> unload_one_thermosensitive_more 232339 232347
+232347 unload_phase biggie stasis_lab -> finish_unloading
+232353 load_phase biggie stasis_lab -> finish_loading
+232357 conduct_tour biggie -> finish_tour
+232360 make_robot_work biggie -> finish_work
+232362 solve_problem  -> run_main_task 9
+232363 tour_around biggie pod_pickup -> do_tour_around 39 78
+232364 fetch_pods biggie -> fetch_pods_from_pod_pickup 45 57
+232365 service_room biggie stasis_lab -> do_service_room 183 189
+232366 service_room biggie hall_beta -> do_service_room 4069 4075
+232367 service_room biggie hall_alpha -> do_service_room 11075 11292
+232368 tour_around biggie hall_alpha -> do_tour_around 12084 12088
+232369 tour_around biggie hall_alpha -> do_tour_around 12102 12106
+232370 tour_around biggie hall_alpha -> do_tour_around 12120 12124
+232371 tour_around biggie hall_alpha -> do_tour_around 12138 12142
+232372 tour_around biggie hall_alpha -> do_tour_around 12156 12160
+232373 tour_around biggie hall_alpha -> do_tour_around 12184 12190
+232374 service_room biggie cryo_chamber -> do_service_room 12538 12741
+232375 tour_around biggie cryo_chamber -> do_tour_around 12759 12763
+232376 tour_around biggie cryo_chamber -> do_tour_around 12851 12857
+232377 service_room biggie hall_alpha -> do_service_room 26106 26112
+232378 tour_around biggie hall_alpha -> do_tour_around 26155 26159
+232379 tour_around biggie hall_alpha -> do_tour_around 26173 26177
+232380 tour_around biggie hall_alpha -> do_tour_around 26251 26257
+232381 service_room biggie cryo_chamber -> do_service_room 26524 26528
+232382 tour_around biggie cryo_chamber -> do_tour_around 26546 26550
+232383 tour_around biggie cryo_chamber -> do_tour_around 26564 26568
+232384 tour_around biggie cryo_chamber -> do_tour_around 26582 26586
+232385 tour_around biggie cryo_chamber -> do_tour_around 26600 26604
+232386 tour_around biggie cryo_chamber -> do_tour_around 26618 26622
+232387 tour_around biggie cryo_chamber -> do_tour_around 26636 26640
+232388 tour_around biggie cryo_chamber -> do_tour_around 26654 26660
+232389 service_room biggie hall_beta -> do_service_room 44428 49716
+232390 service_room biggie stasis_lab -> do_service_room 67448 67558
+232391 tour_around biggie stasis_lab -> do_tour_around 67620 67624
+232392 tour_around biggie stasis_lab -> do_tour_around 67638 67642
+232393 tour_around biggie stasis_lab -> do_tour_around 67656 67660
+232394 tour_around biggie stasis_lab -> do_tour_around 67674 67678
+232395 tour_around biggie stasis_lab -> do_tour_around 67692 67696
+232396 tour_around biggie stasis_lab -> do_tour_around 67710 67714
+232397 tour_around biggie stasis_lab -> do_tour_around 67728 67732
+232398 tour_around biggie stasis_lab -> do_tour_around 67746 67750
+232399 tour_around biggie stasis_lab -> do_tour_around 67764 67768
+232400 tour_around biggie stasis_lab -> do_tour_around 67782 67786
+232401 tour_around biggie stasis_lab -> do_tour_around 67800 67804
+232402 tour_around biggie stasis_lab -> do_tour_around 67818 67822
+232403 tour_around biggie stasis_lab -> do_tour_around 67836 67840
+232404 tour_around biggie stasis_lab -> do_tour_around 67854 67858
+232405 tour_around biggie stasis_lab -> do_tour_around 67872 67876
+232406 tour_around biggie stasis_lab -> do_tour_around 67890 67896
+232407 service_room biggie hall_beta -> do_service_room 71166 71172
+232408 service_room biggie stasis_lab -> do_service_room 72172 72383
+232409 tour_around biggie stasis_lab -> do_tour_around 72401 72405
+232410 tour_around biggie stasis_lab -> do_tour_around 72709 72713
+232411 tour_around biggie stasis_lab -> do_tour_around 72727 72731
+232412 tour_around biggie stasis_lab -> do_tour_around 72745 72749
+232413 tour_around biggie stasis_lab -> do_tour_around 72763 72767
+232414 tour_around biggie stasis_lab -> do_tour_around 72781 72787
+232415 service_room biggie hall_beta -> do_service_room 84744 84750
+232416 tour_around biggie hall_beta -> do_tour_around 84921 84925
+232417 tour_around biggie hall_beta -> do_tour_around 84939 84943
+232418 tour_around biggie hall_beta -> do_tour_around 84960 84966
+232419 service_room biggie hall_alpha -> do_service_room 92099 100773
+232420 tour_around biggie hall_alpha -> do_tour_around 100930 100934
+232421 tour_around biggie hall_alpha -> do_tour_around 100948 100952
+232422 tour_around biggie hall_alpha -> do_tour_around 100966 100970
+232423 tour_around biggie hall_alpha -> do_tour_around 100984 100988
+232424 tour_around biggie hall_alpha -> do_tour_around 101002 101006
+232425 tour_around biggie hall_alpha -> do_tour_around 101020 101024
+232426 tour_around biggie hall_alpha -> do_tour_around 101038 101042
+232427 tour_around biggie hall_alpha -> do_tour_around 101056 101060
+232428 tour_around biggie hall_alpha -> do_tour_around 101074 101078
+232429 tour_around biggie hall_alpha -> do_tour_around 101092 101096
+232430 tour_around biggie hall_alpha -> do_tour_around 101110 101114
+232431 tour_around biggie hall_alpha -> do_tour_around 101128 101132
+232432 tour_around biggie hall_alpha -> do_tour_around 101146 101150
+232433 tour_around biggie hall_alpha -> do_tour_around 101164 101168
+232434 tour_around biggie hall_alpha -> do_tour_around 101182 101186
+232435 tour_around biggie hall_alpha -> do_tour_around 101200 101204
+232436 tour_around biggie hall_alpha -> do_tour_around 101218 101222
+232437 tour_around biggie hall_alpha -> do_tour_around 101236 101240
+232438 tour_around biggie hall_alpha -> do_tour_around 101254 101258
+232439 tour_around biggie hall_alpha -> do_tour_around 101272 101276
+232440 tour_around biggie hall_alpha -> do_tour_around 101290 101294
+232441 tour_around biggie hall_alpha -> do_tour_around 101308 101312
+232442 tour_around biggie hall_alpha -> do_tour_around 101326 101330
+232443 tour_around biggie hall_alpha -> do_tour_around 101344 101348
+232444 tour_around biggie hall_alpha -> do_tour_around 101362 101366
+232445 tour_around biggie hall_alpha -> do_tour_around 101380 101384
+232446 tour_around biggie hall_alpha -> do_tour_around 101398 101402
+232447 tour_around biggie hall_alpha -> do_tour_around 101416 101420
+232448 tour_around biggie hall_alpha -> do_tour_around 101434 101438
+232449 tour_around biggie hall_alpha -> do_tour_around 101452 101456
+232450 tour_around biggie hall_alpha -> do_tour_around 101470 101474
+232451 tour_around biggie hall_alpha -> do_tour_around 101488 101492
+232452 tour_around biggie hall_alpha -> do_tour_around 101506 101510
+232453 tour_around biggie hall_alpha -> do_tour_around 101524 101528
+232454 tour_around biggie hall_alpha -> do_tour_around 101542 101546
+232455 tour_around biggie hall_alpha -> do_tour_around 101560 101564
+232456 tour_around biggie hall_alpha -> do_tour_around 101578 101582
+232457 tour_around biggie hall_alpha -> do_tour_around 101596 101600
+232458 tour_around biggie hall_alpha -> do_tour_around 101614 101618
+232459 tour_around biggie hall_alpha -> do_tour_around 101632 101636
+232460 tour_around biggie hall_alpha -> do_tour_around 101650 101654
+232461 tour_around biggie hall_alpha -> do_tour_around 101668 101672
+232462 tour_around biggie hall_alpha -> do_tour_around 101686 101690
+232463 tour_around biggie hall_alpha -> do_tour_around 101704 101708
+232464 tour_around biggie hall_alpha -> do_tour_around 101722 101726
+232465 tour_around biggie hall_alpha -> do_tour_around 101740 101744
+232466 tour_around biggie hall_alpha -> do_tour_around 101758 101762
+232467 tour_around biggie hall_alpha -> do_tour_around 101776 101780
+232468 tour_around biggie hall_alpha -> do_tour_around 101794 101798
+232469 tour_around biggie hall_alpha -> do_tour_around 101812 101816
+232470 tour_around biggie hall_alpha -> do_tour_around 101830 101834
+232471 tour_around biggie hall_alpha -> do_tour_around 101848 101852
+232472 tour_around biggie hall_alpha -> do_tour_around 101866 101870
+232473 tour_around biggie hall_alpha -> do_tour_around 101884 101888
+232474 tour_around biggie hall_alpha -> do_tour_around 101902 101906
+232475 tour_around biggie hall_alpha -> do_tour_around 101920 101924
+232476 tour_around biggie hall_alpha -> do_tour_around 101938 101942
+232477 tour_around biggie hall_alpha -> do_tour_around 101956 101960
+232478 tour_around biggie hall_alpha -> do_tour_around 101974 101978
+232479 tour_around biggie hall_alpha -> do_tour_around 101992 101996
+232480 tour_around biggie hall_alpha -> do_tour_around 102010 102014
+232481 tour_around biggie hall_alpha -> do_tour_around 102028 102032
+232482 tour_around biggie hall_alpha -> do_tour_around 102046 102050
+232483 tour_around biggie hall_alpha -> do_tour_around 102064 102068
+232484 tour_around biggie hall_alpha -> do_tour_around 102082 102086
+232485 tour_around biggie hall_alpha -> do_tour_around 102100 102104
+232486 tour_around biggie hall_alpha -> do_tour_around 102118 102122
+232487 tour_around biggie hall_alpha -> do_tour_around 102136 102140
+232488 tour_around biggie hall_alpha -> do_tour_around 102154 102158
+232489 tour_around biggie hall_alpha -> do_tour_around 102172 102176
+232490 tour_around biggie hall_alpha -> do_tour_around 102190 102194
+232491 tour_around biggie hall_alpha -> do_tour_around 102208 102212
+232492 tour_around biggie hall_alpha -> do_tour_around 102226 102230
+232493 tour_around biggie hall_alpha -> do_tour_around 102244 102250
+232494 service_room biggie stasis_lab -> do_service_room 106133 106332
+232495 service_room biggie hall_alpha -> do_service_room 174702 174708
+232496 tour_around biggie hall_alpha -> do_tour_around 174757 174763
+232497 service_room biggie stasis_lab -> do_service_room 188891 188956
+232498 tour_around biggie stasis_lab -> do_tour_around 188974 188978
+232499 tour_around biggie stasis_lab -> do_tour_around 188992 188996
+232500 tour_around biggie stasis_lab -> do_tour_around 189025 189029
+232501 tour_around biggie stasis_lab -> do_tour_around 189043 189047
+232502 tour_around biggie stasis_lab -> do_tour_around 189061 189065
+232503 tour_around biggie stasis_lab -> do_tour_around 189079 189083
+232504 tour_around biggie stasis_lab -> do_tour_around 189097 189101
+232505 tour_around biggie stasis_lab -> do_tour_around 189115 189121
+232506 service_room biggie hall_beta -> do_service_room 209421 209426
+232507 tour_around biggie hall_beta -> do_tour_around 209570 209574
+232508 tour_around biggie hall_beta -> do_tour_around 209588 209592
+232509 tour_around biggie hall_beta -> do_tour_around 209606 209610
+232510 tour_around biggie hall_beta -> do_tour_around 209624 209628
+232511 tour_around biggie hall_beta -> do_tour_around 209642 209646
+232512 tour_around biggie hall_beta -> do_tour_around 209660 209664
+232513 tour_around biggie hall_beta -> do_tour_around 209678 209682
+232514 tour_around biggie hall_beta -> do_tour_around 209696 209700
+232515 tour_around biggie hall_beta -> do_tour_around 209714 209718
+232516 tour_around biggie hall_beta -> do_tour_around 209768 209772
+232517 tour_around biggie hall_beta -> do_tour_around 209786 209790
+232518 tour_around biggie hall_beta -> do_tour_around 209804 209808
+232519 tour_around biggie hall_beta -> do_tour_around 209822 209826
+232520 tour_around biggie hall_beta -> do_tour_around 209840 209844
+232521 tour_around biggie hall_beta -> do_tour_around 209858 209862
+232522 tour_around biggie hall_beta -> do_tour_around 209876 209880
+232523 tour_around biggie hall_beta -> do_tour_around 209894 209898
+232524 tour_around biggie hall_beta -> do_tour_around 209912 209916
+232525 tour_around biggie hall_beta -> do_tour_around 209930 209934
+232526 tour_around biggie hall_beta -> do_tour_around 209948 209952
+232527 tour_around biggie hall_beta -> do_tour_around 209966 209972
+232528 service_room biggie stasis_lab -> do_service_room 211483 211700
+232529 tour_around biggie stasis_lab -> do_tour_around 211718 211722
+232530 tour_around biggie stasis_lab -> do_tour_around 211736 211740
+232531 tour_around biggie stasis_lab -> do_tour_around 211754 211758
+232532 tour_around biggie stasis_lab -> do_tour_around 211772 211776
+232533 tour_around biggie stasis_lab -> do_tour_around 211790 211794
+232534 tour_around biggie stasis_lab -> do_tour_around 211808 211814
+232535 service_room biggie hall_beta -> do_service_room 218018 218023
+232536 tour_around biggie hall_beta -> do_tour_around 218054 218058
+232537 tour_around biggie hall_beta -> do_tour_around 218072 218076
+232538 tour_around biggie hall_beta -> do_tour_around 218090 218094
+232539 tour_around biggie hall_beta -> do_tour_around 218108 218112
+232540 tour_around biggie hall_beta -> do_tour_around 218126 218130
+232541 tour_around biggie hall_beta -> do_tour_around 218144 218148
+232542 tour_around biggie hall_beta -> do_tour_around 218162 218168
+232543 service_room biggie stasis_lab -> do_service_room 218380 218559
+232544 tour_around biggie stasis_lab -> do_tour_around 218614 218618
+232545 tour_around biggie stasis_lab -> do_tour_around 218632 218636
+232546 tour_around biggie stasis_lab -> do_tour_around 218650 218656
+232547 service_room biggie cryo_chamber -> do_service_room 222237 222270
+232548 tour_around biggie cryo_chamber -> do_tour_around 222303 222307
+232549 tour_around biggie cryo_chamber -> do_tour_around 222321 222325
+232550 tour_around biggie cryo_chamber -> do_tour_around 222339 222343
+232551 tour_around biggie cryo_chamber -> do_tour_around 222357 222363
+232552 service_room biggie hall_alpha -> do_service_room 229663 229670
+232553 tour_around biggie hall_alpha -> do_tour_around 229735 229741
+232554 service_room biggie stasis_lab -> do_service_room 232177 232353

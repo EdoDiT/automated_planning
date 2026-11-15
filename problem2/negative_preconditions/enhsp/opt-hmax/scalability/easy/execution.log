@@ -1,0 +1,68 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 24
+Aibr Preprocessing
+|F|:32
+|X|:3
+|A|:45
+|P|:0
+|E|:0
+H1 Setup Time (msec): 10
+f(n) = 4.0 (Expanded Nodes: 1, Evaluated States: 1, Time: 0.007) Frontier Size: 0
+f(n) = 5.0 (Expanded Nodes: 2, Evaluated States: 8, Time: 0.025) Frontier Size: 6
+f(n) = 6.0 (Expanded Nodes: 4, Evaluated States: 16, Time: 0.027) Frontier Size: 12
+f(n) = 7.0 (Expanded Nodes: 11, Evaluated States: 28, Time: 0.03) Frontier Size: 17
+f(n) = 8.0 (Expanded Nodes: 19, Evaluated States: 42, Time: 0.033) Frontier Size: 23
+f(n) = 9.0 (Expanded Nodes: 37, Evaluated States: 81, Time: 0.037) Frontier Size: 44
+f(n) = 10.0 (Expanded Nodes: 64, Evaluated States: 145, Time: 0.042) Frontier Size: 81
+f(n) = 11.0 (Expanded Nodes: 103, Evaluated States: 207, Time: 0.046) Frontier Size: 104
+f(n) = 12.0 (Expanded Nodes: 155, Evaluated States: 279, Time: 0.05) Frontier Size: 124
+f(n) = 13.0 (Expanded Nodes: 217, Evaluated States: 361, Time: 0.056) Frontier Size: 144
+f(n) = 14.0 (Expanded Nodes: 315, Evaluated States: 537, Time: 0.065) Frontier Size: 222
+f(n) = 15.0 (Expanded Nodes: 460, Evaluated States: 835, Time: 0.077) Frontier Size: 375
+f(n) = 16.0 (Expanded Nodes: 651, Evaluated States: 1144, Time: 0.088) Frontier Size: 493
+f(n) = 17.0 (Expanded Nodes: 900, Evaluated States: 1486, Time: 0.1) Frontier Size: 586
+f(n) = 18.0 (Expanded Nodes: 1205, Evaluated States: 1908, Time: 0.114) Frontier Size: 703
+f(n) = 19.0 (Expanded Nodes: 1661, Evaluated States: 2657, Time: 0.14) Frontier Size: 996
+f(n) = 20.0 (Expanded Nodes: 2272, Evaluated States: 3716, Time: 0.173) Frontier Size: 1444
+f(n) = 21.0 (Expanded Nodes: 3059, Evaluated States: 4970, Time: 0.204) Frontier Size: 1911
+f(n) = 22.0 (Expanded Nodes: 4022, Evaluated States: 6304, Time: 0.238) Frontier Size: 2282
+Problem Solved
+
+Found Plan:
+0.0: (move biggie tunnel pod_pickup)
+1.0: (unseal biggie)
+2.0: (take_pod biggie pod_1)
+3.0: (seal biggie)
+4.0: (move biggie pod_pickup tunnel)
+5.0: (move biggie tunnel hall_beta)
+6.0: (unseal biggie)
+7.0: (pickup_sensitive_artifact biggie artifact_2 pod_1 hall_beta)
+8.0: (pickup_standard_artifact biggie artifact_1 hall_beta)
+9.0: (seal biggie)
+10.0: (move biggie hall_beta tunnel)
+11.0: (move biggie tunnel stasis_lab)
+12.0: (unseal biggie)
+13.0: (safe_drop_thermosensitive_artifact biggie artifact_2 pod_1 stasis_lab)
+14.0: (pickup_standard_artifact biggie artifact_3 stasis_lab)
+15.0: (seal biggie)
+16.0: (move biggie stasis_lab tunnel)
+17.0: (move biggie tunnel cryo_chamber)
+18.0: (unseal biggie)
+19.0: (drop_standard_artifact biggie artifact_1 cryo_chamber)
+20.0: (start_earthquake)
+21.0: (drop_standard_artifact biggie artifact_3 cryo_chamber)
+
+Plan-Length:22
+Metric (Search):22.0
+Planning Time (msec): 240
+Heuristic Time (msec): 145
+Search Time (msec): 238
+Expanded Nodes:4023
+States Evaluated:6308
+Number of Dead-Ends detected:0
+Number of Duplicates detected:8199
+
+Execution time: 0.612954 seconds
+Exit status: 0

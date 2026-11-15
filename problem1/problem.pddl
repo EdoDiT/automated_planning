@@ -5,6 +5,8 @@
     hall_beta - room
     stasis_lab - room
     curator - standard_curator
+    ;curator_2 - standard_curator
+    ;curator_3 - standard_curator
     pod_1 - pod
     pod_2 - pod
     artifact_1 - artifact
@@ -51,6 +53,14 @@
     (is_sealed curator)
     (is_unloaded curator)
     (is_unpodded curator)
+    ;(at curator_2 tunnel)
+    ;(is_sealed curator_2)
+    ;(is_unloaded curator_2)
+    ;(is_unpodded curator_2)
+    ;(at curator_3 tunnel)
+    ;(is_sealed curator_3)
+    ;(is_unloaded curator_3)
+    ;(is_unpodded curator_3)
     ;pods
     (at pod_1 pod_pickup)
     (at pod_2 pod_pickup)

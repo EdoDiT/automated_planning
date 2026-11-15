@@ -1,0 +1,272 @@
+% Auto-generated LaTeX tables for Automated Planning Final Project
+% Requires \usepackage{booktabs} and \usepackage{graphicx}
+
+% ==================== table_problem_instances.tex ====================
+\begin{table}[htbp]
+\centering
+\caption{Problem Instances and Active Domain Entities across Problems 1--5. Artifacts are broken down into Sturdy (St.), Thermosensitive (Th.), Seismic-sensitive (Se.), and Thermo+Seismic-sensitive (Both). Robots are broken down into Standard/Tank/Drone curators (S/T/D). Rooms include active rooms in \texttt{:objects} plus \texttt{hall\_beta} when declared in domain \texttt{:constants}.}
+\label{tab:problem_instances}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lll rrrrrr rr rr rr}
+\toprule
+ & & & \multicolumn{6}{c}{\textbf{Active Artifacts}} & \multicolumn{2}{c}{\textbf{Active Robots}} & \multicolumn{2}{c}{\textbf{Pods \& Rooms}} & \multicolumn{2}{c}{\textbf{Init / Goal}} \\
+\cmidrule(lr){4-9} \cmidrule(lr){10-11} \cmidrule(lr){12-13} \cmidrule(lr){14-15}
+\textbf{Problem} & \textbf{Variant} & \textbf{Level} & \textbf{Tot.} & \textbf{St.} & \textbf{Th.} & \textbf{Se.} & \textbf{Both} & \textbf{Move} & \textbf{Tot.} & \textbf{(S/T/D)} & \textbf{Pods} & \textbf{Rooms (Loc.)} & \textbf{Init} & \textbf{Goal} \\
+\midrule
+problem1 & Default & default & 10 & 4 & 3 & 1 & 2 & 9 & 1 & (1/0/0) & 2 & 4 (6) & 51 & 10 \\
+problem1 & Default & easy & 3 & 2 & 1 & 0 & 0 & 3 & 1 & (1/0/0) & 2 & 4 (6) & 32 & 3 \\
+problem1 & Default & middle & 5 & 2 & 1 & 1 & 1 & 5 & 2 & (2/0/0) & 2 & 4 (6) & 42 & 5 \\
+problem1 & Default & hard & 10 & 3 & 1 & 3 & 3 & 10 & 3 & (3/0/0) & 2 & 4 (6) & 60 & 10 \\
+\midrule
+problem2 & No Neg. Prec. & default & 5 & 2 & 2 & 1 & 0 & 5 & 2 & (0/1/1) & 2 & 4 (6) & 54 & 5 \\
+problem2 & No Neg. Prec. & easy & 3 & 2 & 1 & 0 & 0 & 3 & 1 & (0/1/0) & 2 & 4 (6) & 42 & 3 \\
+problem2 & No Neg. Prec. & middle & 5 & 2 & 2 & 1 & 0 & 5 & 2 & (0/1/1) & 2 & 4 (6) & 54 & 5 \\
+problem2 & No Neg. Prec. & hard & 10 & 3 & 2 & 3 & 2 & 10 & 3 & (1/1/1) & 2 & 4 (6) & 74 & 10 \\
+problem2 & Hard Ver. (No Neg.) & default & 3 & 1 & 1 & 1 & 0 & 3 & 2 & (0/1/1) & 2 & 4 (6) & 53 & 3 \\
+problem2 & Neg. Prec. & default & 5 & 2 & 2 & 1 & 0 & 5 & 2 & (0/1/1) & 2 & 4 (6) & 45 & 5 \\
+problem2 & Neg. Prec. & easy & 3 & 2 & 1 & 0 & 0 & 3 & 1 & (0/1/0) & 2 & 4 (6) & 35 & 3 \\
+problem2 & Neg. Prec. & middle & 5 & 2 & 2 & 1 & 0 & 5 & 2 & (0/1/1) & 2 & 4 (6) & 45 & 5 \\
+problem2 & Neg. Prec. & hard & 10 & 3 & 2 & 3 & 2 & 10 & 3 & (1/1/1) & 2 & 4 (6) & 65 & 10 \\
+problem2 & Hard Ver. (Neg.) & default & 3 & 1 & 1 & 1 & 0 & 3 & 2 & (0/1/1) & 2 & 4 (6) & 48 & 3 \\
+\midrule
+problem3 & Default & default & 13 & 4 & 2 & 4 & 3 & 12 & 2 & (1/0/1) & 2 & 4 (6) & 64 & 13 \\
+problem3 & Default & easy & 3 & 2 & 1 & 0 & 0 & 3 & 1 & (1/0/0) & 2 & 4 (6) & 30 & 3 \\
+problem3 & Default & middle & 5 & 2 & 2 & 1 & 0 & 4 & 2 & (1/0/1) & 2 & 4 (6) & 39 & 5 \\
+problem3 & Default & hard & 10 & 3 & 2 & 3 & 2 & 9 & 3 & (1/1/1) & 2 & 4 (6) & 58 & 10 \\
+problem3 & Fluent HTN & default & 20 & 5 & 5 & 6 & 4 & 17 & 3 & (1/1/1) & 2 & 4 (6) & 104 & 20 \\
+\midrule
+problem4 & Default & default & 1 & 1 & 0 & 0 & 0 & 1 & 1 & (1/0/0) & 0 & 3 (5) & 28 & 1 \\
+problem4 & Default & easy & 3 & 2 & 1 & 0 & 0 & 3 & 1 & (1/0/0) & 2 & 4 (6) & 44 & 3 \\
+problem4 & Default & middle & 5 & 2 & 2 & 1 & 0 & 5 & 2 & (1/1/0) & 2 & 4 (6) & 59 & 5 \\
+problem4 & Default & hard & 10 & 3 & 2 & 3 & 2 & 10 & 3 & (1/1/1) & 2 & 4 (6) & 82 & 10 \\
+\midrule
+problem5 & Default & default & 20 & 5 & 5 & 6 & 4 & 18 & 3 & (1/1/1) & 2 & 4 (6) & 90 & 20 \\
+problem5 & Default & easy & 3 & 2 & 1 & 0 & 0 & 3 & 1 & (1/0/0) & 2 & 4 (6) & 40 & 3 \\
+problem5 & Default & middle & 5 & 2 & 2 & 1 & 0 & 5 & 2 & (1/1/0) & 2 & 4 (6) & 51 & 5 \\
+problem5 & Default & hard & 10 & 3 & 2 & 3 & 2 & 10 & 3 & (1/1/1) & 2 & 4 (6) & 66 & 10 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+\clearpage
+
+% ==================== table_problem1_results.tex ====================
+\begin{table}[htbp]
+\centering
+\caption{Problem 1 (Classical Planning) Results across ENHSP and Fast Downward Configurations. Instances: \texttt{easy} (3 artifacts, 1 robot), \texttt{middle} (5 artifacts, 2 robots), \texttt{default} (10 artifacts, 1 robot), \texttt{hard} (10 artifacts, 3 robots). For OOM/TO runs, expanded and evaluated states reflect the last logged search frontier before termination.}
+\label{tab:problem1_results}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lll rrr c rrr rr}
+\toprule
+\textbf{Planner} & \textbf{Configuration} & \textbf{Level} & \textbf{Art.} & \textbf{Rob.} & \textbf{Actions ($|A|$)} & \textbf{Solved} & \textbf{Search Time (s)} & \textbf{Total Time (s)} & \textbf{Expanded States} & \textbf{Evaluated States} & \textbf{Plan Len.} \\
+\midrule
+ENHSP & \texttt{opt-blind} & easy & 3 & 1 & 42 & \textbf{Yes} & 0.040 & 0.30 & 1,200 & 1,294 & 20 \\
+ENHSP & \texttt{opt-blind} & middle & 5 & 2 & 128 & \textbf{Yes} & 1.387 & 1.64 & 265,014 & 280,044 & 29 \\
+ENHSP & \texttt{opt-blind} & default & 10 & 1 & 134 & \textbf{Yes} & 30.922 & 31.72 & 5,463,906 & 5,523,856 & 50 \\
+ENHSP & \texttt{opt-blind} & hard & 10 & 3 & 348 & No (OOM) & --- & 102.50 & 4,245,129 & 7,174,392 & --- \\
+\midrule
+ENHSP & \texttt{opt-hmax} & easy & 3 & 1 & 40 & \textbf{Yes} & 0.105 & 0.51 & 693 & 821 & 20 \\
+ENHSP & \texttt{opt-hmax} & middle & 5 & 2 & 112 & \textbf{Yes} & 8.185 & 8.60 & 185,260 & 216,898 & 29 \\
+ENHSP & \texttt{opt-hmax} & default & 10 & 1 & 102 & \textbf{Yes} & 158.640 & 159.17 & 4,776,419 & 5,004,955 & 50 \\
+ENHSP & \texttt{opt-hmax} & hard & 10 & 3 & 288 & No (TO) & --- & 602.17 & 3,305,754 & 6,235,239 & --- \\
+\midrule
+ENHSP & \texttt{sat-aibr} & easy & 3 & 1 & 40 & \textbf{Yes} & 0.100 & 0.46 & 114 & 150 & 20 \\
+ENHSP & \texttt{sat-aibr} & middle & 5 & 2 & 112 & \textbf{Yes} & 2.236 & 2.61 & 3,819 & 9,771 & 38 \\
+ENHSP & \texttt{sat-aibr} & default & 10 & 1 & 102 & \textbf{Yes} & 0.520 & 0.84 & 1,091 & 1,725 & 52 \\
+ENHSP & \texttt{sat-aibr} & hard & 10 & 3 & 288 & No (TO) & --- & 600.10 & 203,502 & 1,123,414 & --- \\
+\midrule
+Fast Downward & \texttt{astar-blind} & easy & 3 & 1 & 40 & \textbf{Yes} & 0.0026 & 0.77 & 1,084 & 1,227 & 20 \\
+Fast Downward & \texttt{astar-blind} & middle & 5 & 2 & 112 & \textbf{Yes} & 0.519 & 1.24 & 256,200 & 271,121 & 29 \\
+Fast Downward & \texttt{astar-blind} & default & 10 & 1 & 102 & \textbf{Yes} & 9.361 & 11.07 & 5,404,265 & 5,495,998 & 50 \\
+Fast Downward & \texttt{astar-blind} & hard & 10 & 3 & 288 & No (TO) & 556.474 & 600.08 & 143,297,241 & 181,464,889 & --- \\
+\midrule
+Fast Downward & \texttt{lama-first} & easy & 3 & 1 & 40 & \textbf{Yes} & 0.0019 & 1.31 & 43 & 44 & 20 \\
+Fast Downward & \texttt{lama-first} & middle & 5 & 2 & 112 & \textbf{Yes} & 0.0074 & 0.65 & 129 & 130 & 33 \\
+Fast Downward & \texttt{lama-first} & default & 10 & 1 & 102 & \textbf{Yes} & 0.010 & 0.66 & 154 & 155 & 52 \\
+Fast Downward & \texttt{lama-first} & hard & 10 & 3 & 288 & \textbf{Yes} & 0.167 & 1.07 & 2,007 & 2,008 & 78 \\
+\midrule
+Fast Downward & \texttt{seq-opt-lmcut} & easy & 3 & 1 & 40 & \textbf{Yes} & 0.011 & 0.77 & 325 & 456 & 20 \\
+Fast Downward & \texttt{seq-opt-lmcut} & middle & 5 & 2 & 112 & \textbf{Yes} & 2.773 & 3.59 & 50,177 & 74,655 & 29 \\
+Fast Downward & \texttt{seq-opt-lmcut} & default & 10 & 1 & 102 & \textbf{Yes} & 54.006 & 54.33 & 1,276,881 & 1,528,704 & 50 \\
+Fast Downward & \texttt{seq-opt-lmcut} & hard & 10 & 3 & 288 & No (TO) & 525.321 & 600.00 & 2,052,361 & 4,414,656 & --- \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+\clearpage
+
+% ==================== table_problem2_results.tex ====================
+\begin{table}[htbp]
+\centering
+\caption{Problem 2 (Numeric Planning with Fluents \& Earthquakes) Results using ENHSP: Comparison between \texttt{no\_negative\_preconditions} and \texttt{negative\_preconditions}. (Note: Fast Downward configurations \texttt{astar-blind}, \texttt{seq-opt-lmcut}, and \texttt{lama-first} abort during translation on all Problem 2 instances with exit code 31 because PDDL \texttt{:fluents} are unsupported.)}
+\label{tab:problem2_results}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{ll rr crrr crrr}
+\toprule
+ & & & & \multicolumn{4}{c}{\textbf{No Negative Preconditions}} & \multicolumn{4}{c}{\textbf{With Negative Preconditions}} \\
+\cmidrule(lr){5-8} \cmidrule(lr){9-12}
+\textbf{Config.} & \textbf{Level} & \textbf{Art.} & \textbf{Rob.} & \textbf{Solved} & \textbf{Time (s)} & \textbf{Expanded} & \textbf{Len.} & \textbf{Solved} & \textbf{Time (s)} & \textbf{Expanded} & \textbf{Len.} \\
+\midrule
+\texttt{opt-blind} & easy & 3 & 1 & \textbf{Yes} & 0.54 & 58,293 & 26 & \textbf{Yes} & 0.16 & 12,009 & 22 \\
+\texttt{opt-blind} & middle & 5 & 2 & No (OOM) & 121.97 & 6,220,676 & --- & \textbf{Yes} & 63.66 & 5,528,262 & 34 \\
+\texttt{opt-blind} & default & 5 & 2 & No (OOM) & 94.45 & 6,222,028 & --- & \textbf{Yes} & 61.04 & 5,528,262 & 34 \\
+\texttt{opt-blind} & hard & 10 & 3 & No (OOM) & 102.36 & 4,123,132 & --- & No (OOM) & 206.63 & 4,440,624 & --- \\
+\midrule
+\texttt{opt-hmax} & easy & 3 & 1 & \textbf{Yes} & 0.89 & 27,185 & 26 & \textbf{Yes} & 0.24 & 4,023 & 22 \\
+\texttt{opt-hmax} & middle & 5 & 2 & \textbf{Yes} & 180.35 & 2,695,950 & 34 & \textbf{Yes} & 68.78 & 1,131,140 & 34 \\
+\texttt{opt-hmax} & default & 5 & 2 & \textbf{Yes} & 175.35 & 2,695,950 & 34 & \textbf{Yes} & 68.42 & 1,131,140 & 34 \\
+\texttt{opt-hmax} & hard & 10 & 3 & No (TO) & 589.50 & 2,023,046 & --- & No (TO) & 596.14 & 2,565,409 & --- \\
+\midrule
+\texttt{sat-aibr} & easy & 3 & 1 & \textbf{Yes} & 3.78 & 6,339 & 34 & \textbf{Yes} & 1.12 & 2,106 & 30 \\
+\texttt{sat-aibr} & middle & 5 & 2 & \textbf{Yes} & 350.74 & 199,705 & 49 & \textbf{Yes} & 132.90 & 85,669 & 43 \\
+\texttt{sat-aibr} & default & 5 & 2 & \textbf{Yes} & 299.53 & 199,705 & 49 & \textbf{Yes} & 131.53 & 85,669 & 43 \\
+\texttt{sat-aibr} & hard & 10 & 3 & No (TO) & 588.35 & 78,356 & --- & No (TO) & 598.76 & 57,217 & --- \\
+\midrule
+\texttt{sat-hadd} & easy & 3 & 1 & \textbf{Yes} & 0.07 & 318 & 26 & \textbf{Yes} & 0.08 & 348 & 26 \\
+\texttt{sat-hadd} & middle & 5 & 2 & \textbf{Yes} & 1.42 & 8,174 & 45 & \textbf{Yes} & 1.01 & 6,899 & 47 \\
+\texttt{sat-hadd} & default & 5 & 2 & \textbf{Yes} & 1.42 & 8,174 & 45 & \textbf{Yes} & 0.96 & 6,899 & 47 \\
+\texttt{sat-hadd} & hard & 10 & 3 & No (TO) & 588.31 & 1,796,993 & --- & No (TO) & 594.02 & 1,275,779 & --- \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+\clearpage
+
+% ==================== table_problem3_results.tex ====================
+\begin{table}[htbp]
+\centering
+\caption{Problem 3 (Hierarchical Task Network / HTN Planning) Results comparing PANDA (Progression Search with \texttt{hhRC2(ff)}) and Lilotane (Tree-Rex SAT-based HTN Planner with Glucose4). For PANDA, Expanded/Evaluated/Generated refer to unique visited states, heuristic evaluations, and generated search nodes; HTN Steps is total decomposition length while Plan Len.\ is primitive action count. For Lilotane, Expanded/Evaluated/Generated refer to instantiated positions, instantiated actions, and encoded SAT clauses.}
+\label{tab:problem3_results}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lll rr c rr rrr rr}
+\toprule
+\textbf{Planner} & \textbf{Method} & \textbf{Level} & \textbf{Art.} & \textbf{Rob.} & \textbf{Solved} & \textbf{Search Time (s)} & \textbf{Total Time (s)} & \textbf{Visited / Pos.} & \textbf{Eval. / Inst. Act.} & \textbf{Gen. Nodes / Clauses} & \textbf{HTN / Layer} & \textbf{Primitive Len.} \\
+\midrule
+PANDA & \texttt{progression-rc2-ff} & easy & 3 & 1 & \textbf{Yes} & 28.240 & 38.47 & 755,646 & 1,484,688 & 3,568,787 & 10,515 & 430 \\
+PANDA & \texttt{progression-rc2-ff} & middle & 5 & 2 & \textbf{Yes} & 0.211 & 0.66 & 6,131 & 13,443 & 26,683 & 585 & 31 \\
+PANDA & \texttt{progression-rc2-ff} & hard & 10 & 3 & \textbf{Yes} & 2.840 & 3.40 & 45,776 & 106,153 & 232,363 & 1,933 & 138 \\
+PANDA & \texttt{progression-rc2-ff} & default & 13 & 2 & \textbf{Yes} & 0.620 & 0.62 & 7,349 & 21,100 & 36,319 & 717 & 144 \\
+\midrule
+Lilotane & \texttt{sat-glucose4} & easy & 3 & 1 & \textbf{Yes} & 0.347 & 0.41 & 1,062 & 1,892 & 67,014 & Layer 11 & 38 \\
+Lilotane & \texttt{sat-glucose4} & middle & 5 & 2 & \textbf{Yes} & 1.105 & 1.13 & 1,133 & 2,364 & 143,996 & Layer 11 & 50 \\
+Lilotane & \texttt{sat-glucose4} & hard & 10 & 3 & \textbf{Yes} & 406.128 & 406.18 & 1,973 & 4,464 & 432,508 & Layer 12 & 101 \\
+Lilotane & \texttt{sat-glucose4} & default & 13 & 2 & No (TO) & 283.855 & 283.86 & 1,973 & 4,464 & 459,467 & Layer 12 & --- \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+\clearpage
+
+% ==================== table_problem4_5_results.tex ====================
+\begin{table}[htbp]
+\centering
+\caption{Problem 4 (Temporal \& Numeric Planning with Durative Actions and Battery Management) and Problem 5 (ROS 2 PlanSys2 Execution with Kairos) Results. $^{\dagger}$On \texttt{easy} and \texttt{middle}, OPTIC finds a valid temporal plan in 0.31\,s and 31.75\,s respectively, and then continues anytime WA* search until the 600\,s time limit.}
+\label{tab:problem4_5_results}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lll rrrr c rr rr rr}
+\toprule
+\textbf{Problem} & \textbf{Planner} & \textbf{Level} & \textbf{Art.} & \textbf{Rob.} & \textbf{Pods} & \textbf{Rooms} & \textbf{Solved} & \textbf{Sol. Time (s)} & \textbf{Exec. Time (s)} & \textbf{Expanded} & \textbf{Evaluated} & \textbf{Plan Len.} & \textbf{Makespan} \\
+\midrule
+problem4 & TFD & default & 1 & 1 & 0 & 3 & No (Exh.) & 59.87 & 59.87 & 1,170,585 & 4,930,525 & --- & --- \\
+problem4 & TFD & easy & 3 & 1 & 2 & 4 & No (TO) & 591.10 & 591.10 & 1,594,805 & 6,085,758 & --- & --- \\
+problem4 & TFD & middle & 5 & 2 & 2 & 4 & \textbf{Yes} & 2.63 & 4.21 & 21,073 & 21,073 & 71 & 125.62 \\
+problem4 & TFD & hard & 10 & 3 & 2 & 4 & No (TO) & 587.38 & 587.38 & 538,864 & 778,308 & --- & --- \\
+\midrule
+problem4 & LPG-TD & default & 1 & 1 & 0 & 3 & \textbf{Yes} & 0.76 & 0.93 & --- & --- & 8 & 17.00 \\
+problem4 & LPG-TD & easy & 3 & 1 & 2 & 4 & No (Err.) & 0.20 & 0.20 & --- & --- & --- & --- \\
+problem4 & LPG-TD & middle & 5 & 2 & 2 & 4 & No (Err.) & 0.19 & 0.19 & --- & --- & --- & --- \\
+problem4 & LPG-TD & hard & 10 & 3 & 2 & 4 & No (Err.) & 0.45 & 0.45 & --- & --- & --- & --- \\
+\midrule
+problem4 & OPTIC & default & 1 & 1 & 0 & 3 & \textbf{Yes} & 0.64 & 0.96 & 34 & 1,925 & 8 & 17.01 \\
+problem4 & OPTIC & easy & 3 & 1 & 2 & 4 & \textbf{Yes}$^{\dagger}$ & 0.31 & 588.71 & 372 & 372 & 34 & 74.03 \\
+problem4 & OPTIC & middle & 5 & 2 & 2 & 4 & \textbf{Yes}$^{\dagger}$ & 31.75 & 588.16 & 21,095 & 21,095 & 73 & 120.06 \\
+problem4 & OPTIC & hard & 10 & 3 & 2 & 4 & No (TO) & 588.47 & 588.47 & --- & --- & --- & --- \\
+\midrule
+problem5 & PlanSys2 (Kairos) & default & 20 & 3 & 2 & 4 & \textbf{Yes} & --- & --- & --- & --- & 155 & 4315.15 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+\clearpage
+
+% ==================== table_action_breakdown.tex ====================
+\begin{table}[htbp]
+\centering
+\caption{Action Category Breakdown and Robot Workload Distribution across Representative Solved Runs.}
+\label{tab:action_breakdown}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llll r rrrrrr rrr}
+\toprule
+ & & & & & \multicolumn{6}{c}{\textbf{Action Categories}} & \multicolumn{3}{c}{\textbf{Actions per Robot}} \\
+\cmidrule(lr){6-11} \cmidrule(lr){12-14}
+\textbf{Problem} & \textbf{Variant/Level} & \textbf{Planner} & \textbf{Config.} & \textbf{Total} & \textbf{Move/Fly} & \textbf{Pickup} & \textbf{Drop} & \textbf{Pod} & \textbf{Seal} & \textbf{Quake} & \textbf{Curator(s)} & \textbf{Biggie} & \textbf{Bee} \\
+\midrule
+problem1 & easy & ENHSP & \texttt{opt-blind} & 20 & 13 & 3 & 3 & 1 & 0 & 0 & 20 & 0 & 0 \\
+problem1 & middle & ENHSP & \texttt{opt-blind} & 29 & 18 & 5 & 5 & 1 & 0 & 0 & 29 & 0 & 0 \\
+problem1 & default & ENHSP & \texttt{opt-blind} & 50 & 31 & 9 & 9 & 1 & 0 & 0 & 50 & 0 & 0 \\
+problem1 & easy & ENHSP & \texttt{opt-hmax} & 20 & 13 & 3 & 3 & 1 & 0 & 0 & 20 & 0 & 0 \\
+problem1 & middle & ENHSP & \texttt{opt-hmax} & 29 & 18 & 5 & 5 & 1 & 0 & 0 & 29 & 0 & 0 \\
+problem1 & default & ENHSP & \texttt{opt-hmax} & 50 & 31 & 9 & 9 & 1 & 0 & 0 & 50 & 0 & 0 \\
+problem1 & easy & ENHSP & \texttt{sat-aibr} & 20 & 13 & 3 & 3 & 1 & 0 & 0 & 20 & 0 & 0 \\
+problem1 & middle & ENHSP & \texttt{sat-aibr} & 38 & 24 & 5 & 5 & 4 & 0 & 0 & 38 & 0 & 0 \\
+problem1 & default & ENHSP & \texttt{sat-aibr} & 52 & 33 & 9 & 9 & 1 & 0 & 0 & 52 & 0 & 0 \\
+problem1 & easy & Fast Downward & \texttt{astar-blind} & 20 & 13 & 3 & 3 & 1 & 0 & 0 & 20 & 0 & 0 \\
+problem1 & middle & Fast Downward & \texttt{astar-blind} & 29 & 18 & 5 & 5 & 1 & 0 & 0 & 29 & 0 & 0 \\
+problem1 & default & Fast Downward & \texttt{astar-blind} & 50 & 31 & 9 & 9 & 1 & 0 & 0 & 50 & 0 & 0 \\
+problem1 & easy & Fast Downward & \texttt{seq-opt-lmcut} & 20 & 13 & 3 & 3 & 1 & 0 & 0 & 20 & 0 & 0 \\
+problem1 & middle & Fast Downward & \texttt{seq-opt-lmcut} & 29 & 18 & 5 & 5 & 1 & 0 & 0 & 29 & 0 & 0 \\
+problem1 & default & Fast Downward & \texttt{seq-opt-lmcut} & 50 & 31 & 9 & 9 & 1 & 0 & 0 & 50 & 0 & 0 \\
+problem1 & easy & Fast Downward & \texttt{lama-first} & 20 & 13 & 3 & 3 & 1 & 0 & 0 & 20 & 0 & 0 \\
+problem1 & middle & Fast Downward & \texttt{lama-first} & 33 & 22 & 5 & 5 & 1 & 0 & 0 & 33 & 0 & 0 \\
+problem1 & default & Fast Downward & \texttt{lama-first} & 52 & 33 & 9 & 9 & 1 & 0 & 0 & 52 & 0 & 0 \\
+problem1 & hard & Fast Downward & \texttt{lama-first} & 78 & 53 & 12 & 12 & 1 & 0 & 0 & 78 & 0 & 0 \\
+\midrule
+problem2 & no\_neg./easy & ENHSP & \texttt{opt-blind} & 26 & 9 & 3 & 3 & 1 & 9 & 1 & 0 & 25 & 0 \\
+problem2 & no\_neg./easy & ENHSP & \texttt{opt-hmax} & 26 & 9 & 3 & 3 & 1 & 9 & 1 & 0 & 25 & 0 \\
+problem2 & no\_neg./middle & ENHSP & \texttt{opt-hmax} & 34 & 11 & 5 & 5 & 1 & 11 & 1 & 0 & 33 & 0 \\
+problem2 & no\_neg./default & ENHSP & \texttt{opt-hmax} & 34 & 11 & 5 & 5 & 1 & 11 & 1 & 0 & 33 & 0 \\
+problem2 & no\_neg./easy & ENHSP & \texttt{sat-aibr} & 34 & 11 & 4 & 4 & 1 & 11 & 1 & 0 & 33 & 0 \\
+problem2 & no\_neg./middle & ENHSP & \texttt{sat-aibr} & 49 & 24 & 5 & 5 & 2 & 11 & 2 & 0 & 29 & 18 \\
+problem2 & no\_neg./default & ENHSP & \texttt{sat-aibr} & 49 & 24 & 5 & 5 & 2 & 11 & 2 & 0 & 29 & 18 \\
+problem2 & no\_neg./easy & ENHSP & \texttt{sat-hadd} & 26 & 9 & 3 & 3 & 1 & 9 & 1 & 0 & 25 & 0 \\
+problem2 & no\_neg./middle & ENHSP & \texttt{sat-hadd} & 45 & 20 & 5 & 5 & 2 & 11 & 2 & 0 & 29 & 14 \\
+problem2 & no\_neg./default & ENHSP & \texttt{sat-hadd} & 45 & 20 & 5 & 5 & 2 & 11 & 2 & 0 & 29 & 14 \\
+problem2 & negati./easy & ENHSP & \texttt{opt-blind} & 22 & 7 & 3 & 3 & 1 & 7 & 1 & 0 & 21 & 0 \\
+problem2 & negati./middle & ENHSP & \texttt{opt-blind} & 34 & 12 & 5 & 5 & 2 & 9 & 1 & 0 & 28 & 5 \\
+problem2 & negati./default & ENHSP & \texttt{opt-blind} & 34 & 12 & 5 & 5 & 2 & 9 & 1 & 0 & 28 & 5 \\
+problem2 & negati./easy & ENHSP & \texttt{opt-hmax} & 22 & 7 & 3 & 3 & 1 & 7 & 1 & 0 & 21 & 0 \\
+problem2 & negati./middle & ENHSP & \texttt{opt-hmax} & 34 & 12 & 5 & 5 & 2 & 9 & 1 & 0 & 28 & 5 \\
+problem2 & negati./default & ENHSP & \texttt{opt-hmax} & 34 & 12 & 5 & 5 & 2 & 9 & 1 & 0 & 28 & 5 \\
+problem2 & negati./easy & ENHSP & \texttt{sat-aibr} & 30 & 11 & 3 & 3 & 1 & 11 & 1 & 0 & 29 & 0 \\
+problem2 & negati./middle & ENHSP & \texttt{sat-aibr} & 43 & 22 & 5 & 5 & 2 & 7 & 2 & 0 & 19 & 22 \\
+problem2 & negati./default & ENHSP & \texttt{sat-aibr} & 43 & 22 & 5 & 5 & 2 & 7 & 2 & 0 & 19 & 22 \\
+problem2 & negati./easy & ENHSP & \texttt{sat-hadd} & 26 & 9 & 3 & 3 & 1 & 9 & 1 & 0 & 25 & 0 \\
+problem2 & negati./middle & ENHSP & \texttt{sat-hadd} & 47 & 20 & 6 & 6 & 2 & 11 & 2 & 0 & 31 & 14 \\
+problem2 & negati./default & ENHSP & \texttt{sat-hadd} & 47 & 20 & 6 & 6 & 2 & 11 & 2 & 0 & 31 & 14 \\
+\midrule
+problem3 & easy & PANDA & \texttt{progression-rc2-ff} & 430 & 406 & 3 & 3 & 1 & 16 & 0 & 430 & 0 & 0 \\
+problem3 & middle & PANDA & \texttt{progression-rc2-ff} & 31 & 20 & 4 & 4 & 1 & 0 & 0 & 1 & 0 & 30 \\
+problem3 & hard & PANDA & \texttt{progression-rc2-ff} & 138 & 68 & 12 & 12 & 1 & 44 & 0 & 0 & 138 & 0 \\
+problem3 & default & PANDA & \texttt{progression-rc2-ff} & 144 & 60 & 15 & 15 & 1 & 52 & 0 & 144 & 0 & 0 \\
+problem3 & easy & Lilotane & \texttt{sat-glucose4} & 38 & 14 & 3 & 3 & 1 & 16 & 0 & 38 & 0 & 0 \\
+problem3 & middle & Lilotane & \texttt{sat-glucose4} & 50 & 20 & 8 & 8 & 2 & 10 & 0 & 24 & 0 & 26 \\
+problem3 & hard & Lilotane & \texttt{sat-glucose4} & 101 & 42 & 11 & 11 & 2 & 32 & 0 & 58 & 20 & 23 \\
+\midrule
+problem4 & middle & TFD & \texttt{tfd} & 71 & 23 & 5 & 5 & 1 & 34 & 3 & 15 & 53 & 0 \\
+problem4 & default & LPG-TD & \texttt{lpg-td} & 8 & 3 & 1 & 1 & 0 & 3 & 0 & 8 & 0 & 0 \\
+problem4 & default & OPTIC & \texttt{optic} & 8 & 3 & 1 & 1 & 0 & 3 & 0 & 8 & 0 & 0 \\
+problem4 & easy & OPTIC & \texttt{optic} & 34 & 13 & 3 & 3 & 1 & 13 & 1 & 33 & 0 & 0 \\
+problem4 & middle & OPTIC & \texttt{optic} & 73 & 28 & 5 & 5 & 1 & 31 & 3 & 46 & 24 & 0 \\
+\midrule
+problem5 & default & PlanSys2 (Kairos) & \texttt{kairos} & 155 & 79 & 18 & 18 & 2 & 31 & 7 & 1 & 89 & 58 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+\clearpage
