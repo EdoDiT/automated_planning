@@ -41,9 +41,6 @@ Or run individual scripts using `.venv/bin/python3`:
     - `table_action_breakdown.tex`: Action category breakdown (Move/Fly, Pickup, Drop, Pod Ops, Seal/Unseal, Earthquake) and robot workload distribution across solved plans.
     - `all_tables.tex`: Single file combining all 6 LaTeX tables.
   - `plots/`
-    - `plot_problem_instances_overview.{pdf,png}`
-    - `plot_problem1_scalability.{pdf,png}`
-    - `plot_problem2_neg_vs_noneg.{pdf,png}`
-    - `plot_problem3_htn_comparison.{pdf,png}`
-    - `plot_problem4_temporal_comparison.{pdf,png}`
-    - `plot_action_distribution_and_problem5.{pdf,png}`
+    - `plot_problem1_scalability.png`
+    - `plot_problem2_neg_vs_noneg.png`
+    - `plot_problem3_htn_comparison.png`

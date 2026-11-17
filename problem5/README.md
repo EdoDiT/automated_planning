@@ -71,7 +71,7 @@ Load the problem generated from the interplanetary museum PDDL during the setup 
 source ./plansys2_interplanetary_museum/launch/problem 1
 ```
 
-Generate a plan using the POPF planner:
+Generate a plan using the Kairos planner:
 
 ```bash
 get plan

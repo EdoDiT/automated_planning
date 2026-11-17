@@ -2,15 +2,15 @@
 (:objects
     cryo_chamber - room
     hall_alpha - room
-    ;stasis_lab - room
+    stasis_lab - room
     curator - standard_curator
     ;biggie - tank_curator
     ;bee - drone_curator
-    ;pod_1 - pod
-    ;pod_2 - pod
+    pod_1 - pod
+    pod_2 - pod
     artifact_1 - artifact
-    ;artifact_2 - artifact
-    ;artifact_3 - artifact
+    artifact_2 - artifact
+    artifact_3 - artifact
     ;artifact_4 - artifact
     ;artifact_5 - artifact
     ;artifact_6 - artifact
@@ -34,16 +34,16 @@
     ;locations
     (is_freezing cryo_chamber)
     (is_vibration_free hall_alpha)
-    ;(is_freezing stasis_lab)
-    ;(is_vibration_free stasis_lab)
+    (is_freezing stasis_lab)
+    (is_vibration_free stasis_lab)
     (are_connected tunnel cryo_chamber)
     (are_connected cryo_chamber tunnel)
     (are_connected tunnel hall_alpha)
     (are_connected hall_alpha tunnel)
     (are_connected tunnel hall_beta)
     (are_connected hall_beta tunnel)
-    ;(are_connected tunnel stasis_lab)
-    ;(are_connected stasis_lab tunnel)
+    (are_connected tunnel stasis_lab)
+    (are_connected stasis_lab tunnel)
     (are_connected tunnel pod_pickup)
     (are_connected pod_pickup tunnel)
     ;curator
@@ -53,8 +53,8 @@
     (= (max_pod_capacity curator) 1)
     (= (capacity_available curator) 1)
     (= (pod_capacity_available curator) 1)
-    (= (max_battery_level curator) 1000)
-    (= (battery_level curator) 1000)
+    (= (max_battery_level curator) 50)
+    (= (battery_level curator) 50)
     (is_available curator)
     ;(at biggie tunnel)
     ;(is_sealed biggie)
@@ -75,20 +75,20 @@
     ;(= (battery_level bee) 1000)
     ;(is_available bee)
     ;pods
-    ;(at pod_1 pod_pickup)
-    ;(at pod_2 pod_pickup)
-    ;(pod_is_empty pod_1)
-    ;(pod_is_empty pod_2)
-    ;(pod_is_available pod_1)
-    ;(pod_is_available pod_2)
+    (at pod_1 pod_pickup)
+    (at pod_2 pod_pickup)
+    (pod_is_empty pod_1)
+    (pod_is_empty pod_2)
+    (pod_is_available pod_1)
+    (pod_is_available pod_2)
     ;artifacts
     (at artifact_1 hall_alpha)
     (is_sturdy artifact_1)
-    ;(at artifact_2 hall_alpha)
-    ;(is_sensitive artifact_2)
-    ;(is_thermosensitive artifact_2)
-    ;(at artifact_3 hall_alpha)
-    ;(is_sturdy artifact_3)
+    (at artifact_2 hall_alpha)
+    (is_sensitive artifact_2)
+    (is_thermosensitive artifact_2)
+    (at artifact_3 hall_alpha)
+    (is_sturdy artifact_3)
     ;(at artifact_4 hall_beta)
     ;(is_sensitive artifact_4)
     ;(is_seismic_sensitive artifact_4)
@@ -140,18 +140,18 @@
     ;earthquakes
     (= (seismic_counter) 0)
     (= (seismic_phase_duration) 20)
-    (is_not_seisming hall_beta)
-    (is_not_seisming hall_alpha)
-    ;(is_not_seisming stasis_lab)
     (is_not_seisming tunnel)
     (is_not_seisming pod_pickup)
+    (is_not_seisming hall_beta)
+    (is_not_seisming stasis_lab)
+    (is_not_seisming hall_alpha)
     (is_not_seisming cryo_chamber)
 )
 
 (:goal (and
     (at artifact_1 cryo_chamber)
-    ;(at artifact_2 stasis_lab)
-    ;(at artifact_3 stasis_lab)
+    (at artifact_2 stasis_lab)
+    (at artifact_3 stasis_lab)
     ;(at artifact_4 hall_alpha)
     ;(at artifact_5 cryo_chamber)
     ;(at artifact_6 stasis_lab)

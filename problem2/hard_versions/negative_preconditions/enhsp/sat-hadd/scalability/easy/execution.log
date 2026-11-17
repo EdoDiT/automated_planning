@@ -1,0 +1,65 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 41
+Aibr Preprocessing
+|F|:32
+|X|:4
+|A|:46
+|P|:0
+|E|:0
+H1 Setup Time (msec): 9
+ g(n)= 4.0 h(n)=28.0
+ g(n)= 5.0 h(n)=21.0
+ g(n)= 9.0 h(n)=18.0
+ g(n)= 10.0 h(n)=15.0
+ g(n)= 15.0 h(n)=14.0
+ g(n)= 16.0 h(n)=13.0
+ g(n)= 17.0 h(n)=12.0
+ g(n)= 18.0 h(n)=11.0
+ g(n)= 19.0 h(n)=10.0
+ g(n)= 16.0 h(n)=9.0
+ g(n)= 17.0 h(n)=8.0
+ g(n)= 18.0 h(n)=7.0
+ g(n)= 19.0 h(n)=6.0
+ g(n)= 23.0 h(n)=4.0
+ g(n)= 24.0 h(n)=2.0
+ g(n)= 21.0 h(n)=1.0
+Problem Solved
+
+Found Plan:
+0.0: (move biggie tunnel pod_pickup)
+1.0: (unseal biggie)
+2.0: (take_pod biggie pod_1)
+3.0: (seal biggie)
+4.0: (move biggie pod_pickup tunnel)
+5.0: (move biggie tunnel hall_beta)
+6.0: (unseal biggie)
+7.0: (pickup_sensitive_artifact biggie artifact_2 pod_1 hall_beta)
+8.0: (pickup_standard_artifact biggie artifact_1 hall_beta)
+9.0: (seal biggie)
+10.0: (move biggie hall_beta tunnel)
+11.0: (move biggie tunnel stasis_lab)
+12.0: (unseal biggie)
+13.0: (safe_drop_thermosensitive_artifact biggie artifact_2 pod_1 stasis_lab)
+14.0: (pickup_standard_artifact biggie artifact_3 stasis_lab)
+15.0: (seal biggie)
+16.0: (move biggie stasis_lab tunnel)
+17.0: (move biggie tunnel cryo_chamber)
+18.0: (unseal biggie)
+19.0: (drop_standard_artifact biggie artifact_3 cryo_chamber)
+20.0: (start_earthquake)
+21.0: (drop_standard_artifact biggie artifact_1 cryo_chamber)
+
+Plan-Length:22
+Metric (Search):22.0
+Planning Time (msec): 588
+Heuristic Time (msec): 421
+Search Time (msec): 586
+Expanded Nodes:11369
+States Evaluated:20606
+Number of Dead-Ends detected:3529
+Number of Duplicates detected:17893
+
+Execution time: 1.01469 seconds
+Exit status: 0

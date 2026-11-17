@@ -104,7 +104,7 @@
 		:effect (and
 			(increase (seismic_counter) 1)
 			(increase (total_cost) 1)
-			(decrease (capacity_available ?agent) 2)
+			(decrease (capacity_available ?agent) 1)
 			(not (at ?artifact ?room))
 			(on ?artifact ?agent)
 			(in ?artifact ?pod)

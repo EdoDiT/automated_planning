@@ -27,7 +27,6 @@
 		(is_freezing ?arg0 - location)
 		(are_connected  ?departure - location ?destination - location)
 		(is_vibration_free ?arg0 - location)
-		(is_safe ?arg0 - artifact)
 		(is_sturdy ?arg0 - artifact)
 		(is_sensitive ?arg0 - artifact)
 		(is_thermosensitive ?arg0 - artifact)
@@ -113,7 +112,6 @@
 			(at start (not (on ?artifact ?agent)))
 			(at end (increase (capacity_available ?agent) 1))
 			(at end (at ?artifact ?room))
-			(at end (is_safe ?artifact))
 		)
 	)
 
@@ -202,7 +200,6 @@
 			(at end (increase (capacity_available ?agent) 1))
 			(at end (at ?artifact ?room))
 			(at end (pod_is_empty ?pod))
-			(at end (is_safe ?artifact))
 		)
 	)
 
@@ -233,7 +230,6 @@
 			(at end (at ?artifact ?room))
 			(at end (pod_is_empty ?pod))
 			(at end (increase (capacity_available ?agent) 1))
-			(at end (is_safe ?artifact))
 		)
 	)
 
@@ -265,7 +261,6 @@
 			(at end (at ?artifact ?room))
 			(at end (pod_is_empty ?pod))
 			(at end (increase (capacity_available ?agent) 1))
-			(at end (is_safe ?artifact))
 		)
 	)
 	

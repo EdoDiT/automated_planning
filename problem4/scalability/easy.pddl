@@ -140,11 +140,11 @@
     ;earthquakes
     (= (seismic_counter) 0)
     (= (seismic_phase_duration) 20)
-    (is_not_seisming hall_beta)
-    (is_not_seisming hall_alpha)
-    (is_not_seisming stasis_lab)
     (is_not_seisming tunnel)
     (is_not_seisming pod_pickup)
+    (is_not_seisming hall_beta)
+    (is_not_seisming stasis_lab)
+    (is_not_seisming hall_alpha)
     (is_not_seisming cryo_chamber)
 )
 

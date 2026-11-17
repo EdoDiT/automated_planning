@@ -1,0 +1,83 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 72
+Aibr Preprocessing
+|F|:56
+|X|:7
+|A|:118
+|P|:0
+|E|:0
+H1 Setup Time (msec): 11
+ g(n)= 3.0 h(n)=47.0
+ g(n)= 4.0 h(n)=44.0
+ g(n)= 5.0 h(n)=35.0
+ g(n)= 7.0 h(n)=34.0
+ g(n)= 12.0 h(n)=33.0
+ g(n)= 13.0 h(n)=32.0
+ g(n)= 14.0 h(n)=31.0
+ g(n)= 15.0 h(n)=30.0
+ g(n)= 13.0 h(n)=28.0
+ g(n)= 16.0 h(n)=26.0
+ g(n)= 17.0 h(n)=24.0
+ g(n)= 18.0 h(n)=22.0
+-------------Time: 10s ; Expanded Nodes: 33972 (Avg-Speed 3397.0 n/s); Evaluated States: 176058
+ g(n)= 18.0 h(n)=21.0
+ g(n)= 19.0 h(n)=20.0
+ g(n)= 19.0 h(n)=17.0
+ g(n)= 21.0 h(n)=16.0
+ g(n)= 22.0 h(n)=15.0
+ g(n)= 23.0 h(n)=14.0
+-------------Time: 20s ; Expanded Nodes: 80675 (Avg-Speed 4033.0 n/s); Evaluated States: 358554
+ g(n)= 30.0 h(n)=13.0
+ g(n)= 37.0 h(n)=12.0
+ g(n)= 38.0 h(n)=11.0
+ g(n)= 39.0 h(n)=10.0
+ g(n)= 40.0 h(n)=9.0
+-------------Time: 30s ; Expanded Nodes: 152636 (Avg-Speed 5087.0 n/s); Evaluated States: 612656
+ g(n)= 42.0 h(n)=8.0
+ g(n)= 53.0 h(n)=7.0
+ g(n)= 54.0 h(n)=6.0
+ g(n)= 55.0 h(n)=5.0
+ g(n)= 56.0 h(n)=4.0
+ g(n)= 57.0 h(n)=3.0
+-------------Time: 40s ; Expanded Nodes: 364968 (Avg-Speed 9124.0 n/s); Evaluated States: 848559
+-------------Time: 50s ; Expanded Nodes: 706514 (Avg-Speed 14130.0 n/s); Evaluated States: 1217598
+-------------Time: 60s ; Expanded Nodes: 1121975 (Avg-Speed 18699.0 n/s); Evaluated States: 1665612
+-------------Time: 70s ; Expanded Nodes: 1457097 (Avg-Speed 20815.0 n/s); Evaluated States: 2026486
+-------------Time: 80s ; Expanded Nodes: 1885069 (Avg-Speed 23563.0 n/s); Evaluated States: 2488728
+-------------Time: 90s ; Expanded Nodes: 2204093 (Avg-Speed 24489.0 n/s); Evaluated States: 2832586
+-------------Time: 100s ; Expanded Nodes: 2497341 (Avg-Speed 24973.0 n/s); Evaluated States: 3148723
+-------------Time: 110s ; Expanded Nodes: 2894044 (Avg-Speed 26309.0 n/s); Evaluated States: 3576916
+-------------Time: 120s ; Expanded Nodes: 3237491 (Avg-Speed 26979.0 n/s); Evaluated States: 3947115
+-------------Time: 130s ; Expanded Nodes: 3576298 (Avg-Speed 27509.0 n/s); Evaluated States: 4312308
+-------------Time: 140s ; Expanded Nodes: 4008884 (Avg-Speed 28634.0 n/s); Evaluated States: 4779266
+-------------Time: 150s ; Expanded Nodes: 4338557 (Avg-Speed 28923.0 n/s); Evaluated States: 5134544
+-------------Time: 160s ; Expanded Nodes: 4660443 (Avg-Speed 29127.0 n/s); Evaluated States: 5481774
+-------------Time: 170s ; Expanded Nodes: 5042471 (Avg-Speed 29661.0 n/s); Evaluated States: 5894000
+-------------Time: 180s ; Expanded Nodes: 5325451 (Avg-Speed 29585.0 n/s); Evaluated States: 6198973
+-------------Time: 190s ; Expanded Nodes: 5572724 (Avg-Speed 29330.0 n/s); Evaluated States: 6465350
+-------------Time: 200s ; Expanded Nodes: 5905524 (Avg-Speed 29527.0 n/s); Evaluated States: 6824389
+-------------Time: 210s ; Expanded Nodes: 6191797 (Avg-Speed 29484.0 n/s); Evaluated States: 7133390
+-------------Time: 220s ; Expanded Nodes: 6448796 (Avg-Speed 29312.0 n/s); Evaluated States: 7410720
+-------------Time: 230s ; Expanded Nodes: 6534588 (Avg-Speed 28411.0 n/s); Evaluated States: 7502745
+-------------Time: 240s ; Expanded Nodes: 6564377 (Avg-Speed 27351.0 n/s); Evaluated States: 7535301
+-------------Time: 251s ; Expanded Nodes: 6567654 (Avg-Speed 26165.0 n/s); Evaluated States: 7538850
+-------------Time: 262s ; Expanded Nodes: 6569379 (Avg-Speed 25073.0 n/s); Evaluated States: 7540765
+-------------Time: 272s ; Expanded Nodes: 6570724 (Avg-Speed 24157.0 n/s); Evaluated States: 7541992
+-------------Time: 282s ; Expanded Nodes: 6571304 (Avg-Speed 23302.0 n/s); Evaluated States: 7542945
+-------------Time: 292s ; Expanded Nodes: 6572401 (Avg-Speed 22508.0 n/s); Evaluated States: 7543843
+-------------Time: 303s ; Expanded Nodes: 6572844 (Avg-Speed 21692.0 n/s); Evaluated States: 7544578
+-------------Time: 313s ; Expanded Nodes: 6573798 (Avg-Speed 21002.0 n/s); Evaluated States: 7545117
+-------------Time: 323s ; Expanded Nodes: 6592465 (Avg-Speed 20410.0 n/s); Evaluated States: 7565750
+-------------Time: 333s ; Expanded Nodes: 6598680 (Avg-Speed 19815.0 n/s); Evaluated States: 7572358
+-------------Time: 344s ; Expanded Nodes: 6600501 (Avg-Speed 19187.0 n/s); Evaluated States: 7574410
+-------------Time: 354s ; Expanded Nodes: 6601913 (Avg-Speed 18649.0 n/s); Evaluated States: 7575826
+-------------Time: 365s ; Expanded Nodes: 6602990 (Avg-Speed 18090.0 n/s); Evaluated States: 7576453
+-------------Time: 375s ; Expanded Nodes: 6603640 (Avg-Speed 17609.0 n/s); Evaluated States: 7577736
+-------------Time: 385s ; Expanded Nodes: 6604666 (Avg-Speed 17154.0 n/s); Evaluated States: 7578315
+-------------Time: 396s ; Expanded Nodes: 6605149 (Avg-Speed 16679.0 n/s); Evaluated States: 7579293
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space: failed reallocation of scalar replaced objects
+
+Execution time: 407.644 seconds
+Exit status: 1

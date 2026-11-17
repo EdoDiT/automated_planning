@@ -1,0 +1,41 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 104
+|F|:117
+|X|:10
+|A|:366
+|P|:0
+|E|:0
+f(n) = 1.0 (Expanded Nodes: 2, Evaluated States: 21, Time: 0.008) Frontier Size: 19
+f(n) = 2.0 (Expanded Nodes: 22, Evaluated States: 197, Time: 0.028) Frontier Size: 175
+f(n) = 3.0 (Expanded Nodes: 198, Evaluated States: 1165, Time: 0.062) Frontier Size: 967
+f(n) = 4.0 (Expanded Nodes: 1166, Evaluated States: 5261, Time: 0.118) Frontier Size: 4095
+f(n) = 5.0 (Expanded Nodes: 5262, Evaluated States: 20245, Time: 0.286) Frontier Size: 14983
+f(n) = 6.0 (Expanded Nodes: 20246, Evaluated States: 69518, Time: 0.813) Frontier Size: 49272
+f(n) = 7.0 (Expanded Nodes: 69519, Evaluated States: 218049, Time: 2.414) Frontier Size: 148530
+f(n) = 8.0 (Expanded Nodes: 218050, Evaluated States: 633677, Time: 7.676) Frontier Size: 415627
+-------------Time: 10s ; Expanded Nodes: 281325 (Avg-Speed 28132.0 n/s); Evaluated States: 1009298
+f(n) = 9.0 (Expanded Nodes: 633678, Evaluated States: 1723814, Time: 19.595) Frontier Size: 1090136
+-------------Time: 20s ; Expanded Nodes: 646871 (Avg-Speed 32343.0 n/s); Evaluated States: 1834729
+-------------Time: 30s ; Expanded Nodes: 911814 (Avg-Speed 30393.0 n/s); Evaluated States: 3145733
+-------------Time: 40s ; Expanded Nodes: 1212091 (Avg-Speed 30302.0 n/s); Evaluated States: 3927147
+-------------Time: 50s ; Expanded Nodes: 1583848 (Avg-Speed 31676.0 n/s); Evaluated States: 4365060
+f(n) = 10.0 (Expanded Nodes: 1723815, Evaluated States: 4426581, Time: 54.625) Frontier Size: 2702766
+-------------Time: 60s ; Expanded Nodes: 1873047 (Avg-Speed 31217.0 n/s); Evaluated States: 5496932
+-------------Time: 70s ; Expanded Nodes: 2054249 (Avg-Speed 29346.0 n/s); Evaluated States: 6479310
+-------------Time: 81s ; Expanded Nodes: 2136602 (Avg-Speed 26377.0 n/s); Evaluated States: 6864786
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+	at java.base/java.util.BitSet.clone(BitSet.java:1102)
+	at com.hstairs.ppmajal.PDDLProblem.PDDLState.<init>(PDDLState.java:50)
+	at com.hstairs.ppmajal.PDDLProblem.PDDLState.clone(PDDLState.java:116)
+	at com.hstairs.ppmajal.PDDLProblem.PDDLState.clone(PDDLState.java:39)
+	at com.hstairs.ppmajal.PDDLProblem.PDDLProblem$stateIterator.hasNext(PDDLProblem.java:1453)
+	at com.hstairs.ppmajal.search.WAStar.search(WAStar.java:127)
+	at com.hstairs.ppmajal.PDDLProblem.PDDLPlanner.plan(PDDLPlanner.java:85)
+	at planners.ENHSP.search(ENHSP.java:532)
+	at planners.ENHSP.planning(ENHSP.java:198)
+	at main.main(main.java:31)
+
+Execution time: 93.335 seconds
+Exit status: 1

@@ -389,8 +389,7 @@ def plot_problem3_htn_comparison(data: Dict[str, Any]) -> None:
     x = np.arange(len(levels))
     w = 0.36
 
-    fig, axes = plt.subplots(1, 3, figsize=(15.5, 4.8))
-    ax_time, ax_len, ax_layers = axes
+    fig, (ax_time, ax_len) = plt.subplots(1, 2, figsize=(11.5, 4.8))
 
     panda_times = []
     lilo_times = []
@@ -447,23 +446,7 @@ def plot_problem3_htn_comparison(data: Dict[str, Any]) -> None:
     ax_len.set_xticklabels(level_labels)
     ax_len.set_ylabel("Primitive Plan Length (actions)")
     ax_len.set_title("(b) Solution Plan Length (Primitive Actions)")
-
-    # Panel C: Lilotane SAT Clause Growth per Layer
-    colors_lilo = {"easy": "#2ca02c", "middle": "#1f77b4", "hard": "#ff7f0e", "default": "#d62728"}
-    markers_lilo = {"easy": "o", "middle": "s", "hard": "^", "default": "X"}
-    for lv in levels:
-        rl = find_run(runs, "problem3", "Lilotane", "sat-glucose4", lv)
-        if not rl or not rl.get("layers_progression"):
-            continue
-        layers = [item["layer"] for item in rl["layers_progression"] if item.get("clauses") is not None]
-        clauses = [item["clauses"] for item in rl["layers_progression"] if item.get("clauses") is not None]
-        ax_layers.plot(layers, clauses, label=f"Lilotane ({lv})", color=colors_lilo[lv], marker=markers_lilo[lv], linewidth=1.8)
-
-    ax_layers.set_yscale("log")
-    ax_layers.set_xlabel("Hierarchy Layer Depth")
-    ax_layers.set_ylabel("Cumulative SAT Clauses (log scale)")
-    ax_layers.set_title("(c) Lilotane Formula Growth across Layers")
-    ax_layers.legend(loc="lower right")
+    ax_len.legend(loc="upper right")
 
     fig.suptitle("Problem 3 (HTN Planning): Progression Search (PANDA) vs. SAT-Based HTN (Lilotane)", y=1.02)
     fig.tight_layout()

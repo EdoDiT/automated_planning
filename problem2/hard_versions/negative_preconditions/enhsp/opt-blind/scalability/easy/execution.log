@@ -1,0 +1,69 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 55
+|F|:33
+|X|:4
+|A|:48
+|P|:0
+|E|:0
+f(n) = 1.0 (Expanded Nodes: 2, Evaluated States: 8, Time: 0.011) Frontier Size: 6
+f(n) = 2.0 (Expanded Nodes: 9, Evaluated States: 23, Time: 0.025) Frontier Size: 14
+f(n) = 3.0 (Expanded Nodes: 24, Evaluated States: 58, Time: 0.027) Frontier Size: 34
+f(n) = 4.0 (Expanded Nodes: 59, Evaluated States: 130, Time: 0.031) Frontier Size: 71
+f(n) = 5.0 (Expanded Nodes: 131, Evaluated States: 274, Time: 0.038) Frontier Size: 143
+f(n) = 6.0 (Expanded Nodes: 275, Evaluated States: 559, Time: 0.043) Frontier Size: 284
+f(n) = 7.0 (Expanded Nodes: 560, Evaluated States: 1086, Time: 0.052) Frontier Size: 526
+f(n) = 8.0 (Expanded Nodes: 1087, Evaluated States: 2062, Time: 0.065) Frontier Size: 975
+f(n) = 9.0 (Expanded Nodes: 2063, Evaluated States: 3731, Time: 0.08) Frontier Size: 1668
+f(n) = 10.0 (Expanded Nodes: 3732, Evaluated States: 6582, Time: 0.103) Frontier Size: 2850
+f(n) = 11.0 (Expanded Nodes: 6583, Evaluated States: 11222, Time: 0.142) Frontier Size: 4639
+f(n) = 12.0 (Expanded Nodes: 11223, Evaluated States: 18567, Time: 0.199) Frontier Size: 7344
+f(n) = 13.0 (Expanded Nodes: 18568, Evaluated States: 30018, Time: 0.275) Frontier Size: 11450
+f(n) = 14.0 (Expanded Nodes: 30019, Evaluated States: 47381, Time: 0.342) Frontier Size: 17362
+f(n) = 15.0 (Expanded Nodes: 47382, Evaluated States: 73278, Time: 0.446) Frontier Size: 25896
+f(n) = 16.0 (Expanded Nodes: 73279, Evaluated States: 110820, Time: 0.662) Frontier Size: 37541
+f(n) = 17.0 (Expanded Nodes: 110821, Evaluated States: 164627, Time: 0.895) Frontier Size: 53806
+f(n) = 18.0 (Expanded Nodes: 164628, Evaluated States: 240644, Time: 1.263) Frontier Size: 76016
+f(n) = 19.0 (Expanded Nodes: 240645, Evaluated States: 346596, Time: 1.706) Frontier Size: 105951
+f(n) = 20.0 (Expanded Nodes: 346597, Evaluated States: 492750, Time: 2.454) Frontier Size: 146153
+f(n) = 21.0 (Expanded Nodes: 492751, Evaluated States: 638904, Time: 2.949) Frontier Size: 146153
+f(n) = 22.0 (Expanded Nodes: 638905, Evaluated States: 833655, Time: 4.041) Frontier Size: 194750
+Problem Solved
+
+Found Plan:
+0.0: (move biggie tunnel pod_pickup)
+1.0: (unseal biggie)
+2.0: (take_pod biggie pod_1)
+3.0: (seal biggie)
+4.0: (move biggie pod_pickup tunnel)
+5.0: (move biggie tunnel hall_beta)
+6.0: (unseal biggie)
+7.0: (pickup_sensitive_artifact biggie artifact_2 pod_1 hall_beta)
+8.0: (pickup_standard_artifact biggie artifact_1 hall_beta)
+9.0: (seal biggie)
+10.0: (move biggie hall_beta tunnel)
+11.0: (move biggie tunnel stasis_lab)
+12.0: (unseal biggie)
+13.0: (safe_drop_thermosensitive_artifact biggie artifact_2 pod_1 stasis_lab)
+14.0: (pickup_standard_artifact biggie artifact_3 stasis_lab)
+15.0: (seal biggie)
+16.0: (move biggie stasis_lab tunnel)
+17.0: (move biggie tunnel cryo_chamber)
+18.0: (unseal biggie)
+19.0: (drop_standard_artifact biggie artifact_3 cryo_chamber)
+20.0: (start_earthquake)
+21.0: (drop_standard_artifact biggie artifact_1 cryo_chamber)
+
+Plan-Length:22
+Metric (Search):22.0
+Planning Time (msec): 4793
+Heuristic Time (msec): 21
+Search Time (msec): 4784
+Expanded Nodes:756798
+States Evaluated:1006643
+Number of Dead-Ends detected:0
+Number of Duplicates detected:1258551
+
+Execution time: 5.63975 seconds
+Exit status: 0
