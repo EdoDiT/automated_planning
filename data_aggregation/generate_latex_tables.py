@@ -280,7 +280,7 @@ def generate_problem3_table(data: Dict[str, Any]) -> str:
 def generate_problem4_5_table(data: Dict[str, Any]) -> str:
     runs = [r for r in data["runs"] if r["problem_id"] in ("problem4", "problem5")]
     level_order = {"default": 0, "easy": 1, "middle": 2, "hard": 3}
-    fam_order = {"TFD": 0, "LPG-TD": 1, "OPTIC": 2, "PlanSys2 (Kairos)": 3}
+    fam_order = {"LPG-TD": 0, "OPTIC": 1, "PlanSys2 (Kairos)": 2}
     runs.sort(key=lambda r: (r["problem_id"], fam_order.get(r["planner_family"], 99), level_order.get(r["level"], 99)))
 
     lines = [

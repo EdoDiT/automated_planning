@@ -207,6 +207,35 @@
 		)
 	)
 
+	(:durative-action safe_drop_seismic_and_thermo_sensitive_artifact
+		:parameters (?agent - sealing_curators ?artifact - artifact ?pod - pod ?room - room)
+		:duration (= ?duration 2)
+		:condition (and
+			(at start (is_available ?agent))
+			(at start (< (seismic_counter) (seismic_phase_duration)))
+			(over all (on ?pod ?agent))
+			(over all (not (is_sealed ?agent)))
+			(at start (on ?artifact ?agent))
+			(at start (in ?artifact ?pod))
+			(over all (is_sensitive ?artifact))
+			(over all (is_thermosensitive ?artifact))
+			(over all (is_seismic_sensitive ?artifact))
+			(over all (is_vibration_free ?room))
+			(over all (is_freezing ?room))
+			(over all (at ?agent ?room))
+		)
+		:effect (and
+			(at start (not (is_available ?agent)))
+			(at end (is_available ?agent))
+			(at start (increase (seismic_counter) 1))
+			(at start (not (on ?artifact ?agent)))
+			(at start (not (in ?artifact ?pod)))
+			(at end (increase (capacity_available ?agent) 1))
+			(at end (at ?artifact ?room))
+			(at end (pod_is_empty ?pod))
+		)
+	)
+
 	(:durative-action fly
 		:parameters (?agent - drone_curator ?departure - location ?destination - location)
 		:duration (= ?duration 2)

@@ -1,8 +1,8 @@
 {
   "metadata": {
     "project": "Automated Planning - Interplanetary Museum",
-    "total_problem_files_parsed": 27,
-    "total_planner_runs_parsed": 101
+    "total_problem_files_parsed": 24,
+    "total_planner_runs_parsed": 97
   },
   "summary_by_problem": {
     "problem1": {
@@ -33,12 +33,12 @@
       "max_plan_length": 430
     },
     "problem4": {
-      "total_runs": 12,
-      "solved_runs": 5,
-      "coverage_ratio": 0.4167,
+      "total_runs": 8,
+      "solved_runs": 3,
+      "coverage_ratio": 0.375,
       "min_time_sec": 0.31,
-      "max_time_sec": 31.75,
-      "min_plan_length": 8,
+      "max_time_sec": 39.07,
+      "min_plan_length": 34,
       "max_plan_length": 73
     },
     "problem5": {
@@ -1651,18 +1651,20 @@
       "domain_file": "problem4/interplanetary_museum_domain_4.pddl",
       "is_htn": false,
       "active_artifacts": {
-        "total": 1,
-        "earth_artifacts": 1,
+        "total": 3,
+        "earth_artifacts": 3,
         "martian_artifacts": 0,
-        "sturdy": 1,
-        "sensitive_total": 0,
-        "thermosensitive_only": 0,
+        "sturdy": 2,
+        "sensitive_total": 1,
+        "thermosensitive_only": 1,
         "seismic_sensitive_only": 0,
         "thermo_and_seismic_sensitive": 0,
-        "in_goal": 1,
-        "requiring_movement": 1,
+        "in_goal": 3,
+        "requiring_movement": 3,
         "names": [
-          "artifact_1"
+          "artifact_1",
+          "artifact_2",
+          "artifact_3"
         ]
       },
       "active_robots": {
@@ -1682,18 +1684,22 @@
         }
       },
       "active_pods": {
-        "total": 0,
-        "names": []
+        "total": 2,
+        "names": [
+          "pod_1",
+          "pod_2"
+        ]
       },
       "active_rooms": {
-        "rooms_in_problem_objects": 2,
+        "rooms_in_problem_objects": 3,
         "rooms_in_domain_constants": 1,
-        "total_active_rooms": 3,
+        "total_active_rooms": 4,
         "other_locations": 2,
-        "total_locations": 5,
+        "total_locations": 6,
         "room_names": [
           "cryo_chamber",
           "hall_alpha",
+          "stasis_lab",
           "hall_beta"
         ],
         "other_location_names": [
@@ -1702,16 +1708,16 @@
         ]
       },
       "commented_out_objects": {
-        "artifacts": 19,
+        "artifacts": 17,
         "robots": 2,
-        "pods": 2,
-        "rooms": 1
+        "pods": 0,
+        "rooms": 0
       },
       "init_stats": {
-        "predicates_count": 20,
+        "predicates_count": 36,
         "functions_count": 8,
-        "total_init_facts": 28,
-        "goal_conditions_count": 1
+        "total_init_facts": 44,
+        "goal_conditions_count": 3
       }
     },
     {
@@ -2061,255 +2067,6 @@
         "functions_count": 10,
         "total_init_facts": 90,
         "goal_conditions_count": 20
-      }
-    },
-    {
-      "problem_id": "problem5",
-      "variant": "default",
-      "level": "easy",
-      "problem_file": "problem5/plansys2_interplanetary_museum/pddl/scalability/easy.pddl",
-      "domain_file": "problem5/plansys2_interplanetary_museum/pddl/domain.pddl",
-      "is_htn": false,
-      "active_artifacts": {
-        "total": 3,
-        "earth_artifacts": 3,
-        "martian_artifacts": 0,
-        "sturdy": 2,
-        "sensitive_total": 1,
-        "thermosensitive_only": 1,
-        "seismic_sensitive_only": 0,
-        "thermo_and_seismic_sensitive": 0,
-        "in_goal": 3,
-        "requiring_movement": 3,
-        "names": [
-          "artifact_1",
-          "artifact_2",
-          "artifact_3"
-        ]
-      },
-      "active_robots": {
-        "total": 1,
-        "standard_curator": 1,
-        "tank_curator": 0,
-        "drone_curator": 0,
-        "names": [
-          "curator"
-        ],
-        "by_type": {
-          "standard_curator": [
-            "curator"
-          ],
-          "tank_curator": [],
-          "drone_curator": []
-        }
-      },
-      "active_pods": {
-        "total": 2,
-        "names": [
-          "pod_1",
-          "pod_2"
-        ]
-      },
-      "active_rooms": {
-        "rooms_in_problem_objects": 4,
-        "rooms_in_domain_constants": 1,
-        "total_active_rooms": 4,
-        "other_locations": 2,
-        "total_locations": 6,
-        "room_names": [
-          "hall_beta",
-          "cryo_chamber",
-          "hall_alpha",
-          "stasis_lab"
-        ],
-        "other_location_names": [
-          "pod_pickup",
-          "tunnel"
-        ]
-      },
-      "commented_out_objects": {
-        "artifacts": 17,
-        "robots": 2,
-        "pods": 0,
-        "rooms": 0
-      },
-      "init_stats": {
-        "predicates_count": 34,
-        "functions_count": 6,
-        "total_init_facts": 40,
-        "goal_conditions_count": 3
-      }
-    },
-    {
-      "problem_id": "problem5",
-      "variant": "default",
-      "level": "middle",
-      "problem_file": "problem5/plansys2_interplanetary_museum/pddl/scalability/middle.pddl",
-      "domain_file": "problem5/plansys2_interplanetary_museum/pddl/domain.pddl",
-      "is_htn": false,
-      "active_artifacts": {
-        "total": 5,
-        "earth_artifacts": 5,
-        "martian_artifacts": 0,
-        "sturdy": 2,
-        "sensitive_total": 3,
-        "thermosensitive_only": 2,
-        "seismic_sensitive_only": 1,
-        "thermo_and_seismic_sensitive": 0,
-        "in_goal": 5,
-        "requiring_movement": 5,
-        "names": [
-          "artifact_1",
-          "artifact_2",
-          "artifact_3",
-          "artifact_4",
-          "artifact_5"
-        ]
-      },
-      "active_robots": {
-        "total": 2,
-        "standard_curator": 1,
-        "tank_curator": 1,
-        "drone_curator": 0,
-        "names": [
-          "curator",
-          "biggie"
-        ],
-        "by_type": {
-          "standard_curator": [
-            "curator"
-          ],
-          "tank_curator": [
-            "biggie"
-          ],
-          "drone_curator": []
-        }
-      },
-      "active_pods": {
-        "total": 2,
-        "names": [
-          "pod_1",
-          "pod_2"
-        ]
-      },
-      "active_rooms": {
-        "rooms_in_problem_objects": 4,
-        "rooms_in_domain_constants": 1,
-        "total_active_rooms": 4,
-        "other_locations": 2,
-        "total_locations": 6,
-        "room_names": [
-          "hall_beta",
-          "cryo_chamber",
-          "hall_alpha",
-          "stasis_lab"
-        ],
-        "other_location_names": [
-          "pod_pickup",
-          "tunnel"
-        ]
-      },
-      "commented_out_objects": {
-        "artifacts": 15,
-        "robots": 1,
-        "pods": 0,
-        "rooms": 0
-      },
-      "init_stats": {
-        "predicates_count": 43,
-        "functions_count": 8,
-        "total_init_facts": 51,
-        "goal_conditions_count": 5
-      }
-    },
-    {
-      "problem_id": "problem5",
-      "variant": "default",
-      "level": "hard",
-      "problem_file": "problem5/plansys2_interplanetary_museum/pddl/scalability/hard.pddl",
-      "domain_file": "problem5/plansys2_interplanetary_museum/pddl/domain.pddl",
-      "is_htn": false,
-      "active_artifacts": {
-        "total": 10,
-        "earth_artifacts": 10,
-        "martian_artifacts": 0,
-        "sturdy": 3,
-        "sensitive_total": 7,
-        "thermosensitive_only": 2,
-        "seismic_sensitive_only": 3,
-        "thermo_and_seismic_sensitive": 2,
-        "in_goal": 10,
-        "requiring_movement": 10,
-        "names": [
-          "artifact_1",
-          "artifact_2",
-          "artifact_3",
-          "artifact_4",
-          "artifact_5",
-          "artifact_6",
-          "artifact_7",
-          "artifact_8",
-          "artifact_9",
-          "artifact_10"
-        ]
-      },
-      "active_robots": {
-        "total": 3,
-        "standard_curator": 1,
-        "tank_curator": 1,
-        "drone_curator": 1,
-        "names": [
-          "curator",
-          "biggie",
-          "bee"
-        ],
-        "by_type": {
-          "standard_curator": [
-            "curator"
-          ],
-          "tank_curator": [
-            "biggie"
-          ],
-          "drone_curator": [
-            "bee"
-          ]
-        }
-      },
-      "active_pods": {
-        "total": 2,
-        "names": [
-          "pod_1",
-          "pod_2"
-        ]
-      },
-      "active_rooms": {
-        "rooms_in_problem_objects": 4,
-        "rooms_in_domain_constants": 1,
-        "total_active_rooms": 4,
-        "other_locations": 2,
-        "total_locations": 6,
-        "room_names": [
-          "hall_beta",
-          "cryo_chamber",
-          "hall_alpha",
-          "stasis_lab"
-        ],
-        "other_location_names": [
-          "pod_pickup",
-          "tunnel"
-        ]
-      },
-      "commented_out_objects": {
-        "artifacts": 10,
-        "robots": 0,
-        "pods": 0,
-        "rooms": 0
-      },
-      "init_stats": {
-        "predicates_count": 56,
-        "functions_count": 10,
-        "total_init_facts": 66,
-        "goal_conditions_count": 10
       }
     }
   ],
@@ -7064,43 +6821,10 @@
       "problem_id": "problem4",
       "variant": "default",
       "level": "default",
-      "planner_family": "TFD",
-      "planner_config": "tfd",
-      "planner_label": "TFD (tfd)",
-      "log_file": "problem4/tfd/tfd.log",
-      "plan_file": null,
-      "problem_stats": {
-        "active_artifacts": 1,
-        "goal_artifacts": 1,
-        "active_robots": 1,
-        "active_pods": 0,
-        "active_rooms": 3
-      },
-      "solution_found": false,
-      "status": "unsolvable_exhausted",
-      "exit_status": 1,
-      "execution_time_sec": 59.8735,
-      "planning_time_sec": 58.7301,
-      "search_time_sec": 50.37,
-      "time_spent_sec": 59.8735,
-      "expanded_states": 1170585,
-      "evaluated_states": 4930525,
-      "generated_states": 6115163,
-      "plan_length": null,
-      "plan_cost": null,
-      "makespan": null,
-      "grounded_variables": 34,
-      "grounded_actions": 20,
-      "action_analysis": null
-    },
-    {
-      "problem_id": "problem4",
-      "variant": "default",
-      "level": "easy",
-      "planner_family": "TFD",
-      "planner_config": "tfd",
-      "planner_label": "TFD (tfd)",
-      "log_file": "problem4/tfd/scalability/easy/tfd.log",
+      "planner_family": "LPG-TD",
+      "planner_config": "lpg-td",
+      "planner_label": "LPG-TD (lpg-td)",
+      "log_file": "problem4/lpg-td/lpg-td.log",
       "plan_file": null,
       "problem_stats": {
         "active_artifacts": 3,
@@ -7110,151 +6834,19 @@
         "active_rooms": 4
       },
       "solution_found": false,
-      "status": "timeout",
-      "exit_status": 124,
-      "execution_time_sec": 591.097,
-      "planning_time_sec": 591.097,
-      "search_time_sec": 447.0,
-      "time_spent_sec": 591.097,
-      "expanded_states": 1594805,
-      "evaluated_states": 6085758,
-      "generated_states": 7809479,
-      "plan_length": null,
-      "plan_cost": null,
-      "makespan": null,
-      "grounded_variables": 48,
-      "grounded_actions": 46,
-      "action_analysis": null
-    },
-    {
-      "problem_id": "problem4",
-      "variant": "default",
-      "level": "middle",
-      "planner_family": "TFD",
-      "planner_config": "tfd",
-      "planner_label": "TFD (tfd)",
-      "log_file": "problem4/tfd/scalability/middle/tfd.log",
-      "plan_file": "problem4/tfd/scalability/middle/solution.plan",
-      "problem_stats": {
-        "active_artifacts": 5,
-        "goal_artifacts": 5,
-        "active_robots": 2,
-        "active_pods": 2,
-        "active_rooms": 4
-      },
-      "solution_found": true,
-      "status": "solved",
-      "exit_status": 0,
-      "execution_time_sec": 4.21405,
-      "planning_time_sec": 2.63008,
-      "search_time_sec": 2.31,
-      "time_spent_sec": 2.63008,
-      "expanded_states": 21073,
-      "evaluated_states": 21073,
-      "generated_states": null,
-      "plan_length": 71,
-      "plan_cost": 125.621,
-      "makespan": 125.621,
-      "grounded_variables": 70,
-      "grounded_actions": 130,
-      "action_analysis": {
-        "total_actions": 71,
-        "by_category": {
-          "move_or_fly": 23,
-          "pickup_artifact": 5,
-          "drop_artifact": 5,
-          "pod_operations": 1,
-          "seal_unseal": 34,
-          "earthquake": 3,
-          "wait_or_charge": 0,
-          "activate_robot": 0,
-          "other": 0
-        },
-        "by_robot": {
-          "curator": 15,
-          "biggie": 53
-        }
-      }
-    },
-    {
-      "problem_id": "problem4",
-      "variant": "default",
-      "level": "hard",
-      "planner_family": "TFD",
-      "planner_config": "tfd",
-      "planner_label": "TFD (tfd)",
-      "log_file": "problem4/tfd/scalability/hard/tfd.log",
-      "plan_file": null,
-      "problem_stats": {
-        "active_artifacts": 10,
-        "goal_artifacts": 10,
-        "active_robots": 3,
-        "active_pods": 2,
-        "active_rooms": 4
-      },
-      "solution_found": false,
-      "status": "timeout",
-      "exit_status": 124,
-      "execution_time_sec": 587.376,
-      "planning_time_sec": 587.376,
-      "search_time_sec": 188.0,
-      "time_spent_sec": 587.376,
-      "expanded_states": 538864,
-      "evaluated_states": 778308,
-      "generated_states": 4896072,
-      "plan_length": null,
-      "plan_cost": null,
-      "makespan": null,
-      "grounded_variables": 97,
-      "grounded_actions": 270,
-      "action_analysis": null
-    },
-    {
-      "problem_id": "problem4",
-      "variant": "default",
-      "level": "default",
-      "planner_family": "LPG-TD",
-      "planner_config": "lpg-td",
-      "planner_label": "LPG-TD (lpg-td)",
-      "log_file": "problem4/lpg-td/lpg-td.log",
-      "plan_file": "problem4/lpg-td/solution.plan",
-      "problem_stats": {
-        "active_artifacts": 1,
-        "goal_artifacts": 1,
-        "active_robots": 1,
-        "active_pods": 0,
-        "active_rooms": 3
-      },
-      "solution_found": true,
-      "status": "solved",
-      "exit_status": 0,
-      "execution_time_sec": 0.925925,
-      "planning_time_sec": 0.76,
-      "search_time_sec": 0.04,
-      "time_spent_sec": 0.76,
+      "status": "relaxed_plan_error",
+      "exit_status": 1,
+      "execution_time_sec": 0.220414,
+      "planning_time_sec": 0.220414,
+      "search_time_sec": null,
+      "time_spent_sec": 0.220414,
       "expanded_states": null,
       "evaluated_states": null,
       "generated_states": null,
-      "plan_length": 8,
-      "plan_cost": 8.0,
-      "makespan": 17.0,
-      "action_analysis": {
-        "total_actions": 8,
-        "by_category": {
-          "move_or_fly": 3,
-          "pickup_artifact": 1,
-          "drop_artifact": 1,
-          "pod_operations": 0,
-          "seal_unseal": 3,
-          "earthquake": 0,
-          "wait_or_charge": 0,
-          "activate_robot": 0,
-          "other": 0
-        },
-        "by_robot": {
-          "curator": 8
-        }
-      }
+      "plan_length": null,
+      "plan_cost": null,
+      "makespan": null,
+      "action_analysis": null
     },
     {
       "problem_id": "problem4",
@@ -7275,10 +6867,10 @@
       "solution_found": false,
       "status": "relaxed_plan_error",
       "exit_status": 1,
-      "execution_time_sec": 0.198443,
-      "planning_time_sec": 0.198443,
+      "execution_time_sec": 0.253509,
+      "planning_time_sec": 0.253509,
       "search_time_sec": null,
-      "time_spent_sec": 0.198443,
+      "time_spent_sec": 0.253509,
       "expanded_states": null,
       "evaluated_states": null,
       "generated_states": null,
@@ -7306,10 +6898,10 @@
       "solution_found": false,
       "status": "relaxed_plan_error",
       "exit_status": 1,
-      "execution_time_sec": 0.185661,
-      "planning_time_sec": 0.185661,
+      "execution_time_sec": 0.616351,
+      "planning_time_sec": 0.616351,
       "search_time_sec": null,
-      "time_spent_sec": 0.185661,
+      "time_spent_sec": 0.616351,
       "expanded_states": null,
       "evaluated_states": null,
       "generated_states": null,
@@ -7337,10 +6929,10 @@
       "solution_found": false,
       "status": "relaxed_plan_error",
       "exit_status": 1,
-      "execution_time_sec": 0.454244,
-      "planning_time_sec": 0.454244,
+      "execution_time_sec": 0.206148,
+      "planning_time_sec": 0.206148,
       "search_time_sec": null,
-      "time_spent_sec": 0.454244,
+      "time_spent_sec": 0.206148,
       "expanded_states": null,
       "evaluated_states": null,
       "generated_states": null,
@@ -7359,44 +6951,44 @@
       "log_file": "problem4/optic/optic.log",
       "plan_file": "problem4/optic/solution.plan",
       "problem_stats": {
-        "active_artifacts": 1,
-        "goal_artifacts": 1,
+        "active_artifacts": 3,
+        "goal_artifacts": 3,
         "active_robots": 1,
-        "active_pods": 0,
-        "active_rooms": 3
+        "active_pods": 2,
+        "active_rooms": 4
       },
       "solution_found": true,
       "anytime_completed": true,
       "status": "solved",
       "exit_status": 0,
-      "execution_time_sec": 0.961808,
-      "first_plan_time_sec": 0.1,
-      "planning_time_sec": 0.64,
-      "search_time_sec": 0.1,
-      "time_spent_sec": 0.64,
-      "expanded_states": 34,
-      "evaluated_states": 1925,
-      "first_plan_evaluated_states": 34,
+      "execution_time_sec": 0.569237,
+      "first_plan_time_sec": 0.31,
+      "planning_time_sec": 0.31,
+      "search_time_sec": 0.31,
+      "time_spent_sec": 0.31,
+      "expanded_states": null,
+      "evaluated_states": 372,
+      "first_plan_evaluated_states": null,
       "generated_states": null,
-      "plan_length": 8,
-      "plan_cost": 17.007,
-      "makespan": 17.007,
-      "grounded_facts": 19,
+      "plan_length": 34,
+      "plan_cost": 74.032,
+      "makespan": 74.032,
+      "grounded_facts": 42,
       "action_analysis": {
-        "total_actions": 8,
+        "total_actions": 34,
         "by_category": {
-          "move_or_fly": 3,
-          "pickup_artifact": 1,
-          "drop_artifact": 1,
-          "pod_operations": 0,
-          "seal_unseal": 3,
-          "earthquake": 0,
+          "move_or_fly": 13,
+          "pickup_artifact": 3,
+          "drop_artifact": 3,
+          "pod_operations": 1,
+          "seal_unseal": 13,
+          "earthquake": 1,
           "wait_or_charge": 0,
           "activate_robot": 0,
           "other": 0
         },
         "by_robot": {
-          "curator": 8
+          "curator": 33
         }
       }
     },
@@ -7408,7 +7000,7 @@
       "planner_config": "optic",
       "planner_label": "OPTIC (optic)",
       "log_file": "problem4/optic/scalability/easy/optic.log",
-      "plan_file": null,
+      "plan_file": "problem4/optic/scalability/easy/solution.plan",
       "problem_stats": {
         "active_artifacts": 3,
         "goal_artifacts": 3,
@@ -7417,22 +7009,22 @@
         "active_rooms": 4
       },
       "solution_found": true,
-      "anytime_completed": false,
-      "status": "solved_anytime_timeout",
-      "exit_status": 124,
-      "execution_time_sec": 588.706,
-      "first_plan_time_sec": 0.31,
-      "planning_time_sec": 0.31,
-      "search_time_sec": 0.31,
-      "time_spent_sec": 0.31,
-      "expanded_states": 372,
+      "anytime_completed": true,
+      "status": "solved",
+      "exit_status": 0,
+      "execution_time_sec": 0.649468,
+      "first_plan_time_sec": 0.41,
+      "planning_time_sec": 0.41,
+      "search_time_sec": 0.41,
+      "time_spent_sec": 0.41,
+      "expanded_states": null,
       "evaluated_states": 372,
-      "first_plan_evaluated_states": 372,
+      "first_plan_evaluated_states": null,
       "generated_states": null,
       "plan_length": 34,
       "plan_cost": 74.032,
       "makespan": 74.032,
-      "grounded_facts": 45,
+      "grounded_facts": 42,
       "action_analysis": {
         "total_actions": 34,
         "by_category": {
@@ -7459,7 +7051,7 @@
       "planner_config": "optic",
       "planner_label": "OPTIC (optic)",
       "log_file": "problem4/optic/scalability/middle/optic.log",
-      "plan_file": null,
+      "plan_file": "problem4/optic/scalability/middle/solution.plan",
       "problem_stats": {
         "active_artifacts": 5,
         "goal_artifacts": 5,
@@ -7468,22 +7060,22 @@
         "active_rooms": 4
       },
       "solution_found": true,
-      "anytime_completed": false,
-      "status": "solved_anytime_timeout",
-      "exit_status": 124,
-      "execution_time_sec": 588.165,
-      "first_plan_time_sec": 31.75,
-      "planning_time_sec": 31.75,
-      "search_time_sec": 31.75,
-      "time_spent_sec": 31.75,
-      "expanded_states": 21095,
+      "anytime_completed": true,
+      "status": "solved",
+      "exit_status": 0,
+      "execution_time_sec": 40.3,
+      "first_plan_time_sec": 39.07,
+      "planning_time_sec": 39.07,
+      "search_time_sec": 39.07,
+      "time_spent_sec": 39.07,
+      "expanded_states": null,
       "evaluated_states": 21095,
-      "first_plan_evaluated_states": 21095,
+      "first_plan_evaluated_states": null,
       "generated_states": null,
       "plan_length": 73,
       "plan_cost": 120.059,
       "makespan": 120.059,
-      "grounded_facts": 77,
+      "grounded_facts": 72,
       "action_analysis": {
         "total_actions": 73,
         "by_category": {
@@ -7523,11 +7115,11 @@
       "anytime_completed": false,
       "status": "timeout",
       "exit_status": 124,
-      "execution_time_sec": 588.473,
+      "execution_time_sec": 600.01,
       "first_plan_time_sec": null,
       "planning_time_sec": null,
       "search_time_sec": null,
-      "time_spent_sec": 588.473,
+      "time_spent_sec": 600.01,
       "expanded_states": null,
       "evaluated_states": null,
       "first_plan_evaluated_states": null,
@@ -7535,7 +7127,7 @@
       "plan_length": null,
       "plan_cost": null,
       "makespan": null,
-      "grounded_facts": 131,
+      "grounded_facts": 121,
       "action_analysis": null
     },
     {

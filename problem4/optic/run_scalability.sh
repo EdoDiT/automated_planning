@@ -26,7 +26,7 @@ for level in easy middle hard; do
     (
         cd "$level_dir" || exit 1
         timeout 600s planutils run optic \
-            "$domain $problem"
+            "-N $domain $problem"
     ) >"$planner_output" 2>&1
     planner_status=$?
 

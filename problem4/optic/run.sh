@@ -19,7 +19,7 @@ trap 'rm -f "$planner_output"' EXIT
 rm -f "$optic_plan" "$solution_plan"
 
 timeout 180s planutils run optic \
-    "$domain $problem" >"$planner_output" 2>&1
+    "-N $domain $problem" >"$planner_output" 2>&1
 planner_status=$?
 
 if [[ -s "$optic_plan" ]]; then

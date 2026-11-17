@@ -17,11 +17,11 @@ RUN apt-get update && apt-get install -y \
 
 WORKDIR /root
 
-RUN mkdir -p ~/plansys2_ws/src && \
+RUN git config --global http.version HTTP/1.1 && \
+    mkdir -p ~/plansys2_ws/src && \
     cd ~/plansys2_ws/src && \
-    git clone https://github.com/PlanSys2/ros2_planning_system.git && \
+    git clone --branch ${ROS_DISTRO}-devel --depth 1 https://github.com/PlanSys2/ros2_planning_system.git && \
     cd ros2_planning_system && \
-    git checkout ${ROS_DISTRO}-devel && \
     git clone --branch main --depth 1 https://github.com/PlanSys2/kairos.git kairos && \
     git clone --branch ${ROS_DISTRO}-devel --depth 1 \
     https://github.com/fmrico/cascade_lifecycle.git cascade_lifecycle

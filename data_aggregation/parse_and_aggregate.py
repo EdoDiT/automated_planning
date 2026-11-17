@@ -1114,13 +1114,15 @@ def collect_all_data() -> Dict[str, Any]:
         "default",
     )
     for lvl in ("easy", "middle", "hard"):
-        register_problem(
-            PROJECT_ROOT / "problem5" / "plansys2_interplanetary_museum" / "pddl" / "scalability" / f"{lvl}.pddl",
-            p5_dom,
-            "problem5",
-            "default",
-            lvl,
-        )
+        p5_scal = PROJECT_ROOT / "problem5" / "plansys2_interplanetary_museum" / "pddl" / "scalability" / f"{lvl}.pddl"
+        if p5_scal.exists():
+            register_problem(
+                p5_scal,
+                p5_dom,
+                "problem5",
+                "default",
+                lvl,
+            )
 
     # Now collect all runs!
     runs_list: List[Dict[str, Any]] = []
@@ -1204,9 +1206,8 @@ def collect_all_data() -> Dict[str, Any]:
         if log_f.exists():
             add_run("problem3", "default", lvl, "Lilotane", "sat-glucose4", log_f, plan_f, parse_lilotane_run(log_f, plan_f))
 
-    # Problem 4 runs (TFD, LPG-TD, OPTIC)
+    # Problem 4 runs (LPG-TD, OPTIC)
     for planner_family, folder, log_name, parser_fn in [
-        ("TFD", "tfd", "tfd.log", parse_tfd_run),
         ("LPG-TD", "lpg-td", "lpg-td.log", parse_lpg_td_run),
         ("OPTIC", "optic", "optic.log", parse_optic_run),
     ]:

@@ -7,20 +7,15 @@
 \toprule
 \textbf{Problem} & \textbf{Planner} & \textbf{Level} & \textbf{Art.} & \textbf{Rob.} & \textbf{Pods} & \textbf{Rooms} & \textbf{Solved} & \textbf{Sol. Time (s)} & \textbf{Exec. Time (s)} & \textbf{Expanded} & \textbf{Evaluated} & \textbf{Plan Len.} & \textbf{Makespan} \\
 \midrule
-problem4 & TFD & default & 1 & 1 & 0 & 3 & No (Exh.) & 59.87 & 59.87 & 1,170,585 & 4,930,525 & --- & --- \\
-problem4 & TFD & easy & 3 & 1 & 2 & 4 & No (TO) & 591.10 & 591.10 & 1,594,805 & 6,085,758 & --- & --- \\
-problem4 & TFD & middle & 5 & 2 & 2 & 4 & \textbf{Yes} & 2.63 & 4.21 & 21,073 & 21,073 & 71 & 125.62 \\
-problem4 & TFD & hard & 10 & 3 & 2 & 4 & No (TO) & 587.38 & 587.38 & 538,864 & 778,308 & --- & --- \\
+problem4 & LPG-TD & default & 3 & 1 & 2 & 4 & No (Err.) & 0.22 & 0.22 & --- & --- & --- & --- \\
+problem4 & LPG-TD & easy & 3 & 1 & 2 & 4 & No (Err.) & 0.25 & 0.25 & --- & --- & --- & --- \\
+problem4 & LPG-TD & middle & 5 & 2 & 2 & 4 & No (Err.) & 0.62 & 0.62 & --- & --- & --- & --- \\
+problem4 & LPG-TD & hard & 10 & 3 & 2 & 4 & No (Err.) & 0.21 & 0.21 & --- & --- & --- & --- \\
 \midrule
-problem4 & LPG-TD & default & 1 & 1 & 0 & 3 & \textbf{Yes} & 0.76 & 0.93 & --- & --- & 8 & 17.00 \\
-problem4 & LPG-TD & easy & 3 & 1 & 2 & 4 & No (Err.) & 0.20 & 0.20 & --- & --- & --- & --- \\
-problem4 & LPG-TD & middle & 5 & 2 & 2 & 4 & No (Err.) & 0.19 & 0.19 & --- & --- & --- & --- \\
-problem4 & LPG-TD & hard & 10 & 3 & 2 & 4 & No (Err.) & 0.45 & 0.45 & --- & --- & --- & --- \\
-\midrule
-problem4 & OPTIC & default & 1 & 1 & 0 & 3 & \textbf{Yes} & 0.64 & 0.96 & 34 & 1,925 & 8 & 17.01 \\
-problem4 & OPTIC & easy & 3 & 1 & 2 & 4 & \textbf{Yes}$^{\dagger}$ & 0.31 & 588.71 & 372 & 372 & 34 & 74.03 \\
-problem4 & OPTIC & middle & 5 & 2 & 2 & 4 & \textbf{Yes}$^{\dagger}$ & 31.75 & 588.16 & 21,095 & 21,095 & 73 & 120.06 \\
-problem4 & OPTIC & hard & 10 & 3 & 2 & 4 & No (TO) & 588.47 & 588.47 & --- & --- & --- & --- \\
+problem4 & OPTIC & default & 3 & 1 & 2 & 4 & \textbf{Yes} & 0.31 & 0.57 & --- & 372 & 34 & 74.03 \\
+problem4 & OPTIC & easy & 3 & 1 & 2 & 4 & \textbf{Yes} & 0.41 & 0.65 & --- & 372 & 34 & 74.03 \\
+problem4 & OPTIC & middle & 5 & 2 & 2 & 4 & \textbf{Yes} & 39.07 & 40.30 & --- & 21,095 & 73 & 120.06 \\
+problem4 & OPTIC & hard & 10 & 3 & 2 & 4 & No (TO) & 600.01 & 600.01 & --- & --- & --- & --- \\
 \midrule
 problem5 & PlanSys2 (Kairos) & default & 20 & 3 & 2 & 4 & \textbf{Yes} & --- & --- & --- & --- & 155 & 4315.15 \\
 \bottomrule

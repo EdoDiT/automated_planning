@@ -87,16 +87,12 @@ problem3,default,easy,Lilotane,sat-glucose4,3,3,1,2,4,True,solved,0.405285,0.405
 problem3,default,middle,Lilotane,sat-glucose4,5,5,2,2,4,True,solved,1.12641,1.12641,1.105,1133,2364,143996,50,50.0,,problem3/lilotane/scalability/middle/lilotane.log
 problem3,default,hard,Lilotane,sat-glucose4,10,10,3,2,4,True,solved,406.178,406.178,406.128,1973,4464,432508,101,101.0,,problem3/lilotane/scalability/hard/lilotane.log
 problem3,default,default,Lilotane,sat-glucose4,13,13,2,2,4,False,timeout,283.855,283.855,283.855,1973,4464,459467,,,,problem3/lilotane/lilotane.log
-problem4,default,default,TFD,tfd,1,1,1,0,3,False,unsolvable_exhausted,59.8735,59.8735,50.37,1170585,4930525,6115163,,,,problem4/tfd/tfd.log
-problem4,default,easy,TFD,tfd,3,3,1,2,4,False,timeout,591.097,591.097,447.0,1594805,6085758,7809479,,,,problem4/tfd/scalability/easy/tfd.log
-problem4,default,middle,TFD,tfd,5,5,2,2,4,True,solved,2.63008,4.21405,2.31,21073,21073,,71,125.621,125.621,problem4/tfd/scalability/middle/tfd.log
-problem4,default,hard,TFD,tfd,10,10,3,2,4,False,timeout,587.376,587.376,188.0,538864,778308,4896072,,,,problem4/tfd/scalability/hard/tfd.log
-problem4,default,default,LPG-TD,lpg-td,1,1,1,0,3,True,solved,0.76,0.925925,0.04,,,,8,8.0,17.0,problem4/lpg-td/lpg-td.log
-problem4,default,easy,LPG-TD,lpg-td,3,3,1,2,4,False,relaxed_plan_error,0.198443,0.198443,,,,,,,,problem4/lpg-td/scalability/easy/lpg-td.log
-problem4,default,middle,LPG-TD,lpg-td,5,5,2,2,4,False,relaxed_plan_error,0.185661,0.185661,,,,,,,,problem4/lpg-td/scalability/middle/lpg-td.log
-problem4,default,hard,LPG-TD,lpg-td,10,10,3,2,4,False,relaxed_plan_error,0.454244,0.454244,,,,,,,,problem4/lpg-td/scalability/hard/lpg-td.log
-problem4,default,default,OPTIC,optic,1,1,1,0,3,True,solved,0.64,0.961808,0.1,34,1925,,8,17.007,17.007,problem4/optic/optic.log
-problem4,default,easy,OPTIC,optic,3,3,1,2,4,True,solved_anytime_timeout,0.31,588.706,0.31,372,372,,34,74.032,74.032,problem4/optic/scalability/easy/optic.log
-problem4,default,middle,OPTIC,optic,5,5,2,2,4,True,solved_anytime_timeout,31.75,588.165,31.75,21095,21095,,73,120.059,120.059,problem4/optic/scalability/middle/optic.log
-problem4,default,hard,OPTIC,optic,10,10,3,2,4,False,timeout,588.473,588.473,,,,,,,,problem4/optic/scalability/hard/optic.log
+problem4,default,default,LPG-TD,lpg-td,3,3,1,2,4,False,relaxed_plan_error,0.220414,0.220414,,,,,,,,problem4/lpg-td/lpg-td.log
+problem4,default,easy,LPG-TD,lpg-td,3,3,1,2,4,False,relaxed_plan_error,0.253509,0.253509,,,,,,,,problem4/lpg-td/scalability/easy/lpg-td.log
+problem4,default,middle,LPG-TD,lpg-td,5,5,2,2,4,False,relaxed_plan_error,0.616351,0.616351,,,,,,,,problem4/lpg-td/scalability/middle/lpg-td.log
+problem4,default,hard,LPG-TD,lpg-td,10,10,3,2,4,False,relaxed_plan_error,0.206148,0.206148,,,,,,,,problem4/lpg-td/scalability/hard/lpg-td.log
+problem4,default,default,OPTIC,optic,3,3,1,2,4,True,solved,0.31,0.569237,0.31,,372,,34,74.032,74.032,problem4/optic/optic.log
+problem4,default,easy,OPTIC,optic,3,3,1,2,4,True,solved,0.41,0.649468,0.41,,372,,34,74.032,74.032,problem4/optic/scalability/easy/optic.log
+problem4,default,middle,OPTIC,optic,5,5,2,2,4,True,solved,39.07,40.3,39.07,,21095,,73,120.059,120.059,problem4/optic/scalability/middle/optic.log
+problem4,default,hard,OPTIC,optic,10,10,3,2,4,False,timeout,600.01,600.01,,,,,,,,problem4/optic/scalability/hard/optic.log
 problem5,default,default,PlanSys2 (Kairos),kairos,20,20,3,2,4,True,solved,,,,,,,155,4315.15,4315.15,problem5/plan_output.txt

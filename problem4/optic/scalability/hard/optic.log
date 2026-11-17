@@ -1,4 +1,4 @@
-Number of literals: 131
+Number of literals: 121
 Constructing lookup tables: [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%]
 Post filtering unreachable actions:  [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%]
 (battery_level curator) has a finite upper bound: [-inf,1000.000]
@@ -18,4 +18,4 @@ Initial heuristic = 64.000, admissible cost estimate 0.000
 b (55.000 | 2.000)b (54.000 | 2.000)Planner did not produce a solution plan.
 
 Planner exit status: 124
-Execution time: 588.473 seconds
+Execution time: 600.01 seconds

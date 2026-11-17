@@ -467,13 +467,12 @@ def plot_problem4_temporal_comparison(data: Dict[str, Any]) -> None:
         "hard\n(10 art, 3 rob, 2 pod)",
     ]
     planners = [
-        ("TFD", "tfd", "TFD", "#4C78A8"),
         ("LPG-TD", "lpg-td", "LPG-TD", "#E45756"),
         ("OPTIC", "optic", "OPTIC", "#54A24B"),
     ]
 
     x = np.arange(len(levels))
-    w = 0.26
+    w = 0.34
 
     fig, (ax_time, ax_qual) = plt.subplots(1, 2, figsize=(13.5, 4.8))
 
@@ -499,7 +498,7 @@ def plot_problem4_temporal_comparison(data: Dict[str, Any]) -> None:
             else:
                 annotations.append("Err.")
 
-        offset = (idx_p - 1) * w
+        offset = (idx_p - 0.5) * w
         rects = ax_time.bar(x + offset, times, w, label=p_label, color=color, edgecolor="white")
         for i, rect in enumerate(rects):
             h = rect.get_height()
@@ -526,10 +525,8 @@ def plot_problem4_temporal_comparison(data: Dict[str, Any]) -> None:
 
     # Panel B: Makespan & Plan Length for Solved Temporal Runs (Problem 4 & Problem 5)
     solved_items = [
-        ("P4 default\n(LPG-TD)", find_run(runs, "problem4", "LPG-TD", "lpg-td", "default")),
         ("P4 default\n(OPTIC)", find_run(runs, "problem4", "OPTIC", "optic", "default")),
         ("P4 easy\n(OPTIC)", find_run(runs, "problem4", "OPTIC", "optic", "easy")),
-        ("P4 middle\n(TFD)", find_run(runs, "problem4", "TFD", "tfd", "middle")),
         ("P4 middle\n(OPTIC)", find_run(runs, "problem4", "OPTIC", "optic", "middle")),
         ("P5 default\n(PlanSys2)", find_run(runs, "problem5", "PlanSys2 (Kairos)", "kairos", "default")),
     ]
@@ -586,7 +583,6 @@ def plot_action_distribution_and_problem5(data: Dict[str, Any]) -> None:
         ("P2 mid (Neg)\n(ENHSP aibr)", find_run(runs, "problem2", "ENHSP", "sat-aibr", "middle", "negative_preconditions")),
         ("P3 hard\n(PANDA)", find_run(runs, "problem3", "PANDA", "progression-rc2-ff", "hard")),
         ("P3 hard\n(Lilotane)", find_run(runs, "problem3", "Lilotane", "sat-glucose4", "hard")),
-        ("P4 middle\n(TFD)", find_run(runs, "problem4", "TFD", "tfd", "middle")),
         ("P4 middle\n(OPTIC)", find_run(runs, "problem4", "OPTIC", "optic", "middle")),
         ("P5 default\n(PlanSys2)", find_run(runs, "problem5", "PlanSys2 (Kairos)", "kairos", "default")),
     ]
