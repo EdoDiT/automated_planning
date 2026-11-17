@@ -1,0 +1,1160 @@
+pandaPIparser is configured as follows
+  Colors in output: true
+  Mode: parsing mode
+  Parameter splitting: true
+  Conditional effects: exponential encoding
+  Disjunctive preconditions as HTN: false
+  Replace goal with action: false
+  Output: pandaPI format
+Parsing /project/deliverable/problem3/interplanetary_museum_domain_3.hddl
+Parsing /project/deliverable/problem3/problem_3.hddl
+Random seed: 42
+Time limit: 1800 seconds
+Reading input from interplanetary_museum_domain_3-problem_3.psas.
+- State has 116 bits divided into 116 mutex groups.
+- Domain contains 507 actions.
+- Domain contains 650 tasks.
+- Domain contains 569 methods.
+- The initial state contains 28 set bits.
+- The initial task is "__top[]".
+- State-based goal contains 13 bits.
+- Instance is totally-ordered: no
+- Instance has unique paths: no
+- Instance is parallel sequences: no
+Calculate SCCs...
+- Number of SCCs: 600
+- The problem is cyclic
+- Number of cyclic SCCs: 33
+- Number of cyclic SCCs of size 1: 23
+Selected Planning Algorithm: progression searchParsing heuristics ...
+Number of specified heuristics: 1
+Generate 3
+
+RC Factory: CMA 1
+- the option "store cuts" of the RC heuristic can only be used with the inner heuristic LM-Cut. It will be disabled.
+- Calculating minimal implied distances and estimated costs (1 ms)
+Heuristic #0 = hhRC2(ff;distance;correct count)
+Search config:
+ - type: greedy
+ - weight: 1
+ - suboptimal: true
+Visited List configured
+- mode: partial order
+- hashs to use: state task task-sequence
+- memory information: topological ordering order-pairs layer
+- Visited list allows deletion of search nodes: false
+Search Configuration
+- Using JAIR 2020 progression algorithm
+- Search is stopped after first solution is found.
+- Greedy Search
+Search Results
+- Search time 0.422 seconds
+- Visited list time 0.138646 seconds
+- Visited list inserts 9180
+- Visited list pruned 3134
+- Visited list contains 6046
+- Visited list hash collisions 6100
+- Visited list used hash buckets 3080
+- Generated 30017 search nodes
+  Calculated heuristic for 17942 nodes
+  One modifications 4728
+  Effectless actions 7347
+- including 4728 one modification actions
+- including 0 one modification methods
+- and       7347 progressions of effectless actions
+- Generated 42516 nodes per second
+- Final fringe contains 1268 nodes
+- Status: Solved
+- Found solution of length 663
+- Total costs of actions: 146
+==>
+4 __method_precondition_deploy_one_more_robot[curator]
+5 activate_robot[curator]
+10 __noop
+21 __method_precondition_already_at_destination[curator,pod_pickup]
+22 __method_precondition_already_at_destination[curator,pod_pickup]
+28 __method_precondition_already_at_destination[curator,pod_pickup]
+29 __method_precondition_fetch_pods_from_pod_pickup[curator]
+37 __method_precondition_already_at_destination[curator,pod_pickup]
+59 __method_precondition_take_one_pod[curator,pod_2]
+60 take_pod[curator,pod_2]
+71 __method_precondition_already_at_destination[curator,pod_pickup]
+552 __method_precondition_sealing_curator_travel[curator,pod_pickup]
+553 seal[curator]
+561 __method_precondition_move_robot_one_location[curator,pod_pickup,tunnel]
+562 move[curator,pod_pickup,tunnel]
+571 __method_precondition_move_robot_one_location[curator,tunnel,cryo_chamber]
+572 move[curator,tunnel,hall_beta]
+580 __method_precondition_arrived_at_destination[curator,hall_beta,hall_beta]
+581 unseal[curator]
+586 __noop
+605 __method_precondition_load_one_sensitive_more[curator,hall_beta,artifact_8,pod_2]
+606 pickup_sensitive_artifact[curator,artifact_8,pod_2,hall_beta]
+615 __noop
+876 __method_precondition_sealing_curator_travel[curator,hall_beta]
+877 seal[curator]
+938 __method_precondition_move_robot_one_location[curator,hall_beta,tunnel]
+939 move[curator,hall_beta,tunnel]
+952 __method_precondition_move_robot_one_location[curator,tunnel,cryo_chamber]
+953 move[curator,tunnel,hall_alpha]
+969 __method_precondition_arrived_at_destination[curator,hall_alpha,hall_alpha]
+970 unseal[curator]
+1029 __method_precondition_unload_one_seismic_sensitive_more[curator,artifact_8,pod_2]
+1030 safe_drop_seismic_sensitive_artifact[curator,artifact_8,pod_2,hall_alpha]
+1039 __noop
+1198 __method_precondition_load_one_sensitive_more[curator,hall_alpha,artifact_2,pod_2]
+1199 pickup_sensitive_artifact[curator,artifact_2,pod_2,hall_alpha]
+1204 __noop
+1543 __method_precondition_sealing_curator_travel[curator,hall_alpha]
+1544 seal[curator]
+1549 __method_precondition_move_robot_one_location[curator,hall_alpha,tunnel]
+1550 move[curator,hall_alpha,tunnel]
+1553 __method_precondition_move_robot_one_location[curator,tunnel,cryo_chamber]
+1554 move[curator,tunnel,stasis_lab]
+1727 __method_precondition_arrived_at_destination[curator,stasis_lab,stasis_lab]
+1728 unseal[curator]
+1789 __method_precondition_unload_one_thermosensitive_more[curator,artifact_2,pod_2]
+1790 safe_drop_thermosensitive_artifact[curator,artifact_2,pod_2,stasis_lab]
+1796 __noop
+1802 __noop
+2142 __method_precondition_sealing_curator_travel[curator,stasis_lab]
+2143 seal[curator]
+2430 __method_precondition_move_robot_one_location[curator,stasis_lab,tunnel]
+2431 move[curator,stasis_lab,tunnel]
+2443 __method_precondition_move_robot_one_location[curator,tunnel,cryo_chamber]
+2444 move[curator,tunnel,hall_alpha]
+2450 __method_precondition_move_robot_one_location[curator,hall_alpha,tunnel]
+2451 move[curator,hall_alpha,tunnel]
+2460 __method_precondition_move_robot_one_location[curator,tunnel,cryo_chamber]
+2461 move[curator,tunnel,hall_beta]
+2469 __method_precondition_arrived_at_destination[curator,hall_beta,hall_beta]
+2470 unseal[curator]
+2475 __noop
+2495 __method_precondition_load_one_sensitive_more[curator,hall_beta,artifact_7,pod_2]
+2496 pickup_sensitive_artifact[curator,artifact_7,pod_2,hall_beta]
+2502 __noop
+2749 __method_precondition_already_at_destination[curator,hall_beta]
+2759 __noop
+2762 __noop
+2825 __method_precondition_sealing_curator_travel[curator,hall_beta]
+2826 seal[curator]
+2866 __method_precondition_move_robot_one_location[curator,hall_beta,tunnel]
+2867 move[curator,hall_beta,tunnel]
+3185 __method_precondition_move_robot_one_location[curator,tunnel,cryo_chamber]
+3186 move[curator,tunnel,stasis_lab]
+3200 __method_precondition_arrived_at_destination[curator,stasis_lab,stasis_lab]
+3201 unseal[curator]
+3242 __method_precondition_unload_one_seismic_sensitive_more[curator,artifact_7,pod_2]
+3243 safe_drop_seismic_sensitive_artifact[curator,artifact_7,pod_2,stasis_lab]
+3250 __noop
+3256 __noop
+3699 __method_precondition_sealing_curator_travel[curator,stasis_lab]
+3700 seal[curator]
+3707 __method_precondition_move_robot_one_location[curator,stasis_lab,tunnel]
+3708 move[curator,stasis_lab,tunnel]
+3717 __method_precondition_move_robot_one_location[curator,tunnel,cryo_chamber]
+3718 move[curator,tunnel,hall_beta]
+3730 __method_precondition_arrived_at_destination[curator,hall_beta,hall_beta]
+3731 unseal[curator]
+3736 __noop
+3739 __noop
+4230 __method_precondition_sealing_curator_travel[curator,hall_beta]
+4231 seal[curator]
+4930 __method_precondition_move_robot_one_location[curator,hall_beta,tunnel]
+4931 move[curator,hall_beta,tunnel]
+4946 __method_precondition_move_robot_one_location[curator,tunnel,cryo_chamber]
+4947 move[curator,tunnel,hall_alpha]
+4950 __method_precondition_move_robot_one_location[curator,hall_alpha,tunnel]
+4951 move[curator,hall_alpha,tunnel]
+4966 __method_precondition_move_robot_one_location[curator,tunnel,cryo_chamber]
+4967 move[curator,tunnel,hall_alpha]
+4970 __method_precondition_move_robot_one_location[curator,hall_alpha,tunnel]
+4971 move[curator,hall_alpha,tunnel]
+4977 __method_precondition_move_robot_one_location[curator,tunnel,cryo_chamber]
+4978 move[curator,tunnel,cryo_chamber]
+4989 __method_precondition_arrived_at_destination[curator,cryo_chamber,cryo_chamber]
+4990 unseal[curator]
+4995 __noop
+5034 __method_precondition_load_one_sensitive_more[curator,cryo_chamber,martian_artifact_2,pod_2]
+5035 pickup_sensitive_artifact[curator,martian_artifact_2,pod_2,cryo_chamber]
+5051 __noop
+5419 __method_precondition_sealing_curator_travel[curator,cryo_chamber]
+5420 seal[curator]
+5423 __method_precondition_move_robot_one_location[curator,cryo_chamber,tunnel]
+5424 move[curator,cryo_chamber,tunnel]
+5427 __method_precondition_move_robot_one_location[curator,tunnel,cryo_chamber]
+5428 move[curator,tunnel,stasis_lab]
+5442 __method_precondition_arrived_at_destination[curator,stasis_lab,stasis_lab]
+5443 unseal[curator]
+5501 __method_precondition_unload_one_seismic_sensitive_more[curator,martian_artifact_2,pod_2]
+5502 safe_drop_seismic_sensitive_artifact[curator,martian_artifact_2,pod_2,stasis_lab]
+5517 __noop
+5523 __noop
+5947 __method_precondition_sealing_curator_travel[curator,stasis_lab]
+5948 seal[curator]
+6198 __method_precondition_move_robot_one_location[curator,stasis_lab,tunnel]
+6199 move[curator,stasis_lab,tunnel]
+6214 __method_precondition_move_robot_one_location[curator,tunnel,cryo_chamber]
+6215 move[curator,tunnel,cryo_chamber]
+6222 __method_precondition_move_robot_one_location[curator,cryo_chamber,tunnel]
+6223 move[curator,cryo_chamber,tunnel]
+6232 __method_precondition_move_robot_one_location[curator,tunnel,cryo_chamber]
+6233 move[curator,tunnel,hall_beta]
+6305 __method_precondition_arrived_at_destination[curator,hall_beta,hall_beta]
+6306 unseal[curator]
+6311 __noop
+6342 __method_precondition_load_one_standard_more[curator,hall_beta,artifact_6]
+6343 pickup_standard_artifact[curator,artifact_6,hall_beta]
+6345 __noop
+6548 __method_precondition_sealing_curator_travel[curator,hall_beta]
+6549 seal[curator]
+6553 __method_precondition_move_robot_one_location[curator,hall_beta,tunnel]
+6554 move[curator,hall_beta,tunnel]
+6557 __method_precondition_move_robot_one_location[curator,tunnel,cryo_chamber]
+6558 move[curator,tunnel,stasis_lab]
+6572 __method_precondition_arrived_at_destination[curator,stasis_lab,stasis_lab]
+6573 unseal[curator]
+6636 __method_precondition_unload_one_standard_more[curator,artifact_6]
+6637 drop_standard_artifact[curator,artifact_6,stasis_lab]
+6640 __noop
+6646 __noop
+13314 __method_precondition_sealing_curator_travel[curator,stasis_lab]
+13315 seal[curator]
+13323 __method_precondition_move_robot_one_location[curator,stasis_lab,tunnel]
+13324 move[curator,stasis_lab,tunnel]
+13342 __method_precondition_move_robot_one_location[curator,tunnel,cryo_chamber]
+13343 move[curator,tunnel,hall_alpha]
+13355 __method_precondition_arrived_at_destination[curator,hall_alpha,hall_alpha]
+13356 unseal[curator]
+13361 __noop
+13389 __method_precondition_load_one_sensitive_more[curator,hall_alpha,artifact_5,pod_2]
+13390 pickup_sensitive_artifact[curator,artifact_5,pod_2,hall_alpha]
+13399 __noop
+14831 __method_precondition_sealing_curator_travel[curator,hall_alpha]
+14832 seal[curator]
+14835 __method_precondition_move_robot_one_location[curator,hall_alpha,tunnel]
+14836 move[curator,hall_alpha,tunnel]
+14842 __method_precondition_move_robot_one_location[curator,tunnel,cryo_chamber]
+14843 move[curator,tunnel,cryo_chamber]
+14854 __method_precondition_arrived_at_destination[curator,cryo_chamber,cryo_chamber]
+14855 unseal[curator]
+14924 __method_precondition_unload_one_thermosensitive_more[curator,artifact_5,pod_2]
+14925 safe_drop_thermosensitive_artifact[curator,artifact_5,pod_2,cryo_chamber]
+14932 __noop
+14936 __noop
+15351 __method_precondition_sealing_curator_travel[curator,cryo_chamber]
+15352 seal[curator]
+15356 __method_precondition_move_robot_one_location[curator,cryo_chamber,tunnel]
+15357 move[curator,cryo_chamber,tunnel]
+15410 __method_precondition_move_robot_one_location[curator,tunnel,cryo_chamber]
+15411 move[curator,tunnel,hall_alpha]
+15417 __method_precondition_move_robot_one_location[curator,hall_alpha,tunnel]
+15418 move[curator,hall_alpha,tunnel]
+15430 __method_precondition_move_robot_one_location[curator,tunnel,cryo_chamber]
+15431 move[curator,tunnel,hall_alpha]
+15437 __method_precondition_move_robot_one_location[curator,hall_alpha,tunnel]
+15438 move[curator,hall_alpha,tunnel]
+15447 __method_precondition_move_robot_one_location[curator,tunnel,cryo_chamber]
+15448 move[curator,tunnel,hall_beta]
+15456 __method_precondition_arrived_at_destination[curator,hall_beta,hall_beta]
+15457 unseal[curator]
+15462 __noop
+15511 __method_precondition_load_one_sensitive_more[curator,hall_beta,artifact_9,pod_2]
+15512 pickup_sensitive_artifact[curator,artifact_9,pod_2,hall_beta]
+15520 __noop
+15712 __method_precondition_sealing_curator_travel[curator,hall_beta]
+15713 seal[curator]
+15717 __method_precondition_move_robot_one_location[curator,hall_beta,tunnel]
+15718 move[curator,hall_beta,tunnel]
+15738 __method_precondition_move_robot_one_location[curator,tunnel,cryo_chamber]
+15739 move[curator,tunnel,stasis_lab]
+15753 __method_precondition_arrived_at_destination[curator,stasis_lab,stasis_lab]
+15754 unseal[curator]
+15819 __method_precondition_unload_one_thermosensitive_more[curator,artifact_9,pod_2]
+15820 safe_drop_thermosensitive_artifact[curator,artifact_9,pod_2,stasis_lab]
+15823 __noop
+15829 __noop
+16910 __method_precondition_sealing_curator_travel[curator,stasis_lab]
+16911 seal[curator]
+16939 __method_precondition_move_robot_one_location[curator,stasis_lab,tunnel]
+16940 move[curator,stasis_lab,tunnel]
+16952 __method_precondition_move_robot_one_location[curator,tunnel,cryo_chamber]
+16953 move[curator,tunnel,cryo_chamber]
+16987 __method_precondition_move_robot_one_location[curator,cryo_chamber,tunnel]
+16988 move[curator,cryo_chamber,tunnel]
+16997 __method_precondition_move_robot_one_location[curator,tunnel,cryo_chamber]
+16998 move[curator,tunnel,hall_alpha]
+17006 __method_precondition_arrived_at_destination[curator,hall_alpha,hall_alpha]
+17007 unseal[curator]
+17012 __noop
+17031 __method_precondition_load_one_standard_more[curator,hall_alpha,artifact_1]
+17032 pickup_standard_artifact[curator,artifact_1,hall_alpha]
+17034 __noop
+17656 __method_precondition_sealing_curator_travel[curator,hall_alpha]
+17657 seal[curator]
+17662 __method_precondition_move_robot_one_location[curator,hall_alpha,tunnel]
+17663 move[curator,hall_alpha,tunnel]
+17672 __method_precondition_move_robot_one_location[curator,tunnel,cryo_chamber]
+17673 move[curator,tunnel,hall_beta]
+17733 __method_precondition_arrived_at_destination[curator,hall_beta,hall_beta]
+17734 unseal[curator]
+17779 __method_precondition_unload_one_standard_more[curator,artifact_1]
+17780 drop_standard_artifact[curator,artifact_1,hall_beta]
+17784 __noop
+17836 __method_precondition_load_one_sensitive_more[curator,hall_beta,artifact_10,pod_2]
+17837 pickup_sensitive_artifact[curator,artifact_10,pod_2,hall_beta]
+17846 __noop
+17972 __method_precondition_sealing_curator_travel[curator,hall_beta]
+17973 seal[curator]
+18229 __method_precondition_move_robot_one_location[curator,hall_beta,tunnel]
+18230 move[curator,hall_beta,tunnel]
+18233 __method_precondition_move_robot_one_location[curator,tunnel,cryo_chamber]
+18234 move[curator,tunnel,stasis_lab]
+18248 __method_precondition_arrived_at_destination[curator,stasis_lab,stasis_lab]
+18249 unseal[curator]
+18285 __method_precondition_unload_one_thermosensitive_more[curator,artifact_10,pod_2]
+18286 safe_drop_thermosensitive_artifact[curator,artifact_10,pod_2,stasis_lab]
+18297 __noop
+18303 __noop
+22330 __method_precondition_sealing_curator_travel[curator,stasis_lab]
+22331 seal[curator]
+22336 __method_precondition_move_robot_one_location[curator,stasis_lab,tunnel]
+22337 move[curator,stasis_lab,tunnel]
+22343 __method_precondition_move_robot_one_location[curator,tunnel,cryo_chamber]
+22344 move[curator,tunnel,cryo_chamber]
+22355 __method_precondition_arrived_at_destination[curator,cryo_chamber,cryo_chamber]
+22356 unseal[curator]
+22361 __noop
+22365 __noop
+22643 __method_precondition_sealing_curator_travel[curator,cryo_chamber]
+22644 seal[curator]
+22746 __method_precondition_move_robot_one_location[curator,cryo_chamber,tunnel]
+22747 move[curator,cryo_chamber,tunnel]
+22756 __method_precondition_move_robot_one_location[curator,tunnel,cryo_chamber]
+22757 move[curator,tunnel,hall_alpha]
+22773 __method_precondition_arrived_at_destination[curator,hall_alpha,hall_alpha]
+22774 unseal[curator]
+22779 __noop
+22795 __method_precondition_load_one_standard_more[curator,hall_alpha,artifact_3]
+22796 pickup_standard_artifact[curator,artifact_3,hall_alpha]
+22799 __noop
+23622 __method_precondition_sealing_curator_travel[curator,hall_alpha]
+23623 seal[curator]
+23628 __method_precondition_move_robot_one_location[curator,hall_alpha,tunnel]
+23629 move[curator,hall_alpha,tunnel]
+23638 __method_precondition_move_robot_one_location[curator,tunnel,cryo_chamber]
+23639 move[curator,tunnel,hall_beta]
+23651 __method_precondition_arrived_at_destination[curator,hall_beta,hall_beta]
+23652 unseal[curator]
+23657 __noop
+23660 __noop
+24643 __method_precondition_sealing_curator_travel[curator,hall_beta]
+24644 seal[curator]
+24648 __method_precondition_move_robot_one_location[curator,hall_beta,tunnel]
+24649 move[curator,hall_beta,tunnel]
+24652 __method_precondition_move_robot_one_location[curator,tunnel,cryo_chamber]
+24653 move[curator,tunnel,stasis_lab]
+24667 __method_precondition_arrived_at_destination[curator,stasis_lab,stasis_lab]
+24668 unseal[curator]
+24711 __method_precondition_unload_one_standard_more[curator,artifact_3]
+24712 drop_standard_artifact[curator,artifact_3,stasis_lab]
+24717 __noop
+24723 __noop
+25979 __method_precondition_sealing_curator_travel[curator,stasis_lab]
+25980 seal[curator]
+26028 __method_precondition_move_robot_one_location[curator,stasis_lab,tunnel]
+26029 move[curator,stasis_lab,tunnel]
+26046 __method_precondition_move_robot_one_location[curator,tunnel,cryo_chamber]
+26047 move[curator,tunnel,hall_beta]
+26055 __method_precondition_arrived_at_destination[curator,hall_beta,hall_beta]
+26056 unseal[curator]
+26061 __noop
+26074 __method_precondition_load_one_standard_more[curator,hall_beta,artifact_1]
+26075 pickup_standard_artifact[curator,artifact_1,hall_beta]
+26080 __noop
+26137 __method_precondition_sealing_curator_travel[curator,hall_beta]
+26138 seal[curator]
+26142 __method_precondition_move_robot_one_location[curator,hall_beta,tunnel]
+26143 move[curator,hall_beta,tunnel]
+26149 __method_precondition_move_robot_one_location[curator,tunnel,cryo_chamber]
+26150 move[curator,tunnel,cryo_chamber]
+26161 __method_precondition_arrived_at_destination[curator,cryo_chamber,cryo_chamber]
+26162 unseal[curator]
+26201 __method_precondition_unload_one_standard_more[curator,artifact_1]
+26202 drop_standard_artifact[curator,artifact_1,cryo_chamber]
+26206 __noop
+26224 __method_precondition_load_one_standard_more[curator,cryo_chamber,martian_artifact_1]
+26225 pickup_standard_artifact[curator,martian_artifact_1,cryo_chamber]
+26228 __noop
+26232 __noop
+26248 __method_precondition_deploy_for_work_once[curator,cryo_chamber]
+26249 __method_precondition_deploy_for_work_once[curator,cryo_chamber]
+26256 __noop
+26260 __noop
+26266 __method_precondition_deploy_for_work_once[curator,cryo_chamber]
+26267 __method_precondition_deploy_for_work_once[curator,cryo_chamber]
+26274 __noop
+26338 __method_precondition_sealing_curator_travel[curator,cryo_chamber]
+26339 seal[curator]
+26342 __method_precondition_move_robot_one_location[curator,cryo_chamber,tunnel]
+26343 move[curator,cryo_chamber,tunnel]
+26346 __method_precondition_move_robot_one_location[curator,tunnel,cryo_chamber]
+26347 move[curator,tunnel,stasis_lab]
+26361 __method_precondition_arrived_at_destination[curator,stasis_lab,stasis_lab]
+26362 unseal[curator]
+26420 __method_precondition_unload_one_standard_more[curator,martian_artifact_1]
+26421 drop_standard_artifact[curator,martian_artifact_1,stasis_lab]
+26423 __noop
+26429 __noop
+28114 __method_precondition_sealing_curator_travel[curator,stasis_lab]
+28115 seal[curator]
+28120 __method_precondition_move_robot_one_location[curator,stasis_lab,tunnel]
+28121 move[curator,stasis_lab,tunnel]
+29588 __method_precondition_move_robot_one_location[curator,tunnel,cryo_chamber]
+29589 move[curator,tunnel,cryo_chamber]
+29600 __method_precondition_arrived_at_destination[curator,cryo_chamber,cryo_chamber]
+29601 unseal[curator]
+29606 __noop
+29689 __method_precondition_load_one_sensitive_more[curator,cryo_chamber,martian_artifact_3,pod_2]
+29690 pickup_sensitive_artifact[curator,martian_artifact_3,pod_2,cryo_chamber]
+29701 __noop
+29804 __method_precondition_sealing_curator_travel[curator,cryo_chamber]
+29805 seal[curator]
+29916 __method_precondition_move_robot_one_location[curator,cryo_chamber,tunnel]
+29917 move[curator,cryo_chamber,tunnel]
+29920 __method_precondition_move_robot_one_location[curator,tunnel,cryo_chamber]
+29921 move[curator,tunnel,stasis_lab]
+29935 __method_precondition_arrived_at_destination[curator,stasis_lab,stasis_lab]
+29936 unseal[curator]
+29999 __method_precondition_unload_one_thermosensitive_more[curator,martian_artifact_3,pod_2]
+30000 safe_drop_thermosensitive_artifact[curator,martian_artifact_3,pod_2,stasis_lab]
+30002 __noop
+30008 __noop
+30012 __noop
+30015 __noop
+root 0
+30014 make_robot_work[curator] -> finish_work 30015
+30011 conduct_tour[curator] -> finish_tour 30012
+30007 load_phase[curator,stasis_lab] -> finish_loading 30008
+30001 unload_phase[curator,stasis_lab] -> finish_unloading 30002
+29998 unload_one_thermosensitive_more_splitted_9[curator,stasis_lab] -> _splitting_method_unload_one_thermosensitive_more_splitted_9 29999 30000
+29943 unload_phase[curator,stasis_lab] -> unload_one_thermosensitive_more 29998 30001
+29934 move_robot[curator,stasis_lab,stasis_lab] -> arrived_at_destination 29935
+29919 move_robot[curator,tunnel,stasis_lab] -> move_robot_one_location 29920 29921 29934
+29915 move_robot[curator,cryo_chamber,stasis_lab] -> move_robot_one_location 29916 29917 29919
+29803 robot_travel[curator,stasis_lab] -> sealing_curator_travel 29804 29805 29915 29936
+29760 tour_next_stop_splitted_1[curator] -> <_splitting_method_tour_next_stop_splitted_1;service_room[curator,stasis_lab];do_service_room;1;0,-1,-2> 29803 29943 30007
+29706 conduct_tour[curator] -> tour_next_stop 29760 30011
+29700 load_phase[curator,cryo_chamber] -> finish_loading 29701
+29688 load_one_sensitive_more_splitted_5[curator,cryo_chamber] -> _splitting_method_load_one_sensitive_more_splitted_5 29689 29690
+29612 load_phase[curator,cryo_chamber] -> load_one_sensitive_more 29688 29700
+29605 unload_phase[curator,cryo_chamber] -> finish_unloading 29606
+29599 move_robot[curator,cryo_chamber,cryo_chamber] -> arrived_at_destination 29600
+29587 move_robot[curator,tunnel,cryo_chamber] -> move_robot_one_location 29588 29589 29599
+28119 move_robot[curator,stasis_lab,cryo_chamber] -> move_robot_one_location 28120 28121 29587
+28113 robot_travel[curator,cryo_chamber] -> sealing_curator_travel 28114 28115 28119 29601
+27985 tour_next_stop_splitted_1[curator] -> <_splitting_method_tour_next_stop_splitted_1;service_room[curator,cryo_chamber];do_service_room;1;0,-1,-2> 28113 29605 29612
+26434 conduct_tour[curator] -> tour_next_stop 27985 29706
+26428 load_phase[curator,stasis_lab] -> finish_loading 26429
+26422 unload_phase[curator,stasis_lab] -> finish_unloading 26423
+26419 unload_one_standard_more_splitted_8[curator,stasis_lab] -> _splitting_method_unload_one_standard_more_splitted_8 26420 26421
+26368 unload_phase[curator,stasis_lab] -> unload_one_standard_more 26419 26422
+26360 move_robot[curator,stasis_lab,stasis_lab] -> arrived_at_destination 26361
+26345 move_robot[curator,tunnel,stasis_lab] -> move_robot_one_location 26346 26347 26360
+26341 move_robot[curator,cryo_chamber,stasis_lab] -> move_robot_one_location 26342 26343 26345
+26337 robot_travel[curator,stasis_lab] -> sealing_curator_travel 26338 26339 26341 26362
+26330 tour_next_stop_splitted_1[curator] -> <_splitting_method_tour_next_stop_splitted_1;service_room[curator,stasis_lab];do_service_room;1;0,-1,-2> 26337 26368 26428
+26279 conduct_tour[curator] -> tour_next_stop 26330 26434
+26273 prepare_robot[curator,cryo_chamber] -> prepare_nothing 26274
+26265 deploy_for_work_once_splitted_6[curator] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[curator,cryo_chamber];do_tour_around;1;0,-1,-2,-3> 26266 26267 26273 26279
+26264 make_robot_work[curator] -> deploy_for_work_once 26265 30014
+26259 conduct_tour[curator] -> finish_tour 26260
+26255 prepare_robot[curator,cryo_chamber] -> prepare_nothing 26256
+26247 deploy_for_work_once_splitted_6[curator] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[curator,cryo_chamber];do_tour_around;1;0,-1,-2,-3> 26248 26249 26255 26259
+26236 make_robot_work[curator] -> deploy_for_work_once 26247 26264
+26231 conduct_tour[curator] -> finish_tour 26232
+26227 load_phase[curator,cryo_chamber] -> finish_loading 26228
+26223 load_one_standard_more_splitted_3[curator,cryo_chamber] -> _splitting_method_load_one_standard_more_splitted_3 26224 26225
+26211 load_phase[curator,cryo_chamber] -> load_one_standard_more 26223 26227
+26205 unload_phase[curator,cryo_chamber] -> finish_unloading 26206
+26200 unload_one_standard_more_splitted_8[curator,cryo_chamber] -> _splitting_method_unload_one_standard_more_splitted_8 26201 26202
+26168 unload_phase[curator,cryo_chamber] -> unload_one_standard_more 26200 26205
+26160 move_robot[curator,cryo_chamber,cryo_chamber] -> arrived_at_destination 26161
+26148 move_robot[curator,tunnel,cryo_chamber] -> move_robot_one_location 26149 26150 26160
+26141 move_robot[curator,hall_beta,cryo_chamber] -> move_robot_one_location 26142 26143 26148
+26136 robot_travel[curator,cryo_chamber] -> sealing_curator_travel 26137 26138 26141 26162
+26127 tour_next_stop_splitted_1[curator] -> <_splitting_method_tour_next_stop_splitted_1;service_room[curator,cryo_chamber];do_service_room;1;0,-1,-2> 26136 26168 26211
+26085 conduct_tour[curator] -> tour_next_stop 26127 26231
+26079 load_phase[curator,hall_beta] -> finish_loading 26080
+26073 load_one_standard_more_splitted_3[curator,hall_beta] -> _splitting_method_load_one_standard_more_splitted_3 26074 26075
+26065 load_phase[curator,hall_beta] -> load_one_standard_more 26073 26079
+26060 unload_phase[curator,hall_beta] -> finish_unloading 26061
+26054 move_robot[curator,hall_beta,hall_beta] -> arrived_at_destination 26055
+26045 move_robot[curator,tunnel,hall_beta] -> move_robot_one_location 26046 26047 26054
+26027 move_robot[curator,stasis_lab,hall_beta] -> move_robot_one_location 26028 26029 26045
+25978 robot_travel[curator,hall_beta] -> sealing_curator_travel 25979 25980 26027 26056
+25893 tour_next_stop_splitted_1[curator] -> <_splitting_method_tour_next_stop_splitted_1;service_room[curator,hall_beta];do_service_room;1;0,-1,-2> 25978 26060 26065
+24728 conduct_tour[curator] -> tour_next_stop 25893 26085
+24722 load_phase[curator,stasis_lab] -> finish_loading 24723
+24716 unload_phase[curator,stasis_lab] -> finish_unloading 24717
+24710 unload_one_standard_more_splitted_8[curator,stasis_lab] -> _splitting_method_unload_one_standard_more_splitted_8 24711 24712
+24674 unload_phase[curator,stasis_lab] -> unload_one_standard_more 24710 24716
+24666 move_robot[curator,stasis_lab,stasis_lab] -> arrived_at_destination 24667
+24651 move_robot[curator,tunnel,stasis_lab] -> move_robot_one_location 24652 24653 24666
+24647 move_robot[curator,hall_beta,stasis_lab] -> move_robot_one_location 24648 24649 24651
+24642 robot_travel[curator,stasis_lab] -> sealing_curator_travel 24643 24644 24647 24668
+23884 tour_next_stop_splitted_1[curator] -> <_splitting_method_tour_next_stop_splitted_1;service_room[curator,stasis_lab];do_service_room;1;0,-1,-2> 24642 24674 24722
+23665 conduct_tour[curator] -> tour_next_stop 23884 24728
+23659 load_phase[curator,hall_beta] -> finish_loading 23660
+23656 unload_phase[curator,hall_beta] -> finish_unloading 23657
+23650 move_robot[curator,hall_beta,hall_beta] -> arrived_at_destination 23651
+23637 move_robot[curator,tunnel,hall_beta] -> move_robot_one_location 23638 23639 23650
+23627 move_robot[curator,hall_alpha,hall_beta] -> move_robot_one_location 23628 23629 23637
+23621 robot_travel[curator,hall_beta] -> sealing_curator_travel 23622 23623 23627 23652
+23606 tour_next_stop_splitted_1[curator] -> <_splitting_method_tour_next_stop_splitted_1;service_room[curator,hall_beta];do_service_room;1;0,-1,-2> 23621 23656 23659
+22804 conduct_tour[curator] -> tour_next_stop 23606 23665
+22798 load_phase[curator,hall_alpha] -> finish_loading 22799
+22794 load_one_standard_more_splitted_3[curator,hall_alpha] -> _splitting_method_load_one_standard_more_splitted_3 22795 22796
+22784 load_phase[curator,hall_alpha] -> load_one_standard_more 22794 22798
+22778 unload_phase[curator,hall_alpha] -> finish_unloading 22779
+22772 move_robot[curator,hall_alpha,hall_alpha] -> arrived_at_destination 22773
+22755 move_robot[curator,tunnel,hall_alpha] -> move_robot_one_location 22756 22757 22772
+22745 move_robot[curator,cryo_chamber,hall_alpha] -> move_robot_one_location 22746 22747 22755
+22642 robot_travel[curator,hall_alpha] -> sealing_curator_travel 22643 22644 22745 22774
+22555 tour_next_stop_splitted_1[curator] -> <_splitting_method_tour_next_stop_splitted_1;service_room[curator,hall_alpha];do_service_room;1;0,-1,-2> 22642 22778 22784
+22370 conduct_tour[curator] -> tour_next_stop 22555 22804
+22364 load_phase[curator,cryo_chamber] -> finish_loading 22365
+22360 unload_phase[curator,cryo_chamber] -> finish_unloading 22361
+22354 move_robot[curator,cryo_chamber,cryo_chamber] -> arrived_at_destination 22355
+22342 move_robot[curator,tunnel,cryo_chamber] -> move_robot_one_location 22343 22344 22354
+22335 move_robot[curator,stasis_lab,cryo_chamber] -> move_robot_one_location 22336 22337 22342
+22329 robot_travel[curator,cryo_chamber] -> sealing_curator_travel 22330 22331 22335 22356
+22321 tour_next_stop_splitted_1[curator] -> <_splitting_method_tour_next_stop_splitted_1;service_room[curator,cryo_chamber];do_service_room;1;0,-1,-2> 22329 22360 22364
+18308 conduct_tour[curator] -> tour_next_stop 22321 22370
+18302 load_phase[curator,stasis_lab] -> finish_loading 18303
+18296 unload_phase[curator,stasis_lab] -> finish_unloading 18297
+18284 unload_one_thermosensitive_more_splitted_9[curator,stasis_lab] -> _splitting_method_unload_one_thermosensitive_more_splitted_9 18285 18286
+18256 unload_phase[curator,stasis_lab] -> unload_one_thermosensitive_more 18284 18296
+18247 move_robot[curator,stasis_lab,stasis_lab] -> arrived_at_destination 18248
+18232 move_robot[curator,tunnel,stasis_lab] -> move_robot_one_location 18233 18234 18247
+18228 move_robot[curator,hall_beta,stasis_lab] -> move_robot_one_location 18229 18230 18232
+17971 robot_travel[curator,stasis_lab] -> sealing_curator_travel 17972 17973 18228 18249
+17916 tour_next_stop_splitted_1[curator] -> <_splitting_method_tour_next_stop_splitted_1;service_room[curator,stasis_lab];do_service_room;1;0,-1,-2> 17971 18256 18302
+17851 conduct_tour[curator] -> tour_next_stop 17916 18308
+17845 load_phase[curator,hall_beta] -> finish_loading 17846
+17835 load_one_sensitive_more_splitted_5[curator,hall_beta] -> _splitting_method_load_one_sensitive_more_splitted_5 17836 17837
+17789 load_phase[curator,hall_beta] -> load_one_sensitive_more 17835 17845
+17783 unload_phase[curator,hall_beta] -> finish_unloading 17784
+17778 unload_one_standard_more_splitted_8[curator,hall_beta] -> _splitting_method_unload_one_standard_more_splitted_8 17779 17780
+17740 unload_phase[curator,hall_beta] -> unload_one_standard_more 17778 17783
+17732 move_robot[curator,hall_beta,hall_beta] -> arrived_at_destination 17733
+17671 move_robot[curator,tunnel,hall_beta] -> move_robot_one_location 17672 17673 17732
+17661 move_robot[curator,hall_alpha,hall_beta] -> move_robot_one_location 17662 17663 17671
+17655 robot_travel[curator,hall_beta] -> sealing_curator_travel 17656 17657 17661 17734
+17504 tour_next_stop_splitted_1[curator] -> <_splitting_method_tour_next_stop_splitted_1;service_room[curator,hall_beta];do_service_room;1;0,-1,-2> 17655 17740 17789
+17039 conduct_tour[curator] -> tour_next_stop 17504 17851
+17033 load_phase[curator,hall_alpha] -> finish_loading 17034
+17030 load_one_standard_more_splitted_3[curator,hall_alpha] -> _splitting_method_load_one_standard_more_splitted_3 17031 17032
+17017 load_phase[curator,hall_alpha] -> load_one_standard_more 17030 17033
+17011 unload_phase[curator,hall_alpha] -> finish_unloading 17012
+17005 move_robot[curator,hall_alpha,hall_alpha] -> arrived_at_destination 17006
+16996 move_robot[curator,tunnel,hall_alpha] -> move_robot_one_location 16997 16998 17005
+16986 move_robot[curator,cryo_chamber,hall_alpha] -> move_robot_one_location 16987 16988 16996
+16951 move_robot[curator,tunnel,hall_alpha] -> move_robot_one_location 16952 16953 16986
+16938 move_robot[curator,stasis_lab,hall_alpha] -> move_robot_one_location 16939 16940 16951
+16909 robot_travel[curator,hall_alpha] -> sealing_curator_travel 16910 16911 16938 17007
+16905 tour_next_stop_splitted_1[curator] -> <_splitting_method_tour_next_stop_splitted_1;service_room[curator,hall_alpha];do_service_room;1;0,-1,-2> 16909 17011 17017
+15834 conduct_tour[curator] -> tour_next_stop 16905 17039
+15828 load_phase[curator,stasis_lab] -> finish_loading 15829
+15822 unload_phase[curator,stasis_lab] -> finish_unloading 15823
+15818 unload_one_thermosensitive_more_splitted_9[curator,stasis_lab] -> _splitting_method_unload_one_thermosensitive_more_splitted_9 15819 15820
+15761 unload_phase[curator,stasis_lab] -> unload_one_thermosensitive_more 15818 15822
+15752 move_robot[curator,stasis_lab,stasis_lab] -> arrived_at_destination 15753
+15737 move_robot[curator,tunnel,stasis_lab] -> move_robot_one_location 15738 15739 15752
+15716 move_robot[curator,hall_beta,stasis_lab] -> move_robot_one_location 15717 15718 15737
+15711 robot_travel[curator,stasis_lab] -> sealing_curator_travel 15712 15713 15716 15754
+15638 tour_next_stop_splitted_1[curator] -> <_splitting_method_tour_next_stop_splitted_1;service_room[curator,stasis_lab];do_service_room;1;0,-1,-2> 15711 15761 15828
+15525 conduct_tour[curator] -> tour_next_stop 15638 15834
+15519 load_phase[curator,hall_beta] -> finish_loading 15520
+15510 load_one_sensitive_more_splitted_5[curator,hall_beta] -> _splitting_method_load_one_sensitive_more_splitted_5 15511 15512
+15467 load_phase[curator,hall_beta] -> load_one_sensitive_more 15510 15519
+15461 unload_phase[curator,hall_beta] -> finish_unloading 15462
+15455 move_robot[curator,hall_beta,hall_beta] -> arrived_at_destination 15456
+15446 move_robot[curator,tunnel,hall_beta] -> move_robot_one_location 15447 15448 15455
+15436 move_robot[curator,hall_alpha,hall_beta] -> move_robot_one_location 15437 15438 15446
+15429 move_robot[curator,tunnel,hall_beta] -> move_robot_one_location 15430 15431 15436
+15416 move_robot[curator,hall_alpha,hall_beta] -> move_robot_one_location 15417 15418 15429
+15409 move_robot[curator,tunnel,hall_beta] -> move_robot_one_location 15410 15411 15416
+15355 move_robot[curator,cryo_chamber,hall_beta] -> move_robot_one_location 15356 15357 15409
+15350 robot_travel[curator,hall_beta] -> sealing_curator_travel 15351 15352 15355 15457
+15122 tour_next_stop_splitted_1[curator] -> <_splitting_method_tour_next_stop_splitted_1;service_room[curator,hall_beta];do_service_room;1;0,-1,-2> 15350 15461 15467
+14941 conduct_tour[curator] -> tour_next_stop 15122 15525
+14935 load_phase[curator,cryo_chamber] -> finish_loading 14936
+14931 unload_phase[curator,cryo_chamber] -> finish_unloading 14932
+14923 unload_one_thermosensitive_more_splitted_9[curator,cryo_chamber] -> _splitting_method_unload_one_thermosensitive_more_splitted_9 14924 14925
+14862 unload_phase[curator,cryo_chamber] -> unload_one_thermosensitive_more 14923 14931
+14853 move_robot[curator,cryo_chamber,cryo_chamber] -> arrived_at_destination 14854
+14841 move_robot[curator,tunnel,cryo_chamber] -> move_robot_one_location 14842 14843 14853
+14834 move_robot[curator,hall_alpha,cryo_chamber] -> move_robot_one_location 14835 14836 14841
+14830 robot_travel[curator,cryo_chamber] -> sealing_curator_travel 14831 14832 14834 14855
+14034 tour_next_stop_splitted_1[curator] -> <_splitting_method_tour_next_stop_splitted_1;service_room[curator,cryo_chamber];do_service_room;1;0,-1,-2> 14830 14862 14935
+13404 conduct_tour[curator] -> tour_next_stop 14034 14941
+13398 load_phase[curator,hall_alpha] -> finish_loading 13399
+13388 load_one_sensitive_more_splitted_5[curator,hall_alpha] -> _splitting_method_load_one_sensitive_more_splitted_5 13389 13390
+13367 load_phase[curator,hall_alpha] -> load_one_sensitive_more 13388 13398
+13360 unload_phase[curator,hall_alpha] -> finish_unloading 13361
+13354 move_robot[curator,hall_alpha,hall_alpha] -> arrived_at_destination 13355
+13341 move_robot[curator,tunnel,hall_alpha] -> move_robot_one_location 13342 13343 13354
+13322 move_robot[curator,stasis_lab,hall_alpha] -> move_robot_one_location 13323 13324 13341
+13313 robot_travel[curator,hall_alpha] -> sealing_curator_travel 13314 13315 13322 13356
+13309 tour_next_stop_splitted_1[curator] -> <_splitting_method_tour_next_stop_splitted_1;service_room[curator,hall_alpha];do_service_room;1;0,-1,-2> 13313 13360 13367
+6651 conduct_tour[curator] -> tour_next_stop 13309 13404
+6645 load_phase[curator,stasis_lab] -> finish_loading 6646
+6639 unload_phase[curator,stasis_lab] -> finish_unloading 6640
+6635 unload_one_standard_more_splitted_8[curator,stasis_lab] -> _splitting_method_unload_one_standard_more_splitted_8 6636 6637
+6579 unload_phase[curator,stasis_lab] -> unload_one_standard_more 6635 6639
+6571 move_robot[curator,stasis_lab,stasis_lab] -> arrived_at_destination 6572
+6556 move_robot[curator,tunnel,stasis_lab] -> move_robot_one_location 6557 6558 6571
+6552 move_robot[curator,hall_beta,stasis_lab] -> move_robot_one_location 6553 6554 6556
+6547 robot_travel[curator,stasis_lab] -> sealing_curator_travel 6548 6549 6552 6573
+6541 tour_next_stop_splitted_1[curator] -> <_splitting_method_tour_next_stop_splitted_1;service_room[curator,stasis_lab];do_service_room;1;0,-1,-2> 6547 6579 6645
+6350 conduct_tour[curator] -> tour_next_stop 6541 6651
+6344 load_phase[curator,hall_beta] -> finish_loading 6345
+6341 load_one_standard_more_splitted_3[curator,hall_beta] -> _splitting_method_load_one_standard_more_splitted_3 6342 6343
+6315 load_phase[curator,hall_beta] -> load_one_standard_more 6341 6344
+6310 unload_phase[curator,hall_beta] -> finish_unloading 6311
+6304 move_robot[curator,hall_beta,hall_beta] -> arrived_at_destination 6305
+6231 move_robot[curator,tunnel,hall_beta] -> move_robot_one_location 6232 6233 6304
+6221 move_robot[curator,cryo_chamber,hall_beta] -> move_robot_one_location 6222 6223 6231
+6213 move_robot[curator,tunnel,hall_beta] -> move_robot_one_location 6214 6215 6221
+6197 move_robot[curator,stasis_lab,hall_beta] -> move_robot_one_location 6198 6199 6213
+5946 robot_travel[curator,hall_beta] -> sealing_curator_travel 5947 5948 6197 6306
+5933 tour_next_stop_splitted_1[curator] -> <_splitting_method_tour_next_stop_splitted_1;service_room[curator,hall_beta];do_service_room;1;0,-1,-2> 5946 6310 6315
+5528 conduct_tour[curator] -> tour_next_stop 5933 6350
+5522 load_phase[curator,stasis_lab] -> finish_loading 5523
+5516 unload_phase[curator,stasis_lab] -> finish_unloading 5517
+5500 unload_one_seismic_sensitive_more_splitted_10[curator,stasis_lab] -> _splitting_method_unload_one_seismic_sensitive_more_splitted_10 5501 5502
+5451 unload_phase[curator,stasis_lab] -> unload_one_seismic_sensitive_more 5500 5516
+5441 move_robot[curator,stasis_lab,stasis_lab] -> arrived_at_destination 5442
+5426 move_robot[curator,tunnel,stasis_lab] -> move_robot_one_location 5427 5428 5441
+5422 move_robot[curator,cryo_chamber,stasis_lab] -> move_robot_one_location 5423 5424 5426
+5418 robot_travel[curator,stasis_lab] -> sealing_curator_travel 5419 5420 5422 5443
+5351 tour_next_stop_splitted_1[curator] -> <_splitting_method_tour_next_stop_splitted_1;service_room[curator,stasis_lab];do_service_room;1;0,-1,-2> 5418 5451 5522
+5056 conduct_tour[curator] -> tour_next_stop 5351 5528
+5050 load_phase[curator,cryo_chamber] -> finish_loading 5051
+5033 load_one_sensitive_more_splitted_5[curator,cryo_chamber] -> _splitting_method_load_one_sensitive_more_splitted_5 5034 5035
+5001 load_phase[curator,cryo_chamber] -> load_one_sensitive_more 5033 5050
+4994 unload_phase[curator,cryo_chamber] -> finish_unloading 4995
+4988 move_robot[curator,cryo_chamber,cryo_chamber] -> arrived_at_destination 4989
+4976 move_robot[curator,tunnel,cryo_chamber] -> move_robot_one_location 4977 4978 4988
+4969 move_robot[curator,hall_alpha,cryo_chamber] -> move_robot_one_location 4970 4971 4976
+4965 move_robot[curator,tunnel,cryo_chamber] -> move_robot_one_location 4966 4967 4969
+4949 move_robot[curator,hall_alpha,cryo_chamber] -> move_robot_one_location 4950 4951 4965
+4945 move_robot[curator,tunnel,cryo_chamber] -> move_robot_one_location 4946 4947 4949
+4929 move_robot[curator,hall_beta,cryo_chamber] -> move_robot_one_location 4930 4931 4945
+4229 robot_travel[curator,cryo_chamber] -> sealing_curator_travel 4230 4231 4929 4990
+4191 tour_next_stop_splitted_1[curator] -> <_splitting_method_tour_next_stop_splitted_1;service_room[curator,cryo_chamber];do_service_room;1;0,-1,-2> 4229 4994 5001
+3744 conduct_tour[curator] -> tour_next_stop 4191 5056
+3738 load_phase[curator,hall_beta] -> finish_loading 3739
+3735 unload_phase[curator,hall_beta] -> finish_unloading 3736
+3729 move_robot[curator,hall_beta,hall_beta] -> arrived_at_destination 3730
+3716 move_robot[curator,tunnel,hall_beta] -> move_robot_one_location 3717 3718 3729
+3706 move_robot[curator,stasis_lab,hall_beta] -> move_robot_one_location 3707 3708 3716
+3698 robot_travel[curator,hall_beta] -> sealing_curator_travel 3699 3700 3706 3731
+3676 tour_next_stop_splitted_1[curator] -> <_splitting_method_tour_next_stop_splitted_1;service_room[curator,hall_beta];do_service_room;1;0,-1,-2> 3698 3735 3738
+3261 conduct_tour[curator] -> tour_next_stop 3676 3744
+3255 load_phase[curator,stasis_lab] -> finish_loading 3256
+3249 unload_phase[curator,stasis_lab] -> finish_unloading 3250
+3241 unload_one_seismic_sensitive_more_splitted_10[curator,stasis_lab] -> _splitting_method_unload_one_seismic_sensitive_more_splitted_10 3242 3243
+3209 unload_phase[curator,stasis_lab] -> unload_one_seismic_sensitive_more 3241 3249
+3199 move_robot[curator,stasis_lab,stasis_lab] -> arrived_at_destination 3200
+3184 move_robot[curator,tunnel,stasis_lab] -> move_robot_one_location 3185 3186 3199
+2865 move_robot[curator,hall_beta,stasis_lab] -> move_robot_one_location 2866 2867 3184
+2824 robot_travel[curator,stasis_lab] -> sealing_curator_travel 2825 2826 2865 3201
+2809 tour_next_stop_splitted_1[curator] -> <_splitting_method_tour_next_stop_splitted_1;service_room[curator,stasis_lab];do_service_room;1;0,-1,-2> 2824 3209 3255
+2767 conduct_tour[curator] -> tour_next_stop 2809 3261
+2761 load_phase[curator,hall_beta] -> finish_loading 2762
+2758 unload_phase[curator,hall_beta] -> finish_unloading 2759
+2748 robot_travel[curator,hall_beta] -> already_at_destination 2749
+2737 tour_next_stop_splitted_1[curator] -> <_splitting_method_tour_next_stop_splitted_1;service_room[curator,hall_beta];do_service_room;1;0,-1,-2> 2748 2758 2761
+2507 conduct_tour[curator] -> tour_next_stop 2737 2767
+2501 load_phase[curator,hall_beta] -> finish_loading 2502
+2494 load_one_sensitive_more_splitted_5[curator,hall_beta] -> _splitting_method_load_one_sensitive_more_splitted_5 2495 2496
+2480 load_phase[curator,hall_beta] -> load_one_sensitive_more 2494 2501
+2474 unload_phase[curator,hall_beta] -> finish_unloading 2475
+2468 move_robot[curator,hall_beta,hall_beta] -> arrived_at_destination 2469
+2459 move_robot[curator,tunnel,hall_beta] -> move_robot_one_location 2460 2461 2468
+2449 move_robot[curator,hall_alpha,hall_beta] -> move_robot_one_location 2450 2451 2459
+2442 move_robot[curator,tunnel,hall_beta] -> move_robot_one_location 2443 2444 2449
+2429 move_robot[curator,stasis_lab,hall_beta] -> move_robot_one_location 2430 2431 2442
+2141 robot_travel[curator,hall_beta] -> sealing_curator_travel 2142 2143 2429 2470
+2137 tour_next_stop_splitted_1[curator] -> <_splitting_method_tour_next_stop_splitted_1;service_room[curator,hall_beta];do_service_room;1;0,-1,-2> 2141 2474 2480
+1807 conduct_tour[curator] -> tour_next_stop 2137 2507
+1801 load_phase[curator,stasis_lab] -> finish_loading 1802
+1795 unload_phase[curator,stasis_lab] -> finish_unloading 1796
+1788 unload_one_thermosensitive_more_splitted_9[curator,stasis_lab] -> _splitting_method_unload_one_thermosensitive_more_splitted_9 1789 1790
+1735 unload_phase[curator,stasis_lab] -> unload_one_thermosensitive_more 1788 1795
+1726 move_robot[curator,stasis_lab,stasis_lab] -> arrived_at_destination 1727
+1552 move_robot[curator,tunnel,stasis_lab] -> move_robot_one_location 1553 1554 1726
+1548 move_robot[curator,hall_alpha,stasis_lab] -> move_robot_one_location 1549 1550 1552
+1542 robot_travel[curator,stasis_lab] -> sealing_curator_travel 1543 1544 1548 1728
+1326 tour_next_stop_splitted_1[curator] -> <_splitting_method_tour_next_stop_splitted_1;service_room[curator,stasis_lab];do_service_room;1;0,-1,-2> 1542 1735 1801
+1209 conduct_tour[curator] -> tour_next_stop 1326 1807
+1203 load_phase[curator,hall_alpha] -> finish_loading 1204
+1197 load_one_sensitive_more_splitted_5[curator,hall_alpha] -> _splitting_method_load_one_sensitive_more_splitted_5 1198 1199
+1045 load_phase[curator,hall_alpha] -> load_one_sensitive_more 1197 1203
+1038 unload_phase[curator,hall_alpha] -> finish_unloading 1039
+1028 unload_one_seismic_sensitive_more_splitted_10[curator,hall_alpha] -> _splitting_method_unload_one_seismic_sensitive_more_splitted_10 1029 1030
+977 unload_phase[curator,hall_alpha] -> unload_one_seismic_sensitive_more 1028 1038
+968 move_robot[curator,hall_alpha,hall_alpha] -> arrived_at_destination 969
+951 move_robot[curator,tunnel,hall_alpha] -> move_robot_one_location 952 953 968
+937 move_robot[curator,hall_beta,hall_alpha] -> move_robot_one_location 938 939 951
+875 robot_travel[curator,hall_alpha] -> sealing_curator_travel 876 877 937 970
+838 tour_next_stop_splitted_1[curator] -> <_splitting_method_tour_next_stop_splitted_1;service_room[curator,hall_alpha];do_service_room;1;0,-1,-2> 875 977 1045
+620 conduct_tour[curator] -> tour_next_stop 838 1209
+614 load_phase[curator,hall_beta] -> finish_loading 615
+604 load_one_sensitive_more_splitted_5[curator,hall_beta] -> _splitting_method_load_one_sensitive_more_splitted_5 605 606
+591 load_phase[curator,hall_beta] -> load_one_sensitive_more 604 614
+585 unload_phase[curator,hall_beta] -> finish_unloading 586
+579 move_robot[curator,hall_beta,hall_beta] -> arrived_at_destination 580
+570 move_robot[curator,tunnel,hall_beta] -> move_robot_one_location 571 572 579
+560 move_robot[curator,pod_pickup,hall_beta] -> move_robot_one_location 561 562 570
+551 robot_travel[curator,hall_beta] -> sealing_curator_travel 552 553 560 581
+141 tour_next_stop_splitted_1[curator] -> <_splitting_method_tour_next_stop_splitted_1;service_room[curator,hall_beta];do_service_room;1;0,-1,-2> 551 585 591
+75 conduct_tour[curator] -> tour_next_stop 141 620
+70 take_pods[curator] -> finish_taking_pods 71
+58 take_one_pod_splitted_7[curator,pod_pickup,pod_pickup] -> _splitting_method_take_one_pod_splitted_7 59 60
+48 take_pods[curator] -> take_one_pod 58 70
+36 robot_travel[curator,pod_pickup] -> already_at_destination 37
+27 prepare_robot[curator,pod_pickup] -> <prepare_pods;fetch_pods[curator];fetch_pods_from_pod_pickup;1;0,-1,-2,-3> 28 29 36 48
+20 deploy_for_work_once_splitted_6[curator] -> <_splitting_method_deploy_for_work_once_splitted_6;tour_around[curator,pod_pickup];do_tour_around;1;0,-1,-2,-3> 21 22 27 75
+16 make_robot_work[curator] -> deploy_for_work_once 20 26236
+9 manage_workforce[] -> finish_deployment 10
+3 manage_workforce[] -> deploy_one_more_robot 4 5 9 16
+0 __top[] -> <__top_method;solve_problem[];run_main_task;0;-1> 3
+<==
+pandaPIparser is configured as follows
+  Colors in output: true
+  Mode: convert pandaPI plan
+==>
+5 activate_robot curator
+60 take_pod curator pod_2
+553 seal curator
+562 move curator pod_pickup tunnel
+572 move curator tunnel hall_beta
+581 unseal curator
+606 pickup_sensitive_artifact curator artifact_8 pod_2 hall_beta
+877 seal curator
+939 move curator hall_beta tunnel
+953 move curator tunnel hall_alpha
+970 unseal curator
+1030 safe_drop_seismic_sensitive_artifact curator artifact_8 pod_2 hall_alpha
+1199 pickup_sensitive_artifact curator artifact_2 pod_2 hall_alpha
+1544 seal curator
+1550 move curator hall_alpha tunnel
+1554 move curator tunnel stasis_lab
+1728 unseal curator
+1790 safe_drop_thermosensitive_artifact curator artifact_2 pod_2 stasis_lab
+2143 seal curator
+2431 move curator stasis_lab tunnel
+2444 move curator tunnel hall_alpha
+2451 move curator hall_alpha tunnel
+2461 move curator tunnel hall_beta
+2470 unseal curator
+2496 pickup_sensitive_artifact curator artifact_7 pod_2 hall_beta
+2826 seal curator
+2867 move curator hall_beta tunnel
+3186 move curator tunnel stasis_lab
+3201 unseal curator
+3243 safe_drop_seismic_sensitive_artifact curator artifact_7 pod_2 stasis_lab
+3700 seal curator
+3708 move curator stasis_lab tunnel
+3718 move curator tunnel hall_beta
+3731 unseal curator
+4231 seal curator
+4931 move curator hall_beta tunnel
+4947 move curator tunnel hall_alpha
+4951 move curator hall_alpha tunnel
+4967 move curator tunnel hall_alpha
+4971 move curator hall_alpha tunnel
+4978 move curator tunnel cryo_chamber
+4990 unseal curator
+5035 pickup_sensitive_artifact curator martian_artifact_2 pod_2 cryo_chamber
+5420 seal curator
+5424 move curator cryo_chamber tunnel
+5428 move curator tunnel stasis_lab
+5443 unseal curator
+5502 safe_drop_seismic_sensitive_artifact curator martian_artifact_2 pod_2 stasis_lab
+5948 seal curator
+6199 move curator stasis_lab tunnel
+6215 move curator tunnel cryo_chamber
+6223 move curator cryo_chamber tunnel
+6233 move curator tunnel hall_beta
+6306 unseal curator
+6343 pickup_standard_artifact curator artifact_6 hall_beta
+6549 seal curator
+6554 move curator hall_beta tunnel
+6558 move curator tunnel stasis_lab
+6573 unseal curator
+6637 drop_standard_artifact curator artifact_6 stasis_lab
+13315 seal curator
+13324 move curator stasis_lab tunnel
+13343 move curator tunnel hall_alpha
+13356 unseal curator
+13390 pickup_sensitive_artifact curator artifact_5 pod_2 hall_alpha
+14832 seal curator
+14836 move curator hall_alpha tunnel
+14843 move curator tunnel cryo_chamber
+14855 unseal curator
+14925 safe_drop_thermosensitive_artifact curator artifact_5 pod_2 cryo_chamber
+15352 seal curator
+15357 move curator cryo_chamber tunnel
+15411 move curator tunnel hall_alpha
+15418 move curator hall_alpha tunnel
+15431 move curator tunnel hall_alpha
+15438 move curator hall_alpha tunnel
+15448 move curator tunnel hall_beta
+15457 unseal curator
+15512 pickup_sensitive_artifact curator artifact_9 pod_2 hall_beta
+15713 seal curator
+15718 move curator hall_beta tunnel
+15739 move curator tunnel stasis_lab
+15754 unseal curator
+15820 safe_drop_thermosensitive_artifact curator artifact_9 pod_2 stasis_lab
+16911 seal curator
+16940 move curator stasis_lab tunnel
+16953 move curator tunnel cryo_chamber
+16988 move curator cryo_chamber tunnel
+16998 move curator tunnel hall_alpha
+17007 unseal curator
+17032 pickup_standard_artifact curator artifact_1 hall_alpha
+17657 seal curator
+17663 move curator hall_alpha tunnel
+17673 move curator tunnel hall_beta
+17734 unseal curator
+17780 drop_standard_artifact curator artifact_1 hall_beta
+17837 pickup_sensitive_artifact curator artifact_10 pod_2 hall_beta
+17973 seal curator
+18230 move curator hall_beta tunnel
+18234 move curator tunnel stasis_lab
+18249 unseal curator
+18286 safe_drop_thermosensitive_artifact curator artifact_10 pod_2 stasis_lab
+22331 seal curator
+22337 move curator stasis_lab tunnel
+22344 move curator tunnel cryo_chamber
+22356 unseal curator
+22644 seal curator
+22747 move curator cryo_chamber tunnel
+22757 move curator tunnel hall_alpha
+22774 unseal curator
+22796 pickup_standard_artifact curator artifact_3 hall_alpha
+23623 seal curator
+23629 move curator hall_alpha tunnel
+23639 move curator tunnel hall_beta
+23652 unseal curator
+24644 seal curator
+24649 move curator hall_beta tunnel
+24653 move curator tunnel stasis_lab
+24668 unseal curator
+24712 drop_standard_artifact curator artifact_3 stasis_lab
+25980 seal curator
+26029 move curator stasis_lab tunnel
+26047 move curator tunnel hall_beta
+26056 unseal curator
+26075 pickup_standard_artifact curator artifact_1 hall_beta
+26138 seal curator
+26143 move curator hall_beta tunnel
+26150 move curator tunnel cryo_chamber
+26162 unseal curator
+26202 drop_standard_artifact curator artifact_1 cryo_chamber
+26225 pickup_standard_artifact curator martian_artifact_1 cryo_chamber
+26339 seal curator
+26343 move curator cryo_chamber tunnel
+26347 move curator tunnel stasis_lab
+26362 unseal curator
+26421 drop_standard_artifact curator martian_artifact_1 stasis_lab
+28115 seal curator
+28121 move curator stasis_lab tunnel
+29589 move curator tunnel cryo_chamber
+29601 unseal curator
+29690 pickup_sensitive_artifact curator martian_artifact_3 pod_2 cryo_chamber
+29805 seal curator
+29917 move curator cryo_chamber tunnel
+29921 move curator tunnel stasis_lab
+29936 unseal curator
+30000 safe_drop_thermosensitive_artifact curator martian_artifact_3 pod_2 stasis_lab
+root 30016
+3 manage_workforce  -> deploy_one_more_robot 5 9 16
+9 manage_workforce  -> finish_deployment
+16 make_robot_work curator -> deploy_for_work_once 30017 26236
+27 prepare_robot curator pod_pickup -> prepare_pods 30018
+36 robot_travel curator pod_pickup -> already_at_destination
+48 take_pods curator -> take_one_pod 60 70
+70 take_pods curator -> finish_taking_pods
+75 conduct_tour curator -> tour_next_stop 551 30019 620
+551 robot_travel curator hall_beta -> sealing_curator_travel 553 560 581
+560 move_robot curator pod_pickup hall_beta -> move_robot_one_location 562 570
+570 move_robot curator tunnel hall_beta -> move_robot_one_location 572 579
+579 move_robot curator hall_beta hall_beta -> arrived_at_destination
+585 unload_phase curator hall_beta -> finish_unloading
+591 load_phase curator hall_beta -> load_one_sensitive_more 606 614
+614 load_phase curator hall_beta -> finish_loading
+620 conduct_tour curator -> tour_next_stop 875 30020 1209
+875 robot_travel curator hall_alpha -> sealing_curator_travel 877 937 970
+937 move_robot curator hall_beta hall_alpha -> move_robot_one_location 939 951
+951 move_robot curator tunnel hall_alpha -> move_robot_one_location 953 968
+968 move_robot curator hall_alpha hall_alpha -> arrived_at_destination
+977 unload_phase curator hall_alpha -> unload_one_seismic_sensitive_more 1030 1038
+1038 unload_phase curator hall_alpha -> finish_unloading
+1045 load_phase curator hall_alpha -> load_one_sensitive_more 1199 1203
+1203 load_phase curator hall_alpha -> finish_loading
+1209 conduct_tour curator -> tour_next_stop 1542 30021 1807
+1542 robot_travel curator stasis_lab -> sealing_curator_travel 1544 1548 1728
+1548 move_robot curator hall_alpha stasis_lab -> move_robot_one_location 1550 1552
+1552 move_robot curator tunnel stasis_lab -> move_robot_one_location 1554 1726
+1726 move_robot curator stasis_lab stasis_lab -> arrived_at_destination
+1735 unload_phase curator stasis_lab -> unload_one_thermosensitive_more 1790 1795
+1795 unload_phase curator stasis_lab -> finish_unloading
+1801 load_phase curator stasis_lab -> finish_loading
+1807 conduct_tour curator -> tour_next_stop 2141 30022 2507
+2141 robot_travel curator hall_beta -> sealing_curator_travel 2143 2429 2470
+2429 move_robot curator stasis_lab hall_beta -> move_robot_one_location 2431 2442
+2442 move_robot curator tunnel hall_beta -> move_robot_one_location 2444 2449
+2449 move_robot curator hall_alpha hall_beta -> move_robot_one_location 2451 2459
+2459 move_robot curator tunnel hall_beta -> move_robot_one_location 2461 2468
+2468 move_robot curator hall_beta hall_beta -> arrived_at_destination
+2474 unload_phase curator hall_beta -> finish_unloading
+2480 load_phase curator hall_beta -> load_one_sensitive_more 2496 2501
+2501 load_phase curator hall_beta -> finish_loading
+2507 conduct_tour curator -> tour_next_stop 2748 30023 2767
+2748 robot_travel curator hall_beta -> already_at_destination
+2758 unload_phase curator hall_beta -> finish_unloading
+2761 load_phase curator hall_beta -> finish_loading
+2767 conduct_tour curator -> tour_next_stop 2824 30024 3261
+2824 robot_travel curator stasis_lab -> sealing_curator_travel 2826 2865 3201
+2865 move_robot curator hall_beta stasis_lab -> move_robot_one_location 2867 3184
+3184 move_robot curator tunnel stasis_lab -> move_robot_one_location 3186 3199
+3199 move_robot curator stasis_lab stasis_lab -> arrived_at_destination
+3209 unload_phase curator stasis_lab -> unload_one_seismic_sensitive_more 3243 3249
+3249 unload_phase curator stasis_lab -> finish_unloading
+3255 load_phase curator stasis_lab -> finish_loading
+3261 conduct_tour curator -> tour_next_stop 3698 30025 3744
+3698 robot_travel curator hall_beta -> sealing_curator_travel 3700 3706 3731
+3706 move_robot curator stasis_lab hall_beta -> move_robot_one_location 3708 3716
+3716 move_robot curator tunnel hall_beta -> move_robot_one_location 3718 3729
+3729 move_robot curator hall_beta hall_beta -> arrived_at_destination
+3735 unload_phase curator hall_beta -> finish_unloading
+3738 load_phase curator hall_beta -> finish_loading
+3744 conduct_tour curator -> tour_next_stop 4229 30026 5056
+4229 robot_travel curator cryo_chamber -> sealing_curator_travel 4231 4929 4990
+4929 move_robot curator hall_beta cryo_chamber -> move_robot_one_location 4931 4945
+4945 move_robot curator tunnel cryo_chamber -> move_robot_one_location 4947 4949
+4949 move_robot curator hall_alpha cryo_chamber -> move_robot_one_location 4951 4965
+4965 move_robot curator tunnel cryo_chamber -> move_robot_one_location 4967 4969
+4969 move_robot curator hall_alpha cryo_chamber -> move_robot_one_location 4971 4976
+4976 move_robot curator tunnel cryo_chamber -> move_robot_one_location 4978 4988
+4988 move_robot curator cryo_chamber cryo_chamber -> arrived_at_destination
+4994 unload_phase curator cryo_chamber -> finish_unloading
+5001 load_phase curator cryo_chamber -> load_one_sensitive_more 5035 5050
+5050 load_phase curator cryo_chamber -> finish_loading
+5056 conduct_tour curator -> tour_next_stop 5418 30027 5528
+5418 robot_travel curator stasis_lab -> sealing_curator_travel 5420 5422 5443
+5422 move_robot curator cryo_chamber stasis_lab -> move_robot_one_location 5424 5426
+5426 move_robot curator tunnel stasis_lab -> move_robot_one_location 5428 5441
+5441 move_robot curator stasis_lab stasis_lab -> arrived_at_destination
+5451 unload_phase curator stasis_lab -> unload_one_seismic_sensitive_more 5502 5516
+5516 unload_phase curator stasis_lab -> finish_unloading
+5522 load_phase curator stasis_lab -> finish_loading
+5528 conduct_tour curator -> tour_next_stop 5946 30028 6350
+5946 robot_travel curator hall_beta -> sealing_curator_travel 5948 6197 6306
+6197 move_robot curator stasis_lab hall_beta -> move_robot_one_location 6199 6213
+6213 move_robot curator tunnel hall_beta -> move_robot_one_location 6215 6221
+6221 move_robot curator cryo_chamber hall_beta -> move_robot_one_location 6223 6231
+6231 move_robot curator tunnel hall_beta -> move_robot_one_location 6233 6304
+6304 move_robot curator hall_beta hall_beta -> arrived_at_destination
+6310 unload_phase curator hall_beta -> finish_unloading
+6315 load_phase curator hall_beta -> load_one_standard_more 6343 6344
+6344 load_phase curator hall_beta -> finish_loading
+6350 conduct_tour curator -> tour_next_stop 6547 30029 6651
+6547 robot_travel curator stasis_lab -> sealing_curator_travel 6549 6552 6573
+6552 move_robot curator hall_beta stasis_lab -> move_robot_one_location 6554 6556
+6556 move_robot curator tunnel stasis_lab -> move_robot_one_location 6558 6571
+6571 move_robot curator stasis_lab stasis_lab -> arrived_at_destination
+6579 unload_phase curator stasis_lab -> unload_one_standard_more 6637 6639
+6639 unload_phase curator stasis_lab -> finish_unloading
+6645 load_phase curator stasis_lab -> finish_loading
+6651 conduct_tour curator -> tour_next_stop 13313 30030 13404
+13313 robot_travel curator hall_alpha -> sealing_curator_travel 13315 13322 13356
+13322 move_robot curator stasis_lab hall_alpha -> move_robot_one_location 13324 13341
+13341 move_robot curator tunnel hall_alpha -> move_robot_one_location 13343 13354
+13354 move_robot curator hall_alpha hall_alpha -> arrived_at_destination
+13360 unload_phase curator hall_alpha -> finish_unloading
+13367 load_phase curator hall_alpha -> load_one_sensitive_more 13390 13398
+13398 load_phase curator hall_alpha -> finish_loading
+13404 conduct_tour curator -> tour_next_stop 14830 30031 14941
+14830 robot_travel curator cryo_chamber -> sealing_curator_travel 14832 14834 14855
+14834 move_robot curator hall_alpha cryo_chamber -> move_robot_one_location 14836 14841
+14841 move_robot curator tunnel cryo_chamber -> move_robot_one_location 14843 14853
+14853 move_robot curator cryo_chamber cryo_chamber -> arrived_at_destination
+14862 unload_phase curator cryo_chamber -> unload_one_thermosensitive_more 14925 14931
+14931 unload_phase curator cryo_chamber -> finish_unloading
+14935 load_phase curator cryo_chamber -> finish_loading
+14941 conduct_tour curator -> tour_next_stop 15350 30032 15525
+15350 robot_travel curator hall_beta -> sealing_curator_travel 15352 15355 15457
+15355 move_robot curator cryo_chamber hall_beta -> move_robot_one_location 15357 15409
+15409 move_robot curator tunnel hall_beta -> move_robot_one_location 15411 15416
+15416 move_robot curator hall_alpha hall_beta -> move_robot_one_location 15418 15429
+15429 move_robot curator tunnel hall_beta -> move_robot_one_location 15431 15436
+15436 move_robot curator hall_alpha hall_beta -> move_robot_one_location 15438 15446
+15446 move_robot curator tunnel hall_beta -> move_robot_one_location 15448 15455
+15455 move_robot curator hall_beta hall_beta -> arrived_at_destination
+15461 unload_phase curator hall_beta -> finish_unloading
+15467 load_phase curator hall_beta -> load_one_sensitive_more 15512 15519
+15519 load_phase curator hall_beta -> finish_loading
+15525 conduct_tour curator -> tour_next_stop 15711 30033 15834
+15711 robot_travel curator stasis_lab -> sealing_curator_travel 15713 15716 15754
+15716 move_robot curator hall_beta stasis_lab -> move_robot_one_location 15718 15737
+15737 move_robot curator tunnel stasis_lab -> move_robot_one_location 15739 15752
+15752 move_robot curator stasis_lab stasis_lab -> arrived_at_destination
+15761 unload_phase curator stasis_lab -> unload_one_thermosensitive_more 15820 15822
+15822 unload_phase curator stasis_lab -> finish_unloading
+15828 load_phase curator stasis_lab -> finish_loading
+15834 conduct_tour curator -> tour_next_stop 16909 30034 17039
+16909 robot_travel curator hall_alpha -> sealing_curator_travel 16911 16938 17007
+16938 move_robot curator stasis_lab hall_alpha -> move_robot_one_location 16940 16951
+16951 move_robot curator tunnel hall_alpha -> move_robot_one_location 16953 16986
+16986 move_robot curator cryo_chamber hall_alpha -> move_robot_one_location 16988 16996
+16996 move_robot curator tunnel hall_alpha -> move_robot_one_location 16998 17005
+17005 move_robot curator hall_alpha hall_alpha -> arrived_at_destination
+17011 unload_phase curator hall_alpha -> finish_unloading
+17017 load_phase curator hall_alpha -> load_one_standard_more 17032 17033
+17033 load_phase curator hall_alpha -> finish_loading
+17039 conduct_tour curator -> tour_next_stop 17655 30035 17851
+17655 robot_travel curator hall_beta -> sealing_curator_travel 17657 17661 17734
+17661 move_robot curator hall_alpha hall_beta -> move_robot_one_location 17663 17671
+17671 move_robot curator tunnel hall_beta -> move_robot_one_location 17673 17732
+17732 move_robot curator hall_beta hall_beta -> arrived_at_destination
+17740 unload_phase curator hall_beta -> unload_one_standard_more 17780 17783
+17783 unload_phase curator hall_beta -> finish_unloading
+17789 load_phase curator hall_beta -> load_one_sensitive_more 17837 17845
+17845 load_phase curator hall_beta -> finish_loading
+17851 conduct_tour curator -> tour_next_stop 17971 30036 18308
+17971 robot_travel curator stasis_lab -> sealing_curator_travel 17973 18228 18249
+18228 move_robot curator hall_beta stasis_lab -> move_robot_one_location 18230 18232
+18232 move_robot curator tunnel stasis_lab -> move_robot_one_location 18234 18247
+18247 move_robot curator stasis_lab stasis_lab -> arrived_at_destination
+18256 unload_phase curator stasis_lab -> unload_one_thermosensitive_more 18286 18296
+18296 unload_phase curator stasis_lab -> finish_unloading
+18302 load_phase curator stasis_lab -> finish_loading
+18308 conduct_tour curator -> tour_next_stop 22329 30037 22370
+22329 robot_travel curator cryo_chamber -> sealing_curator_travel 22331 22335 22356
+22335 move_robot curator stasis_lab cryo_chamber -> move_robot_one_location 22337 22342
+22342 move_robot curator tunnel cryo_chamber -> move_robot_one_location 22344 22354
+22354 move_robot curator cryo_chamber cryo_chamber -> arrived_at_destination
+22360 unload_phase curator cryo_chamber -> finish_unloading
+22364 load_phase curator cryo_chamber -> finish_loading
+22370 conduct_tour curator -> tour_next_stop 22642 30038 22804
+22642 robot_travel curator hall_alpha -> sealing_curator_travel 22644 22745 22774
+22745 move_robot curator cryo_chamber hall_alpha -> move_robot_one_location 22747 22755
+22755 move_robot curator tunnel hall_alpha -> move_robot_one_location 22757 22772
+22772 move_robot curator hall_alpha hall_alpha -> arrived_at_destination
+22778 unload_phase curator hall_alpha -> finish_unloading
+22784 load_phase curator hall_alpha -> load_one_standard_more 22796 22798
+22798 load_phase curator hall_alpha -> finish_loading
+22804 conduct_tour curator -> tour_next_stop 23621 30039 23665
+23621 robot_travel curator hall_beta -> sealing_curator_travel 23623 23627 23652
+23627 move_robot curator hall_alpha hall_beta -> move_robot_one_location 23629 23637
+23637 move_robot curator tunnel hall_beta -> move_robot_one_location 23639 23650
+23650 move_robot curator hall_beta hall_beta -> arrived_at_destination
+23656 unload_phase curator hall_beta -> finish_unloading
+23659 load_phase curator hall_beta -> finish_loading
+23665 conduct_tour curator -> tour_next_stop 24642 30040 24728
+24642 robot_travel curator stasis_lab -> sealing_curator_travel 24644 24647 24668
+24647 move_robot curator hall_beta stasis_lab -> move_robot_one_location 24649 24651
+24651 move_robot curator tunnel stasis_lab -> move_robot_one_location 24653 24666
+24666 move_robot curator stasis_lab stasis_lab -> arrived_at_destination
+24674 unload_phase curator stasis_lab -> unload_one_standard_more 24712 24716
+24716 unload_phase curator stasis_lab -> finish_unloading
+24722 load_phase curator stasis_lab -> finish_loading
+24728 conduct_tour curator -> tour_next_stop 25978 30041 26085
+25978 robot_travel curator hall_beta -> sealing_curator_travel 25980 26027 26056
+26027 move_robot curator stasis_lab hall_beta -> move_robot_one_location 26029 26045
+26045 move_robot curator tunnel hall_beta -> move_robot_one_location 26047 26054
+26054 move_robot curator hall_beta hall_beta -> arrived_at_destination
+26060 unload_phase curator hall_beta -> finish_unloading
+26065 load_phase curator hall_beta -> load_one_standard_more 26075 26079
+26079 load_phase curator hall_beta -> finish_loading
+26085 conduct_tour curator -> tour_next_stop 26136 30042 26231
+26136 robot_travel curator cryo_chamber -> sealing_curator_travel 26138 26141 26162
+26141 move_robot curator hall_beta cryo_chamber -> move_robot_one_location 26143 26148
+26148 move_robot curator tunnel cryo_chamber -> move_robot_one_location 26150 26160
+26160 move_robot curator cryo_chamber cryo_chamber -> arrived_at_destination
+26168 unload_phase curator cryo_chamber -> unload_one_standard_more 26202 26205
+26205 unload_phase curator cryo_chamber -> finish_unloading
+26211 load_phase curator cryo_chamber -> load_one_standard_more 26225 26227
+26227 load_phase curator cryo_chamber -> finish_loading
+26231 conduct_tour curator -> finish_tour
+26236 make_robot_work curator -> deploy_for_work_once 30043 26264
+26255 prepare_robot curator cryo_chamber -> prepare_nothing
+26259 conduct_tour curator -> finish_tour
+26264 make_robot_work curator -> deploy_for_work_once 30044 30014
+26273 prepare_robot curator cryo_chamber -> prepare_nothing
+26279 conduct_tour curator -> tour_next_stop 26337 30045 26434
+26337 robot_travel curator stasis_lab -> sealing_curator_travel 26339 26341 26362
+26341 move_robot curator cryo_chamber stasis_lab -> move_robot_one_location 26343 26345
+26345 move_robot curator tunnel stasis_lab -> move_robot_one_location 26347 26360
+26360 move_robot curator stasis_lab stasis_lab -> arrived_at_destination
+26368 unload_phase curator stasis_lab -> unload_one_standard_more 26421 26422
+26422 unload_phase curator stasis_lab -> finish_unloading
+26428 load_phase curator stasis_lab -> finish_loading
+26434 conduct_tour curator -> tour_next_stop 28113 30046 29706
+28113 robot_travel curator cryo_chamber -> sealing_curator_travel 28115 28119 29601
+28119 move_robot curator stasis_lab cryo_chamber -> move_robot_one_location 28121 29587
+29587 move_robot curator tunnel cryo_chamber -> move_robot_one_location 29589 29599
+29599 move_robot curator cryo_chamber cryo_chamber -> arrived_at_destination
+29605 unload_phase curator cryo_chamber -> finish_unloading
+29612 load_phase curator cryo_chamber -> load_one_sensitive_more 29690 29700
+29700 load_phase curator cryo_chamber -> finish_loading
+29706 conduct_tour curator -> tour_next_stop 29803 30047 30011
+29803 robot_travel curator stasis_lab -> sealing_curator_travel 29805 29915 29936
+29915 move_robot curator cryo_chamber stasis_lab -> move_robot_one_location 29917 29919
+29919 move_robot curator tunnel stasis_lab -> move_robot_one_location 29921 29934
+29934 move_robot curator stasis_lab stasis_lab -> arrived_at_destination
+29943 unload_phase curator stasis_lab -> unload_one_thermosensitive_more 30000 30001
+30001 unload_phase curator stasis_lab -> finish_unloading
+30007 load_phase curator stasis_lab -> finish_loading
+30011 conduct_tour curator -> finish_tour
+30014 make_robot_work curator -> finish_work
+30016 solve_problem  -> run_main_task 3
+30017 tour_around curator pod_pickup -> do_tour_around 27 75
+30018 fetch_pods curator -> fetch_pods_from_pod_pickup 36 48
+30019 service_room curator hall_beta -> do_service_room 585 591
+30020 service_room curator hall_alpha -> do_service_room 977 1045
+30021 service_room curator stasis_lab -> do_service_room 1735 1801
+30022 service_room curator hall_beta -> do_service_room 2474 2480
+30023 service_room curator hall_beta -> do_service_room 2758 2761
+30024 service_room curator stasis_lab -> do_service_room 3209 3255
+30025 service_room curator hall_beta -> do_service_room 3735 3738
+30026 service_room curator cryo_chamber -> do_service_room 4994 5001
+30027 service_room curator stasis_lab -> do_service_room 5451 5522
+30028 service_room curator hall_beta -> do_service_room 6310 6315
+30029 service_room curator stasis_lab -> do_service_room 6579 6645
+30030 service_room curator hall_alpha -> do_service_room 13360 13367
+30031 service_room curator cryo_chamber -> do_service_room 14862 14935
+30032 service_room curator hall_beta -> do_service_room 15461 15467
+30033 service_room curator stasis_lab -> do_service_room 15761 15828
+30034 service_room curator hall_alpha -> do_service_room 17011 17017
+30035 service_room curator hall_beta -> do_service_room 17740 17789
+30036 service_room curator stasis_lab -> do_service_room 18256 18302
+30037 service_room curator cryo_chamber -> do_service_room 22360 22364
+30038 service_room curator hall_alpha -> do_service_room 22778 22784
+30039 service_room curator hall_beta -> do_service_room 23656 23659
+30040 service_room curator stasis_lab -> do_service_room 24674 24722
+30041 service_room curator hall_beta -> do_service_room 26060 26065
+30042 service_room curator cryo_chamber -> do_service_room 26168 26211
+30043 tour_around curator cryo_chamber -> do_tour_around 26255 26259
+30044 tour_around curator cryo_chamber -> do_tour_around 26273 26279
+30045 service_room curator stasis_lab -> do_service_room 26368 26428
+30046 service_room curator cryo_chamber -> do_service_room 29605 29612
+30047 service_room curator stasis_lab -> do_service_room 29943 30007
+Execution time: 0.816468 seconds
